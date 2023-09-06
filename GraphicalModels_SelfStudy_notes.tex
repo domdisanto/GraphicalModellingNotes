@@ -24,12 +24,25 @@
     \item Proofs are similarly good-faith efforts but unverified 
     \item \textcolor{red}{Red text} indicates my personal questions, lapses in understanding, or otherwise shakey areas 
     \item Other nice treatments of similar material include:
-            \subitem Frederic Koehler's lecture on Common Gaussian Graphical Models \url{https://www.youtube.com/watch?v=V6NMDZB6LI4}
-        	\subitem -- Illinois lecture note on graphical models class: \url{http://swoh.web.engr.illinois.edu/courses/IE598/info.html}
+    \begin{itemize}
+            \item Frederic Koehler's lecture on Common Gaussian Graphical Models \url{https://www.youtube.com/watch?v=V6NMDZB6LI4}
+        	\item -- Illinois lecture note on graphical models class: \url{http://swoh.web.engr.illinois.edu/courses/IE598/info.html}
+    \end{itemize}
     \item Useful\footnote{Not a pre-req (or any area of experience for me) but relevant optimization tools do crop up in Ch. 17 of ESL} references/notes on convex optimization and sub-gradient notation 
-            \subitem Ryan Tibshirani's Convex Optimization Notes at \url{https://www.stat.cmu.edu/~ryantibs/convexopt/}
-            \subitem Boyd and Vandenberghe's 2008 Textbook on Convex Optimization \url{https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf}
+    \begin{itemize}
+            \item Ryan Tibshirani's Convex Optimization Notes at \url{https://www.stat.cmu.edu/~ryantibs/convexopt/}
+            \item Boyd and Vandenberghe's 2008 Textbook on Convex Optimization \url{https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf}
+    \end{itemize}
 \end{itemize}
+
+\section*{Non-Urgent/Of-Interest Review}
+
+\begin{itemize}
+    \item Community-Based Group Graphical Lasso (Pircalabelu, 2020) \url{https://www.jmlr.org/papers/volume21/19-181/19-181.pdf}
+    \item Applications of lasso/grouped lasso (Friedman 2010) \url{https://www.asc.ohio-state.edu/statistics/statgen/joul_aut2015/2010-Friedman-Hastie-Tibshirani.pdf}
+    \item Elastic net model selection in undirected graphica models (Cucuringu 2011) \url{https://arxiv.org/abs/1111.0559}
+\end{itemize}
+
 
 \newpage 
 
@@ -39,24 +52,34 @@
 \subsection*{Important}
 
 \begin{itemize}
-	\item Summarize/scribe notes on Chen et al paper 
-    \item Finish ESL Ch. 17 Review 
-    \item Implement Graphical Lasso (ESL Exercise 17.8)
+    \item Review restricted strong convexity proofs 
+    \begin{itemize}
+        \item OLS with $\ell_1$ penalty (i.e. lasso) with 1) exact sparsity and 2) "partial" sparsity (i.e. $\mathbb{B}_q$ work, assumed sparsity)
+        \item Understand how restricted eigenvalue condition implies restricted strong convexity 
+    \end{itemize}
+    \item GLM's (see section 6 in v1 of paper on ar$\chi$iv)
+    \begin{itemize}
+        \item For general link function but notably for logit link
+        \item Note requirement of the tolerance function $\tau(\theta^*)$, the cause and how it alters the proof 
+    \end{itemize}
 \end{itemize}
+
 
 \subsection*{Supplementary}
 
 \begin{itemize}
+    \item Implement Graphical Lasso (ESL Exercise 17.8)
     \item Review Wasserman Ch 19 (log-linear models)
     \item Review proofs:
-    	\subitem Hammersley-Clifford theorem (iff/bi-directional)
-	    \subitem Markov Property: Global $\Leftrightarrow$ Pairwise
+    \begin{itemize}
+    	\item Hammersley-Clifford theorem (iff/bi-directional)
+	    \item Markov Properties  
+        \begin{itemize}
+            \item Global $\Leftrightarrow$ Pairwise $\Leftrightarrow$ Local (for positive distributions)
+            \item Global $\Rightarrow$ Local $\Rightarrow$ Pairwise (generally)
+        \end{itemize}
+    \end{itemize}
     \item Review Junction-Tree Algo (ESL Ch 17) 
-    \item Review Wasserman Ch 19 (log-linear models)	
-    \item Treatments of Graphical Grouped Lasso 
-    	\subitem -- \url{https://www.jmlr.org/papers/volume21/19-181/19-181.pdf}
-    	\subitem -- \url{https://www.asc.ohio-state.edu/statistics/statgen/joul_aut2015/2010-Friedman-Hastie-Tibshirani.pdf}
-    \item Undirected (Graphical) Elastic Net \url{https://arxiv.org/abs/1111.0559}
 \end{itemize}
 
 \newpage 
@@ -80,15 +103,19 @@
 \subsection*{Takeaways/High-Level Notes}
 	\begin{itemize}
 		\item This paper extends previous work to allow for estimation of conditional dependencies/associations within graphs of mixed distributions within the exponential family. Previous work focused on Gaussian graphs and more recently within 
-			\subitem One related/contemporaneous work allowed for a mixed model of two distributions, this work allows for any(?) combination of the specified exponential family distributions
+		\begin{itemize}
+			\item One related/contemporaneous work allowed for a mixed model of two distributions, this work allows for any(?) combination of the specified exponential family distributions
+        \end{itemize}
 	\end{itemize}
 
 \subsection*{Further Review}
 	
 	\begin{itemize}
 		\item Work through derivations of Ex. 1 to 4 (parameterization of conditional densities $p(x_s | x_{-s})$ in the proposed conditional density form (3))
-			\subitem -- See \url{http://www.cs.cmu.edu/~epxing/Class/10708-16/note/10708_scribe_lecture10.pdf}
-		\item Revisit equation (3) (pg 3), how was this derived or arrived at? Is this a known extension of the exponential family definition in the graphical setting? 
+        \begin{itemize}
+            \item -- See \url{http://www.cs.cmu.edu/~epxing/Class/10708-16/note/10708_scribe_lecture10.pdf}
+        \end{itemize}
+        \item Revisit equation (3) (pg 3), how was this derived or arrived at? Is this a known extension of the exponential family definition in the graphical setting? 
 		\item Review proofs in Appendix 
 	\end{itemize}
 
@@ -99,13 +126,16 @@
 		\item The Introduction mentioned papers from \(\sim\)2009-13 that proposed semi-/non-parametric methods for conditional dependence estimation (Graphical Random Forest; Joint Additive Models) but criticizes these methods' efficiency. Is non-parametric estimation still an open research area?  
 		
 		\item What are these node potential functions, $f(x_s)$? Are they present to capture/account for the marginal "densities"(?) of a given random vector/node $x_s$? I want to understand because they seem to define the importance of $\alpha_s$, which in turn are parameters that we assume are known in the algorithm proposed in Section 3. Just trying to understand 1) what we are estimating in estimating $\alpha_{s1}$ and how strict (or just what the) assumption is when we say $\alpha_{sk}$ are known for $k\geq 2$
-		\subitem The $\alpha_s$ are defined as $f(x_s) = \alpha_{s1}x_s + \alpha_{s2}x_s^2/2 + \sum \alpha_{sk}B_{sk}(x_k)$. That is, the $\alpha_s$ vector are coefficients for some linear combination that defines the node potential function 
-		
+		\begin{itemize}
+            \item The $\alpha_s$ are defined as $f(x_s) = \alpha_{s1}x_s + \alpha_{s2}x_s^2/2 + \sum \alpha_{sk}B_{sk}(x_k)$. That is, the $\alpha_s$ vector are coefficients for some linear combination that defines the node potential function 
+        \end{itemize}
+
 		\item Why allow for different penalty $\lambda$ by node type? This was counterintuitive to me. We've assumed that our graph is undirected, or $\theta_{st}=\theta)_{ts}$. However if $x_s, x_t$ are distributed differently (e.g. one Poisson and one binomial), $\not \Rightarrow \lambda_s \theta_{st}= \lambda_t \theta_{ts}$ (we could apply different optimal $\lambda$ values
 		
 		\item General question: Neighbourhood selection (and Graphical Lasso) are defined on $\ell_1$ penalty alone. Are there extensions (and if so, are they popular/open reserach) on $\ell_2$ or combined penalties?
-			\subitem Found a 2011 treatment of an elastic net model for undirected Gaussian undirected graphs out of Princeton at \url{https://arxiv.org/abs/1111.0559}
-			
+			\begin{itemize}
+                \item Found a 2011 treatment of an elastic net model for undirected Gaussian undirected graphs out of Princeton at \url{https://arxiv.org/abs/1111.0559}
+            \end{itemize}
 			
 		\item Very general question: How (If you do) do you pick out useful techniques from some of the dense theory? And how do you identify what is a necessary pre-requisite or where you can assume or glance over some knowledge? For example, I don't have a convex optimization background outside of it's discussion in some stat theory (read: very little). So the proof of theorem 1 relying primal-dual witness method. Is this worthwhile to learn and how do I identify what is a useful/generalizable tool/skill and what may be useful just for this paper (and worth either accepting, or asking someone else to verify that I do know has this background)? 
 	\end{itemize}
@@ -115,24 +145,31 @@
 
 \section*{Wainwright (2012) {\large \it Unified Framework for High-Dimensional Analyais of $M$-Estimators with Decomposable Regulators}}
 
-\subsection*{Further Review/Questions}
+\subsection*{Further Review/Questions (9/6)}
 \begin{itemize}
 	\item{Where does equation 18 come from? I am familiar with explicit forms of the remainder in univariate expansions, but I'm not familiar with the multivariate remainder expression (and am unsure how this specific expression is derived)}
-	\item Review beginning of 4.2, 1) do I understand this Taylor series expansion about $\partial\mathcal{L}$? 2) do I understand why it is exact in this scenario? 
 	\item End of page 12, how does this correspond to a restricted eigenvalue condition? 
 \end{itemize}
 
-\subsection*{Takeaways}
+Applications to Lasso (4-5):
 
 \begin{itemize}
 	\item 4.1) For least squares LASSO ($\ell_1$ penalty), the Taylor series involved in the RSC definition is exact, and thus independent of $\theta^*$ (the parameter's true value for all intents and purpose). This, combined with the definition of the cone set $\mathcal{C}$ to which $\hat{\Delta}$ must belong simplifies the necessary RSC demonstration into a restricted eigenvalue condition, which can be shown to be met with high probability for Gaussian (and subGaussian) design matrices (even with dependencies)
-		\subitem But no comments yet on convergence, accuracy, etc. just meeting this RSC definition as necessary for further analysis of this M-estimation problem 
-	\item 4.2) Assume RE to assume RSC. We know $\ell_1$ is decomposable. Thus we have the bounds from Corollary 1 on the error vector, we must simply identify the regularization constant $\lambda_n$ and the compatibility function $\Psi(M)$ for $\mathcal{R}(\cdot) = ||\cdot||_1$ and error norm $||\cdot||_2$ (which is the meat of the proof of Corollary 2, besides the implicit $RE \Rightarrow RSC$ argument that I believe 4.1 makes)
-		\subitem Note the sub-gaussian (and normalizing) assumption allows for the high-probability argument made in the proof of corollary 2. 
+    \begin{itemize}
+        \item But no comments yet on convergence, accuracy, etc. just meeting this RSC definition as necessary for further analysis of this M-estimation problem 
+    \end{itemize}
+    \item 4.2) Assume RE to assume RSC. We know $\ell_1$ is decomposable. Thus we have the bounds from Corollary 1 on the error vector, we must simply identify the regularization constant $\lambda_n$ and the compatibility function $\Psi(M)$ for $\mathcal{R}(\cdot) = ||\cdot||_1$ and error norm $||\cdot||_2$ (which is the meat of the proof of Corollary 2, besides the implicit $RE \Rightarrow RSC$ argument that I believe 4.1 makes)
+		\begin{itemize}
+            \item Note the sub-gaussian (and normalizing) assumption allows for the high-probability argument made in the proof of corollary 2. 
+        \end{itemize}
 	\item 4.3) So assuming now $\theta^*$ is weakly sparse, that is not sparse but adequately-approximated by a sparse vector. We construct a set of sparse vectors for $\mathcal{M}$, and now have that $\theta^* \not\in \mathcal{M}$, leading to 1) this ball-shaped set and 2) the need for a positive tolerance function $\tau(\theta^*)$. This is contradicted however by the statement in Corollary 3 that $\theta^* \in \mathbb{B}_q(R_q)$, that is $\theta^*$ actually does belong to our model/sparsifiable set. 
-		\subitem Maybe it's that $\theta^*$ belongs to $\mathbb{B}_q(R_q)$ but we are estimating with a truly sparse set (i.e. $\mathbb{B}_0(R_0)$ with at most $R_0$ non-zero features), a stricter condition/subset of the $\mathbb{B}_q$ sparsifiable set 
-	 
+	\begin{itemize}
+        \item Maybe it's that $\theta^*$ belongs to $\mathbb{B}_q(R_q)$ but we are estimating with a truly sparse set (i.e. $\mathbb{B}_0(R_0)$ with at most $R_0$ non-zero features), a stricter condition/subset of the $\mathbb{B}_q$ sparsifiable set 
+        \item GLM extension essentially (with exponential family requirement although this is w/in definition of GLM) is just a revisited Taylor Series expansion with analogous work and results and an additional\textcolor{red}{(?)} constraint that sample size scales in $\Omega(s \log p)$ for sparsity $|S|=:s$.
+    \end{itemize}
 \end{itemize}
+\subsection*{Takeaways}
+
 
 Definitions in section 2 as set-up for Theorem 1:
 \begin{enumerate}
@@ -144,16 +181,20 @@ Definitions in section 2 as set-up for Theorem 1:
 \begin{itemize}
 	\item namely, a decomposability property for the regularizer and a notion of restricted strong convexity that depends on the inter- action between the regularizer and the loss function.
 	\item Decomposability (want to ensure I understand this perturbation intuition): 
-		\subitem Consider a model $M$ and our estimation $\overline{M}$ (for simplicity consider $M = \overline{M}$ but general result offered for $\overline{M} \subseteq M$. For $\theta \in M$ and $\gamma \in \overline{M}$, $\theta+\gamma$ (and specifically $\gamma$) can be considered deviations away from the model space 
+		\begin{itemize}
+            \item Consider a model $M$ and our estimation $\overline{M}$ (for simplicity consider $M = \overline{M}$ but general result offered for $\overline{M} \subseteq M$. For $\theta \in M$ and $\gamma \in \overline{M}$, $\theta+\gamma$ (and specifically $\gamma$) can be considered deviations away from the model space 
+        \end{itemize}
 \end{itemize}
 
 \subsection*{Questions/Notes}
 
 	\begin{itemize}
 		\item How do you best understand/learn the "history" of a given topic/method?
-			\subitem Sometimes it frequently pops up and just sticks (Tibshirani 1996 key ex), either in coursework or a common "parent" publication across 
-			\subitem "Review"-esque papers like this (or at least papers that provide succinct overviews of notable papers) are great but not always available
-		\item  How do we think about $\theta^* \in M$? Is this somewhat similar to identifiability? Like a well-specified model, such that $M$ our subspace which encodes the constraints (or other parameterizations/properties) that we believe are true for $\theta$ actually contains $\theta^*$ (analogous to "ground truth" in the frequentist univariate parameter estimation setting)
+		\begin{itemize}
+			\item Sometimes it frequently pops up and just sticks (Tibshirani 1996 key ex), either in coursework or a common "parent" publication across 
+			\item "Review"-esque papers like this (or at least papers that provide succinct overviews of notable papers) are great but not always available
+        \end{itemize}
+        \item  How do we think about $\theta^* \in M$? Is this somewhat similar to identifiability? Like a well-specified model, such that $M$ our subspace which encodes the constraints (or other parameterizations/properties) that we believe are true for $\theta$ actually contains $\theta^*$ (analogous to "ground truth" in the frequentist univariate parameter estimation setting)
 		\item {\bf More transparently, what is $\overline{M}$ in relationship to $M$?} Topological closures(?): Important to understand the distinction $\overline{M} \subseteq M$ and $\overline{M} = M$? I understand when we do not have equality (low-rank matrix estimation), but I don't necessarily understand what a topological closure is 
 		\item (pg. 5-6) {\it "With certain exceptions, it is computationally expensive to enforce a rank-constraint in a direct manner..."} What are the issues? Something related to the number combinations of row/column combinations that could result in a specific rank become prohibitively large (even if considered cleverly)? 
 		\item (pg. 11 (c)) How does the tolerance $\tau_\mathcal{L}$ related to unidentifiable components in a high-dim model? 
@@ -168,11 +209,15 @@ Definitions in section 2 as set-up for Theorem 1:
 	(Newly) Conceptual
 	\begin{itemize}
 		\item Review equivalency of lasso and basis pursuit de-noising
-			\subitem See \url{https://www.cs.cornell.edu/courses/cs6220/2017fa/CS6220_Lecture21_2.pdf}
-			\subitem {\it Possibly only of historical relevance}
+		\begin{itemize}
+			\item See \url{https://www.cs.cornell.edu/courses/cs6220/2017fa/CS6220_Lecture21_2.pdf}
+			\item {\it Possibly only of historical relevance}
+        \end{itemize}
 		\item Definition/abstraction of a (topological) closure:
-			\subitem For subspace $M \subseteq \mathbb{R}^p, \left(M^\perp \right)^\perp \equiv \overline{M}$ is a closure of $M$ (more accurately is a closure operator on $M$) 
-			\subitem With the exception of discussion of low-rank matrices and the nuclear norm, we can work with $M = \overline{M}$ and not concern ourselves with the concept of topological closures 
+		\begin{itemize}
+			\item For subspace $M \subseteq \mathbb{R}^p, \left(M^\perp \right)^\perp \equiv \overline{M}$ is a closure of $M$ (more accurately is a closure operator on $M$) 
+			\item With the exception of discussion of low-rank matrices and the nuclear norm, we can work with $M = \overline{M}$ and not concern ourselves with the concept of topological closures 
+        \end{itemize}
 		\item Prove (pg 7) dual-norm for group-norm (similar to $\ell_1 - \ell_\infty$ dual norm relationship proof)
 	\end{itemize}
 	
@@ -211,13 +256,16 @@ WTS $\sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\math
 \begin{enumerate}
     \item \textit{Omitting information that is shared with Wasserman chapters, which are more introductory than ESL's discussion of graphical algorithms}
     \item \textcolor{red}{\sout{We define clique potentials (similar to the Wasserman chapter) as affinities (affine functions?). Since we express the density function as product of clique functions, I assume these must be positive functions defined on each clique. Are there other constraints or definitions about these affinities?}}
-    	\subitem -- My (still limited, possibly incorrect) understanding is that these are simply positive functions that are context-specific or user-defined. Wainwright/Jordan describes these as {\it compatibility functions} which are defined based on a model. 
-    	\subsubitem -- An example of a simple compatibility functions is a binary decision rule that is 0 for any configuration of vertices/values that occurs with probability 0, and 1 otherwise. That is for clique $(x_i, x_j, x_k)$ with known impossible configuration $(z_i, z_j, z_k)$, the compatibility function is equivalent to the boolean $\lnot z_i \lor \lnot z_j \lor \lnot z_k$.
-
+    	\begin{itemize}
+            \item -- My (still limited, possibly incorrect) understanding is that these are simply positive functions that are context-specific or user-defined. Wainwright/Jordan describes these as {\it compatibility functions} which are defined based on a model. 
+    	    \item -- An example of a simple compatibility functions is a binary decision rule that is 0 for any configuration of vertices/values that occurs with probability 0, and 1 otherwise. That is for clique $(x_i, x_j, x_k)$ with known impossible configuration $(z_i, z_j, z_k)$, the compatibility function is equivalent to the boolean $\lnot z_i \lor \lnot z_j \lor \lnot z_k$.
+        \end{itemize}
     \item Hammserley-Clifford: From ESL, states that we can equivalently represent the joint density function of a graph ($\mathcal{G} = (V,E)$) $f_V$ as a product of clique affinities {\bf for Markov networks with positive (i.e. non-zero) distributions}
-            \subitem -- That is for set of maximal cliques\footnote{
+    \begin{itemize}
+        \item -- That is for set of maximal cliques\footnote{
             From Wainwright, Jordan (2008), I believe we can also use a set of non-maximal cliques (or any combination of cliques) in this factorization when convenient
             } $\mathcal{C}$ and graph $\mathcal{G} = (V, E)$, $f_\mathcal{G}(x) \propto \prod_{C \in \mathcal{C}}\psi_C (x_C)$
+    \end{itemize}
 
     \item \textcolor{red}{Another question re: HC theorem/clique-factorization of the density function "implies a graph with independence properties defined by the cliques...". So this is true even with overlap in the maximal cliques (or within whatever cliques are used to factorize the density function)? }
         
