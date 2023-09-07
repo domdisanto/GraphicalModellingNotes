@@ -52,10 +52,11 @@
 \section*{Notation}
 
 {\it Abbreviated, contains only notation that is ambiguous or otherwise necessitates explicit definition}
-
+ 
 \begin{itemize}
     \item $0 \in \mathbb{N}, 0 \not\in \mathbb{N}^+$
     \item $[n] = \{1, 2, ..., n\}$ (implicitly assertes $n \in \mathbb{N}^+$)
+    \item For any $f: \mathbb{R}^n \mapsto \mathbb{R}$, $\nabla f, \nabla^2 f$ represent the gradient and Hessian respectively. $H_f, \mathcal{H}_f$ may similarly represent the Hessian but I try to minimize use of this notation in favor of $\nabla^2f$
 \end{itemize}
 
 \newpage  
@@ -224,8 +225,36 @@ Definitions in section 2 as set-up for Theorem 1:
 	
 \subsection*{Restricted Strong Convexity Proofs}
 
+Recall $\Delta = |\hat{\theta_{\lambda_n}} - \theta^*|$. \newline 
+
+Recall also that the first-order Taylor series of any loss function  $\mathcal{L}: \mathbb{R}^n \mapsto \mathbb{R}$ about $\theta^* + \Delta$ with some error $\delta \mathcal{L}(\theta^*, \Delta)$ is
+
+\begin{gather*}
+    \mathcal{L}(\theta^* + \Delta)
+    =
+    \mathcal{L}(\theta^*)
+    +
+    \Delta^T\nabla\mathcal{L}(\theta^*)
+    +
+    \delta \mathcal{L}(\theta^*, \Delta)
+\end{gather*}
+
+{\bf Definition:} A loss function satisfies the restricted storng convexity condition with curvature $\kappa_\mathcal{L}$ and tolerance $\tau_{\mathcal{L}}(\theta^*)$ if its first-order Taylor's series error satisfies the following
+
+\begin{gather*}
+    \delta \mathcal{L}(\theta^*, \Delta)
+    \geq \kappa_\mathcal{L}||\Delta||_2^2 - \tau^2_\mathcal{L}(\theta^*), \ \ \forall \Delta \in \mathbb{C}(\mathcal{M}, \overline{\mathcal{M}}^\perp, \theta^*)
+\end{gather*}
+
+
 \subsubsection{OLS  with exact sparsity, $\ell_1$ penalty}
+
+Note u7u788
+
+
 \subsubsection{OLS with partial sparsity, $\ell_1$ penalty ($\mathbb{B}_q$ setting)}
+
+
 
 \subsubsection{Restricted Eigenvalue $\Rightarrow$ Restricted Strong Convexity}
 
