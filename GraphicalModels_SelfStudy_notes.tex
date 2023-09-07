@@ -65,7 +65,6 @@
 \subsection*{Important}
 
 \begin{itemize}
-    \item Organize notes
     \item Review restricted strong convexity proofs 
     \begin{itemize}
         \item OLS with $\ell_1$ penalty (i.e. lasso) with 1) exact sparsity and 2) "partial" sparsity (i.e. $\mathbb{B}_q$ work, assumed sparsity)
@@ -74,7 +73,6 @@
     \item GLM's (see section 6 in v1 of paper on ar$\chi$iv)
     \begin{itemize}
         \item For general link function but notably for logit link
-        \item Note requirement of the tolerance function $\tau(\theta^*)$, the cause and how it alters the proof 
     \end{itemize}
 \end{itemize}
 
@@ -200,11 +198,6 @@ Definitions in section 2 as set-up for Theorem 1:
 \subsection*{Questions/Notes}
 
 	\begin{itemize}
-		\item How do you best understand/learn the "history" of a given topic/method?
-		\begin{itemize}
-			\item Sometimes it frequently pops up and just sticks (Tibshirani 1996 key ex), either in coursework or a common "parent" publication across 
-			\item "Review"-esque papers like this (or at least papers that provide succinct overviews of notable papers) are great but not always available
-        \end{itemize}
         \item (pg. 5-6) {\it "With certain exceptions, it is computationally expensive to enforce a rank-constraint in a direct manner..."} What are the issues? Something related to the number combinations of row/column combinations that could result in a specific rank become prohibitively large (even if considered cleverly)? 
 		\item (pg. 11 (c)) How does the tolerance $\tau_\mathcal{L}$ related to unidentifiable components in a high-dim model? 
 	\end{itemize}
@@ -227,10 +220,20 @@ Definitions in section 2 as set-up for Theorem 1:
 			\item For subspace $M \subseteq \mathbb{R}^p, \left(M^\perp \right)^\perp \equiv \overline{M}$ is a closure of $M$ (more accurately is a closure operator on $M$) 
 			\item With the exception of discussion of low-rank matrices and the nuclear norm, we can work with $M = \overline{M}$ and not concern ourselves with the concept of topological closures 
         \end{itemize}
-		\item Prove (pg 7) dual-norm for group-norm (similar to $\ell_1 - \ell_\infty$ dual norm relationship proof)
 	\end{itemize}
 	
-\subsection*{Proofs}
+\subsection*{Restricted Strong Convexity Proofs}
+
+\subsubsection{OLS  with exact sparsity, $\ell_1$ penalty}
+\subsubsection{OLS with partial sparsity, $\ell_1$ penalty ($\mathbb{B}_q$ setting)}
+
+\subsubsection{Restricted Eigenvalue $\Rightarrow$ Restricted Strong Convexity}
+
+\subsubsection{GLM with Logit Link, $\ell_1$ penalty}
+
+{\it Note the tolerance function, $\tau(\theta^*)$ is now necessarily accounte for, unlike the OLS proofs, and note why}
+
+\subsection*{Misc. Proofs}
 
 \subsubsection{Proof of equivalent dual-norm definitions}
 
@@ -306,7 +309,7 @@ That is, for each $t$th partition, we take the $\alpha_t$-norm of this partition
 
 We want to identify the dual norm of $||\cdot||_{\mathcal{G}, \overrightarrow\alpha}$ (limited to $\overrightarrow{\alpha} \in [2,\infty]^{N_\mathcal{G}})$. For convenience we drop the $\mathcal{G}$ index for the specific partitioning for the group norm. \newline 
 
-Define $\overrightarrow{\alpha^*}$  such that $\frac{1}{\alpha_t} + \frac{1}{\alpha^*_t} = 1$. 
+Define $\overrightarrow{\alpha^*}$ such that $\frac{1}{\alpha_t} + \frac{1}{\alpha^*_t} = 1$. 
 
 \begin{gather*}
     \sup_{||u||_{\overrightarrow\alpha} \leq 1} 
@@ -345,6 +348,11 @@ $ and $s$ such that for $k \in p$, $||s_{G_s}||_{\alpha_s}=1$ and $s_i=0, \foral
         \max_w ||v_{G_w}||_{\alpha^*_w} 
         \qed 
 \end{gather}
+
+
+
+
+
 
 
 \newpage
