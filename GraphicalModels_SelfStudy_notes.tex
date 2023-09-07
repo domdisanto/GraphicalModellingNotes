@@ -43,11 +43,22 @@
     \item Elastic net model selection in undirected graphical models (Cucuringu 2011) \url{https://arxiv.org/abs/1111.0559}
     \item Review Wasserman Ch 19 (log-linear models)
     \item Review Junction-Tree Algo (ESL Ch 17 references) 
+    \item Original group lasso paper (Yuan, 2006) \url{http://www.columbia.edu/~my2550/papers/glasso.final.pdf}
 \end{itemize}
 
 
 \newpage 
 
+\section*{Notation}
+
+{\it Abbreviated, contains only notation that is ambiguous or otherwise necessitates explicit definition}
+
+\begin{itemize}
+    \item $0 \in \mathbb{N}, 0 \not\in \mathbb{N}^+$
+    \item $[n] = \{1, 2, ..., n\}$ (implicitly assertes $n \in \mathbb{N}^+$)
+\end{itemize}
+
+\newpage  
 %\boxsection*[\LARGE To Do ]
 \section*{To Do}
 
@@ -143,7 +154,7 @@
 	
 \newpage 
 
-\section*{Wainwright (2012) {\large \it Unified Framework for High-Dimensional Analyais of $M$-Estimators with Decomposable Regulators}}
+\section*{Negahban (2012) {\large \it Unified Framework for High-Dimensional Analyais of $M$-Estimators with Decomposable Regulators}}
 
 \subsection*{Further Review/Questions (9/6)}
 \begin{itemize}
@@ -219,7 +230,7 @@ Definitions in section 2 as set-up for Theorem 1:
 		\item Prove (pg 7) dual-norm for group-norm (similar to $\ell_1 - \ell_\infty$ dual norm relationship proof)
 	\end{itemize}
 	
-\subsection*{Misc (Somewhat) Related Work}
+\subsection*{Proofs}
 
 \subsubsection{Proof of equivalent dual-norm definitions}
 
@@ -276,6 +287,65 @@ To demonstrate equivalence we prove the inequality in the opposite direction. As
 \end{gather*}
 
 \subsubsection{Dual-norm of group-structured norm}
+    \footnote{Forgoing some of Sahand's nicer/more concise notation for clarity/confirmation of understanding on my end}
+
+{\it See 2.2 Example 2 (pg 5) for more details on group-sparsity} \newline 
+
+Consider $\theta \in \mathbb{R}^p$ such that  $[p]$ is partitionable as $\mathcal{G} = \{G_1, G_2, ..., G_{N_\mathcal{G}}\}$ (i.e. $\mathcal{G}$ indexes a specific partinioning of $[p]$ of length $N_{\mathcal{G}}$).
+Consider similarly the vector $\overrightarrow{\alpha} = (\alpha_1, ..., \alpha_{N_\mathcal{G}}), \alpha_i \in [1, \infty]$. 
+
+We define the group norm of $\theta$ as 
+
+\begin{gather*}
+    ||\theta||_{\mathcal{G}, \overrightarrow{\alpha}}
+    := 
+    \sum_{t=1}^{N_\mathcal{G}} ||\theta_{G_t}||_{\alpha_t}
+\end{gather*}
+
+That is, for each $t$th partition, we take the $\alpha_t$-norm of this partition of $\theta$. \newline 
+
+We want to identify the dual norm of $||\cdot||_{\mathcal{G}, \overrightarrow\alpha}$ (limited to $\overrightarrow{\alpha} \in [2,\infty]^{N_\mathcal{G}})$. For convenience we drop the $\mathcal{G}$ index for the specific partitioning for the group norm. \newline 
+
+Define $\overrightarrow{\alpha^*}$  such that $\frac{1}{\alpha_t} + \frac{1}{\alpha^*_t} = 1$. 
+
+\begin{gather*}
+    \sup_{||u||_{\overrightarrow\alpha} \leq 1} 
+    \iprod{u,v}
+%    \leq 
+%    \sup_{||u||_{\overrightarrow\alpha} \leq 1} 
+%    \frac{\iprod{u,v}}{ \max_{t} ||u_{G_t}||_{\overrightarrow\alpha_t}}    
+    =
+    \sup_{||u||_{\overrightarrow\alpha} \leq 1} 
+    \sum_t 
+    \iprod{u_{G_t}, v_{G_t}}
+    \stackrel{\text{H\"{o}lder's}}{\leq}
+    \sup_{||u||_{\overrightarrow\alpha} \leq 1} 
+    \sum_t 
+    ||u_{G_t}||_{\alpha_t}
+    ||v_{G_t}||_{\alpha^*_t}
+\\
+    \leq 
+    \sup_{||u||_{\overrightarrow\alpha} \leq 1} 
+    \max_w ||v_{G_w}||_{\alpha^*_w}
+    \sum_t 
+    ||u_{G_t}||_{\alpha_t}
+    =
+    \max_w ||v_{G_w}||_{\alpha^*_w}
+\end{gather*}
+
+Similarly define $k := \argmax_w ||v_{G_w}||_{\alpha^*_w}
+$ and $s$ such that for $k \in p$, $||s_{G_s}||_{\alpha_s}=1$ and $s_i=0, \forall i \not\in G_s$. Clearly again $||s||_{\overrightarrow{\alpha}} = 1$:
+
+\begin{gather}
+        \sup_{||u||_{\overrightarrow\alpha} \leq 1} 
+        \iprod{u, v}
+        \geq 
+        \iprod{s, v}
+        =
+        \max_w ||v_{G_w}||_{\alpha^*_w} 
+        \qed 
+\end{gather}
+
 
 \newpage
 \begin{tcolorbox}
