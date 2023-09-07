@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1694034049 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphicalModels_SelfStudy_notes.tex" "GraphicalModels_SelfStudy_notes.pdf" "GraphicalModels_SelfStudy_notes" 1694034051 0
-  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphicalModels_SelfStudy_notes.tex" 1694034049 41462 ae15950328d0de7e6856752ae1b79f52 ""
+["pdflatex"] 1694097286 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphicalModels_SelfStudy_notes.tex" "GraphicalModels_SelfStudy_notes.pdf" "GraphicalModels_SelfStudy_notes" 1694097287 0
+  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphicalModels_SelfStudy_notes.tex" 1694097285 39547 aa3d159a3abf5b467d939146411a4046 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -256,9 +256,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693935593 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693935547 7883466 9d2d13fbc6d11091b517934f993b5158 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "GraphicalModels_SelfStudy_notes.aux" 1694034050 687 d108e88b60712b96be2a70d81b34c00c "pdflatex"
-  "GraphicalModels_SelfStudy_notes.out" 1694034050 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "GraphicalModels_SelfStudy_notes.tex" 1694034049 41462 ae15950328d0de7e6856752ae1b79f52 ""
+  "GraphicalModels_SelfStudy_notes.aux" 1694097287 687 d108e88b60712b96be2a70d81b34c00c "pdflatex"
+  "GraphicalModels_SelfStudy_notes.out" 1694097286 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "GraphicalModels_SelfStudy_notes.tex" 1694097285 39547 aa3d159a3abf5b467d939146411a4046 ""
   "verbose_mdframed.sty" 1693939241 27651 b13a9f52a249456e10132814d895c699 ""
   (generated)
   "GraphicalModels_SelfStudy_notes.aux"

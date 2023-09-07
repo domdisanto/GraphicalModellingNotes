@@ -15,7 +15,7 @@
 
 \begin{document}
 
-\roundhomework{Graphical Modelling Guided Study}{}{}{ {\bf Updated:} 7.4.2023}
+\roundhomework{Graphical Modelling Guided Study}{}{}{ {\bf Dominic DiSanto working with Junwei Lu}}
 %\boxsection*[\LARGE Preface]
 \section*{Preface}
 
@@ -40,7 +40,9 @@
 \begin{itemize}
     \item Community-Based Group Graphical Lasso (Pircalabelu, 2020) \url{https://www.jmlr.org/papers/volume21/19-181/19-181.pdf}
     \item Applications of lasso/grouped lasso (Friedman 2010) \url{https://www.asc.ohio-state.edu/statistics/statgen/joul_aut2015/2010-Friedman-Hastie-Tibshirani.pdf}
-    \item Elastic net model selection in undirected graphica models (Cucuringu 2011) \url{https://arxiv.org/abs/1111.0559}
+    \item Elastic net model selection in undirected graphical models (Cucuringu 2011) \url{https://arxiv.org/abs/1111.0559}
+    \item Review Wasserman Ch 19 (log-linear models)
+    \item Review Junction-Tree Algo (ESL Ch 17 references) 
 \end{itemize}
 
 
@@ -52,6 +54,7 @@
 \subsection*{Important}
 
 \begin{itemize}
+    \item Organize notes
     \item Review restricted strong convexity proofs 
     \begin{itemize}
         \item OLS with $\ell_1$ penalty (i.e. lasso) with 1) exact sparsity and 2) "partial" sparsity (i.e. $\mathbb{B}_q$ work, assumed sparsity)
@@ -69,17 +72,16 @@
 
 \begin{itemize}
     \item Implement Graphical Lasso (ESL Exercise 17.8)
-    \item Review Wasserman Ch 19 (log-linear models)
+    \item TeX up/finish ESL Ch. 17 notes 
     \item Review proofs:
     \begin{itemize}
-    	\item Hammersley-Clifford theorem (iff/bi-directional)
+    	\item Hammersley-Clifford theorem
 	    \item Markov Properties  
         \begin{itemize}
             \item Global $\Leftrightarrow$ Pairwise $\Leftrightarrow$ Local (for positive distributions)
             \item Global $\Rightarrow$ Local $\Rightarrow$ Pairwise (generally)
         \end{itemize}
     \end{itemize}
-    \item Review Junction-Tree Algo (ESL Ch 17) 
 \end{itemize}
 
 \newpage 
@@ -116,28 +118,26 @@
             \item -- See \url{http://www.cs.cmu.edu/~epxing/Class/10708-16/note/10708_scribe_lecture10.pdf}
         \end{itemize}
         \item Revisit equation (3) (pg 3), how was this derived or arrived at? Is this a known extension of the exponential family definition in the graphical setting? 
-		\item Review proofs in Appendix 
 	\end{itemize}
 
 \subsection*{Notes/Questions}
 	
 	\begin{itemize}
 	
-		\item The Introduction mentioned papers from \(\sim\)2009-13 that proposed semi-/non-parametric methods for conditional dependence estimation (Graphical Random Forest; Joint Additive Models) but criticizes these methods' efficiency. Is non-parametric estimation still an open research area?  
+		\item \textcolor{red}{The Introduction mentioned papers from \(\sim\)2009-13 that proposed semi-/non-parametric methods for conditional dependence estimation (Graphical Random Forest; Joint Additive Models) but criticizes these methods' efficiency. Is non-parametric estimation still an open research area?}
 		
-		\item What are these node potential functions, $f(x_s)$? Are they present to capture/account for the marginal "densities"(?) of a given random vector/node $x_s$? I want to understand because they seem to define the importance of $\alpha_s$, which in turn are parameters that we assume are known in the algorithm proposed in Section 3. Just trying to understand 1) what we are estimating in estimating $\alpha_{s1}$ and how strict (or just what the) assumption is when we say $\alpha_{sk}$ are known for $k\geq 2$
+		\item \textcolor{red}{What are these node potential functions, $f(x_s)$? Are they present to capture/account for the marginal "densities"(?) of a given random vector/node $x_s$? I want to understand because they seem to define the importance of $\alpha_s$, which in turn are parameters that we assume are known in the algorithm proposed in Section 3. Just trying to understand 1) what we are estimating in estimating $\alpha_{s1}$ and how strict (or just what the) assumption is when we say $\alpha_{sk}$ are known for $k\geq 2$}
 		\begin{itemize}
-            \item The $\alpha_s$ are defined as $f(x_s) = \alpha_{s1}x_s + \alpha_{s2}x_s^2/2 + \sum \alpha_{sk}B_{sk}(x_k)$. That is, the $\alpha_s$ vector are coefficients for some linear combination that defines the node potential function 
+            \item \textcolor{red}{The $\alpha_s$ are defined as $f(x_s) = \alpha_{s1}x_s + \alpha_{s2}x_s^2/2 + \sum \alpha_{sk}B_{sk}(x_k)$. That is, the $\alpha_s$ vector are coefficients for some linear combination that defines the node potential function}
+            \item To this coefficient point, most often $\alpha_{s1}$/linear term coefficient is the only (or most important) parameter of interest. This expression of $f(x_s)$ allows for generalizations to include higher order terms, but as the authors note, $\alpha_{sk}=0$ or known$, k\geq 2$ is a common assumption that works in most applications. This linear combination of functions of $x_k$ is most general 
         \end{itemize}
 
-		\item Why allow for different penalty $\lambda$ by node type? This was counterintuitive to me. We've assumed that our graph is undirected, or $\theta_{st}=\theta)_{ts}$. However if $x_s, x_t$ are distributed differently (e.g. one Poisson and one binomial), $\not \Rightarrow \lambda_s \theta_{st}= \lambda_t \theta_{ts}$ (we could apply different optimal $\lambda$ values
+		\item \textcolor{red}{Why allow for different penalty $\lambda$ by node type? This was counterintuitive to me. We've assumed that our graph is undirected, or $\theta_{st}=\theta)_{ts}$. However if $x_s, x_t$ are distributed differently (e.g. one Poisson and one binomial), $\not \Rightarrow \lambda_s \theta_{st}= \lambda_t \theta_{ts}$ (we could apply different optimal $\lambda$ values}
 		
-		\item General question: Neighbourhood selection (and Graphical Lasso) are defined on $\ell_1$ penalty alone. Are there extensions (and if so, are they popular/open reserach) on $\ell_2$ or combined penalties?
+		\item \textcolor{red}{General question: Neighbourhood selection (and Graphical Lasso) are defined on $\ell_1$ penalty alone. Are there extensions (and if so, are they popular/open reserach) on $\ell_2$ or combined penalties?}
 			\begin{itemize}
                 \item Found a 2011 treatment of an elastic net model for undirected Gaussian undirected graphs out of Princeton at \url{https://arxiv.org/abs/1111.0559}
-            \end{itemize}
-			
-		\item Very general question: How (If you do) do you pick out useful techniques from some of the dense theory? And how do you identify what is a necessary pre-requisite or where you can assume or glance over some knowledge? For example, I don't have a convex optimization background outside of it's discussion in some stat theory (read: very little). So the proof of theorem 1 relying primal-dual witness method. Is this worthwhile to learn and how do I identify what is a useful/generalizable tool/skill and what may be useful just for this paper (and worth either accepting, or asking someone else to verify that I do know has this background)? 
+            \end{itemize} 			
 	\end{itemize}
 	
 	
@@ -194,9 +194,7 @@ Definitions in section 2 as set-up for Theorem 1:
 			\item Sometimes it frequently pops up and just sticks (Tibshirani 1996 key ex), either in coursework or a common "parent" publication across 
 			\item "Review"-esque papers like this (or at least papers that provide succinct overviews of notable papers) are great but not always available
         \end{itemize}
-        \item  How do we think about $\theta^* \in M$? Is this somewhat similar to identifiability? Like a well-specified model, such that $M$ our subspace which encodes the constraints (or other parameterizations/properties) that we believe are true for $\theta$ actually contains $\theta^*$ (analogous to "ground truth" in the frequentist univariate parameter estimation setting)
-		\item {\bf More transparently, what is $\overline{M}$ in relationship to $M$?} Topological closures(?): Important to understand the distinction $\overline{M} \subseteq M$ and $\overline{M} = M$? I understand when we do not have equality (low-rank matrix estimation), but I don't necessarily understand what a topological closure is 
-		\item (pg. 5-6) {\it "With certain exceptions, it is computationally expensive to enforce a rank-constraint in a direct manner..."} What are the issues? Something related to the number combinations of row/column combinations that could result in a specific rank become prohibitively large (even if considered cleverly)? 
+        \item (pg. 5-6) {\it "With certain exceptions, it is computationally expensive to enforce a rank-constraint in a direct manner..."} What are the issues? Something related to the number combinations of row/column combinations that could result in a specific rank become prohibitively large (even if considered cleverly)? 
 		\item (pg. 11 (c)) How does the tolerance $\tau_\mathcal{L}$ related to unidentifiable components in a high-dim model? 
 	\end{itemize}
 
@@ -227,18 +225,30 @@ Definitions in section 2 as set-up for Theorem 1:
 
 WTS $\sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\mathcal{R}(u)} = \sup_{\mathcal{R}(u)\leq 1} \langle u,v \rangle$
 
-1) 
-
 \begin{gather*}
-	A := \{u : \mathcal{R}(u) \leq 1\} \subseteq \{u : ||u|| \leq 1, u \neq 0\} =: B 
+    \sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\mathcal{R}(u)} 
+    =
+    \sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{u^Tv}{\mathcal{R}(u)}
+    =
+    \sup_{\mathcal{R}(w)=1} w^{T}v
+    \leq 
+    \sup_{\mathcal{R}(w)\leq1} w^{T}v
+%\end{gather*}
+%
+%\begin{gather*}
+%	A := \{u : \mathcal{R}(u) \leq 1\} \subseteq \{u : ||u|| \leq 1, u \neq 0\} =: B 
 	\\
-	\Rightarrow 
-	\sup_{\mathcal{R}(u)\leq 1} \langle u,v \rangle 
+%	\Rightarrow 
+ 	\sup_{\mathcal{R}(u)\leq 1} \langle u,v \rangle 
 	\leq 
 	\sup_{\mathcal{R}(u)\leq 1}\frac{\langle u,v \rangle}{\mathcal{R}(u)}
 	\leq 
 	\sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\mathcal{R}(u)}
+\\
+    \Rightarrow \sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\mathcal{R}(u)} = \sup_{\mathcal{R}(u)\leq 1} \langle u,v \rangle
 \end{gather*}
+
+
 
 \newpage
 \begin{tcolorbox}
@@ -280,24 +290,11 @@ WTS $\sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\math
         \item Generally (or perhaps vaguely), Gaussian graphical models allow estimation problems to be constructed conveniently as linear regression problems (see 17.3.1 for regression estimating equations, 17.3.2 for lasso regression for structure estimation)
         \item For $\mathbf{X} \sim N(\boldsymbol{\mu}, \boldsymbol\Sigma)$ and $\boldsymbol\Theta = \boldsymbol\Sigma^{-1}$, $\theta_{ij}=0 \Leftrightarrow X_i \perp X_j | \text{rest}$
     \end{itemize}
-    \item \textcolor{red}{I assume the algorithm for graphs with completely known structure is a (almost prohibitively) rare setting for any utility. Are there also settings with partially specified structure? Suppose we know the existence/absence of some specific edges but otherwise have no other information? A hybrid of the structure-specified and -unspecified approach?}
 \end{itemize}
 
 \subsubsection{17.3.1 Estimating Equations for Graphs with Known Structure}
 
-\textcolor{red}{\sout{Pg 631, authors claim {\it "The dependence of Y on Z in (17.6) is in the mean term alone"} for this conditional Gaussian relationship. How is this true? We also see this $\sigma_{XY}$ term in the Variance as well, where $\sigma_{XY}$ is the covariance of $Y, X$. }
-}
-The dependence on $Z$ is only in the mean. The variance term includes $\sigma_{ZY}$ which is a parameter/"constant" (i.e. does not vary by values of $Z$, just captures the dependence relationship between $Y, Z$.   \\
-
-
 \textcolor{red}{See work/question for Exercise 17.5 for question of distinction between $W, S$ matrices in presented algorithm}
-
-\subsubsection{17.3.2 Estimation of Graph Structure (Graphical Lasso) }
-
-\textcolor{red}{I don't necessarily understand the difference between the initial 2006 lasso approach to structure estimation (fitting $p$ lasso models, arguing edge $\theta_{ij}$ exists iff $\beta_j$ is non-zero for $X_i$ regressed on $\mathbf{X}\backslash\{X_i\}$) and the algorithm described in 17.2 (graphical lasso). GL is  solving an equivalent system of equations, no? And this algorithm has guaranteed convergence pending lasso convergence. I would need to read the 2008 graphical lasso paper to undertand its theoretical guarantees and/or possible convergence issues
-}
-
-\subsection*{17.4 Discrete Variables}
 
 \newpage 
 
@@ -533,6 +530,9 @@ The dependence on $Z$ is only in the mean. The variance term includes $\sigma_{Z
     \item 
 \end{enumerate}
 
+
+\newpage 
+
 \begin{tcolorbox}
     \vspace{4mm}
     \Large \bf Misc. Claims, Proofs, Work
@@ -542,7 +542,7 @@ The dependence on $Z$ is only in the mean. The variance term includes $\sigma_{Z
 {\bf Claim:} The log-likelihood of $N$ random samples of a $k-$dimenisonal multivariate Gaussian with mean $\boldsymbol\mu$ and covariance matrix $\boldsymbol\Sigma = \boldsymbol\Theta^{-1}$ can be expressed as (noting $\mathbf{x} \in \mathbb{R}^k; \boldsymbol\Theta, \mathbf{S} \in \mathbb{R}^{k \times k}$) for sample covariance matrix $\mathbf{S} =  (\mathbf{x}-\mu)(\mathbf{x}-\mu)^T$:
 
 \begin{align*}
-    \text{WTS}
+    \text{WTS }    
     \ell(\boldsymbol\Theta)
     &= \textcolor{red}{(\propto?)}
     \log \det \boldsymbol\Theta
@@ -658,7 +658,7 @@ The dependence on $Z$ is only in the mean. The variance term includes $\sigma_{Z
 
     \item \label{MarkovGraphDef} A distribution $\Psymb$ for nodes $V = \{X_1, ..., X_k\}$ is Markov wrt a graph $\mathcal{G}$ if $f(v) = \prod_{i=1}^k f(x_i | \pi_i)$ for $\pi_i$ parents for node $X_i$. Also written as $\Psymb \in M(\mathcal{G})$
 
-    \item \label{MarkovCondition} The \textbf{Markov Condition} for distribution $\Psymb$ holds if $\forall X_i \in V, \mathcal{G}=(V,E)$ (or for $X_i$ simply as random variables) if $W \perp \tilde{W} | \pi_W$, where $\tilde{W}$ includes all other nodes/variables besides $\pi_W$ and descendants of $W$ 
+    \item \label{MarkovCondition} The \textbf{Markov Condition} (or Local Markov property) for distribution $\Psymb$ holds if $\forall X_i \in V, \mathcal{G}=(V,E)$ (or for $X_i$ simply as random variables) if $W \perp \tilde{W} | \pi_W$, where $\tilde{W}$ includes all other nodes/variables besides $\pi_W$ and descendants of $W$ 
 
 
     \item The following items from this list are equivalent characterizations $\mathcal{G}$: \ref{MarkovGraphDef} $\Leftrightarrow$
@@ -672,7 +672,7 @@ The dependence on $Z$ is only in the mean. The variance term includes $\sigma_{Z
 
 \boxsubsection*{Exercises}
 
-\subsubsection*{1}
+\subsubsection{1}
 
 WTS (17.1) and (17.2) are equivalent: $X\perp Y |Z$ indicates
 $f_{X,Y|Z}=f_{X|Z}f_{Y|Z} \Leftrightarrow f_{X|Y,Z} = f_{X|Z}$
@@ -691,7 +691,7 @@ $f_{X,Y|Z}=f_{X|Z}f_{Y|Z} \Leftrightarrow f_{X|Y,Z} = f_{X|Z}$
     f_{X|Z}
 \end{gather*}
 
-\subsubsection*{2}
+\subsubsection{2}
 
 \begin{gather*}
     \Psymb (U\leq u, Y \leq y | Z)
@@ -758,11 +758,11 @@ $f_{X,Y|Z}=f_{X|Z}f_{Y|Z} \Leftrightarrow f_{X|Y,Z} = f_{X|Z}$
 
 \end{enumerate}
 
-\subsubsection*{3}
+\subsubsection{3}
 
 \textit{Omitted}
 
-\subsubsection*{4}
+\subsubsection{4}
 
 Consider the (re-created) DAG's in 17.6 with no colliders present: 
 
@@ -807,7 +807,7 @@ WTS $X \perp Z|Y$
     \item Markov Condition again in a similar way wrt either $X,Z$ (both have empty set descendants, $Y$ as parent) 
 \end{enumerate}
 
-\subsubsection*{5}
+\subsubsection{5}
 
 \begin{figure}[H]
 \centering 
@@ -826,7 +826,7 @@ $X\perp Z$ follows from Markov Condition ($Z$ is not a descendant of $X$, $X$ ha
 
 We know that $X \perp Z | Y \Leftrightarrow X, Z$ are d-separated. We note by definition $X,Z$ are d-connected conditioning on $Y$ and thus $X \not\perp Z | Y$. 
 
-\subsubsection*{6}
+\subsubsection{6}
 
 {\textit Simulations omitted}
 
@@ -836,7 +836,7 @@ We know that $X \perp Z | Y \Leftrightarrow X, Z$ are d-separated. We note by de
     f_{Z|Y}f_{Y|X}f_X
 \end{gather*}
 
-\subsubsection*{7}
+\subsubsection{7}
 
 {\it DAG Omitted}
 
@@ -859,7 +859,7 @@ Consider the set of nodes $V = \{Z_j, X, Y_i\}$, $i,j=[4]$:
 $X \perp Z_j, \forall j \in [4]$ follows directly from the Markov Condition, as no $Z_j$ is a parent or descendent of $X$. We could also note $X, Z_j$ collide at $Y_j$ and are d-separated, thus $X\perp Z_j$ but $X \not\perp Z_j | Y_j$ ($\forall j \in [4]$). 
 
 
-\subsubsection*{8}
+\subsubsection{8}
 
 \begin{enumerate}[label=(\alph*)]
     \item 
@@ -882,13 +882,13 @@ $X \perp Z_j, \forall j \in [4]$ follows directly from the Markov Condition, as 
 
 
 
-\subsubsection*{9}
+\subsubsection{9}
 
 \begin{enumerate}[label=(\alph*)]
     \item {\it Incomplete}
 \end{enumerate}
 
-\boxsection*[Chapter 18: Undirected Graphs]
+\boxsection*{Chapter 18: Undirected Graphs}
 
 \boxsubsection*{Questions, Definitions, Notes, Properties, etc.}
 
@@ -913,7 +913,7 @@ $X \perp Z_j, \forall j \in [4]$ follows directly from the Markov Condition, as 
 
 \boxsubsection*{Exercises}
 
-\subsubsection*{1}
+\subsubsection{1}
 
 \begin{figure}[H]
 \centering 
@@ -943,7 +943,7 @@ $X \perp Z_j, \forall j \in [4]$ follows directly from the Markov Condition, as 
 
 All three relationships also hold trivially for the graph in (C). 
 
-\subsubsection*{2}
+\subsubsection{2}
 
 \begin{figure}[H]
 \centering
@@ -990,7 +990,7 @@ All three relationships also hold trivially for the graph in (C).
     \end{tikzpicture}
 \end{figure}
 
-\subsubsection*{3}
+\subsubsection{3}
 
 \begin{enumerate}[label=(\alph*)]
     \item $X_1 \perp \{X_3, X_4\} | X_2; \\
@@ -1005,7 +1005,7 @@ All three relationships also hold trivially for the graph in (C).
     X_6 \perp \{X_2, X_5\} | X_3, X_5$
 \end{enumerate}
 
-\subsubsection*{4}
+\subsubsection{4}
 \textit{Omitted }
 
 
@@ -1032,7 +1032,7 @@ All three relationships also hold trivially for the graph in (C).
         \end{align*}
     \fi 
 
-\subsubsection*{5}
+\subsubsection{5}
 \textit{Omitted}
 
 \end{document}
