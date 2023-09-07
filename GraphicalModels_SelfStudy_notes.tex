@@ -223,7 +223,7 @@ Definitions in section 2 as set-up for Theorem 1:
 
 \subsubsection{Proof of equivalent dual-norm definitions}
 
-WTS $\sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\mathcal{R}(u)} = \sup_{\mathcal{R}(u)\leq 1} \langle u,v \rangle$
+WTS $\sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\mathcal{R}(u)} = \sup_{\mathcal{R}(u)\leq 1} \langle u,v \rangle$ (i.e. equivalence of two definitions of dual norm $R^*(u)$)
 
 \begin{gather*}
     \sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\mathcal{R}(u)} 
@@ -233,22 +233,47 @@ WTS $\sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\math
     \sup_{\mathcal{R}(w)=1} w^{T}v
     \leq 
     \sup_{\mathcal{R}(w)\leq1} w^{T}v
-%\end{gather*}
-%
-%\begin{gather*}
+\end{gather*}
+
+To demonstrate equivalence we prove the inequality in the opposite direction:
+
+\begin{gather*}
 %	A := \{u : \mathcal{R}(u) \leq 1\} \subseteq \{u : ||u|| \leq 1, u \neq 0\} =: B 
-	\\
+%	\\
 %	\Rightarrow 
  	\sup_{\mathcal{R}(u)\leq 1} \langle u,v \rangle 
 	\leq 
 	\sup_{\mathcal{R}(u)\leq 1}\frac{\langle u,v \rangle}{\mathcal{R}(u)}
 	\leq 
 	\sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\mathcal{R}(u)}
-\\
-    \Rightarrow \sup_{u \in \mathbb{R}^p\backslash\{0\} } \frac{\langle u, v \rangle}{\mathcal{R}(u)} = \sup_{\mathcal{R}(u)\leq 1} \langle u,v \rangle
 \end{gather*}
 
 
+\subsubsection{Prove $\ell_\infty$ is dual-norm of $\ell_1$}
+
+Let $u,v \in \mathbb{R}^n$ and $v_{(n)}$ = $\max_i |v_i|, i \in [n]$
+
+\begin{gather*}
+    \sup_{||u||\leq 1} \iprod{u,v}
+    \leq 
+    \sup_{||u||\leq 1} \sum_i |u_i||v_i|
+    \leq 
+    \sup_{||u|| \leq 1}  v_{(n)} \sum_i |u_i|
+    \leq 
+    ||v||_\infty 
+\end{gather*}
+
+To demonstrate equivalence we prove the inequality in the opposite direction. Assume $v_j = ||v||_\infty$ (i.e. j indexes the maximum value in $v$), let $s \in \mathbb{R}^n, s_j = \sign(v_j)$ and $0$ elsewhere. Clearly $||s|| \in \{u: ||u||\leq 1\}$ and 
+
+\begin{gather*}
+    \sup_{||u||\leq 1} \iprod{u, v}
+    \geq 
+    \iprod{s, v}
+    =
+    v_j 
+    =
+    ||v||_\infty
+\end{gather*}
 
 \newpage
 \begin{tcolorbox}
