@@ -55,7 +55,7 @@
  
 \begin{itemize}
     \item $0 \in \mathbb{N}, 0 \not\in \mathbb{N}^+$
-    \item $[n] = \{1, 2, ..., n\}$ (implicitly assertes $n \in \mathbb{N}^+$)
+    \item We abbreviate integer sets as $[k] = \{1, 2, ..., k\}$ (implicitly assertes $k \in \mathbb{N}^+$)
     \item For any $f: \mathbb{R}^n \mapsto \mathbb{R}$, $\nabla f, \nabla^2 f$ represent the gradient and Hessian respectively. $H_f, \mathcal{H}_f$ may similarly represent the Hessian but I try to minimize use of this notation in favor of $\nabla^2f$
 \end{itemize}
 
@@ -66,10 +66,11 @@
 \subsection*{Important}
 
 \begin{itemize}
+    \item Review Lemma 2 proof 
+    \item Review proposition 2 proof (v1 doc) 
     \item Review restricted strong convexity proofs 
     \begin{itemize}
         \item OLS with $\ell_1$ penalty (i.e. lasso) with 1) exact sparsity and 2) "partial" sparsity (i.e. $\mathbb{B}_q$ work, assumed sparsity)
-        \item Understand how restricted eigenvalue condition implies restricted strong convexity 
     \end{itemize}
     \item GLM's (see section 6 in v1 of paper on ar$\chi$iv)
     \begin{itemize}
@@ -155,11 +156,25 @@
 
 \section*{Negahban (2012) {\large \it Unified Framework for High-Dimensional Analyais of $M$-Estimators with Decomposable Regulators}}
 
-\subsection*{Further Review/Questions (9/6)}
+\subsection*{Takeaways/Outline}
+
+
+Definitions in section 2 as set-up for Theorem 1:
+\begin{enumerate}
+	\item Identifies a suitable bound on our penalty $\lambda_n$ related to the norm $\mathcal{R}(\grad \mathcal{L}(\theta^*))$ such that our errors $\delta$ for any optimal solution $\hat{\theta}$ are contained in a bounded cone (if $\theta^* \in \mathcal{M}$, a star-shaped set otherwise)
+	\item Strong convexity of our loss function $\mathcal{L}$ is necessary to ensure that $|\mathcal{L}(\theta^*) - \mathcal{L}(\hat{\theta}_{\lambda_n}|$ approaching 0 implies that $\delta$ (or $\hat{\delta}$ is also small. We can be less strict in this assumption and only require strong convexity in a neighborhood about $\theta^*$, and in fact can focus on the cone (or star-shaped set) identified in definition 1, leading us to this RSC definition/consideration 
+	\item \textcolor{red}{It seems intuitive to want some subspace compatibility measure, as we can construct any subspace $M$ (and norm, with decomposability as in Dfn 1) and $\overline{M}^\perp$ that we deem appropriate, but what is the idea behind this specific measure of compatibility? } My intuition is that this captures the interplay between the subspace $M$ (by suping over $u \in M$) and balancing the norm $\mathcal{R}$ with the 
+\end{enumerate}
+
 \begin{itemize}
-	\item{Where does equation 18 come from? I am familiar with explicit forms of the remainder in univariate expansions, but I'm not familiar with the multivariate remainder expression (and am unsure how this specific expression is derived)}
-	\item End of page 12, how does this correspond to a restricted eigenvalue condition? 
+	\item namely, a decomposability property for the regularizer and a notion of restricted strong convexity that depends on the inter- action between the regularizer and the loss function.
+	\item Decomposability (want to ensure I understand this perturbation intuition): 
+		\begin{itemize}
+            \item Consider a model $M$ and our estimation $\overline{M}$ (for simplicity consider $M = \overline{M}$ but general result offered for $\overline{M} \subseteq M$. For $\theta \in M$ and $\gamma \in \overline{M}$, $\theta+\gamma$ (and specifically $\gamma$) can be considered deviations away from the model space 
+        \end{itemize}
 \end{itemize}
+
+
 
 Applications to Lasso (4-5):
 
@@ -178,56 +193,21 @@ Applications to Lasso (4-5):
         \item GLM extension essentially (with exponential family requirement although this is w/in definition of GLM) is just a revisited Taylor Series expansion with analogous work and results and an additional\textcolor{red}{(?)} constraint that sample size scales in $\Omega(s \log p)$ for sparsity $|S|=:s$.
     \end{itemize}
 \end{itemize}
-\subsection*{Takeaways}
-
-
-Definitions in section 2 as set-up for Theorem 1:
-\begin{enumerate}
-	\item Identifies a suitable bound on our penalty $\lambda_n$ related to the norm $\mathcal{R}(\grad \mathcal{L}(\theta^*))$ such that our errors $\delta$ for any optimal solution $\hat{\theta}$ are contained in a bounded cone (if $\theta^* \in \mathcal{M}$, a star-shaped set otherwise)
-	\item Strong convexity of our loss function $\mathcal{L}$ is necessary to ensure that $|\mathcal{L}(\theta^*) - \mathcal{L}(\hat{\theta}_{\lambda_n}|$ approaching 0 implies that $\delta$ (or $\hat{\delta}$ is also small. We can be less strict in this assumption and only require strong convexity in a neighborhood about $\theta^*$, and in fact can focus on the cone (or star-shaped set) identified in definition 1, leading us to this RSC definition/consideration 
-	\item \textcolor{red}{It seems intuitive to want some subspace compatibility measure, as we can construct any subspace $M$ (and norm, with decomposability as in Dfn 1) and $\overline{M}^\perp$ that we deem appropriate, but what is the idea behind this specific measure of compatibility? } My intuition is that this captures the interplay between the subspace $M$ (by suping over $u \in M$) and balancing the norm $\mathcal{R}$ with the 
-\end{enumerate}
-
-\begin{itemize}
-	\item namely, a decomposability property for the regularizer and a notion of restricted strong convexity that depends on the inter- action between the regularizer and the loss function.
-	\item Decomposability (want to ensure I understand this perturbation intuition): 
-		\begin{itemize}
-            \item Consider a model $M$ and our estimation $\overline{M}$ (for simplicity consider $M = \overline{M}$ but general result offered for $\overline{M} \subseteq M$. For $\theta \in M$ and $\gamma \in \overline{M}$, $\theta+\gamma$ (and specifically $\gamma$) can be considered deviations away from the model space 
-        \end{itemize}
-\end{itemize}
-
 \subsection*{Questions/Notes}
-
+\textcolor{red}{
 	\begin{itemize}
-        \item (pg. 5-6) {\it "With certain exceptions, it is computationally expensive to enforce a rank-constraint in a direct manner..."} What are the issues? Something related to the number combinations of row/column combinations that could result in a specific rank become prohibitively large (even if considered cleverly)? 
 		\item (pg. 11 (c)) How does the tolerance $\tau_\mathcal{L}$ related to unidentifiable components in a high-dim model? 
 	\end{itemize}
-
-\subsection*{Further Review}
-
-	Pressing/Paper Material 
-	\begin{itemize}	
-		\item Figure 1 (3-dimensional error vector, geometric intuition behind $\mathbb{C}(M, \overline{M}^\perp, \theta)$ when $\theta^* \in M, \theta^*\not\in M$ respectively 
-	\end{itemize}
-	(Newly) Conceptual
-	\begin{itemize}
-		\item Review equivalency of lasso and basis pursuit de-noising
-		\begin{itemize}
-			\item See \url{https://www.cs.cornell.edu/courses/cs6220/2017fa/CS6220_Lecture21_2.pdf}
-			\item {\it Possibly only of historical relevance}
-        \end{itemize}
-		\item Definition/abstraction of a (topological) closure:
-		\begin{itemize}
-			\item For subspace $M \subseteq \mathbb{R}^p, \left(M^\perp \right)^\perp \equiv \overline{M}$ is a closure of $M$ (more accurately is a closure operator on $M$) 
-			\item With the exception of discussion of low-rank matrices and the nuclear norm, we can work with $M = \overline{M}$ and not concern ourselves with the concept of topological closures 
-        \end{itemize}
-	\end{itemize}
+}
 	
+\newpage 
 \subsection*{Restricted Strong Convexity Proofs}
 
-Recall $\Delta = |\hat{\theta_{\lambda_n}} - \theta^*|$. \newline 
+\subsubsection{Set-Up/Background}
 
-Recall also that the first-order Taylor series of any loss function  $\mathcal{L}: \mathbb{R}^n \mapsto \mathbb{R}$ about $\theta^* + \Delta$ with some error $\delta \mathcal{L}(\theta^*, \Delta)$ is
+\textcolor{blue}{Currently assuming $\overline{\mathcal{M}}=\mathcal{M}$ until otherwise noted, deferring to $\mathcal{M}$ when referencing the model subspace.}\newline 
+
+Recall $\hat\Delta = \hat{\theta}_{\lambda_n} - \theta^*$. Also recall that the first-order Taylor series of any loss function  $\mathcal{L}: \mathbb{R}^n \mapsto \mathbb{R}$ about $\theta^* + \Delta$\footnote{Noting $\Delta$ is some general perturbation, no explicit relationship to $\hat\Delta$} with some error $\delta \mathcal{L}(\theta^*, \Delta)$ is
 
 \begin{gather*}
     \mathcal{L}(\theta^* + \Delta)
@@ -239,6 +219,12 @@ Recall also that the first-order Taylor series of any loss function  $\mathcal{L
     \delta \mathcal{L}(\theta^*, \Delta)
 \end{gather*}
 
+%\href{https://math.stackexchange.com/questions/302601/exact-expansion-of-functions}{Also recall generally} that for $f: \mathbb{R}^n \mapsto \mathbb{R}$, 
+%
+%\begin{gather*}
+%    f(y) = f(x) + \nabla f(x)^T(y-x) + \frac{1}{2}(y-x)^T \nabla^2 f(z) (y-x)
+%\end{gather*}
+
 {\bf Definition:} A loss function satisfies the restricted storng convexity condition with curvature $\kappa_\mathcal{L}$ and tolerance $\tau_{\mathcal{L}}(\theta^*)$ if its first-order Taylor's series error satisfies the following
 
 \begin{gather*}
@@ -247,21 +233,76 @@ Recall also that the first-order Taylor series of any loss function  $\mathcal{L
 \end{gather*}
 
 
-\subsubsection{OLS  with exact sparsity, $\ell_1$ penalty}
+\subsubsection{OLS  with exact sparsity ($\theta^* \in \mathcal{M}$), $\ell_1$ regularization penalty}
+  
+$\mathcal{L}(\theta) = ||y-X\theta||_2^2, \mathcal{R}(w) = ||w||_1$, and $S \subseteq[p]$ indexes the known, non-zero elements of $\theta$ (with $S_C = [p]\backslash S)$. \newline 
 
-Note u7u788
+In this setting $\mathcal{L}(\theta) := \frac{1}{2n}||y-X\theta||_2^2$ and thus $\nabla\mathcal{L}(\theta) = -\frac{1}{n}X^T(y-X\theta), \nabla^2\mathcal{L}(\theta) = \frac{1}{n}X^TX$. \newline 
 
+
+\begin{enumerate}
+    \item Decomposability satisfied for $\ell_1$ penalty 
+    \item Subspace compatibility fully specified by known $\ell_2, \ell_1$ relationship such that
+    \begin{gather*} \Psi(M) := \sup_{u \in \mathcal{M}} \frac{\mathcal{R}(u)}{||u||_2} = \sup_{u \in S} \frac{||u||_1}{||u||_2} = \sqrt{|S|} \end{gather*}
+    \item First-order Taylor series expansion of OLS loss yields $\delta\mathcal{L}(\theta^*, \Delta) = \frac{1}{n}\Delta^T X^TX\Delta = \frac{1}{n}||X\Delta||_2^2$. Want to uniformly lower-bound this remainder for a sensisble/appropriate set of $\Delta$.  
+    \item For properly selected regulation paramter $\lambda_n$ (by Lemma 1, bound to be shown later), we can identify our appropriate set as $\mathbb{C} := \{||\Delta_{S_c}||_1 \leq 3||\Delta_S||_1\}$, as by assumption $\theta^* \in \mathcal{M}_S$, which implies $\Pi_{\mathcal{M}_{S\perp}}(\theta^*) = 0 \Rightarrow ||\theta^*_{\mathcal{M}_{S\perp}}||_1=0$. 
+        \subitem Desired bound: $\frac{1}{n} ||X\theta||_2^2 \geq \kappa_{\mathcal{L}} ||\theta||_2^2, \forall \theta \in \mathbb{C}$
+    \item Assuming sub-Gaussian$(\sigma^2)$ noise $w$, we apply known results to bound $\frac{||X\theta||_2^2}{n}$, thus meeting the RE/RSC property if 1) $n > 64(\kappa_2 / \kappa_2)^2$ (so that our lower bound is valid on $||X\Delta||_2^2/n$) and 2) $\lambda_n \geq 2||\nabla \mathcal{L}(\theta^*)||_\infty$ (so that our set of $\Delta$, $\mathbb{C}$, is valid)
+        \subitem Note that the sub-Gaussian result truly gives us a bound $\frac{||X\theta||_2}{\sqrt{n}} \geq \kappa_1 ||\theta||_2 - \kappa_2\sqrt{\frac{\log p}{n}}||\theta||_1$. The result that $||\theta||_1 \leq 4\sqrt{s}||\theta_M||_2$ from $\theta^* \in \mathcal{M}$ allows us to extend this to the necessary bound $||X\theta||_2 \geq \kappa_\mathcal{L} ||\theta||_2$. 
+        \subitem \textcolor{red}{This bound on $||X\theta||_2^2 / n$ holds determinstically? Or holds with high probability? the analysis in 4.1 is with high probability, but then the conclusion in the proof of Corollary 2 simply states that the RE and thus RSC condition holds}
+
+    \item Finish $\lambda_n$ bound derivation to complete proof (concentration inequality via union bound argument)
+        \subitem Important to note that this bound on $\lambda_n$ holds independently of the fact that $\theta^*\in \mathcal{M}$. 
+    \end{enumerate}
+    
+%{\bf Old Notes} \newline 
+
+%We can define our model subspace more explicitly as $M(S) = \{\theta \in \mathbb{R}^p : \theta_{S^c} = 0\}$ (often using $S$ as shorthand for this subspace, even though truly $S \subseteq [p]$ represents the non-zero indices of $\theta^*$). Note $S_c = [p]\backslash S$. By assumption $\theta^* \in \mathcal{M}_S$, implying $\Pi_{\mathcal{M}_\perp}(\theta^*) = 0 \Rightarrow \mathcal{R}(\theta^*_{\mathcal{M}_\perp})=0$ and $\Delta \in \mathbb{C}:=\{\Delta \in \mathbb{R}^p : ||\Delta_{\mathcal{M}_\perp}||_1 \leq 3||\Delta_\mathcal{M}||_1 \}$ (assuming appropriate selection of $\lambda_n$, which we postpone until the final step.) \newline 
 
 \subsubsection{OLS with partial sparsity, $\ell_1$ penalty ($\mathbb{B}_q$ setting)}
 
+{\it Notation, $s\equiv|S|$.}\newline
 
+We now no longer have (or assume) $\theta^* \in \mathcal{M}$, as we are approximating a weakly sparse vector with true sparsity. Thus $\mathcal{R}(\theta^*_{\mathcal{M}_\perp})\neq0$ (as $\Pi_{\mathcal{M_\perp}}(\theta^*)\neq 0$). Our results from the exact sparisy setting holds that for $\lambda_n = 4\sqrt{\frac{\sigma^2 \log p}{n}}$, $\lambda_n \geq ||\nabla\mathcal{L}(\theta^*)||_1$ with probability $1-c_1 \exp{-c_2n\lambda_n^2}$ (along with the subspace compatibility and decomposability arguments). It then only remains to demonstrate the RSC condition holds. \newline 
 
-\subsubsection{Restricted Eigenvalue $\Rightarrow$ Restricted Strong Convexity}
+Now we cannot conclude $||\theta||_1 \leq 4\sqrt{s}||\theta_\mathcal{M}||_2$, as the space $\mathbb{C}$ is not a cone where $||\Delta_\mathcal{M}|| \leq 3||\Delta_{\mathcal{M}_\perp}||$ but now a star-shaped set (so $||\Delta||_1 \leq 4\sqrt{s}||\Delta||_2$ does not hold).  The essence of this proof is now a control over the radius of the $\mathbb{B}_q(R_q)$ ball that we use to intersect $\mathbb{C}$. 
+\newline 
+
 
 \subsubsection{GLM with Logit Link, $\ell_1$ penalty}
 
-{\it Note the tolerance function, $\tau(\theta^*)$ is now necessarily accounte for, unlike the OLS proofs, and note why}
+The Taylor Series approximation in the OLS setting is no longer exact such that $\delta\mathcal{L}(\theta^*, \Delta) \neq \Delta^T \nabla \mathcal{L}(\theta^*)$. We will appeal to a similar sub-Gaussian argument but must first more carefully bound $\delta\mathcal{L}$ and parameterize our design matrix (see GLM1 assumptions, bounding $\lambda_{min}\geq \kappa_\ell > 0$ of $cov(x_i)$ and sub-Gaussianity of $v^T x_i, \ \forall v \in \mathbb{R}$ with sub-Guassianity parameter $\sigma^2\leq \kappa_u ||v||_2^2$). 
 
+\newpage  
+\subsection*{Further Review}
+
+Pressing/Paper Material 
+\begin{itemize}	
+    \item Figure 1 (3-dimensional error vector, geometric intuition behind $\mathbb{C}(M, \overline{M}^\perp, \theta)$ when $\theta^* \in M, \theta^*\not\in M$ respectively 
+\end{itemize}
+
+(Newly) Conceptual
+\begin{itemize}
+    \item Review equivalency of lasso and basis pursuit de-noising
+    \begin{itemize}
+        \item See \url{https://www.cs.cornell.edu/courses/cs6220/2017fa/CS6220_Lecture21_2.pdf}
+        \item {\it Possibly only of historical relevance}
+    \end{itemize}
+    \item Definition/abstraction of a (topological) closure:
+    \begin{itemize}
+        \item For subspace $M \subseteq \mathbb{R}^p, \left(M^\perp \right)^\perp \equiv \overline{M}$ is a closure of $M$ (more accurately is a closure operator on $M$) 
+        \item With the exception of discussion of low-rank matrices and the nuclear norm, we can work with $M = \overline{M}$ and not concern ourselves with the concept of topological closures 
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Questions}
+\begin{itemize}
+    \item Where does equation 18 come from? I am familiar with explicit forms of the remainder in univariate expansions, but I'm not familiar with the multivariate remainder expression (and am unsure how this specific expression is derived)
+    \subitem Similarly, why is the Taylor series of the OLS loss function exact such that $\delta\mathcal{L}(\theta^*, \Delta) = \iprod{\Delta, \frac{1}{n}X^TX\Delta}$? How is the hessian form introduced?
+\item End of page 12, how does this correspond to a restricted eigenvalue condition? 
+\end{itemize}
+
+\newpage 
 \subsection*{Misc. Proofs}
 
 \subsubsection{Proof of equivalent dual-norm definitions}
