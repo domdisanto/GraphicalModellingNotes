@@ -68,14 +68,10 @@
 \begin{itemize}
     \item Review Lemma 2 proof 
     \item Review proposition 2 proof (v1 doc) 
-    \item Review restricted strong convexity proofs 
-    \begin{itemize}
-        \item OLS with $\ell_1$ penalty (i.e. lasso) with 1) exact sparsity and 2) "partial" sparsity (i.e. $\mathbb{B}_q$ work, assumed sparsity)
-    \end{itemize}
-    \item GLM's (see section 6 in v1 of paper on ar$\chi$iv)
-    \begin{itemize}
-        \item For general link function but notably for logit link
-    \end{itemize}
+    \item Understand theorem(s)/cited papers used to determine that Gaussian/subGaussian design matrices 
+    \item  Find/Prove sub-Gaussian definition (pg. 13): \newline 
+        $w\sim subG(\sigma^2)$ if $\mathbb{P}(|\iprod{w, v}|\geq t) \leq 2\exp{-\frac{t^2}{2\sigma^2}}, \forall ||v||_2 \leq 1$
+    \item 
 \end{itemize}
 
 
@@ -196,7 +192,12 @@ Applications to Lasso (4-5):
 \subsection*{Questions/Notes}
 \textcolor{red}{
 	\begin{itemize}
-		\item (pg. 11 (c)) How does the tolerance $\tau_\mathcal{L}$ related to unidentifiable components in a high-dim model? 
+		\item (pg. 11 (c)) How does the tolerance $\tau_\mathcal{L}$ related to unidentifiable components in a high-dim model (possibly discussed in sections 6-8 of v1 paper)? 
+		\item Understand considerations of restricted eigenvalue, restricted isometry property, and partial Riesz conditions in the context of convergence fo $\ell_2$ loss functionin $\ell_1$ (i.e. lasso) settings
+            \subitem See \url{https://www.stat.berkeley.edu/~binyu/ps/papers2010/RaskuttiWY10.pdf} Raskutti 2010 paper on correlated Gaussian ensembles section 2.2.2
+            \subitem RE is listed as least severe, so curious if the others are just of historical importance or the different analyses of convergence are across these properties 
+    \item From Raskutti 2010, $\Sigma$-Gaussian ensemble design matrices have sample covariance matrices $X^TX/n$ that satisfy the RE property if $\Sigma$ satisfies the RE condition (and we have adequate sample size scaling). Does $\Sigma$ necessarily complete the RE condition as a covariance matrix? Seems like a nontrivial assumption 
+        \subitem \url{https://www.stat.berkeley.edu/~binyu/ps/papers2010/RaskuttiWY10.pdf}
 	\end{itemize}
 }
 	
