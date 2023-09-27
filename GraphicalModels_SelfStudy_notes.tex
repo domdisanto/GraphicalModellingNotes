@@ -68,7 +68,11 @@
 \begin{itemize}
     \item Review Lemma 2 proof 
     \item Review proposition 2 proof (v1 doc) 
-    \item Understand theorem(s)/cited papers used to determine that Gaussian/subGaussian design matrices 
+    \item Understand theorem(s)/cited papers used to determine that Gaussian/subGaussian design matrices in linear setting
+        \subitem Exact sparsity, Gaussian-ensemble matrices follows directly from Raskutti 2010 
+        \subitem \textcolor{red}{Exact sparsity, sub-Gaussian} Seems like it follows from sub-Gaussian ensemble satisfying the UUP via \href{https://arxiv.org/pdf/math/0608665.pdf}{Mendelson 2006, Uniform uncertainty principle for Bernoulli and subgaussian ensembles} but may also need \href{https://arxiv.org/pdf/0912.4045.pdf}{Zhou 2009, Restricted Eigenvalue Conditions on Subgaussian Random Matrices} (although this may just be an extension beyond independence)
+        \subitem \textcolor{red}{Weak sparsity, Gaussian ensemble}
+        \subitem \textcolor{red}{Weak sparsity, sub-Gaussian ensemble}
     \item  Find/Prove sub-Gaussian definition (pg. 13): \newline 
         $w\sim subG(\sigma^2)$ if $\mathbb{P}(|\iprod{w, v}|\geq t) \leq 2\exp{-\frac{t^2}{2\sigma^2}}, \forall ||v||_2 \leq 1$
     \item 
@@ -230,9 +234,10 @@ Recall $\hat\Delta = \hat{\theta}_{\lambda_n} - \theta^*$. Also recall that the 
 
 \begin{gather*}
     \delta \mathcal{L}(\theta^*, \Delta)
-    \geq \kappa_\mathcal{L}||\Delta||_2^2 - \tau^2_\mathcal{L}(\theta^*), \ \ \forall \Delta \in \mathbb{C}(\mathcal{M}, \overline{\mathcal{M}}^\perp, \theta^*)
+    \geq \kappa_\mathcal{L}||\Delta||_2^2 - \tau^2_\mathcal{L}(\theta^*), \ \ \forall \Delta \in \mathbb{S}
 \end{gather*}
 
+for some set $\mathbb{S}$. We see that for reasonable selection of $\lambda_n$, we can identify $\mathbb{S}=\mathbb{C}(\mathcal{M}, \overline{\mathcal{M}}^\perp, \theta^*)$.
 
 \subsubsection{OLS  with exact sparsity ($\theta^* \in \mathcal{M}$), $\ell_1$ regularization penalty}
   
@@ -248,12 +253,34 @@ In this setting $\mathcal{L}(\theta) := \frac{1}{2n}||y-X\theta||_2^2$ and thus 
     \item First-order Taylor series expansion of OLS loss yields $\delta\mathcal{L}(\theta^*, \Delta) = \frac{1}{n}\Delta^T X^TX\Delta = \frac{1}{n}||X\Delta||_2^2$. Want to uniformly lower-bound this remainder for a sensisble/appropriate set of $\Delta$.  
     \item For properly selected regulation paramter $\lambda_n$ (by Lemma 1, bound to be shown later), we can identify our appropriate set as $\mathbb{C} := \{||\Delta_{S_c}||_1 \leq 3||\Delta_S||_1\}$, as by assumption $\theta^* \in \mathcal{M}_S$, which implies $\Pi_{\mathcal{M}_{S\perp}}(\theta^*) = 0 \Rightarrow ||\theta^*_{\mathcal{M}_{S\perp}}||_1=0$. 
         \subitem Desired bound: $\frac{1}{n} ||X\theta||_2^2 \geq \kappa_{\mathcal{L}} ||\theta||_2^2, \forall \theta \in \mathbb{C}$
-    \item Assuming sub-Gaussian$(\sigma^2)$ noise $w$, we apply known results to bound $\frac{||X\theta||_2^2}{n}$, thus meeting the RE/RSC property if 1) $n > 64(\kappa_2 / \kappa_2)^2$ (so that our lower bound is valid on $||X\Delta||_2^2/n$) and 2) $\lambda_n \geq 2||\nabla \mathcal{L}(\theta^*)||_\infty$ (so that our set of $\Delta$, $\mathbb{C}$, is valid)
-        \subitem Note that the sub-Gaussian result truly gives us a bound $\frac{||X\theta||_2}{\sqrt{n}} \geq \kappa_1 ||\theta||_2 - \kappa_2\sqrt{\frac{\log p}{n}}||\theta||_1$. The result that $||\theta||_1 \leq 4\sqrt{s}||\theta_M||_2$ from $\theta^* \in \mathcal{M}$ allows us to extend this to the necessary bound $||X\theta||_2 \geq \kappa_\mathcal{L} ||\theta||_2$. 
-        \subitem \textcolor{red}{This bound on $||X\theta||_2^2 / n$ holds determinstically? Or holds with high probability? the analysis in 4.1 is with high probability, but then the conclusion in the proof of Corollary 2 simply states that the RE and thus RSC condition holds}
+    \item Assuming sub-Gaussian$(\sigma^2)$ noise $w$, we apply known results to bound $\frac{||X\theta||_2^2}{n}$, thus meeting the RE/RSC property if 1) $n > 64(\kappa_2 / \kappa_1)^2$ (so that our lower bound is valid on $||X\Delta||_2^2/n$) and 2) $\lambda_n \geq 2||\nabla \mathcal{L}(\theta^*)||_\infty$ (so that our set of $\Delta$, $\mathbb{C}$, is valid)
+        \footnote{Note that the sub-Gaussian result truly gives us a bound $\frac{||X\theta||_2}{\sqrt{n}} \geq \kappa_1 ||\theta||_2 - \kappa_2\sqrt{\frac{\log p}{n}}||\theta||_1$. The result that $||\theta||_1 \leq 4\sqrt{s}||\theta_M||_2$ from $\theta^* \in \mathcal{M}$ and clever constant selectionas mentioned allows us to extend this to the necessary bound $||X\theta||_2 \geq \kappa_\mathcal{L} ||\theta||_2$.}
 
-    \item Finish $\lambda_n$ bound derivation to complete proof (concentration inequality via union bound argument)
-        \subitem Important to note that this bound on $\lambda_n$ holds independently of the fact that $\theta^*\in \mathcal{M}$. 
+    \item We finish by identifying a satisfactory bound on $\lambda_n$ such that previous analysis, assuming $\hat\delta \in \mathbb{C}$ is valid, namely $\lambda_n \geq 2\mathcal{R}^*(\nabla\mathcal{L}(\theta^*))$. Recall that we assume $w \sim subG(\sigma^2)$, where $w$ is our random noise $w = Y-X\theta^*$. 
+        \begin{align*}
+            2\mathcal{R}^*(\nabla\mathcal{L}(\theta^*))
+            &=
+            2||\nabla \mathcal{L}(\theta^*)||_\infty
+        \\
+            &= 
+            \frac{2}{n}|| X^T(y-X\theta^*)||_\infty
+        \\
+            &= 
+            \frac{2}{n}|| X^Tw||_\infty
+        \end{align*}
+            
+        Recall that WLOG $X$ is column-centered such that $\frac{||X_j||_2}{\sqrt{n}} \leq 1$: 
+
+        \begin{align*}
+            \Pr\left(|| X^Tw||_\infty \geq t\right)
+            &\leq 
+            \Pr\left( \sum_{j=1}^p |\iprod{X_j, w}| \geq t \right)
+        \\
+        &\leq 2p\exp{-\frac{nt^2}{2\sigma^2}}
+        =
+        2\exp{-\frac{nt^2}{2\sigma^2} + \log p}
+        \end{align*}
+        Informing $\lambda_n$ selection such that above holds with high probability with respect to $n, \sigma^2$, and constants. 
     \end{enumerate}
     
 %{\bf Old Notes} \newline 
