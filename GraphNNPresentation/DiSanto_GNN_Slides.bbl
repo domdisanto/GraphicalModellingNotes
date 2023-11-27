@@ -19,6 +19,81 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{duvenaud_convolutional_2015}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=834f50f5d5a332c21effd10f07daf79e}{%
+           family={Duvenaud},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=07e607fb522f06610feb023ecfa712e2}{%
+           family={Maclaurin},
+           familyi={M\bibinitperiod},
+           given={Dougal},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5debbaca3d1169a9867a72e085c3cefd}{%
+           family={Aguilera-Iparraguirre},
+           familyi={A\bibinithyphendelim I\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a37688f976e048ffbc85a45699635c91}{%
+           family={Gómez-Bombarelli},
+           familyi={G\bibinithyphendelim B\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2f565f45e0faadc2ec7c0fbf40e550cc}{%
+           family={Hirzel},
+           familyi={H\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=083dcdd0db2687433b22fabfb2e55c17}{%
+           family={Aspuru-Guzik},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Alán},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1552be0c6aa9c6e0fd91a130a682853}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={Ryan\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{fefc8e1deb8de16e193321f2de1eda2f}
+      \strng{fullhash}{76efadea36b06eac13c72157e055b771}
+      \strng{bibnamehash}{fefc8e1deb8de16e193321f2de1eda2f}
+      \strng{authorbibnamehash}{fefc8e1deb8de16e193321f2de1eda2f}
+      \strng{authornamehash}{fefc8e1deb8de16e193321f2de1eda2f}
+      \strng{authorfullhash}{76efadea36b06eac13c72157e055b771}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce a convolutional neural network that operates directly on graphs. These networks allow end-to-end learning of prediction pipelines whose inputs are graphs of arbitrary size and shape. The architecture we present generalizes standard molecular feature extraction methods based on circular fingerprints. We show that these data-driven features are more interpretable, and have better predictive performance on a variety of tasks.}
+      \field{annotation}{Comment: 9 pages, 5 figures. To appear in Neural Information Processing Systems (NIPS)}
+      \field{month}{11}
+      \field{note}{arXiv:1509.09292 [cs, stat]}
+      \field{title}{Convolutional {Networks} on {Graphs} for {Learning} {Molecular} {Fingerprints}}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1509.09292
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/jdomi/Zotero/storage/25EMKK23/Duvenaud et al. - 2015 - Convolutional Networks on Graphs for Learning Mole.pdf:application/pdf;arXiv.org Snapshot:/Users/jdomi/Zotero/storage/FSXKHGU9/1509.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1509.09292
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1509.09292
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning}
+    \endentry
     \entry{ektefaie_multimodal_2023}{article}{}
       \name{author}{5}{}{%
         {{hash=9706737cdd9e6111fbc0ee5fdaa848c7}{%
@@ -88,6 +163,68 @@
       \verb https://www.nature.com/articles/s42256-023-00624-6
       \endverb
       \keyw{Computational science,Computer science,Machine learning,Statistics}
+    \endentry
+    \entry{gilmer_neural_2017}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=4f550339f0337905aa634f39e1ba4833}{%
+           family={Gilmer},
+           familyi={G\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=aa3475bbb938eec3f9f0d7c8d44f1e86}{%
+           family={Schoenholz},
+           familyi={S\bibinitperiod},
+           given={Samuel\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e9632c2c29a574cd09a5a7503be60435}{%
+           family={Riley},
+           familyi={R\bibinitperiod},
+           given={Patrick\bibnamedelima F.},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=494b568c5dc85ba8f3f409635f9c5f25}{%
+           family={Vinyals},
+           familyi={V\bibinitperiod},
+           given={Oriol},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b2367e57c17225a47853346440e87b35}{%
+           family={Dahl},
+           familyi={D\bibinitperiod},
+           given={George\bibnamedelima E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{c654290e16b9e71825428d767650ff2a}
+      \strng{fullhash}{a97dbeb15b563be460fc056e7a076a4b}
+      \strng{bibnamehash}{c654290e16b9e71825428d767650ff2a}
+      \strng{authorbibnamehash}{c654290e16b9e71825428d767650ff2a}
+      \strng{authornamehash}{c654290e16b9e71825428d767650ff2a}
+      \strng{authorfullhash}{a97dbeb15b563be460fc056e7a076a4b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Supervised learning on molecules has incredible potential to be useful in chemistry, drug discovery, and materials science. Luckily, several promising and closely related neural network models invariant to molecular symmetries have already been described in the literature. These models learn a message passing algorithm and aggregation procedure to compute a function of their entire input graph. At this point, the next step is to find a particularly effective variant of this general approach and apply it to chemical prediction benchmarks until we either solve them or reach the limits of the approach. In this paper, we reformulate existing models into a single common framework we call Message Passing Neural Networks (MPNNs) and explore additional novel variations within this framework. Using MPNNs we demonstrate state of the art results on an important molecular property prediction benchmark; these results are strong enough that we believe future work should focus on datasets with larger molecules or more accurate ground truth labels.}
+      \field{annotation}{Comment: 14 pages}
+      \field{month}{6}
+      \field{note}{arXiv:1704.01212 [cs]}
+      \field{title}{Neural {Message} {Passing} for {Quantum} {Chemistry}}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/jdomi/Zotero/storage/BFUQJEMC/1704.html:text/html;Full Text PDF:/Users/jdomi/Zotero/storage/5SHINSLY/Gilmer et al. - 2017 - Neural Message Passing for Quantum Chemistry.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1704.01212
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1704.01212
+      \endverb
+      \keyw{Computer Science - Machine Learning,I.2.6}
     \endentry
     \entry{kipf_semi-supervised_2017}{misc}{}
       \name{author}{2}{}{%
@@ -259,6 +396,71 @@
       \endverb
       \verb{url}
       \verb https://distill.pub/2021/gnn-intro
+      \endverb
+    \endentry
+    \entry{scarselli_graph_2009}{article}{}
+      \name{author}{5}{}{%
+        {{hash=08ec959fd97d02517d7be592475bf19c}{%
+           family={Scarselli},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9ab33529dbd8ef78724f1dc8a425e57e}{%
+           family={Gori},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=520b01fdf4ea304850fd2941b3e204df}{%
+           family={{Ah Chung Tsoi}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=f9aeb1565769af71b434ced426b91c86}{%
+           family={Hagenbuchner},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2c9332473b589bf9413b8bf49f7a999c}{%
+           family={Monfardini},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{058d3d3e9c66e504975aa6380e0414cd}
+      \strng{fullhash}{46c944a3987a3dd2d2c244e52016a100}
+      \strng{bibnamehash}{058d3d3e9c66e504975aa6380e0414cd}
+      \strng{authorbibnamehash}{058d3d3e9c66e504975aa6380e0414cd}
+      \strng{authornamehash}{058d3d3e9c66e504975aa6380e0414cd}
+      \strng{authorfullhash}{46c944a3987a3dd2d2c244e52016a100}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1045-9227, 1941-0093}
+      \field{journaltitle}{IEEE Transactions on Neural Networks}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{The {Graph} {Neural} {Network} {Model}}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{20}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{61\bibrangedash 80}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/TNN.2008.2005605
+      \endverb
+      \verb{file}
+      \verb Scarselli et al. - 2009 - The Graph Neural Network Model.pdf:/Users/jdomi/Zotero/storage/DLKGJ92Q/Scarselli et al. - 2009 - The Graph Neural Network Model.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/4700287/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/4700287/
       \endverb
     \endentry
     \entry{xu_how_2019}{misc}{}

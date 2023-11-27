@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber DiSanto_GNN_Slides"] 1701117653 "DiSanto_GNN_Slides.bcf" "DiSanto_GNN_Slides.bbl" "DiSanto_GNN_Slides" 1701118455 0
-  "./GNN_Presentation.bib" 1701117280 14795 c791ea32b3ee0ca735aa6cd06d35c2fb ""
-  "DiSanto_GNN_Slides.bcf" 1701118455 108104 d0e61ab6bc8b8733126b32778ae97a43 "pdflatex"
+["biber DiSanto_GNN_Slides"] 1701120956 "DiSanto_GNN_Slides.bcf" "DiSanto_GNN_Slides.bbl" "DiSanto_GNN_Slides" 1701120979 0
+  "./GNN_Presentation.bib" 1701120931 18632 e595a2dd324ba68372866b882b731dd0 ""
+  "DiSanto_GNN_Slides.bcf" 1701120979 108502 af7e91f1056f37e764f5a7129632df38 "pdflatex"
   (generated)
   "DiSanto_GNN_Slides.bbl"
   "DiSanto_GNN_Slides.blg"
   (rewritten before read)
-["pdflatex"] 1701118453 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" "DiSanto_GNN_Slides.pdf" "DiSanto_GNN_Slides" 1701118455 0
-  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" 1701118451 13168 e86218102c1d53fc202a5f656b9549c3 ""
+["pdflatex"] 1701120976 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" "DiSanto_GNN_Slides.pdf" "DiSanto_GNN_Slides" 1701120979 0
+  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" 1701120976 15027 dc66b8da15d84805eb304720c505c828 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1246382020 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -265,13 +265,14 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693935547 7883466 9d2d13fbc6d11091b517934f993b5158 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Caffeine_Graph.png" 1701106261 214751 e9ba72ae758bd400b77b9a34a618898b ""
-  "DiSanto_GNN_Slides.aux" 1701118455 8757 3bfa242b39e86402e479932a87c93cdc "pdflatex"
-  "DiSanto_GNN_Slides.bbl" 1701117656 16584 3f83d1e62a355165664917ef69b4f325 "biber DiSanto_GNN_Slides"
-  "DiSanto_GNN_Slides.nav" 1701118455 3515 c9b9547699a0dfbd7857bee3ce15f857 "pdflatex"
-  "DiSanto_GNN_Slides.out" 1701118455 1006 06c28a3eca9193f86e2d433f6e0ef921 "pdflatex"
-  "DiSanto_GNN_Slides.run.xml" 1701118455 2409 47d6fc4ed2ecda7a5ace4f9810941036 "pdflatex"
-  "DiSanto_GNN_Slides.tex" 1701118451 13168 e86218102c1d53fc202a5f656b9549c3 ""
-  "DiSanto_GNN_Slides.toc" 1701118455 279 eb5f6edc9becbd35d18213c9571120be "pdflatex"
+  "DiSanto_GNN_Slides.aux" 1701120979 10480 e0a62a58414e2520f90faf301c085c3f "pdflatex"
+  "DiSanto_GNN_Slides.bbl" 1701120958 26215 c0004315cc3ba60d32a39f154ac5cdb6 "biber DiSanto_GNN_Slides"
+  "DiSanto_GNN_Slides.nav" 1701120979 4161 290134185403e84c4b7ef865d094db57 "pdflatex"
+  "DiSanto_GNN_Slides.out" 1701120979 1361 8cd6d2a9b6258d45c8308efaa4278f2c "pdflatex"
+  "DiSanto_GNN_Slides.run.xml" 1701120979 2409 47d6fc4ed2ecda7a5ace4f9810941036 "pdflatex"
+  "DiSanto_GNN_Slides.tex" 1701120976 15027 dc66b8da15d84805eb304720c505c828 ""
+  "DiSanto_GNN_Slides.toc" 1701120979 411 61415de1c78021fe93e16d540c340d82 "pdflatex"
+  "Junwei_KG_Models_Infograph.png" 1700697582 1058127 a44b2e181116a9d2698f44397ef525ed ""
   "MultimodalPreview.png" 1701114323 287772 2db3e68c5dd901255b3ece7aa14aada0 ""
   (generated)
   "DiSanto_GNN_Slides.aux"

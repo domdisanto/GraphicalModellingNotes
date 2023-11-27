@@ -1,3 +1,5 @@
 \beamer@sectionintoc {1}{Set-Up and Motivation \textcolor {red}{5ish minutes}}{5}{0}{1}
-\beamer@sectionintoc {2}{General Construction \textcolor {red}{10-20ish minutes}}{14}{0}{2}
-\beamer@sectionintoc {3}{Applications and Extensions \textcolor {red}{20-25ish minutes}}{20}{0}{3}
+\beamer@sectionintoc {2}{General Construction \textcolor {red}{10-20ish minutes}}{13}{0}{2}
+\beamer@sectionintoc {3}{Applications and Extensions \textcolor {red}{20-25ish minutes}}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Knowledge-Graph Data}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{Multimodal Biomedical Data}{22}{0}{3}

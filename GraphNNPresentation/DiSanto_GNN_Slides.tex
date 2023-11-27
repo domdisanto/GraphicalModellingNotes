@@ -2,14 +2,24 @@
 
 
 \setbeamerfont{footnote}{size=\tiny}
-\AtBeginSection[]
+%\AtBeginSection[]
+%{
+%  \begin{frame}<beamer>
+%%    \frametitle{Outline for Section \thesection}
+%    \frametitle{Outline}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+\newcommand{\OutlineRedux}
 {
   \begin{frame}<beamer>
 %    \frametitle{Outline for Section \thesection}
-    \frametitle{Outline (Redux)}
+    \frametitle{Outline}
     \tableofcontents[currentsection]
   \end{frame}
 }
+
 
 \usepackage{algpseudocodex}
 \usepackage{tikz}
@@ -28,6 +38,7 @@
   \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
   \vskip2pt%
 }
+
 
 
 % Bibliography Options 
@@ -51,7 +62,8 @@
 \newcommand{\edge}{e}
 \newcommand{\iter}{\kappa}
 \newcommand{\Iter}{K}
-
+\newcommand{\AdjMat}{\mathbf{A}}
+\newcommand{\LapMat}{\mathbf{L}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
     % START %%%%%%%%%%%%
@@ -86,10 +98,10 @@
 
 \begin{frame}{Goals}
     \begin{itemize}\setlength\itemsep{8mm}
-        \item Outline the architecture of Graphical Neural Networks (GNN)
+        \item Provide a useful overview of Graphical Neural Networks (GNN)
         \begin{itemize}
             \item Motivation for necessity of GNN's 
-            \item Provide a general framework
+            \item Provide a general framework of fitting 
         \end{itemize}
         \item Describe applications and extensions of the general GNN model 
         \begin{itemize}
@@ -97,6 +109,46 @@
         \end{itemize}
     \end{itemize}
 \end{frame}
+
+
+\begin{frame}{KG Application}
+    \textcolor{red}{Image here}
+\end{frame}
+
+\begin{frame}{Multi-modal Biomedical Data}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.2]{MultimodalPreview.png}
+    \end{figure}
+    Image courtesy of partial figure from McDermott et al. {\it Structure-inducing pre-training} \cite{mcdermott_structure-inducing_2023}
+\end{frame}
+
+
+\begin{frame}{Molecular/Biochemical}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Caffeine_Graph.png}
+    \end{figure}
+    Image courtesy of \url{https://distill.pub/2021/gnn-intro/} \cite{sanchez-lengeling_gentle_2021}
+\end{frame}
+
+\begin{frame}{Protein Folding \textcolor{red}{Maybe drop? 4 examples probably unnecessary}}
+    \textcolor{red}{Image/example here }
+\end{frame}
+
+\begin{frame}{Motivation}
+    \begin{itemize}
+        \item Want to utilize the input structure of the graph
+        \begin{itemize}
+            \item Respect/Maintain
+            \item Update/Estimate
+        \end{itemize} 
+        \item \color{red} Why do "regular" NN's/CNN's fail on graphical data? 2009 paper offers pre-GNN data processing led to information loss 
+        \item Permutation invariance/Permutation invariant hypotheses 
+    \end{itemize}
+\end{frame}
+
+
 
 \begin{frame}{Notation/Set-Up}
     \begin{columns}[T] % align columns at the top
@@ -106,9 +158,9 @@
 %                \item Consider random vector $X \sim F(\boldsymbol\mu, \Sigma)$ and precision matrix $\Theta \equiv \Sigma^{-1}$
                 \item Consider the graph $\Graph = (\NodeSet, \EdgeSet), \EdgeSet \subseteq \NodeSet \times \NodeSet$, where any node $\node$ has a related "feature vector" $x_\node \in \mathbb{R}^d$
                 \item Let $\nhood_s(\node)$ represent the $s$-hop neighborhood of any node $\node$ (and implicitly $\nhood(\node) \equiv \nhood_1(\node)$)
-                \item Can construct adjacency matrix $A \in \mathbb{R}^{|\NodeSet| \times |\NodeSet|}$ describing edge set $\EdgeSet$ 
+                \item Can construct adjacency matrix $\AdjMat \in \mathbb{R}^{|\NodeSet| \times |\NodeSet|}$ describing edge set $\EdgeSet$ 
                 \begin{itemize} 
-                    \item $A_{ij}=\mathbb{I}\{(i,j) \in \EdgeSet\}$ 
+                    \item $\AdjMat_{ij}=\mathbb{I}\{(i,j) \in \EdgeSet\}$ 
                     \item Adjacency "lists" often used for memory efficiency and permutation invariance
                 \end{itemize}
             \end{itemize}
@@ -151,50 +203,20 @@
 \end{frame}
 
 
-\begin{frame}{Other application}
-    \textcolor{red}{Image here}
-\end{frame}
-
-\begin{frame}{Multi-modal Biomedical Data}
-    \begin{figure}
-        \centering 
-        \includegraphics[scale=0.2]{MultimodalPreview.png}
-    \end{figure}
-    Image courtesy of partial figure from McDermott et al. {\it Structure-inducing pre-training} \cite{mcdermott_structure-inducing_2023}
-\end{frame}
-
-
-\begin{frame}{Molecular/Biochemical}
-    \begin{figure}
-        \centering
-        \includegraphics[scale=0.3]{Caffeine_Graph.png}
-    \end{figure}
-    Image courtesy of \url{https://distill.pub/2021/gnn-intro/} \cite{sanchez-lengeling_gentle_2021}
-\end{frame}
-
-
-
-\begin{frame}{Motivation}
-    \begin{itemize}
-        \item Want to utilize the input structure of the graph
-        \begin{itemize}
-            \item Respect/Maintain
-            \item Update/Estimate
-        \end{itemize} 
-        \item \color{red} Why do "regular" NN's/CNN's fail on graphical data? 2009 paper offers pre-GNN data processing led to information loss 
-        \item Permutation invariance/Permutation invariant hypotheses 
-        \item Applications in chemistry/drug-discovery, large text data(?), multimodal data source analyses 
-    \end{itemize}
-\end{frame}
-
-
 \begin{frame}{Adjacency Representations}
 \begin{itemize}\setlength\itemsep{8mm}
+    \color{red}
     \item Adjacency matrix can be prohibitively large but likely sparse, is also permutable but DNN's are not permutation invariant, undesirable 
     \item Can store an adjacency list
-    \item Can use Laplacian matrix $L = \text{diag}(A\mathbf{1}_{|\NodeSet|}) - A$
+    \item Can use Laplacian matrix $\LapMat = \text{diag}(\AdjMat\mathbf{1}_{|\NodeSet|}) - \AdjMat$
     \end{itemize}
 \end{frame}
+
+
+
+\section{General Construction \textcolor{red}{10-20ish minutes}}
+\OutlineRedux 
+
 
 \begin{frame}{What do we estimate about graph structure?}
     \textcolor{red}{See supp note 1 on Multimodal learning with graphs}
@@ -206,22 +228,19 @@
             \text{Edge-wise }\Phi(\Graph, e): (e\in \EdgeSet) \rightarrow \mathbb{R}^m  
             % can predict edge weights and prune to determine "edge presence", but I believe that GNN's take edge sets as input and preserve these edgesets 
             \\ \\ 
-            \text{Graph-level level }\Phi(\Graph): \Graph %\rightarrow \mathbb{R}^m 
+            \text{Graph-level level }\Phi(\Graph) %\rightarrow \mathbb{R}^m 
             \end{cases}            
     \end{gather*}
 \end{frame}
-
-\section{General Construction \textcolor{red}{10-20ish minutes}}
-
 
 \begin{frame}{}
     An overly simple representation: \newline 
     \begin{columns}[T]
     \begin{column}{0.3\textwidth}
         \begin{tikzpicture}
-            \node[circle, color=red, draw] (A) at (0,0) {$X_1$};
-            \node[circle, draw] (B) at (1,1) {$X_2$};
-            \node[circle, color=red, draw] (C) at (1,-1) {$X_3$};
+            \node[circle, draw] (A) at (0,0) {$X_1$};
+            \node[circle, color=red, draw] (B) at (1,1) {$X_2$};
+            \node[circle, draw] (C) at (1,-1) {$X_3$};
             \node[circle, draw] (D) at (2,0) {$X_4$};
             \draw[line width=0.4mm] (A) -- (B);
             \draw[line width=0.1mm] (A) -- (C);
@@ -259,12 +278,12 @@
     \end{column}
     \begin{column}{0.3\textwidth}
         \begin{tikzpicture}
-            \node[circle, color=black, draw] (A) at (0,0) {$X_1$};
-            \node[circle, color=red,draw] (B) at (1,1) {$X_2$};
+            \node[circle, draw] (A) at (0,0) {$X_1$};
+            \node[circle, color=red, draw] (B) at (1,1) {$X_2$};
             \node[circle, draw] (C) at (1,-1) {$X_3$};
-            \node[circle, draw] (D) at (2,0) {$X_4$};
+            \node[circle, color=red, draw] (D) at (2,0) {$X_4$};
             \draw[line width=0.4mm] (A) -- (B);
-            \draw[line width=0.1mm] (A) -- (C);
+            %\draw[line width=0.1mm] (A) -- (C);
             \draw[line width=0.8mm] (B) -- (D);
             \draw[line width=0.5mm] (C) -- (B);
         \end{tikzpicture}
@@ -290,9 +309,7 @@
         \EndFor
         \State $h_\Graph \gets \text{Readout}(h^\Iter_\node | \node \in \Graph)$
     \end{algorithmic}
-
-\vspace{4mm}
-
+\vspace{2mm}
 Can succinctly represent the $\iter$th layer as: 
 \begin{gather*}
     \mathbf{h}_\node^{(\iter+1)} 
@@ -307,55 +324,17 @@ Can succinctly represent the $\iter$th layer as:
     )
     \right)
 \end{gather*}
-
-\vspace{4mm}
+\vspace{2mm}
 Choices of (differentiable) functions for Aggregate, Update, and Readout determine the architecture of your GNN 
 \end{frame}
 
 
-\begin{frame}{Graph Convolutional Network}
-Proposed in 2017 by Thomas Kipf, Max Welling \cite{kipf_semi-supervised_2017}
-    \begin{align*}
-    \iffalse
-        \mathbf{h}_\node^{(\iter+1)} 
-        &=
-        \text{Update}
-        \left( 
-        x_\node^{(\iter)}
-        ,   
-        \text{Aggregate}
-        (
-            h_\node^{(\iter)}, x_u^{(\iter)}, \edge_{u,\node}^{(\iter)}
-        )
-        \right)
-    \\
-    \fi 
-        \mathbf{h}_\node^{(\iter+1)} 
-        &=
-        \sigma
-        \left( 
-            \mathbf{
-            %D^{-1/2}
-            %(A + I)
-            %D^{-1/2}
-            \Omega 
-            H^{(\iter)}
-            \Theta 
-            }            
-        \right)
-\end{align*}
-
-\begin{itemize}
-    \item $\sigma(\cdot) = \text{ReLu}(\cdot)$ activation function
-    \item Learned weight/parameter matrix $\boldsymbol\Theta$
-    \item Including $\boldsymbol\Omega$ normalizing matrix (with known closed form) for computational stability 
-    %\item $\mathbf{D}_{ii} = \sum_{j}\mathbf{(A+I)_{ij}}$
-    %\item Eigenvalue normalizing $\mathbf{D^{-1/2}(A + I)D^{-1/2}}$ for computational stability
-\end{itemize}
-\textcolor{red}{Review paper, comment on applications briefly (KG setting)}
-\end{frame}
-
 \begin{frame}{Aggregate/Update}
+    \begin{itemize}
+        \color{red}
+        \item Mention specific functions used 
+        \item Mention conequences on architecture/very high level what these steps do wrt graphical structure  
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Readout}
@@ -366,7 +345,69 @@ Proposed in 2017 by Thomas Kipf, Max Welling \cite{kipf_semi-supervised_2017}
     \end{itemize}
 \end{frame}
 
+
+\begin{frame}{Message Passing}
+\end{frame}
+
+\begin{frame}{Graph Convolutional Network}
+    Proposed in 2017 by Thomas Kipf, Max Welling \cite{kipf_semi-supervised_2017}
+        \begin{align*}
+        \iffalse
+            \mathbf{h}_\node^{(\iter+1)} 
+            &=
+            \text{Update}
+            \left( 
+            x_\node^{(\iter)}
+            ,   
+            \text{Aggregate}
+            (
+                h_\node^{(\iter)}, x_u^{(\iter)}, \edge_{u,\node}^{(\iter)}
+            )
+            \right)
+        \\
+        \fi 
+            \mathbf{H}^{(\iter+1)} 
+            &=
+            \sigma
+            \left( 
+                \mathbf{
+                %D^{-1/2}
+                %(\AdjMat + I)
+                %D^{-1/2}
+                \Omega 
+                H^{(\iter)}
+                \Theta 
+                }            
+            \right)
+    \end{align*}
+    
+    \begin{itemize}
+        \item $\mathbf{H}$ is simply the matrix of $\mathbf{h}_\node$ for all nodes 
+        \item $\sigma(\cdot) = \text{ReLu}(\cdot)$ activation function
+        \item Learned weight/parameter matrix $\boldsymbol\Theta$
+        \item Including $\boldsymbol\Omega$ normalizing matrix (with known closed form) for computational stability, function of $\AdjMat$ or $\LapMat$
+        %\item $\mathbf{D}_{ii} = \sum_{j}\mathbf{(\AdjMat+I)_{ij}}$
+        %\item Eigenvalue normalizing $\mathbf{D^{-1/2}(\AdjMat + I)D^{-1/2}}$ for computational stability
+    \end{itemize}
+    \textcolor{red}{Review paper, comment on applications briefly (KG setting)}
+    \end{frame}
+
+
+
 \section{Applications and Extensions \textcolor{red}{20-25ish minutes}}
+\OutlineRedux
+
+
+\subsection{Knowledge-Graph Data}
+
+\subsection{Multimodal Biomedical Data}
+
+
+
+
+\begin{frame}{}
+    \bf{\LARGE Conclusion}    
+\end{frame}
 
 \section*{Conclusion}
 
@@ -392,4 +433,19 @@ Proposed in 2017 by Thomas Kipf, Max Welling \cite{kipf_semi-supervised_2017}
 \bf{\LARGE Appendix Slides}    
 \end{frame}
 
+\begin{frame}{Abbreviated History}
+    \begin{itemize}
+        \item Graph Neural Network first used in Scarselli (2009) {\it The Graph Neural Network Model} \cite{scarselli_graph_2009}
+        \item Graph Convolutional Network by Kipf (2017) \cite{kipf_semi-supervised_2017} but with similar convolutional message-passing algorithms proposed in 2015 \cite{duvenaud_convolutional_2015}
+        \item Message passing GNN proposed in Gilmer (2017), applications in molecular chemistry \cite{gilmer_neural_2017} 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+    Full figure from McDermott et al. \cite{mcdermott_structure-inducing_2023}, cropped and presented in Introduction:
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.13]{Junwei_KG_Models_Infograph.png}
+    \end{figure}
+\end{frame}
 \end{document}
