@@ -1,0 +1,326 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{ektefaie_multimodal_2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=9706737cdd9e6111fbc0ee5fdaa848c7}{%
+           family={Ektefaie},
+           familyi={E\bibinitperiod},
+           given={Yasha},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6d38ba04252526c77483e030d609daf6}{%
+           family={Dasoulas},
+           familyi={D\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1f012affd20ae9c45ab3c0f96b0e84d3}{%
+           family={Noori},
+           familyi={N\bibinitperiod},
+           given={Ayush},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4388e632550213867abe8f3dc9d8e74a}{%
+           family={Farhat},
+           familyi={F\bibinitperiod},
+           given={Maha},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5f1df07c5fbd5a91d0e32b8697082857}{%
+           family={Zitnik},
+           familyi={Z\bibinitperiod},
+           given={Marinka},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{82993c530f85986f9b34b0dd6f280369}
+      \strng{fullhash}{d399ceab17ccbd7084d97a4199d5b87e}
+      \strng{bibnamehash}{82993c530f85986f9b34b0dd6f280369}
+      \strng{authorbibnamehash}{82993c530f85986f9b34b0dd6f280369}
+      \strng{authornamehash}{82993c530f85986f9b34b0dd6f280369}
+      \strng{authorfullhash}{d399ceab17ccbd7084d97a4199d5b87e}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Artificial intelligence for graphs has achieved remarkable success in modelling complex systems, ranging from dynamic networks in biology to interacting particle systems in physics. However, the increasingly heterogeneous graph datasets call for multimodal methods that can combine different inductive biases — assumptions that algorithms use to make predictions for inputs they have not encountered during training. Learning on multimodal datasets is challenging because the inductive biases can vary by data modality and graphs might not be explicitly given in the input. To address these challenges, graph artificial intelligence methods combine different modalities while leveraging cross-modal dependencies through geometric relationships. Diverse datasets are combined using graphs and fed into sophisticated multimodal architectures, specified as image-intensive, knowledge-grounded and language-intensive models. Using this categorization, we introduce a blueprint for multimodal graph learning, use it to study existing methods and provide guidelines to design new models.}
+      \field{issn}{2522-5839}
+      \field{journaltitle}{Nature Machine Intelligence}
+      \field{month}{4}
+      \field{note}{Number: 4 Publisher: Nature Publishing Group}
+      \field{number}{4}
+      \field{title}{Multimodal learning with graphs}
+      \field{urlday}{26}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{5}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{340\bibrangedash 350}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1038/s42256-023-00624-6
+      \endverb
+      \verb{file}
+      \verb Submitted Version:/Users/jdomi/Zotero/storage/VWY2SA29/Ektefaie et al. - 2023 - Multimodal learning with graphs.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s42256-023-00624-6
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s42256-023-00624-6
+      \endverb
+      \keyw{Computational science,Computer science,Machine learning,Statistics}
+    \endentry
+    \entry{kipf_semi-supervised_2017}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=26d8bcbda6afaf96334bf47c8fb88a75}{%
+           family={Kipf},
+           familyi={K\bibinitperiod},
+           given={Thomas\bibnamedelima N.},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=53d2880ad8047b61cdae2c6b2803e763}{%
+           family={Welling},
+           familyi={W\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{8357de6f2714533d08059670ab3ea016}
+      \strng{fullhash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \strng{bibnamehash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \strng{authorbibnamehash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \strng{authornamehash}{8357de6f2714533d08059670ab3ea016}
+      \strng{authorfullhash}{e04e5808dc0d0ec733212b81e1f8c78a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a scalable approach for semi-supervised learning on graph-structured data that is based on an efficient variant of convolutional neural networks which operate directly on graphs. We motivate the choice of our convolutional architecture via a localized first-order approximation of spectral graph convolutions. Our model scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes. In a number of experiments on citation networks and on a knowledge graph dataset we demonstrate that our approach outperforms related methods by a significant margin.}
+      \field{annotation}{Comment: Published as a conference paper at ICLR 2017}
+      \field{month}{2}
+      \field{note}{arXiv:1609.02907 [cs, stat]}
+      \field{title}{Semi-{Supervised} {Classification} with {Graph} {Convolutional} {Networks}}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/jdomi/Zotero/storage/IJ8MTNEG/1609.html:text/html;Full Text PDF:/Users/jdomi/Zotero/storage/AY9ETCPZ/Kipf and Welling - 2017 - Semi-Supervised Classification with Graph Convolut.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1609.02907
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1609.02907
+      \endverb
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
+    \entry{mcdermott_structure-inducing_2023}{article}{}
+      \name{author}{4}{}{%
+        {{hash=320a9eb93080307302d84ae0ed6b7111}{%
+           family={McDermott},
+           familyi={M\bibinitperiod},
+           given={Matthew\bibnamedelimb B.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9af2cc990c398e4e7941565aa2df225b}{%
+           family={Yap},
+           familyi={Y\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e4ec701f3e9b3400f41c7dcb84d2e88a}{%
+           family={Szolovits},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5f1df07c5fbd5a91d0e32b8697082857}{%
+           family={Zitnik},
+           familyi={Z\bibinitperiod},
+           given={Marinka},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f3c9eabb2b2c8e80fbdacf0fd6367f70}
+      \strng{fullhash}{ce44954852217b01ca962462ddf80594}
+      \strng{bibnamehash}{f3c9eabb2b2c8e80fbdacf0fd6367f70}
+      \strng{authorbibnamehash}{f3c9eabb2b2c8e80fbdacf0fd6367f70}
+      \strng{authornamehash}{f3c9eabb2b2c8e80fbdacf0fd6367f70}
+      \strng{authorfullhash}{ce44954852217b01ca962462ddf80594}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Language model pre-training and the derived general-purpose methods have reshaped machine learning research. However, there remains considerable uncertainty regarding why pre-training improves the performance of downstream tasks. This challenge is pronounced when using language model pre-training in domains outside of natural language. Here we investigate this problem by analysing how pre-training methods impose relational structure in induced per-sample latent spaces—that is, what constraints do pre-training methods impose on the distance or geometry between the pre-trained embeddings of samples. A comprehensive review of pre-training methods reveals that this question remains open, despite theoretical analyses showing the importance of understanding this form of induced structure. Based on this review, we introduce a pre-training framework that enables a granular and comprehensive understanding of how relational structure can be induced. We present a theoretical analysis of the framework from the first principles and establish a connection between the relational inductive bias of pre-training and fine-tuning performance. Empirical studies spanning three data modalities and ten fine-tuning tasks confirm theoretical analyses, inform the design of novel pre-training methods and establish consistent improvements over a compelling suite of methods.}
+      \field{issn}{2522-5839}
+      \field{journaltitle}{Nature Machine Intelligence}
+      \field{month}{6}
+      \field{note}{Number: 6 Publisher: Nature Publishing Group}
+      \field{number}{6}
+      \field{title}{Structure-inducing pre-training}
+      \field{urlday}{26}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{5}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{612\bibrangedash 621}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1038/s42256-023-00647-z
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/jdomi/Zotero/storage/L88JZQ9T/McDermott et al. - 2023 - Structure-inducing pre-training.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s42256-023-00647-z
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s42256-023-00647-z
+      \endverb
+      \keyw{Computational models,Computer science,Machine learning,Statistics}
+    \endentry
+    \entry{sanchez-lengeling_gentle_2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7c4f5c739dce58401e7c2ed6906ff806}{%
+           family={Sanchez-Lengeling},
+           familyi={S\bibinithyphendelim L\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bf36a95184bcf06abe636f74e9bcdc70}{%
+           family={Reif},
+           familyi={R\bibinitperiod},
+           given={Emily},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3394c53217b55644faae08f1c08d41ca}{%
+           family={Pearce},
+           familyi={P\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e0d9e9b0e574bb94ab3c67626cca5c17}{%
+           family={Wiltschko},
+           familyi={W\bibinitperiod},
+           given={Alexander\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{87a91bc8ed3b035a4dbf1ec0b979e4e5}
+      \strng{fullhash}{2e68e45732f50abe0c84e383e9f51470}
+      \strng{bibnamehash}{87a91bc8ed3b035a4dbf1ec0b979e4e5}
+      \strng{authorbibnamehash}{87a91bc8ed3b035a4dbf1ec0b979e4e5}
+      \strng{authornamehash}{87a91bc8ed3b035a4dbf1ec0b979e4e5}
+      \strng{authorfullhash}{2e68e45732f50abe0c84e383e9f51470}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{What components are needed for building learning algorithms that leverage the structure and properties of graphs?}
+      \field{issn}{2476-0757}
+      \field{journaltitle}{Distill}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{A {Gentle} {Introduction} to {Graph} {Neural} {Networks}}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{e33}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.23915/distill.00033
+      \endverb
+      \verb{urlraw}
+      \verb https://distill.pub/2021/gnn-intro
+      \endverb
+      \verb{url}
+      \verb https://distill.pub/2021/gnn-intro
+      \endverb
+    \endentry
+    \entry{xu_how_2019}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=29a3a6bf823a641230b0258e0a8a0214}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Keyulu},
+           giveni={K\bibinitperiod}}}%
+        {{hash=164c7f22cde069c57bf9b80f76441fa9}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Weihua},
+           giveni={W\bibinitperiod}}}%
+        {{hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod}}}%
+        {{hash=83a44c18acfaa38fa9f6ba76cfdc0132}{%
+           family={Jegelka},
+           familyi={J\bibinitperiod},
+           given={Stefanie},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{344f5b90b6e6e45d86fe86fd8fdca38c}
+      \strng{fullhash}{3fe1c2e12a449ac359ab2737dfe4ce17}
+      \strng{bibnamehash}{344f5b90b6e6e45d86fe86fd8fdca38c}
+      \strng{authorbibnamehash}{344f5b90b6e6e45d86fe86fd8fdca38c}
+      \strng{authornamehash}{344f5b90b6e6e45d86fe86fd8fdca38c}
+      \strng{authorfullhash}{3fe1c2e12a449ac359ab2737dfe4ce17}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Graph Neural Networks (GNNs) are an effective framework for representation learning of graphs. GNNs follow a neighborhood aggregation scheme, where the representation vector of a node is computed by recursively aggregating and transforming representation vectors of its neighboring nodes. Many GNN variants have been proposed and have achieved state-of-the-art results on both node and graph classification tasks. However, despite GNNs revolutionizing graph representation learning, there is limited understanding of their representational properties and limitations. Here, we present a theoretical framework for analyzing the expressive power of GNNs to capture different graph structures. Our results characterize the discriminative power of popular GNN variants, such as Graph Convolutional Networks and GraphSAGE, and show that they cannot learn to distinguish certain simple graph structures. We then develop a simple architecture that is provably the most expressive among the class of GNNs and is as powerful as the Weisfeiler-Lehman graph isomorphism test. We empirically validate our theoretical findings on a number of graph classification benchmarks, and demonstrate that our model achieves state-of-the-art performance.}
+      \field{month}{2}
+      \field{note}{arXiv:1810.00826 [cs, stat]}
+      \field{title}{How {Powerful} are {Graph} {Neural} {Networks}?}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1810.00826
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/jdomi/Zotero/storage/MX7SILVL/Xu et al. - 2019 - How Powerful are Graph Neural Networks.pdf:application/pdf;arXiv.org Snapshot:/Users/jdomi/Zotero/storage/9FD66I8S/1810.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1810.00826
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1810.00826
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
