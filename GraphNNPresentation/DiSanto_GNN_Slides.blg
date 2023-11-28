@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'DiSanto_GNN_Slides.blg'
-[35] biber-darwin:340> INFO - === Mon Nov 27, 2023, 16:35:58
-[43] Biber.pm:419> INFO - Reading 'DiSanto_GNN_Slides.bcf'
-[89] Biber.pm:979> INFO - Found 8 citekeys in bib section 0
-[96] Biber.pm:4419> INFO - Processing section 0
-[101] Biber.pm:4610> INFO - Looking for bibtex file 'GNN_Presentation.bib' for section 0
-[102] bibtex.pm:1713> INFO - LaTeX decoding ...
-[116] bibtex.pm:1519> INFO - Found BibTeX data source 'GNN_Presentation.bib'
-[166] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[166] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[166] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[166] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[172] bbl.pm:660> INFO - Writing 'DiSanto_GNN_Slides.bbl' with encoding 'UTF-8'
-[178] bbl.pm:763> INFO - Output to DiSanto_GNN_Slides.bbl
+[37] biber-darwin:340> INFO - === Tue Nov 28, 2023, 16:05:11
+[44] Biber.pm:419> INFO - Reading 'DiSanto_GNN_Slides.bcf'
+[92] Biber.pm:979> INFO - Found 11 citekeys in bib section 0
+[99] Biber.pm:4419> INFO - Processing section 0
+[104] Biber.pm:4610> INFO - Looking for bibtex file 'GNN_Presentation.bib' for section 0
+[106] bibtex.pm:1713> INFO - LaTeX decoding ...
+[125] bibtex.pm:1519> INFO - Found BibTeX data source 'GNN_Presentation.bib'
+[204] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[204] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[204] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[204] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[213] bbl.pm:660> INFO - Writing 'DiSanto_GNN_Slides.bbl' with encoding 'UTF-8'
+[225] bbl.pm:763> INFO - Output to DiSanto_GNN_Slides.bbl

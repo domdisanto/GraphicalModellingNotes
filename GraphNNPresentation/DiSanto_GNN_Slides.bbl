@@ -164,6 +164,183 @@
       \endverb
       \keyw{Computational science,Computer science,Machine learning,Statistics}
     \endentry
+    \entry{ferludin_tf-gnn_2023}{misc}{}
+      \name{author}{27}{}{%
+        {{hash=6a8ede9edca7199b11eb2be6470496c6}{%
+           family={Ferludin},
+           familyi={F\bibinitperiod},
+           given={Oleksandr},
+           giveni={O\bibinitperiod}}}%
+        {{hash=3d575967a362a573c1cebf8b80813839}{%
+           family={Eigenwillig},
+           familyi={E\bibinitperiod},
+           given={Arno},
+           giveni={A\bibinitperiod}}}%
+        {{hash=27fdf0c75975816ef453080418d6d003}{%
+           family={Blais},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6196f36ea2a0362af89723c6ab8410ea}{%
+           family={Zelle},
+           familyi={Z\bibinitperiod},
+           given={Dustin},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9593c188424e417a82ba098eb7bf2b98}{%
+           family={Pfeifer},
+           familyi={P\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cfe62c9365c523ba7d4f7fd1147cff41}{%
+           family={Sanchez-Gonzalez},
+           familyi={S\bibinithyphendelim G\bibinitperiod},
+           given={Alvaro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=777a88f13c4811865edf7848be0dee07}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wai\bibnamedelimb Lok\bibnamedelima Sibon},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=a90c626d0bc2b0bc1c7adb2066a4919c}{%
+           family={Abu-El-Haija},
+           familyi={A\bibinithyphendelim E\bibinithyphendelim H\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5a63429a6e1733e8f3f4dc71cbb6eec9}{%
+           family={Battaglia},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=292165e91a9fd8315550174c8ea7bb84}{%
+           family={Bulut},
+           familyi={B\bibinitperiod},
+           given={Neslihan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f1a8b87e0d2f4a688ff24ff81f90656c}{%
+           family={Halcrow},
+           familyi={H\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=18deeb663a9baa29a49f8c944b184f51}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Filipe\bibnamedelimb Miguel\bibnamedelima Gonçalves},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=8d02bf11fafaf93727a4b58fcfcaa8e8}{%
+           family={Gonnet},
+           familyi={G\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cb6bb2ec9b79c0990abc58585b3ef7ab}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Liangze},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5322fb9d898092c5dc6a3057b86b2469}{%
+           family={Kothari},
+           familyi={K\bibinitperiod},
+           given={Parth},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5681ea16e5d63a76143c93b584264e8c}{%
+           family={Lattanzi},
+           familyi={L\bibinitperiod},
+           given={Silvio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=40abbd6e5cb3f57a91ba99d3e71f4d5a}{%
+           family={Linhares},
+           familyi={L\bibinitperiod},
+           given={André},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0a6dea0096b19ec2e1a00e0adce494a6}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={Brandon},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2403978c38056af7a74b3ef42192cc46}{%
+           family={Mirrokni},
+           familyi={M\bibinitperiod},
+           given={Vahab},
+           giveni={V\bibinitperiod}}}%
+        {{hash=63e3da9b99c3b70eb20fa472a73d4904}{%
+           family={Palowitch},
+           familyi={P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=65c6e6f2e861b74ec65c27354079d881}{%
+           family={Paradkar},
+           familyi={P\bibinitperiod},
+           given={Mihir},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f12eef3f89a29bb7c5ee51d10bc71ba0}{%
+           family={She},
+           familyi={S\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+        {{hash=33a24fcbb1fd295f5542b38203954a4f}{%
+           family={Tsitsulin},
+           familyi={T\bibinitperiod},
+           given={Anton},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1f309062b709d3579e03c16ee7a0f124}{%
+           family={Villela},
+           familyi={V\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c9e3554ba89b08176017242506dd3424}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ccad041ca1fd5cb223b21f7307baccef}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3bbe3b6d26e1f03feea22728836605cd}{%
+           family={Perozzi},
+           familyi={P\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{93704c698499f9da3e731b37fb5e05a3}
+      \strng{fullhash}{ac097a82a9dfa44f2771a82eb16ee826}
+      \strng{bibnamehash}{93704c698499f9da3e731b37fb5e05a3}
+      \strng{authorbibnamehash}{93704c698499f9da3e731b37fb5e05a3}
+      \strng{authornamehash}{93704c698499f9da3e731b37fb5e05a3}
+      \strng{authorfullhash}{ac097a82a9dfa44f2771a82eb16ee826}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{TensorFlow-GNN (TF-GNN) is a scalable library for Graph Neural Networks in TensorFlow. It is designed from the bottom up to support the kinds of rich heterogeneous graph data that occurs in today's information ecosystems. In addition to enabling machine learning researchers and advanced developers, TF-GNN offers low-code solutions to empower the broader developer community in graph learning. Many production models at Google use TF-GNN, and it has been recently released as an open source project. In this paper we describe the TF-GNN data model, its Keras message passing API, and relevant capabilities such as graph sampling and distributed training.}
+      \field{month}{7}
+      \field{note}{arXiv:2207.03522 [physics, stat]}
+      \field{shorttitle}{{TF}-{GNN}}
+      \field{title}{{TF}-{GNN}: {Graph} {Neural} {Networks} in {TensorFlow}}
+      \field{urlday}{28}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2207.03522
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/jdomi/Zotero/storage/5GCCG9V5/Ferludin et al. - 2023 - TF-GNN Graph Neural Networks in TensorFlow.pdf:application/pdf;arXiv.org Snapshot:/Users/jdomi/Zotero/storage/8GXFP7QQ/2207.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2207.03522
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2207.03522
+      \endverb
+      \keyw{Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Computer Science - Social and Information Networks,Physics - Physics and Society,Statistics - Machine Learning}
+    \endentry
     \entry{gilmer_neural_2017}{misc}{}
       \name{author}{5}{}{%
         {{hash=4f550339f0337905aa634f39e1ba4833}{%
@@ -225,6 +402,60 @@
       \verb http://arxiv.org/abs/1704.01212
       \endverb
       \keyw{Computer Science - Machine Learning,I.2.6}
+    \endentry
+    \entry{gori_new_2005}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=9ab33529dbd8ef78724f1dc8a425e57e}{%
+           family={Gori},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2c9332473b589bf9413b8bf49f7a999c}{%
+           family={Monfardini},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=08ec959fd97d02517d7be592475bf19c}{%
+           family={Scarselli},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0364cfb2415e80858c70d5ead3ee348}
+      \strng{fullhash}{6a60b97655015a1d5bf7867cfa6a355d}
+      \strng{bibnamehash}{6a60b97655015a1d5bf7867cfa6a355d}
+      \strng{authorbibnamehash}{6a60b97655015a1d5bf7867cfa6a355d}
+      \strng{authornamehash}{c0364cfb2415e80858c70d5ead3ee348}
+      \strng{authorfullhash}{6a60b97655015a1d5bf7867cfa6a355d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In several applications the information is naturally represented by graphs. Traditional approaches cope with graphical data structures using a preprocessing phase which transforms the graphs into a set of flat vectors. However, in this way, important topological information may be lost and the achieved results may heavily depend on the preprocessing stage. This paper presents a new neural model, called graph neural network (GNN), capable of directly processing graphs. GNNs extends recursive neural networks and can be applied on most of the practically useful kinds of graphs, including directed, undirected, labelled and cyclic graphs. A learning algorithm for GNNs is proposed and some experiments are discussed which assess the properties of the model.}
+      \field{booktitle}{Proceedings. 2005 {IEEE} {International} {Joint} {Conference} on {Neural} {Networks}, 2005.}
+      \field{month}{7}
+      \field{note}{ISSN: 2161-4407}
+      \field{title}{A new model for learning in graph domains}
+      \field{urlday}{28}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{2}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \field{pages}{729\bibrangedash 734 vol. 2}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/IJCNN.2005.1555942
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Abstract Record:/Users/jdomi/Zotero/storage/GTX6ZF9N/1555942.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/1555942
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/1555942
+      \endverb
     \endentry
     \entry{kipf_semi-supervised_2017}{misc}{}
       \name{author}{2}{}{%
@@ -521,6 +752,71 @@
       \verb http://arxiv.org/abs/1810.00826
       \endverb
       \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
+    \entry{ying_hierarchical_2018}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=5f21207e4436b16d3a0577038244f9b9}{%
+           family={Ying},
+           familyi={Y\bibinitperiod},
+           given={Zhitao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=adf64964c8c9d5f144d937e11ccf61ba}{%
+           family={You},
+           familyi={Y\bibinitperiod},
+           given={Jiaxuan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=85f1d306bd524b1b382661ffd4da38e8}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=62341ebcc57e03720c55a39d93f0b17d}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=2b50dc0bf681355a1fe029fdb5c75479}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={Will},
+           giveni={W\bibinitperiod}}}%
+        {{hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{608f8f7abd0c8ec13137d8ec5a6de927}
+      \strng{fullhash}{bf470773783968a3ee54f9c66b8715da}
+      \strng{bibnamehash}{608f8f7abd0c8ec13137d8ec5a6de927}
+      \strng{authorbibnamehash}{608f8f7abd0c8ec13137d8ec5a6de927}
+      \strng{authornamehash}{608f8f7abd0c8ec13137d8ec5a6de927}
+      \strng{authorfullhash}{bf470773783968a3ee54f9c66b8715da}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently, graph neural networks (GNNs) have revolutionized the field of graph representation learning through effectively learned node embeddings, and achieved state-of-the-art results in tasks such as node classification and link prediction. However, current GNN methods are inherently flat and do not learn hierarchical representations of graphs---a limitation that is especially problematic for the task of graph classification, where the goal is to predict the label associated with an entire graph. Here we propose DiffPool, a differentiable graph pooling module that can generate hierarchical representations of graphs and can be combined with various graph neural network architectures in an end-to-end fashion. DiffPool learns a differentiable soft cluster assignment for nodes at each layer of a deep GNN, mapping nodes to a set of clusters, which then form the coarsened input for the next GNN layer. Our experimental results show that combining existing GNN methods with DiffPool yields an average improvement of 5-10\% accuracy on graph classification benchmarks, compared to all existing pooling approaches, achieving a new state-of-the-art on four out of five benchmark datasets.}
+      \field{booktitle}{Advances in {Neural} {Information} {Processing} {Systems}}
+      \field{title}{Hierarchical {Graph} {Representation} {Learning} with {Differentiable} {Pooling}}
+      \field{urlday}{28}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{31}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Full Text PDF:/Users/jdomi/Zotero/storage/F9ECRZCH/Ying et al. - 2018 - Hierarchical Graph Representation Learning with Di.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.nips.cc/paper_files/paper/2018/hash/e77dbaf6759253c7c6d0efc5690369c7-Abstract.html
+      \endverb
+      \verb{url}
+      \verb https://papers.nips.cc/paper_files/paper/2018/hash/e77dbaf6759253c7c6d0efc5690369c7-Abstract.html
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
