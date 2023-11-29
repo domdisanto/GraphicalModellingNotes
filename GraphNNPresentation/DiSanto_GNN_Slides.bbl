@@ -457,6 +457,58 @@
       \verb https://ieeexplore.ieee.org/document/1555942
       \endverb
     \endentry
+    \entry{javaloy_mitigating_2022}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=4537f161c24599389d9f72e154a3517a}{%
+           family={Javaloy},
+           familyi={J\bibinitperiod},
+           given={Adrián},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cba52ba155b0a1fb8d94716f29132586}{%
+           family={Meghdadi},
+           familyi={M\bibinitperiod},
+           given={Maryam},
+           giveni={M\bibinitperiod}}}%
+        {{hash=86077c699c3bcb4f9fecce395f1e6f41}{%
+           family={Valera},
+           familyi={V\bibinitperiod},
+           given={Isabel},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{e748a3cc30bff1cd08084768eadcd306}
+      \strng{fullhash}{4553e82d1f76fa79620b1faf19709d8a}
+      \strng{bibnamehash}{4553e82d1f76fa79620b1faf19709d8a}
+      \strng{authorbibnamehash}{4553e82d1f76fa79620b1faf19709d8a}
+      \strng{authornamehash}{e748a3cc30bff1cd08084768eadcd306}
+      \strng{authorfullhash}{4553e82d1f76fa79620b1faf19709d8a}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A number of variational autoencoders (VAEs) have recently emerged with the aim of modeling multimodal data, e.g., to jointly model images and their corresponding captions. Still, multimodal VAEs tend to focus solely on a subset of the modalities, e.g., by fitting the image while neglecting the caption. We refer to this limitation as modality collapse. In this work, we argue that this effect is a consequence of conflicting gradients during multimodal VAE training. We show how to detect the sub-graphs in the computational graphs where gradients conflict (impartiality blocks), as well as how to leverage existing gradient-conflict solutions from multitask learning to mitigate modality collapse. That is, to ensure impartial optimization across modalities. We apply our training framework to several multimodal VAE models, losses and datasets from the literature, and empirically show that our framework significantly improves the reconstruction performance, conditional generation, and coherence of the latent space across modalities.}
+      \field{annotation}{Comment: Accepted as a Spotlight paper at ICML 2022. 27 pages, 10 figures}
+      \field{month}{6}
+      \field{note}{arXiv:2206.04496 [cs]}
+      \field{title}{Mitigating {Modality} {Collapse} in {Multimodal} {VAEs} via {Impartial} {Optimization}}
+      \field{urlday}{29}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2206.04496
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2206.04496
+      \endverb
+      \keyw{Computer Science - Machine Learning}
+    \endentry
     \entry{kipf_semi-supervised_2017}{misc}{}
       \name{author}{2}{}{%
         {{hash=26d8bcbda6afaf96334bf47c8fb88a75}{%
@@ -817,6 +869,71 @@
       \verb{url}
       \verb https://papers.nips.cc/paper_files/paper/2018/hash/e77dbaf6759253c7c6d0efc5690369c7-Abstract.html
       \endverb
+    \endentry
+    \entry{zhang_systematic_2023}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=9ea8bafe63d556c6624b241ead9d14eb}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zaixi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=76b5cf27acf79c365307525d9fc24da6}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Jiaxian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0b07af422f6616fac129405a8b4b1de4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=439e8d5e114670edea6f746db3c18b5b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Enhong},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5f1df07c5fbd5a91d0e32b8697082857}{%
+           family={Zitnik},
+           familyi={Z\bibinitperiod},
+           given={Marinka},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{17176afd1815f979397e0b67d77c8323}
+      \strng{fullhash}{dc794b844db2883bc15128c86d335398}
+      \strng{bibnamehash}{17176afd1815f979397e0b67d77c8323}
+      \strng{authorbibnamehash}{17176afd1815f979397e0b67d77c8323}
+      \strng{authornamehash}{17176afd1815f979397e0b67d77c8323}
+      \strng{authorfullhash}{dc794b844db2883bc15128c86d335398}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Structure-based drug design (SBDD) utilizes the three-dimensional geometry of proteins to identify potential drug candidates. Traditional methods, grounded in physicochemical modeling and informed by domain expertise, are resource-intensive. Recent developments in geometric deep learning, focusing on the integration and processing of 3D geometric data, coupled with the availability of accurate protein 3D structure predictions from tools like AlphaFold, have greatly advanced the field of structure-based drug design. This paper systematically reviews the current state of geometric deep learning in SBDD. We first outline foundational tasks in SBDD, detail prevalent 3D protein representations, and highlight representative predictive and generative models. We then offer in-depth reviews of each key task, including binding site prediction, binding pose generation, {\textbackslash}emph\{de novo\} molecule generation, linker design, and binding affinity prediction. We provide formal problem definitions and outline each task's representative methods, datasets, evaluation metrics, and performance benchmarks. Finally, we summarize the current challenges and future opportunities: current challenges in SBDD include oversimplified problem formulations, inadequate out-of-distribution generalization, a lack of reliable evaluation metrics and large-scale benchmarks, and the need for experimental verification and enhanced model understanding; opportunities include leveraging multimodal datasets, integrating domain knowledge, building comprehensive benchmarks, designing criteria based on clinical endpoints, and developing foundation models that broaden the range of design tasks. We also curate {\textbackslash}url\{https://github.com/zaixizhang/Awesome-SBDD\}, reflecting ongoing contributions and new datasets in SBDD.}
+      \field{annotation}{Comment: 20 pages, under review}
+      \field{month}{10}
+      \field{note}{arXiv:2306.11768 [cs, q-bio]}
+      \field{title}{A {Systematic} {Survey} in {Geometric} {Deep} {Learning} for {Structure}-based {Drug} {Design}}
+      \field{urlday}{26}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2306.11768
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/jdomi/Zotero/storage/L6C96VV7/Zhang et al. - 2023 - A Systematic Survey in Geometric Deep Learning for.pdf:application/pdf;arXiv.org Snapshot:/Users/jdomi/Zotero/storage/BN8YHF65/2306.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2306.11768
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2306.11768
+      \endverb
+      \keyw{Computer Science - Computational Engineering,Finance,and Science,Computer Science - Machine Learning,Quantitative Biology - Quantitative Methods}
     \endentry
   \enddatalist
 \endrefsection

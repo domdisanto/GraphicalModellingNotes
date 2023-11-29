@@ -20,17 +20,23 @@
   \end{frame}
 }
 
+
+
 \usepackage{bbm}
 \usepackage{algorithm}
 \usepackage{algpseudocodex}
 \usepackage{caption}
 \usepackage{tikz}
 \usetikzlibrary{positioning, arrows.meta}
+\usetikzlibrary{decorations.pathreplacing,calligraphy}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=red}
 
 \usetheme{CambridgeUS}
 \setbeamercolor{title}{bg=red!65!black,fg=white}
+% Include/Remove page numbering
+%\setbeamertemplate{page number in head/foot}{}
+
 
 \setbeamertemplate{sidebar right}
 {
@@ -86,7 +92,6 @@
         \item Touch on geometric DL in general? Or just focus on GNN's and not worry about placing within the DL landscape? 
         \item Touch on AlphaFold? GNN's used I believe but unconfirmed, and architecture is complicated/seems infeasible (at least for my time right now)
         \item Still unsure how to tie in PrimeKG paper
-        \item Node-level seems intuitive, my pseudocode already outlines iterative updating of node features and we mention reg/class/multiclass
         \item Methods for edge selection/identification? Some instances we only want to preserve structure, but sometimes we want to predict/fit edges, how does that fit into message-passing/GCN methods or other extensions? 
         \item Example of graph-level classification?  
         \item \textcolor{red}{Diffpool article as extension of general GNN, hierarchical pooling over global readout functions?} \url{https://papers.nips.cc/paper_files/paper/2018/file/e77dbaf6759253c7c6d0efc5690369c7-Paper.pdf}
@@ -122,7 +127,7 @@
 
 
 \begin{frame}{KG Application}
-    \textcolor{red}{Image here}
+    \textcolor{red}{Image here. Or maybe drop, 4 might be overkill}
 \end{frame}
 
 \begin{frame}{Multi-modal Biomedical Data}
@@ -134,7 +139,7 @@
 \end{frame}
 
 
-\begin{frame}{Molecular/Biochemical}
+\begin{frame}{Molecular/Biochemical }
     \begin{figure}
         \centering
         \includegraphics[scale=0.3]{Caffeine_Graph.png}
@@ -142,8 +147,12 @@
     Image courtesy of \url{https://distill.pub/2021/gnn-intro/} \cite{sanchez-lengeling_gentle_2021}
 \end{frame}
 
-\begin{frame}{Protein Folding \textcolor{red}{Maybe drop? 4 examples probably unnecessary}}
-    \textcolor{red}{AlphaFold image/example here if I can find a nice one }
+\begin{frame}{Protein Representation }
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.45]{Zhang_Protein3D.png}
+    \end{figure}
+    Fig 2. of Zhang (2023) {\it Geometric Deep Learning for Structure-Based Drug Design: A Survey} \cite{zhang_systematic_2023}
 \end{frame}
 
 \begin{frame}{Motivation}
@@ -226,8 +235,6 @@
     \color{red}
     \item Define graph convolution here? 
     \item Note on necessity of permutation invariant functions (permutations of adjacency matrix represent same graph but consistent behavior of NN/GNN is not assured by permutd A matrices)
-    \item Adjacency matrix can be prohibitively large but likely sparse, is also permutable but DNN's are not permutation invariant, undesirable 
-    \item Can store an adjacency list
     \end{itemize}
 \end{frame}
 
@@ -338,8 +345,10 @@
 \begin{frame}{
     General Framework\footnote{See \cite{ektefaie_multimodal_2023,gilmer_neural_2017, xu_how_2019}}
     }
-    \textcolor{red}{Title NodeUpdate and create second slide with more clear backpropagation training (i.e. iter over NodeUpdate)} \newline
-    General structure: 
+
+    We begin with the general Message Passing Neural Networks (MPNN) structure of a GNN: 
+
+    \vspace{4mm}
     
     \begin{algorithmic}[1]
     \State Initialize $\nrepresent^{(0)} \gets x_\node, \forall \node \in \NodeSet$ 
@@ -349,7 +358,7 @@
             \State $\nrepresent^{(\iter+1)} \gets \text{\textcolor{blue}{Update}}(\nrepresent^{(\iter)}, \nrepresent_{agg}^{(\iter)})$
             \EndFor
         \EndFor
-        \State $h_\Graph \gets \text{\textcolor{blue}{Transform}}(\{h^\Iter_\node | \node \in \Graph\})$ 
+        \State $\hat{y} \gets \text{\textcolor{blue}{Transform}}(\{h^\Iter_\node | \node \in \Graph\})$ 
         \qquad{\hspace{4mm} or \textcolor{blue}{Readout$(\cdot)$}}
     \end{algorithmic}   
 
@@ -384,18 +393,13 @@ Trained end-to-end via backpropagation
 
 \begin{frame}{Aggregate \& Update}
     \begin{itemize}
-        \item {\bf Aggregate$(\cdot)$} produces a represntation of information from a node's neighborhood 
+        \item {\bf Aggregate$(\cdot)$} produces a representation of information from a node's neighborhood 
         \begin{itemize}
-            \item Also {\bf Message$(\cdot)$} in the context of Message Passing Neural Networks (MPNN's) \cite{gilmer_neural_2017}
+            \item Also {\bf Message$(\cdot)$} in the context of MPNN's \cite{gilmer_neural_2017}
         \end{itemize}
         \item Differentiable, {\it permutation invariant} functions 
         \item Can include weights (edge-wise or learned)
         \item Over later iterations, this includes information from further and further distant nodes to any one target node 
-    \end{itemize}
-
-    \vspace{4mm}
-
-    \begin{itemize}
         \item We then {\bf Update$(\cdot)$} our current state using this aggregated neighborhood-level information
     \end{itemize}
 \end{frame}
@@ -408,63 +412,19 @@ Trained end-to-end via backpropagation
             \item Regression
             \item Binary/Multi-class classification 
             \item MLP/DNN's 
-        \end{itemize}
         \item {\bf Readout$(\cdot)$} is common term for translating node-level output to graph-level
-        \begin{itemize}
             \item {\it Global Pooling} - Methods applied over entire graph (e.g. averaging, fitting "regular" deep neural network, etc.)
         \end{itemize}
     \end{itemize}
 \end{frame}
 
 
-\begin{frame}{Message Passing}
+
+\begin{frame}{Graph Convolutional Network}
     \begin{itemize}
-        \item Our {\bf Aggregate$(\cdot)$} step can also be thought 
+    \item Proposed in 2017 by Thomas Kipf, Max Welling \cite{kipf_semi-supervised_2017}, can consider one example of "Laplacian-based methods" \cite{gilmer_neural_2017} 
     \end{itemize}
-\end{frame}
-
-\begin{frame}{Graph Convolutional Network}
-\begin{align*}
-    \NodeRepMat^{(\iter+1)}
-    &=
-    \sigma
-    \left( 
-        \AdjMat \NodeRepMat^{(\iter)} \Theta
-    \right) 
-\\
-    \NodeRepMat^{(\iter+1)}
-    &=
-    \sigma
-    \left( 
-        \DegMat^{-1}\AdjMat \NodeRepMat^{(\iter)} \Theta
-    \right) 
-    \qquad{\text{Normalizing by degree for stability}}
-\\
-    \NodeRepMat^{(\iter+1)}
-    &=
-    \sigma
-    \left( 
-        \DegMat^{-1/2}\AdjMat\DegMat^{-1/2} \NodeRepMat^{(\iter)} \Theta
-    \right) 
-    \qquad{\text{Symmetric normalization}} % "no longer simple averaging"
-\\
-    \NodeRepMat^{(\iter+1)}
-    &=
-    \sigma
-    \left( 
-        \widetilde{\DegMat}^{-1/2}
-        \widetilde{\AdjMat}
-        \widetilde{\DegMat}^{-1/2} \NodeRepMat^{(\iter)} \Theta
-    \right) 
-    \qquad{\text{Adding self-loop}}
-\end{align*}
-
-where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \sum_j \widetilde{\AdjMat}_{ij}$, $\sigma$ is any activation function, $\NodeRepMat$ is simply the matrix of $\mathbf{\nrepresent}_\node$ for all nodes 
-\end{frame}
-
-
-\begin{frame}{Graph Convolutional Network}
-    Proposed in 2017 by Thomas Kipf, Max Welling \cite{kipf_semi-supervised_2017}
+    
         \begin{align*}
         \iffalse
             \mathbf{\nrepresent}_\node^{(\iter+1)} 
@@ -498,8 +458,7 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
     \end{align*}
     
     \begin{itemize}
-        %\item $\sigma(\cdot) = \text{ReLu}(\cdot)$ activation function
-        \item Can replace ReLu with any activation function (e.g. sigmoid, GELU, etc.)
+        \item Motivated by considering the graph convolution\footnote{$U$ the matrix of eigenvectors of $\LapMat$} $x \star g = UgU^Tx$ as the message passing function 
         \item Learned weight/parameter matrix $\boldsymbol\Theta$
         %\item $\mathbf{D}_{ii} = \sum_{j}\mathbf{(\AdjMat+I)_{ij}}$
         %\item Eigenvalue normalizing $\mathbf{D^{-1/2}(\AdjMat + I)D^{-1/2}}$ for computational stability
@@ -507,9 +466,14 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
     \textcolor{red}{Review paper, comment on applications briefly (KG setting), also motivate through graph convolutions?}
     \end{frame}
 
+
+
 \begin{frame}{Graph Convolutional Network}
-    Proposed in 2017 by Thomas Kipf, Max Welling \cite{kipf_semi-supervised_2017}
-        \begin{align*}
+    \begin{itemize}
+    \item Proposed in 2017 by Thomas Kipf, Max Welling \cite{kipf_semi-supervised_2017}, can consider one example of "Laplacian-based methods" \cite{gilmer_neural_2017} 
+    \end{itemize}
+    
+    \begin{align*}
         \iffalse
             \mathbf{\nrepresent}_\node^{(\iter+1)} 
             &=
@@ -544,8 +508,7 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
     \end{align*}
     
     \begin{itemize}
-        %\item $\sigma(\cdot) = \text{ReLu}(\cdot)$ activation function
-        \item Can replace ReLu with any activation function (e.g. sigmoid, GELU, etc.)
+        \item Motivated by considering the graph convolution\footnote{$U$ the matrix of eigenvectors of $\LapMat$} $x \star g = UgU^Tx$ as the message passing function 
         \item Learned weight/parameter matrix $\boldsymbol\Theta$
         %\item $\mathbf{D}_{ii} = \sum_{j}\mathbf{(\AdjMat+I)_{ij}}$
         %\item Eigenvalue normalizing $\mathbf{D^{-1/2}(\AdjMat + I)D^{-1/2}}$ for computational stability
@@ -555,24 +518,212 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
 
 
 
+\begin{frame}{Graph Convolutional Network}
+Intuitive "derivation": 
+\begin{align*}
+    \NodeRepMat^{(\iter+1)}
+    &=
+    \sigma
+    \left( 
+        \AdjMat \NodeRepMat^{(\iter)} \Theta
+    \right) 
+\\
+    \NodeRepMat^{(\iter+1)}
+    &=
+    \sigma
+    \left( 
+        \DegMat^{-1}\AdjMat \NodeRepMat^{(\iter)} \Theta
+    \right) 
+    \qquad{\text{Normalizing by degree}}
+\\
+    \NodeRepMat^{(\iter+1)}
+    &=
+    \sigma
+    \left( 
+        \DegMat^{-1/2}\AdjMat\DegMat^{-1/2} \NodeRepMat^{(\iter)} \Theta
+    \right) 
+    \qquad{\text{Symmetric normalization}} % "no longer simple averaging"
+\\
+    \NodeRepMat^{(\iter+1)}
+    &=
+    \sigma
+    \left( 
+        \widetilde{\DegMat}^{-1/2}
+        \widetilde{\AdjMat}
+        \widetilde{\DegMat}^{-1/2} \NodeRepMat^{(\iter)} \Theta
+    \right) 
+    \qquad{\text{Adding self-loop}}
+\end{align*}
+
+where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \sum_j \widetilde{\AdjMat}_{ij}$, $\sigma$ is any activation function, $\NodeRepMat$ is simply the matrix of $\mathbf{\nrepresent}_\node$ for all nodes 
+% intuition here is normalizing by a nodes degree (left mult) and "averaging" neighborhood degree (right mult)
+% nice explainer \url{https://math.stackexchange.com/questions/3035968/interpretation-of-symmetric-normalised-graph-adjacency-matrix}
+\end{frame}
+
+
+
+\begin{frame}{General Framework (Re-emphasized)}
+
+    \begin{algorithmic}[1]
+    \State Initialize $\nrepresent^{(0)} \gets x_\node, \forall \node \in \NodeSet$ 
+        \For{$\iter = 0, ..., \Iter$}:
+            \For{$\node \in \Graph$}:
+            \State $\nrepresent_{agg}^{\iter+1} \gets \text{\textcolor{blue}{Aggregate}}(\{h_u^{(\iter)} \mid u \in \nhood_\node\})$ \qquad{\text{or \textcolor{blue}{Message$(\cdot)$}}}
+            \State $\nrepresent^{(\iter+1)} \gets \text{\textcolor{blue}{Update}}(\nrepresent^{(\iter)}, \nrepresent_{agg}^{(\iter)})$
+            \EndFor
+        \EndFor
+        \State $h_\Graph \gets \text{\textcolor{blue}{Transform}}(\{h^\Iter_\node | \node \in \Graph\})$ 
+        \qquad{\hspace{4mm} or \textcolor{blue}{Readout$(\cdot)$}}
+    \end{algorithmic}   
+
+\end{frame}
+
+
 \section{Applications and Extensions \textcolor{red}{20-25ish minutes}}
 \OutlineRedux
 
 
-\subsection{Knowledge-Graph Data}
 
-\subsection{Multimodal Biomedical Data}
+\subsection{Multimodal Graph Learning (MGL)}
 
-\begin{frame}{Motivation}
+\begin{frame}{}
+    \bf{\Large Multimodal Graph Learning (MGL)}    
+\end{frame}
+
+\begin{frame}{Multimodal Graph Learning (MGL)}
+\begin{itemize}\setlength\itemsep{6mm}
+    \item Ektefaie (2023) {\it Multimodal learning with graphs} \cite{ektefaie_multimodal_2023}
+    \item \textcolor{red}{Cite 14-16 in multimodal paper for multi improvement over uni VAE} 
+    \item Topology is complicated by multimodality of input data 
+    \begin{itemize}
+        \item Modal collapse \cite{javaloy_mitigating_2022}
+        \item Differential data availability 
+        \item \textcolor{red}{Can mention Kipf algorithm does well in semi-supervised setting (even with limited labels available within a given "cluster"), so if we have some gold standard data (biomarker/strong proxy, etc.) that is difficult to obtain, can be VERY useful to include for MGL and lead to good performance, no bullet point here just mention}
+    \end{itemize}
+\end{itemize}    
+
+\end{frame}
+
+\begin{frame}{Mutimodal}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            Clinical Data
+            \begin{itemize}        
+                \item Clinical text  
+                \item -omics data 
+                \item Laboratory measurements 
+                \item Clinical imaging
+            \end{itemize}
+            \end{column}
+        \begin{column}{0.5\textwidth}
+            Protein Structures
+            \begin{itemize}        
+                \item 1$^\circ$ AA Sequence
+                \item 2$^\circ$ Helix interactions
+                \item 3$^\circ$ Folding, bridges 
+            \end{itemize}
+        \end{column}
+%        \begin{column}{0.3\textwidth}
+%            Text Data
+%            \begin{itemize}        
+%                \item 
+%            \end{itemize}
+%        \end{column}
+    \end{columns}
 \end{frame}
 
 
+\begin{frame}{Framework}
+    Authors propose a four component "blueprint"
+    \begin{enumerate}
+    \item Identifying entitites (i.e. modalities)
+    \item Uncovering topology 
+    \begin{itemize}
+        \item {\it A priori}
+        \item Adaptively learned
+    \end{itemize}
+    \item Propagating information 
+    \item Mixing representation 
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Framework}
+    Authors propose a four component "blueprint"
+    \begin{enumerate}
+    \item Identifying entitites (i.e. modalities)
+    \item Uncovering topology 
+    \item {\bf Propagating information }
+    \item {\bf Mixing representation }
+    \end{enumerate}
+    \begin{tikzpicture}[overlay,remember picture]
+        \draw[decorate,decoration={calligraphic brace, amplitude=4pt},line width=1.2pt]
+        (6.7,2.6) -- (6.7,1.7) node[midway, right=6pt, xshift=-2pt, text=black] {\footnotesize Structure Learning};
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[overlay,remember picture]
+        \draw[decorate,decoration={calligraphic brace, amplitude=4pt},line width=1.2pt]
+        (5.2,1.8) -- (5.2,0.95) node[midway, right=6pt, xshift=-2pt, text=black] {\footnotesize Learning On-Structure Phase};
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Structure Learning}
+    \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+        \vspace{12mm}
+        \begin{itemize}
+            \item Consider patients as {\it nodes} 
+            \item Consider modalities as {\it entities} (colored nodes)
+            \begin{itemize}
+                \item Clinical text/narrative data 
+                \item Laboratory/Physiological measurements 
+                \item Image/Video data 
+                \item Patient reported measurements/symptoms
+                \item etc. 
+            \end{itemize}
+        \end{itemize}      
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[scale=0.4]{Ektefaie_StructureLearning.png}
+            \caption{Subset of Fig 2c \cite{ektefaie_multimodal_2023}}
+        \end{figure}    
+    \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Learning on Structure}
+    
+\end{frame}
+
+
+\subsection{Knowledge-Graph Data}
+
+
+\subsection{Structure-Based Drug Design (SBDD)}
+
+\begin{frame}{}
+    \bf{\Large Proteins and Structure-Based Drug Design (SBDD)}    
+\end{frame}
+
+\begin{frame}{AlphaFold}
+    \textcolor{red}{Image and very brief acknowledgement/link for AlphaFold, ESMFold here (~30s)}
+\end{frame}
+
+
+\begin{frame}{Structure-Based Drug Design (SBDD)}
+    \begin{itemize}
+        \item Zhang (2023) {\it Geometric Deep Learning for Structure-Based Drug Design: A Survey} \cite{zhang_systematic_2023}
+        \item SBDD aims to improve drug-discovery by understanding 3D protein structures and predicting drug efficacy/behavior % docking, conformations, etc. summarize as useful to understand behavior of drug based on target protein structure 
+    \end{itemize}
+\end{frame}
+
+
+\section*{Conclusion}
 
 \begin{frame}{}
     \bf{\LARGE Conclusion}    
 \end{frame}
-
-\section*{Conclusion}
 
 
 
