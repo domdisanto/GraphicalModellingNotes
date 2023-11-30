@@ -1,0 +1,415 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{banerjee_model_2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41d526624fa356d60d2e59c901d01367}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Onureena},
+           giveni={O\bibinitperiod}}}%
+        {{hash=70c521c2d70c5b1011b94f0a81337a8b}{%
+           family={Ghaoui},
+           familyi={G\bibinitperiod},
+           given={Laurent\bibnamedelima El},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{4aa4928eb89b280aab1e04705b1804e0}
+      \strng{fullhash}{ec8da1037c39e6d0686eabbc10a2cc17}
+      \strng{bibnamehash}{ec8da1037c39e6d0686eabbc10a2cc17}
+      \strng{authorbibnamehash}{ec8da1037c39e6d0686eabbc10a2cc17}
+      \strng{authornamehash}{4aa4928eb89b280aab1e04705b1804e0}
+      \strng{authorfullhash}{ec8da1037c39e6d0686eabbc10a2cc17}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider the problem of estimating the parameters of a Gaussian or binary distribution in such a way that the resulting undirected graphical model is sparse. Our approach is to solve a maximum likelihood problem with an added 1-norm penalty term. The problem as formulated is convex but the memory requirements and complexity of existing interior point methods are prohibitive for problems with more than tens of nodes. We present two new algorithms for solving problems with at least a thousand nodes in the Gaussian case. Our ﬁrst algorithm uses block coordinate descent, and can be interpreted as recursive 1-norm penalized regression. Our second algorithm, based on Nesterov’s ﬁrst order method, yields a complexity estimate with a better dependence on problem size than existing interior point methods. Using a log determinant relaxation of the log partition function (Wainwright and Jordan, 2006), we show that these same algorithms can be used to solve an approximate sparse maximum likelihood problem for the binary case. We test our algorithms on synthetic data, as well as on gene expression and senate voting records data.}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{Model {Selection} {Through} {Sparse} {Maximum} {Likelihood} {Estimation} for {Multivariate} {Gaussian} or {Binary} {Data}}
+      \field{volume}{9}
+      \field{year}{2008}
+      \field{pages}{485\bibrangedash 516}
+      \range{pages}{32}
+      \verb{file}
+      \verb Banerjee and Ghaoui - Model Selection Through Sparse Maximum Likelihood .pdf:/Users/jdomi/Zotero/storage/I2X7G553/Banerjee and Ghaoui - Model Selection Through Sparse Maximum Likelihood .pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{chen_selection_2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=dcda1aed061135e8e22df92323170970}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Shizhe},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6fa979c8f308c55db8450be4216e4531}{%
+           family={Witten},
+           familyi={W\bibinitperiod},
+           given={Daniela\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b133854816964a92b357f0cefd6c0421}{%
+           family={Shojaie},
+           familyi={S\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e19f16ab8710c45d0916f2c19ed506cb}
+      \strng{fullhash}{602ae1e70ebd5d39072f63b336910491}
+      \strng{bibnamehash}{602ae1e70ebd5d39072f63b336910491}
+      \strng{authorbibnamehash}{602ae1e70ebd5d39072f63b336910491}
+      \strng{authornamehash}{e19f16ab8710c45d0916f2c19ed506cb}
+      \strng{authorfullhash}{602ae1e70ebd5d39072f63b336910491}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider the problem of estimating the parameters in a pairwise graphical model in which the distribution of each node, conditioned on the others, may have a different exponential family form. We identify restrictions on the parameter space required for the existence of a well-defined joint density, and establish the consistency of the neighbourhood selection approach for graph reconstruction in high dimensions when the true underlying graph is sparse. Motivated by our theoretical results, we investigate the selection of edges between nodes whose conditional distributions take different parametric forms, and show that efficiency can be gained if edge estimates obtained from the regressions of particular nodes are used to reconstruct the graph. These results are illustrated with examples of Gaussian, Bernoulli, Poisson and exponential distributions. Our theoretical findings are corroborated by evidence from simulation studies.}
+      \field{issn}{0006-3444}
+      \field{journaltitle}{Biometrika}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Selection and estimation for mixed graphical models}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{102}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{47\bibrangedash 64}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1093/biomet/asu051
+      \endverb
+      \verb{file}
+      \verb Accepted Version:/Users/jdomi/Zotero/storage/FI94WPGL/Chen et al. - 2015 - Selection and estimation for mixed graphical model.pdf:application/pdf;Snapshot:/Users/jdomi/Zotero/storage/AKI6PR9L/228946.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/biomet/asu051
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/biomet/asu051
+      \endverb
+    \endentry
+    \entry{dempster_covariance_1972}{article}{}
+      \name{author}{1}{}{%
+        {{hash=09d592a5388131e31704c9c4464439c9}{%
+           family={Dempster},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{09d592a5388131e31704c9c4464439c9}
+      \strng{fullhash}{09d592a5388131e31704c9c4464439c9}
+      \strng{bibnamehash}{09d592a5388131e31704c9c4464439c9}
+      \strng{authorbibnamehash}{09d592a5388131e31704c9c4464439c9}
+      \strng{authornamehash}{09d592a5388131e31704c9c4464439c9}
+      \strng{authorfullhash}{09d592a5388131e31704c9c4464439c9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The covariance structure of a multivariate normal population can be simplified by setting elements of the inverse of the covariance matrix to zero. Reasons for adopting such a model and a rule for estimating its parameters are given in section 2. It is also proposed to select the zeros in the inverse from sample data. A numerical illustration of the proposed technique is given in section 3. Appendix A sketches the general theory of exponential families which underlies the special results of section 2, and Appendix B describes two approaches to computation of the proposed estimator.}
+      \field{issn}{0006-341X}
+      \field{journaltitle}{Biometrics}
+      \field{note}{Publisher: [Wiley, International Biometric Society]}
+      \field{number}{1}
+      \field{title}{Covariance {Selection}}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{28}
+      \field{year}{1972}
+      \field{urldateera}{ce}
+      \field{pages}{157\bibrangedash 175}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.2307/2528966
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/2528966
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/2528966
+      \endverb
+    \endentry
+    \entry{dong_nonparametric_2022}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e16b03661fdfbcf39546885a68509604}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8bc2f1f7178e0f3bb07ef0761cf18a2d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yuedong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6b43a2e98f07ead3461a498e8de1a83b}
+      \strng{fullhash}{b9b37966d6ca88790881a80d8361a022}
+      \strng{bibnamehash}{b9b37966d6ca88790881a80d8361a022}
+      \strng{authorbibnamehash}{b9b37966d6ca88790881a80d8361a022}
+      \strng{authornamehash}{6b43a2e98f07ead3461a498e8de1a83b}
+      \strng{authorfullhash}{b9b37966d6ca88790881a80d8361a022}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The neighborhood selection method directly explores the conditional dependence structure and has been widely used to construct undirected graphical models. However, except for some special cases with discrete data, there is little research on nonparametric methods for neighborhood selection with mixed data. This paper develops a fully nonparametric neighborhood selection method under a consolidated smoothing spline ANOVA (SS ANOVA) decomposition framework. The proposed model is ﬂexible and contains many existing models as special cases. The proposed method provides a uniﬁed framework for mixed data without any restrictions on the type of each random variable. We detect edges by applying an L1 regularization to interactions in the SS ANOVA decomposition. We propose an iterative procedure to compute the estimates and establish the convergence rates for conditional density and interactions. Simulations indicate that the proposed methods perform well under Gaussian and non-Gaussian settings. We illustrate the proposed methods using two real data examples.}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{Nonparametric {Neighborhood} {Selection} in {Graphical} {Models}}
+      \field{volume}{23}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 26}
+      \range{pages}{26}
+      \verb{file}
+      \verb Dong and Wang - Nonparametric Neighborhood Selection in Graphical .pdf:/Users/jdomi/Zotero/storage/W3W98JKU/Dong and Wang - Nonparametric Neighborhood Selection in Graphical .pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{imperatorskaia_akademia_nauk_russia_commentarii_1726}{book}{}
+      \name{author}{1}{}{%
+        {{hash=92a00b569579a6ef2308be0014a2dc55}{%
+           family={{Imperatorskaia akademia nauk (Russia)}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {lat}%
+      }
+      \list{publisher}{1}{%
+        {Petropolis, Typis Academiae}%
+      }
+      \strng{namehash}{92a00b569579a6ef2308be0014a2dc55}
+      \strng{fullhash}{92a00b569579a6ef2308be0014a2dc55}
+      \strng{bibnamehash}{92a00b569579a6ef2308be0014a2dc55}
+      \strng{authorbibnamehash}{92a00b569579a6ef2308be0014a2dc55}
+      \strng{authornamehash}{92a00b569579a6ef2308be0014a2dc55}
+      \strng{authorfullhash}{92a00b569579a6ef2308be0014a2dc55}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Engraved title vignette}
+      \field{title}{Commentarii {Academiae} scientiarum imperialis {Petropolitanae}}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{1726}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archive.org/details/commentariiacade08impe
+      \endverb
+      \verb{url}
+      \verb http://archive.org/details/commentariiacade08impe
+      \endverb
+    \endentry
+    \entry{meinshausen_high-dimensional_2006}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ab9469dddb5d18ec039f709e2d7c4e00}{%
+           family={Meinshausen},
+           familyi={M\bibinitperiod},
+           given={Nicolai},
+           giveni={N\bibinitperiod}}}%
+        {{hash=73b8ae79083852e052f5bd5f82021408}{%
+           family={Bühlmann},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f59d0c03b47098a5ab67ea6fb9a7c3ad}
+      \strng{fullhash}{6c8021f411a6fc698996644706ff1b7b}
+      \strng{bibnamehash}{6c8021f411a6fc698996644706ff1b7b}
+      \strng{authorbibnamehash}{6c8021f411a6fc698996644706ff1b7b}
+      \strng{authornamehash}{f59d0c03b47098a5ab67ea6fb9a7c3ad}
+      \strng{authorfullhash}{6c8021f411a6fc698996644706ff1b7b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The pattern of zero entries in the inverse covariance matrix of a multivariate normal distribution corresponds to conditional independence restrictions between variables. Covariance selection aims at estimating those structural zeros from data. We show that neighborhood selection with the Lasso is a computationally attractive alternative to standard covariance selection for sparse high-dimensional graphs. Neighborhood selection estimates the conditional independence restrictions separately for each node in the graph and is hence equivalent to variable selection for Gaussian linear models. We show that the proposed neighborhood selection scheme is consistent for sparse high-dimensional graphs. Consistency hinges on the choice of the penalty parameter. The oracle value for optimal prediction does not lead to a consistent neighborhood estimate. Controlling instead the probability of falsely joining some distinct connectivity components of the graph, consistent estimation for sparse graphs is achieved (with exponential rates), even when the number of variables grows as the number of observations raised to an arbitrary power.}
+      \field{issn}{0090-5364, 2168-8966}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{month}{6}
+      \field{note}{Publisher: Institute of Mathematical Statistics}
+      \field{number}{3}
+      \field{title}{High-dimensional graphs and variable selection with the {Lasso}}
+      \field{urlday}{7}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{34}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \field{pages}{1436\bibrangedash 1462}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1214/009053606000000281
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/jdomi/Zotero/storage/TAFCKSCW/Meinshausen and Bühlmann - 2006 - High-dimensional graphs and variable selection wit.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://projecteuclid.org/journals/annals-of-statistics/volume-34/issue-3/High-dimensional-graphs-and-variable-selection-with-the-Lasso/10.1214/009053606000000281.full
+      \endverb
+      \verb{url}
+      \verb https://projecteuclid.org/journals/annals-of-statistics/volume-34/issue-3/High-dimensional-graphs-and-variable-selection-with-the-Lasso/10.1214/009053606000000281.full
+      \endverb
+      \keyw{62J07,62F12,62H20,covariance selection,Gaussian graphical models,Linear regression,penalized regression}
+    \endentry
+    \entry{shields_cultural_2012}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6e167a878e1b0f51068b44d69db28c0f}{%
+           family={Shields},
+           familyi={S\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6e167a878e1b0f51068b44d69db28c0f}
+      \strng{fullhash}{6e167a878e1b0f51068b44d69db28c0f}
+      \strng{bibnamehash}{6e167a878e1b0f51068b44d69db28c0f}
+      \strng{authorbibnamehash}{6e167a878e1b0f51068b44d69db28c0f}
+      \strng{authornamehash}{6e167a878e1b0f51068b44d69db28c0f}
+      \strng{authorfullhash}{6e167a878e1b0f51068b44d69db28c0f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In an example of Enlightenment ‘engaged research' and public intellectual practice, Euler established the basis of topology and graph theory through his solution to the puzzle of whether a stroll around the seven bridges of 18th-century Königsberg (Kaliningrad) was possible without having to cross any given bridge twice. This ‘Manifesto' argues that, born in a form of cultural studies, topology offers 21st-century researchers a model for mapping the dynamics of time as well as space, allowing the rigorous description of events, situations, changing cultural formations and social spatializations. Law and Mol's network spaces, Serre's folded time, Massey’s ‘power geometries’, Lefebvre's ‘production of space’ and ‘rhythmanalysis’ can be developed through a cultural topological sensitivity that allows time to be understood as not only progressive but cyclical, relationships and the ‘reach’ of power can be understood through ‘knots', and a topology of experience to model the ‘plushness of the Real' via extra- and over-dimensioned time-spaces that capture nuance while drawing on systematic conceptual resources.}
+      \field{issn}{0263-2764}
+      \field{journaltitle}{Theory, Culture \& Society}
+      \field{month}{7}
+      \field{note}{Publisher: SAGE Publications Ltd}
+      \field{number}{4-5}
+      \field{shorttitle}{Cultural {Topology}}
+      \field{title}{Cultural {Topology}: {The} {Seven} {Bridges} of {Königsburg}, 1736}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{29}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{43\bibrangedash 57}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1177/0263276412451161
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1177/0263276412451161
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1177/0263276412451161
+      \endverb
+    \endentry
+    \entry{wainwright_graphical_2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7eb03239453694f59946ad6008e9f0ab}{%
+           family={Wainwright},
+           familyi={W\bibinitperiod},
+           given={Martin\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8a36116840c7ee55901618c95fd08a58}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima I.},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{2eedc870644ac633cb15888d45d0bb33}
+      \strng{fullhash}{6115ad6aa322e131144376ddc427ec75}
+      \strng{bibnamehash}{6115ad6aa322e131144376ddc427ec75}
+      \strng{authorbibnamehash}{6115ad6aa322e131144376ddc427ec75}
+      \strng{authornamehash}{2eedc870644ac633cb15888d45d0bb33}
+      \strng{authorfullhash}{6115ad6aa322e131144376ddc427ec75}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1935-8237, 1935-8245}
+      \field{journaltitle}{Foundations and Trends® in Machine Learning}
+      \field{number}{1–2}
+      \field{title}{Graphical {Models}, {Exponential} {Families}, and {Variational} {Inference}}
+      \field{urlday}{24}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{1}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 305}
+      \range{pages}{305}
+      \verb{doi}
+      \verb 10.1561/2200000001
+      \endverb
+      \verb{file}
+      \verb Wainwright and Jordan - 2007 - Graphical Models, Exponential Families, and Variat.pdf:/Users/jdomi/Zotero/storage/3VB5MMVS/Wainwright and Jordan - 2007 - Graphical Models, Exponential Families, and Variat.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nowpublishers.com/article/Details/MAL-001
+      \endverb
+      \verb{url}
+      \verb http://www.nowpublishers.com/article/Details/MAL-001
+      \endverb
+    \endentry
+    \entry{zheng_gi-joe_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a2b019fab4bf16ff8f358c7babb07ad8}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Lili},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a2b019fab4bf16ff8f358c7babb07ad8}
+      \strng{fullhash}{a2b019fab4bf16ff8f358c7babb07ad8}
+      \strng{bibnamehash}{a2b019fab4bf16ff8f358c7babb07ad8}
+      \strng{authorbibnamehash}{a2b019fab4bf16ff8f358c7babb07ad8}
+      \strng{authornamehash}{a2b019fab4bf16ff8f358c7babb07ad8}
+      \strng{authorfullhash}{a2b019fab4bf16ff8f358c7babb07ad8}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{month}{3}
+      \field{shorttitle}{{GI}-{JOE}}
+      \field{title}{{GI}-{JOE}: {Graph} {Inference} when {Joint} {Observations} are {Erose}}
+      \field{urlday}{7}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/Lili-Zheng-stat/GI-JOE
+      \endverb
+      \verb{url}
+      \verb https://github.com/Lili-Zheng-stat/GI-JOE
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

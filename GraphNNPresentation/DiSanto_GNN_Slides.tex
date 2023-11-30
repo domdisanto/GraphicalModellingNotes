@@ -81,7 +81,8 @@
 \newcommand{\ReLu}{\text{ReLu}}
 \newcommand{\Ind}{\mathbbm{1}}
 \newcommand{\Identity}{\mathbf{I}}
-
+\newcommand{\Agg}{\text{Aggregate}}
+\newcommand{\Msg}{\text{Message}}
 %%%%%%%%%%%%%%%%%%%%%%%%
     % START %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,11 +90,9 @@
 
 \begin{frame}[allowframebreaks]{Notes/Questions (To Be Deleted)}
     \begin{itemize}
-        \item Touch on geometric DL in general? Or just focus on GNN's and not worry about placing within the DL landscape? 
         \item Touch on AlphaFold? GNN's used I believe but unconfirmed, and architecture is complicated/seems infeasible (at least for my time right now)
         \item Still unsure how to tie in PrimeKG paper
         \item Methods for edge selection/identification? Some instances we only want to preserve structure, but sometimes we want to predict/fit edges, how does that fit into message-passing/GCN methods or other extensions? 
-        \item Example of graph-level classification?  
         \item \textcolor{red}{Diffpool article as extension of general GNN, hierarchical pooling over global readout functions?} \url{https://papers.nips.cc/paper_files/paper/2018/file/e77dbaf6759253c7c6d0efc5690369c7-Paper.pdf}
     \end{itemize}
 \end{frame}
@@ -232,9 +231,9 @@
         \item $\mathbf{\DegMat = \text{diag}(A1_\NumNodes)}$
     \end{itemize}
     \item Can use an eigenvalue-normalized Laplacian $\LapMatNorm = \Identity - \DegMat^{-1/2}\AdjMat\DegMat^{-1/2} = \DegMat^{-1/2}\LapMat\DegMat^{-1/2}$
-    \color{red}
-    \item Define graph convolution here? 
-    \item Note on necessity of permutation invariant functions (permutations of adjacency matrix represent same graph but consistent behavior of NN/GNN is not assured by permutd A matrices)
+    \item Note that a given graph topology is represented equivalently by any permutation of its $\AdjMat$
+%    \color{red}
+%    \item Note on necessity of permutation invariant functions (permutations of adjacency matrix represent same graph but consistent behavior of NN/GNN is not assured by permutd A matrices)
     \end{itemize}
 \end{frame}
 
@@ -248,7 +247,6 @@
 
 
 \begin{frame}{What do we estimate about graph structure?}
-    \textcolor{red}{See supp note 1 on Multimodal learning with graphs}
     \begin{gather*}
         \text{GNN learning can be }
         \begin{cases}
@@ -264,8 +262,6 @@
 
 
 \begin{frame}{What do we estimate about graph structure?}
-    \textcolor{red}{Planning (very tentatively) to note that I focus of node-wise estimation as primary interest. My understanding (with still much to read/learn) is that edge/graph-level characteristics are then essentially secondary outputs of node-characteristics. i.e. we fit the GNN, predict node labels/values/embeddings, then fit separate models to predict edge-/graph-level information}
-
     \begin{gather*}
         \text{GNN learning can be }
         \begin{cases}
@@ -354,7 +350,8 @@
     \State Initialize $\nrepresent^{(0)} \gets x_\node, \forall \node \in \NodeSet$ 
         \For{$\iter = 0, ..., \Iter$}:
             \For{$\node \in \Graph$}:
-            \State $\nrepresent_{agg}^{\iter+1} \gets \text{\textcolor{blue}{Aggregate}}(\{h_u^{(\iter)} \mid u \in \nhood_\node\})$ \qquad{\text{or \textcolor{blue}{Message$(\cdot)$}}}
+            \State $m_u^{(\iter+1)} \gets \text{\textcolor{blue}{Message}}(h_\node, h_u, \edge_{\node u}), \forall u \in \nhood_\node$
+            \State $\nrepresent_{agg}^{(\iter+1)} \gets \text{\textcolor{blue}{Aggregate}}(\{m_u^{(\iter)} \mid u \in \nhood_\node\})$ 
             \State $\nrepresent^{(\iter+1)} \gets \text{\textcolor{blue}{Update}}(\nrepresent^{(\iter)}, \nrepresent_{agg}^{(\iter)})$
             \EndFor
         \EndFor
@@ -369,35 +366,49 @@
 
 \begin{frame}{General Framework}
 Can succinctly represent the $\iter$th layer as: 
-\begin{gather*}
+\begin{align*}
     \mathbf{h}_\node^{(\iter+1)} 
-    =
+    &=
     \text{Update}
-    \left( 
+    \left\{ 
     x_\node^{(\iter)}
     ,   
     \text{Aggregate}
-    (
+    \left[
+        \text{Message}
+        \left(
         h_\node^{(\iter)}, x_u^{(\iter)}, \edge_{u,\node}^{(\iter)}
-    )
-    \right)
-\end{gather*}
+        \right)
+    \right]
+    \right\}
+\\
+    \mathbf{h}_\node^{(\iter+1)} 
+    &=
+    Up
+    \left\{ 
+    x_\node^{(\iter)}
+    ,   
+    Agg
+    \left[
+        Msg
+        \left(
+        h_\node^{(\iter)}, x_u^{(\iter)}, \edge_{u,\node}^{(\iter)}
+        \right)
+    \right]
+    \right\}
+\end{align*}
 
 Choices of (differentiable) functions for Aggregate, Update, and Readout determine the architecture of your GNN 
 
 \vspace{4mm}
 
-Trained end-to-end via backpropagation
+Trained end-to-end via backpropagation for problem-specific Transform function 
 
 \end{frame}
 
 \begin{frame}{Aggregate \& Update}
     \begin{itemize}
-        \item {\bf Aggregate$(\cdot)$} produces a representation of information from a node's neighborhood 
-        \begin{itemize}
-            \item Also {\bf Message$(\cdot)$} in the context of MPNN's \cite{gilmer_neural_2017}
-        \end{itemize}
-        \item Differentiable, {\it permutation invariant} functions 
+        \item {\bf Aggregate$(\cdot)$} produces a representation of information from a node's neighborhood via {\bf permutation invariant} function
         \item Can include weights (edge-wise or learned)
         \item Over later iterations, this includes information from further and further distant nodes to any one target node 
         \item We then {\bf Update$(\cdot)$} our current state using this aggregated neighborhood-level information
@@ -463,7 +474,7 @@ Trained end-to-end via backpropagation
         %\item $\mathbf{D}_{ii} = \sum_{j}\mathbf{(\AdjMat+I)_{ij}}$
         %\item Eigenvalue normalizing $\mathbf{D^{-1/2}(\AdjMat + I)D^{-1/2}}$ for computational stability
     \end{itemize}
-    \textcolor{red}{Review paper, comment on applications briefly (KG setting), also motivate through graph convolutions?}
+%    \textcolor{red}{Review paper, comment on applications briefly (KG setting), also motivate through graph convolutions?}
     \end{frame}
 
 
@@ -513,12 +524,13 @@ Trained end-to-end via backpropagation
         %\item $\mathbf{D}_{ii} = \sum_{j}\mathbf{(\AdjMat+I)_{ij}}$
         %\item Eigenvalue normalizing $\mathbf{D^{-1/2}(\AdjMat + I)D^{-1/2}}$ for computational stability
     \end{itemize}
-    \textcolor{red}{Review paper, comment on applications briefly (KG setting), also motivate through graph convolutions?}
+%    \textcolor{red}{Review paper, comment on applications briefly (KG setting), also motivate through graph convolutions?}
     \end{frame}
 
 
 
 \begin{frame}{Graph Convolutional Network}
+    \textcolor{red}{Maybe move to appendix} \\ 
 Intuitive "derivation": 
 \begin{align*}
     \NodeRepMat^{(\iter+1)}
@@ -561,22 +573,40 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
 \end{frame}
 
 
-
-\begin{frame}{General Framework (Re-emphasized)}
-
-    \begin{algorithmic}[1]
-    \State Initialize $\nrepresent^{(0)} \gets x_\node, \forall \node \in \NodeSet$ 
-        \For{$\iter = 0, ..., \Iter$}:
-            \For{$\node \in \Graph$}:
-            \State $\nrepresent_{agg}^{\iter+1} \gets \text{\textcolor{blue}{Aggregate}}(\{h_u^{(\iter)} \mid u \in \nhood_\node\})$ \qquad{\text{or \textcolor{blue}{Message$(\cdot)$}}}
-            \State $\nrepresent^{(\iter+1)} \gets \text{\textcolor{blue}{Update}}(\nrepresent^{(\iter)}, \nrepresent_{agg}^{(\iter)})$
-            \EndFor
-        \EndFor
-        \State $h_\Graph \gets \text{\textcolor{blue}{Transform}}(\{h^\Iter_\node | \node \in \Graph\})$ 
-        \qquad{\hspace{4mm} or \textcolor{blue}{Readout$(\cdot)$}}
-    \end{algorithmic}   
-
+\begin{frame}{General Framework (Revisited)}
+    \begin{itemize}\setlength\itemsep{8mm}
+        \item {\bf Input} 
+            \begin{itemize}
+                \item Node conceptualization
+                \item Node embeddings
+            \end{itemize}
+        \item {\bf Architecture}
+            \begin{itemize}
+                \item $\NodeRepMat^{(\iter+1)} 
+                =
+                \ReLu
+                \left( 
+                    \mathbf{
+                    %D^{-1/2}
+                    %(\AdjMat + I)
+                    %D^{-1/2}
+                    \widetilde{\DegMat}^{-1/2}
+                    \widetilde{\AdjMat}
+                    \widetilde{\DegMat}^{-1/2}  
+                    \NodeRepMat^{(\iter)}
+                    \Theta 
+                    }            
+                \right)$
+            \end{itemize}
+        \item {\bf Output}
+            \begin{itemize}
+                \item Target output (Readout, Transform functions)
+                \item Loss function
+            \end{itemize}
+\end{itemize}
 \end{frame}
+
+
 
 
 \section{Applications and Extensions \textcolor{red}{20-25ish minutes}}
@@ -715,6 +745,107 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
     \begin{itemize}
         \item Zhang (2023) {\it Geometric Deep Learning for Structure-Based Drug Design: A Survey} \cite{zhang_systematic_2023}
         \item SBDD aims to improve drug-discovery by understanding 3D protein structures and predicting drug efficacy/behavior % docking, conformations, etc. summarize as useful to understand behavior of drug based on target protein structure 
+        \item Problems of note for GNN's include {\bf binding site prediction} and {\bf binding affinity prediction}
+    \end{itemize}
+
+    \vspace{3mm}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \includegraphics[width=\textwidth]{Zhang_2023_BindingSite.png}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \includegraphics[width=\textwidth]{Zhang_2023_BindingAffinity.png}
+        \end{column}
+    \end{columns}
+    \centering{\small Images from Fig. 1 of Zhang (2023) \cite{zhang_systematic_2023}}
+\end{frame}
+
+
+\iffalse 
+            \begin{frame}{Input}
+                \begin{columns}
+                \begin{column}{0.7\textwidth}
+                \begin{itemize}\setlength\itemsep{6mm}
+                    \color{red}
+                    \item Nodes are radial patches (i.e. points)
+                    \item Focus on complications of 3D geometry 
+                    \vspace{8mm}
+                    \begin{minipage}{\textwidth}
+                    \item Invariant, necessary as previously stated ("coordinate system robust")
+                    \item Equivariant, less strict than invariant, some transformations should generate different output (see protein conformations for drug-ligand interaction) 
+                    \end{minipage}
+                \end{itemize}
+                \end{column}
+
+                \begin{column}{0.3\textwidth}
+                    \vspace*{-12mm}
+                    %\begin{figure}
+                        \begin{flushright}
+                        \includegraphics[width=\textwidth]{Gainza_2020_ProteinNodesRadii.png}  \\ 
+                        Fig 1a. Gainza (2020) \cite{gainza_deciphering_2020}
+                        \end{flushright}
+                    %\end{figure}    
+                \end{column}
+            \end{columns}
+            \end{frame}
+\fi 
+
+
+\begin{frame}{Input}
+    \begin{itemize}
+        \item Nodes and edges defined by radial patches about a discretization of the protein surface 
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.55]{Gainza_2020_ProteinNodesRadii.png}  \\ 
+        Fig 1a. Gainza (2020) \cite{gainza_deciphering_2020}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Input}
+    \begin{itemize}\setlength\itemsep{8mm}
+        \item Nodes and edges defined by radial patches about a discretization of the protein surface 
+        \item Note the complications of 3D geometry (geodesic distance)
+        \item Invariant, necessary as previously stated ("coordinate system robust")
+        \item Equivariant, less strict than invariant, some transformations should generate different output (see protein conformations for drug-ligand interaction, molecular chirality) 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Output}
+\end{frame}
+
+\begin{frame}{Architecture}
+    \begin{align*}
+        m_{ij}
+        &=
+        Msg_m() 
+        \\ 
+        \mathbf{m}_{ij}
+        &=
+        Msg_{\mathbf{m}}
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Equivariant GNN's}
+\textcolor{red}{Recreate message passing for equivariant GNN's with my notation for consistency, emphaseize new equivariant vector functions}
+\begin{align*}
+    h_{ij}^{(\iter)}
+    &=
+    \Agg(\mathbf{\node}_i, )
+\end{align*}
+\end{frame}
+
+\begin{frame}{Specific GNN Implementation}
+    \textcolor{red}{Review/cite one of the eGNN's from the Zhang paper}
+\end{frame}
+
+
+\begin{frame}{Extensions}
+    \textcolor{red}{30s discussion(?)}
+    \begin{itemize}
+        \item Transformers (non-GNN method but outperform)
+        \item Generative methods 
     \end{itemize}
 \end{frame}
 

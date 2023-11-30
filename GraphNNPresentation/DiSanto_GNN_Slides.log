@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  28 NOV 2023 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  29 NOV 2023 20:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -985,30 +985,27 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 \c@algpx@indentEndPage-0@totc=\count506
 \c@algpx@indentEndPage-1@totc=\count507
 \c@algpx@indentEndCoordIndex-0@totc=\count508
-\c@algpx@indentEndPage-2@totc=\count509
-\c@algpx@indentEndPage-3@totc=\count510
-\c@algpx@indentEndCoordIndex-2@totc=\count511
 )
 \openout1 = `DiSanto_GNN_Slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1046,16 +1043,16 @@ LaTeX Font Info:    ... okay on input line 88.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count512
+\scratchcounter=\count509
 \scratchdimen=\dimen350
 \scratchbox=\box87
-\nofMPsegments=\count513
-\nofMParguments=\count514
+\nofMPsegments=\count510
+\nofMParguments=\count511
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count515
+\MPscratchCnt=\count512
 \MPscratchDim=\dimen351
-\MPnumerator=\count516
-\makeMPintoPDFobject=\count517
+\MPnumerator=\count513
+\makeMPintoPDFobject=\count514
 \everyMPtoPDFconversion=\toks51
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1063,60 +1060,60 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 88.
+Package hyperref Info: Link coloring ON on input line 89.
  (./DiSanto_GNN_Slides.out) (./DiSanto_GNN_Slides.out)
 \@outlinefile=\write6
 \openout6 = `DiSanto_GNN_Slides.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 88.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 89.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 88.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 89.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 88.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 88.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 88.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 89.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 88.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 88.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 89.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 88.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 88.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 88.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 89.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 88.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 88.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 89.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 88.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 89.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 88.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 88.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 88.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 88.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 88.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 89.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 88.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 88.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 89.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 89.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 88.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 89.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 88.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 89.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 88.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 89.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1145,97 +1142,96 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'DiSanto_GNN_Slides.bbl' found.
  (./DiSanto_GNN_Slides.bbl)
-Package biblatex Info: Reference section=0 on input line 88.
-Package biblatex Info: Reference segment=0 on input line 88.
+Package biblatex Info: Reference section=0 on input line 89.
+Package biblatex Info: Reference segment=0 on input line 89.
  (./DiSanto_GNN_Slides.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 99.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 98.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2
 
+] (./DiSanto_GNN_Slides.toc) [3
 
-] [3
-
-] (./DiSanto_GNN_Slides.toc) [4
+] [4
 
 ] [5
 
-] [6
-
 ]
-<MultimodalPreview.png, id=253, 808.01875pt x 795.97375pt>
+<MultimodalPreview.png, id=226, 808.01875pt x 795.97375pt>
 File: MultimodalPreview.png Graphic file (type png)
 <use MultimodalPreview.png>
-Package pdftex.def Info: MultimodalPreview.png  used on input line 139.
+Package pdftex.def Info: MultimodalPreview.png  used on input line 138.
 (pdftex.def)             Requested size: 161.60088pt x 159.19193pt.
- [7
+ [6
 
  <./MultimodalPreview.png>]
-<Caffeine_Graph.png, id=289, 1137.24875pt x 435.6275pt>
+<Caffeine_Graph.png, id=260, 1137.24875pt x 435.6275pt>
 File: Caffeine_Graph.png Graphic file (type png)
 <use Caffeine_Graph.png>
-Package pdftex.def Info: Caffeine_Graph.png  used on input line 148.
+Package pdftex.def Info: Caffeine_Graph.png  used on input line 147.
 (pdftex.def)             Requested size: 341.17726pt x 130.68925pt.
- [8
+ [7
 
  <./Caffeine_Graph.png>]
-<Zhang_Protein3D.png, id=322, 610.28pt x 336.25626pt>
+<Zhang_Protein3D.png, id=295, 610.28pt x 336.25626pt>
 File: Zhang_Protein3D.png Graphic file (type png)
 <use Zhang_Protein3D.png>
-Package pdftex.def Info: Zhang_Protein3D.png  used on input line 156.
+Package pdftex.def Info: Zhang_Protein3D.png  used on input line 155.
 (pdftex.def)             Requested size: 274.62346pt x 151.3139pt.
- [9
+ [8
 
- <./Zhang_Protein3D.png>] [10
+ <./Zhang_Protein3D.png>] [9
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 224.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 223.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 224.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 223.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 224.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 223.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 224.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 223.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 224.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 223.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 224.
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 224.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 223.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 223.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [11
+) [10
 
-] [12
+] [11
 
-] (./DiSanto_GNN_Slides.toc) [13
+] (./DiSanto_GNN_Slides.toc) [12
 
-] [14
+] [13
 
 ]
-Overfull \hbox (14.84607pt too wide) detected at line 279
+Overfull \hbox (14.84607pt too wide) detected at line 275
 []
  []
 
-[15
+[14
 
 ]
-\c@algpx@indentEndPage-0=\count518
-\c@algpx@indentEndPage-1=\count519
-\c@algpx@indentEndCoordIndex-0=\count520
+\c@algpx@indentEndPage-0=\count515
+\c@algpx@indentEndPage-1=\count516
+\c@algpx@indentEndCoordIndex-0=\count517
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 365.
- [16
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 362.
+ [15
+
+] [16
 
 ] [17
 
@@ -1249,13 +1245,9 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
 
 ] [22
 
-]
-\c@algpx@indentEndPage-2=\count521
-\c@algpx@indentEndPage-3=\count522
-\c@algpx@indentEndCoordIndex-2=\count523
- [23
+] (./DiSanto_GNN_Slides.toc) [23
 
-] (./DiSanto_GNN_Slides.toc) [24
+] [24
 
 ] [25
 
@@ -1265,33 +1257,48 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
 
 ] [28
 
-] [29
-
 ]
-<Ektefaie_StructureLearning.png, id=971, 303.1325pt x 409.53pt>
+<Ektefaie_StructureLearning.png, id=945, 303.1325pt x 409.53pt>
 File: Ektefaie_StructureLearning.png Graphic file (type png)
 <use Ektefaie_StructureLearning.png>
-Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 693.
+Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 723.
 (pdftex.def)             Requested size: 121.25084pt x 163.80908pt.
- [30
+ [29
 
- <./Ektefaie_StructureLearning.png>] [31
+ <./Ektefaie_StructureLearning.png>] [30
+
+] [31
 
 ] [32
 
-] [33
+]
+<Zhang_2023_BindingSite.png, id=1066, 421.575pt x 162.10562pt>
+File: Zhang_2023_BindingSite.png Graphic file (type png)
+<use Zhang_2023_BindingSite.png>
+Package pdftex.def Info: Zhang_2023_BindingSite.png  used on input line 762.
+(pdftex.def)             Requested size: 171.14764pt x 65.81071pt.
+<Zhang_2023_BindingAffinity.png, id=1067, 421.575pt x 147.55125pt>
+File: Zhang_2023_BindingAffinity.png Graphic file (type png)
+<use Zhang_2023_BindingAffinity.png>
+Package pdftex.def Info: Zhang_2023_BindingAffinity.png  used on input line 762.
+(pdftex.def)             Requested size: 171.14764pt x 59.90201pt.
+ [33
 
-] [34
+ <./Zhang_2023_BindingSite.png> <./Zhang_2023_BindingAffinity.png>]
+<Gainza_2020_ProteinNodesRadii.png, id=1100, 268.00125pt x 231.86626pt>
+File: Gainza_2020_ProteinNodesRadii.png Graphic file (type png)
+<use Gainza_2020_ProteinNodesRadii.png>
+Package pdftex.def Info: Gainza_2020_ProteinNodesRadii.png  used on input line 804.
+(pdftex.def)             Requested size: 147.40112pt x 127.52682pt.
+ [34
 
-] [35
+ <./Gainza_2020_ProteinNodesRadii.png>] [35
 
 ] [36
 
 ] [37
 
-
 ] [38
-
 
 ] [39
 
@@ -1301,26 +1308,43 @@ Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 693.
 
 ] [42
 
+] [43
+
+
+] [44
+
+
+] [45
+
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
 ]
-<DIFFPOOL_RexYing.png, id=1368, 786.94pt x 330.23375pt>
+<DIFFPOOL_RexYing.png, id=1586, 786.94pt x 330.23375pt>
 File: DIFFPOOL_RexYing.png Graphic file (type png)
 <use DIFFPOOL_RexYing.png>
-Package pdftex.def Info: DIFFPOOL_RexYing.png  used on input line 784.
+Package pdftex.def Info: DIFFPOOL_RexYing.png  used on input line 915.
 (pdftex.def)             Requested size: 354.11972pt x 148.6038pt.
 
-Overfull \hbox (11.82442pt too wide) in paragraph at lines 784--784
+Overfull \hbox (11.82442pt too wide) in paragraph at lines 915--915
  [] 
  []
 
-[43
+[50
 
  <./DIFFPOOL_RexYing.png>]
-<Junwei_KG_Models_Infograph.png, id=1399, 2352.79pt x 1324.95pt>
+<Junwei_KG_Models_Infograph.png, id=1616, 2352.79pt x 1324.95pt>
 File: Junwei_KG_Models_Infograph.png Graphic file (type png)
 <use Junwei_KG_Models_Infograph.png>
-Package pdftex.def Info: Junwei_KG_Models_Infograph.png  used on input line 792.
+Package pdftex.def Info: Junwei_KG_Models_Infograph.png  used on input line 923.
 (pdftex.def)             Requested size: 305.87344pt x 172.24954pt.
- [44
+ [51
 
  <./Junwei_KG_Models_Infograph.png>]
 \tf@nav=\write7
@@ -1334,24 +1358,24 @@ Package pdftex.def Info: Junwei_KG_Models_Infograph.png  used on input line 792.
 
  (./DiSanto_GNN_Slides.aux)
 Package rerunfilecheck Info: File `DiSanto_GNN_Slides.out' has not changed.
-(rerunfilecheck)             Checksum: 8C690A58EBAD00147DCDCCE3F0AC468E;1638.
+(rerunfilecheck)             Checksum: 51AB226E0639FAC68833FA129E1A5B85;1638.
 Package logreq Info: Writing requests to 'DiSanto_GNN_Slides.run.xml'.
 \openout1 = `DiSanto_GNN_Slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37650 strings out of 476025
- 778663 string characters out of 5790018
- 1876388 words of memory out of 5000000
- 57318 multiletter control sequences out of 15000+600000
+ 37637 strings out of 476025
+ 778290 string characters out of 5790018
+ 1879388 words of memory out of 5000000
+ 57287 multiletter control sequences out of 15000+600000
  532945 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,22n,122p,2052b,1875s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on DiSanto_GNN_Slides.pdf (44 pages, 2152546 bytes).
+ </Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on DiSanto_GNN_Slides.pdf (51 pages, 2440130 bytes).
 PDF statistics:
- 1522 PDF objects out of 1728 (max. 8388607)
- 1401 compressed objects within 15 object streams
- 111 named destinations out of 1000 (max. 500000)
- 211 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1749 PDF objects out of 2073 (max. 8388607)
+ 1609 compressed objects within 17 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

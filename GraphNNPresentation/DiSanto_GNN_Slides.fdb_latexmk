@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber DiSanto_GNN_Slides"] 1701229439 "DiSanto_GNN_Slides.bcf" "DiSanto_GNN_Slides.bbl" "DiSanto_GNN_Slides" 1701229630 0
-  "./GNN_Presentation.bib" 1701226402 40222 60882ee048ad728972718706b2f834ae ""
-  "DiSanto_GNN_Slides.bcf" 1701229630 109650 bdb40cc32b84d39f75c6a515f487144f "pdflatex"
+["biber DiSanto_GNN_Slides"] 0 "DiSanto_GNN_Slides.bcf" "DiSanto_GNN_Slides.bbl" "DiSanto_GNN_Slides" 1701307568 -1
+  "./GNN_Presentation.bib" 1701286785 45490 e3f0a074e110a0042bb0707ded5d503a ""
+  "DiSanto_GNN_Slides.bcf" 1701307568 109732 289242c1464003e730fd12a02b635160 "pdflatex"
   (generated)
   "DiSanto_GNN_Slides.bbl"
   "DiSanto_GNN_Slides.blg"
   (rewritten before read)
-["pdflatex"] 1701229626 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" "DiSanto_GNN_Slides.pdf" "DiSanto_GNN_Slides" 1701229630 0
-  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" 1701229622 30443 37c95c9712a57bd2707a590f62b91ea3 ""
+["pdflatex"] 1701307564 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" "DiSanto_GNN_Slides.pdf" "DiSanto_GNN_Slides" 1701307568 0
+  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" 1701307559 34069 1757ce51d58ae251c386b1e60c50c45e ""
   "/Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1701198993 6964 86a4f557053a70c52d0f24169404b0d7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -53,6 +53,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssxi8.tfm" 1364512039 3000 8e600ffb247b55d33f019684291222af ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
@@ -62,6 +63,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb" 1248133631 25150 e0d09798d232ab9d00c5c0a8df6cc22d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1248133631 25168 33771b85f45c82138dd7745db7092d1c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
@@ -287,16 +289,19 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Caffeine_Graph.png" 1701106261 214751 e9ba72ae758bd400b77b9a34a618898b ""
   "DIFFPOOL_RexYing.png" 1701136621 249236 abaf6d7e25597be5019b60b3388c5919 ""
-  "DiSanto_GNN_Slides.aux" 1701229630 17115 04ec38a46523a5f5e2e763fd60b564e2 "pdflatex"
-  "DiSanto_GNN_Slides.bbl" 1701229441 47936 a4259805cba43f3cd21164b092b53888 "biber DiSanto_GNN_Slides"
-  "DiSanto_GNN_Slides.nav" 1701229630 6162 e84ee15d09ed5817a522607768a85054 "pdflatex"
-  "DiSanto_GNN_Slides.out" 1701229630 1638 8c690a58ebad00147dcdcce3f0ac468e "pdflatex"
-  "DiSanto_GNN_Slides.run.xml" 1701229630 2409 47d6fc4ed2ecda7a5ace4f9810941036 "pdflatex"
-  "DiSanto_GNN_Slides.tex" 1701229622 30443 37c95c9712a57bd2707a590f62b91ea3 ""
-  "DiSanto_GNN_Slides.toc" 1701229630 493 003c4e7ec31e1df8984cdf6c53b3ce68 "pdflatex"
+  "DiSanto_GNN_Slides.aux" 1701307568 16753 4c314197e9b4bad047f59eb6481d4347 "pdflatex"
+  "DiSanto_GNN_Slides.bbl" 1701288106 52198 f36591bd7d7db61e781d0a627d936ea9 "biber DiSanto_GNN_Slides"
+  "DiSanto_GNN_Slides.nav" 1701307568 7045 5a08946ed2c0c4f71f3ca1324e8d870e "pdflatex"
+  "DiSanto_GNN_Slides.out" 1701307568 1638 51ab226e0639fac68833fa129e1a5b85 "pdflatex"
+  "DiSanto_GNN_Slides.run.xml" 1701307568 2409 47d6fc4ed2ecda7a5ace4f9810941036 "pdflatex"
+  "DiSanto_GNN_Slides.tex" 1701307559 34069 1757ce51d58ae251c386b1e60c50c45e ""
+  "DiSanto_GNN_Slides.toc" 1701307568 493 198552fe6935039afcc59a194ac215b7 "pdflatex"
   "Ektefaie_StructureLearning.png" 1701209654 109505 cd9f47742f18a0739e588c11dbe2d917 ""
+  "Gainza_2020_ProteinNodesRadii.png" 1701286841 214328 a0cba1b1920e255603a4e4ecfeeff615 ""
   "Junwei_KG_Models_Infograph.png" 1700697582 1058127 a44b2e181116a9d2698f44397ef525ed ""
   "MultimodalPreview.png" 1701114323 287772 2db3e68c5dd901255b3ece7aa14aada0 ""
+  "Zhang_2023_BindingAffinity.png" 1701286336 37241 f22b55deb6fe18b0fa8317f6c9018201 ""
+  "Zhang_2023_BindingSite.png" 1701286318 39280 8d286d7ecaf20cbe76e2835e51514c5d ""
   "Zhang_Protein3D.png" 1701228093 265824 9ec118838ba24f1af9c94d9729b04e19 ""
   (generated)
   "DiSanto_GNN_Slides.aux"

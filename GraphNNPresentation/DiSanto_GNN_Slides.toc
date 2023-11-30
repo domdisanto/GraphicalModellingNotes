@@ -1,6 +1,6 @@
-\beamer@sectionintoc {1}{Set-Up and Motivation \textcolor {red}{5ish minutes}}{5}{0}{1}
-\beamer@sectionintoc {2}{General Construction \textcolor {red}{10-20ish minutes}}{13}{0}{2}
-\beamer@sectionintoc {3}{Applications and Extensions \textcolor {red}{20-25ish minutes}}{24}{0}{3}
-\beamer@subsectionintoc {3}{1}{Multimodal Graph Learning (MGL)}{25}{0}{3}
-\beamer@subsectionintoc {3}{2}{Knowledge-Graph Data}{32}{0}{3}
-\beamer@subsectionintoc {3}{3}{Structure-Based Drug Design (SBDD)}{32}{0}{3}
+\beamer@sectionintoc {1}{Set-Up and Motivation \textcolor {red}{5ish minutes}}{4}{0}{1}
+\beamer@sectionintoc {2}{General Construction \textcolor {red}{10-20ish minutes}}{12}{0}{2}
+\beamer@sectionintoc {3}{Applications and Extensions \textcolor {red}{20-25ish minutes}}{23}{0}{3}
+\beamer@subsectionintoc {3}{1}{Multimodal Graph Learning (MGL)}{24}{0}{3}
+\beamer@subsectionintoc {3}{2}{Knowledge-Graph Data}{31}{0}{3}
+\beamer@subsectionintoc {3}{3}{Structure-Based Drug Design (SBDD)}{31}{0}{3}

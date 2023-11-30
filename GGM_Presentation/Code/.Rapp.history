@@ -1,0 +1,2 @@
+load("/Users/jdomi/Documents/GradSchool/PhD/Year2/Longitudinal/FinalProject/Code/preprocessed_Allen_GIJOE.rdata")
+ls()

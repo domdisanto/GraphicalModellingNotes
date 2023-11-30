@@ -341,6 +341,86 @@
       \endverb
       \keyw{Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Computer Science - Social and Information Networks,Physics - Physics and Society,Statistics - Machine Learning}
     \endentry
+    \entry{gainza_deciphering_2020}{article}{}
+      \name{author}{7}{}{%
+        {{hash=1a9fc988a5f77ccee00c5d1f45cbdba5}{%
+           family={Gainza},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c2d94a178a59beea25f96b0c7f5b03da}{%
+           family={Sverrisson},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=088055f86e6b25e7fe98a71c2035ef43}{%
+           family={Monti},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0d6ebeea7575ebbe6de481820b17ce79}{%
+           family={Rodolà},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=373820ed5dc49d4a83e328076a4d061b}{%
+           family={Boscaini},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3378643ad337f0831df40a3159bd8e23}{%
+           family={Bronstein},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=25be7ad971aac470dd6c5a7105bf55b3}{%
+           family={Correia},
+           familyi={C\bibinitperiod},
+           given={B.\bibnamedelimi E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1778a794a97f4497602dd7105df67341}
+      \strng{fullhash}{c0b7f7e339c39cbff616cda163525bbf}
+      \strng{bibnamehash}{1778a794a97f4497602dd7105df67341}
+      \strng{authorbibnamehash}{1778a794a97f4497602dd7105df67341}
+      \strng{authornamehash}{1778a794a97f4497602dd7105df67341}
+      \strng{authorfullhash}{c0b7f7e339c39cbff616cda163525bbf}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Predicting interactions between proteins and other biomolecules solely based on structure remains a challenge in biology. A high-level representation of protein structure, the molecular surface, displays patterns of chemical and geometric features that fingerprint a protein’s modes of interactions with other biomolecules. We hypothesize that proteins participating in similar interactions may share common fingerprints, independent of their evolutionary history. Fingerprints may be difficult to grasp by visual analysis but could be learned from large-scale datasets. We present MaSIF (molecular surface interaction fingerprinting), a conceptual framework based on a geometric deep learning method to capture fingerprints that are important for specific biomolecular interactions. We showcase MaSIF with three prediction challenges: protein pocket-ligand prediction, protein–protein interaction site prediction and ultrafast scanning of protein surfaces for prediction of protein–protein complexes. We anticipate that our conceptual framework will lead to improvements in our understanding of protein function and design.}
+      \field{issn}{1548-7105}
+      \field{journaltitle}{Nature Methods}
+      \field{month}{2}
+      \field{note}{Number: 2 Publisher: Nature Publishing Group}
+      \field{number}{2}
+      \field{title}{Deciphering interaction fingerprints from protein molecular surfaces using geometric deep learning}
+      \field{urlday}{29}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{17}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{184\bibrangedash 192}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/s41592-019-0666-6
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/jdomi/Zotero/storage/MSR9WTZY/Gainza et al. - 2020 - Deciphering interaction fingerprints from protein .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41592-019-0666-6
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41592-019-0666-6
+      \endverb
+      \keyw{Machine learning,Protein function predictions,Protein structure predictions,Proteins}
+    \endentry
     \entry{gilmer_neural_2017}{misc}{}
       \name{author}{5}{}{%
         {{hash=4f550339f0337905aa634f39e1ba4833}{%

@@ -1705,6 +1705,21 @@ INPUT ./Ektefaie_StructureLearning.png
 INPUT Ektefaie_StructureLearning.png
 INPUT ./Ektefaie_StructureLearning.png
 INPUT ./Ektefaie_StructureLearning.png
+INPUT ./Zhang_2023_BindingSite.png
+INPUT ./Zhang_2023_BindingSite.png
+INPUT Zhang_2023_BindingSite.png
+INPUT ./Zhang_2023_BindingSite.png
+INPUT ./Zhang_2023_BindingSite.png
+INPUT ./Zhang_2023_BindingAffinity.png
+INPUT ./Zhang_2023_BindingAffinity.png
+INPUT Zhang_2023_BindingAffinity.png
+INPUT ./Zhang_2023_BindingAffinity.png
+INPUT ./Zhang_2023_BindingAffinity.png
+INPUT ./Gainza_2020_ProteinNodesRadii.png
+INPUT ./Gainza_2020_ProteinNodesRadii.png
+INPUT Gainza_2020_ProteinNodesRadii.png
+INPUT ./Gainza_2020_ProteinNodesRadii.png
+INPUT ./Gainza_2020_ProteinNodesRadii.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT ./DIFFPOOL_RexYing.png
 INPUT ./DIFFPOOL_RexYing.png
@@ -1727,6 +1742,7 @@ OUTPUT DiSanto_GNN_Slides.run.xml
 INPUT /Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
@@ -1736,6 +1752,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
