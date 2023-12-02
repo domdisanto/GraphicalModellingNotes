@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber DiSanto245Slides"] 1701034668 "DiSanto245Slides.bcf" "DiSanto245Slides.bbl" "DiSanto245Slides" 1701371907 0
-  "./BST245_Project.bib" 1700837397 25576 4ba011578ad87df6483de92fec5c225d ""
-  "DiSanto245Slides.bcf" 1701371907 108592 11fdd03eabe1e8eabed468251e905543 "pdflatex"
+["biber DiSanto245Slides"] 1701400895 "DiSanto245Slides.bcf" "DiSanto245Slides.bbl" "DiSanto245Slides" 1701401153 0
+  "./BST245_Project.bib" 1701374549 29585 4f964917049c0fffe778ac46aca6dbf9 ""
+  "DiSanto245Slides.bcf" 1701401153 108671 f154c4bec18b9a310662847c5542749d "pdflatex"
   (generated)
   "DiSanto245Slides.bbl"
   "DiSanto245Slides.blg"
   (rewritten before read)
-["pdflatex"] 1701371904 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GGM_Presentation/Slides/DiSanto245Slides.tex" "DiSanto245Slides.pdf" "DiSanto245Slides" 1701371907 0
-  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GGM_Presentation/Slides/DiSanto245Slides.tex" 1701371728 25377 6f8fd7411230fe4eb3f4dea6e04a5ca0 ""
+["pdflatex"] 1701401150 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GGM_Presentation/Slides/DiSanto245Slides.tex" "DiSanto245Slides.pdf" "DiSanto245Slides" 1701401153 0
+  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GGM_Presentation/Slides/DiSanto245Slides.tex" 1701401150 26191 26d5bca74c09a7e1c55131714d60b056 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcsi1095.tfm" 1136768653 2048 deb1f56b7417729340fec7e4c9055e8e ""
@@ -265,13 +265,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693935593 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693935547 7883466 9d2d13fbc6d11091b517934f993b5158 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "DiSanto245Slides.aux" 1701371907 10859 d535fdc7932de384a4d174b20d59f2bf "pdflatex"
-  "DiSanto245Slides.bbl" 1701034672 22338 d3f12f97f4785ed2b15e7700bccb5610 "biber DiSanto245Slides"
-  "DiSanto245Slides.nav" 1701371907 5732 77fde48e8049d2bac3fd54e18fd967c9 "pdflatex"
-  "DiSanto245Slides.out" 1701371907 1600 c2766347023f2a123cfaf456713cd30c "pdflatex"
-  "DiSanto245Slides.run.xml" 1701371907 2393 87e0e2b24651ae919740d636bf14e443 "pdflatex"
-  "DiSanto245Slides.tex" 1701371728 25377 6f8fd7411230fe4eb3f4dea6e04a5ca0 ""
-  "DiSanto245Slides.toc" 1701371907 504 05983960aa4f97579d65f3526ce3843f "pdflatex"
+  "DiSanto245Slides.aux" 1701401153 11171 64b738be06294108e9bda2dd348c71c6 "pdflatex"
+  "DiSanto245Slides.bbl" 1701400897 26234 5054caf42a12767a9603ef80ba0d7fe2 "biber DiSanto245Slides"
+  "DiSanto245Slides.nav" 1701401153 5839 35ac56b74da0faa273e0f38fbdef5ba7 "pdflatex"
+  "DiSanto245Slides.out" 1701401153 1600 46488b9dd4ed6765c6f8cbfb5dbd304c "pdflatex"
+  "DiSanto245Slides.run.xml" 1701401153 2393 87e0e2b24651ae919740d636bf14e443 "pdflatex"
+  "DiSanto245Slides.tex" 1701401150 26191 26d5bca74c09a7e1c55131714d60b056 ""
+  "DiSanto245Slides.toc" 1701401153 504 a1b8bca4d93f90751c62c20abd582dcc "pdflatex"
   "Wikipedia_Bridges.png" 1700776963 239852 59bfa3b3522e2c46831e55153acded1e ""
   (generated)
   "DiSanto245Slides.aux"

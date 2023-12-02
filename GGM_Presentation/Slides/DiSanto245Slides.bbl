@@ -226,6 +226,54 @@
       \verb http://archive.org/details/commentariiacade08impe
       \endverb
     \endentry
+    \entry{mazumder_graphical_2012}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=b2d42a3531b668605928afa46235f0a5}{%
+           family={Mazumder},
+           familyi={M\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{401e2906600fdf5fe2372b3c71c95a40}
+      \strng{fullhash}{8b0bbafa77636ec16d41049f36144587}
+      \strng{bibnamehash}{8b0bbafa77636ec16d41049f36144587}
+      \strng{authorbibnamehash}{8b0bbafa77636ec16d41049f36144587}
+      \strng{authornamehash}{401e2906600fdf5fe2372b3c71c95a40}
+      \strng{authorfullhash}{8b0bbafa77636ec16d41049f36144587}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The graphical lasso {\textbackslash}citep\{FHT2007a\} is an algorithm for learning the structure in an undirected Gaussian graphical model, using \${\textbackslash}ell\_1\$ regularization to control the number of zeros in the precision matrix \$\{{\textbackslash}B{\textbackslash}Theta\}=\{{\textbackslash}B{\textbackslash}Sigma\}{\textasciicircum}\{-1\}\$ {\textbackslash}citep\{BGA2008,yuan\_lin\_07\}. The \{{\textbackslash}texttt R\} package {\textbackslash}GL{\textbackslash} {\textbackslash}citep\{FHT2007a\} is popular, fast, and allows one to efficiently build a path of models for different values of the tuning parameter. Convergence of {\textbackslash}GL{\textbackslash} can be tricky; the converged precision matrix might not be the inverse of the estimated covariance, and occasionally it fails to converge with warm starts. In this paper we explain this behavior, and propose new algorithms that appear to outperform {\textbackslash}GL. By studying the "normal equations" we see that, {\textbackslash}GL{\textbackslash} is solving the \{{\textbackslash}em dual\} of the graphical lasso penalized likelihood, by block coordinate ascent; a result which can also be found in {\textbackslash}cite\{BGA2008\}. In this dual, the target of estimation is \${\textbackslash}B{\textbackslash}Sigma\$, the covariance matrix, rather than the precision matrix \${\textbackslash}B{\textbackslash}Theta\$. We propose similar primal algorithms {\textbackslash}PGL{\textbackslash} and {\textbackslash}DPGL, that also operate by block-coordinate descent, where \${\textbackslash}B{\textbackslash}Theta\$ is the optimization target. We study all of these algorithms, and in particular different approaches to solving their coordinate sub-problems. We conclude that {\textbackslash}DPGL{\textbackslash} is superior from several points of view.}
+      \field{annotation}{Comment: This is a revised version of our previous manuscript with the same name ArXiv id: http://arxiv.org/abs/1111.5479}
+      \field{month}{8}
+      \field{note}{arXiv:1111.5479 [cs, stat]}
+      \field{shorttitle}{The {Graphical} {Lasso}}
+      \field{title}{The {Graphical} {Lasso}: {New} {Insights} and {Alternatives}}
+      \field{urlday}{30}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/jdomi/Zotero/storage/NR3ABS4B/1111.html:text/html;Full Text PDF:/Users/jdomi/Zotero/storage/EBS5D36M/Mazumder and Hastie - 2012 - The Graphical Lasso New Insights and Alternatives.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1111.5479
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1111.5479
+      \endverb
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
     \entry{meinshausen_high-dimensional_2006}{article}{}
       \name{author}{2}{}{%
         {{hash=ab9469dddb5d18ec039f709e2d7c4e00}{%

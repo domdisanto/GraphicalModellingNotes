@@ -340,7 +340,8 @@
     \begin{itemize}\setlength\itemsep{6mm}
         \item \textcolor{red}{$X = (X_1, ..., X_d)$ may or may not contain a "response variable" of interest EDIT do you do anything differently if so?}
         \item Identifying conditional relationships $\Leftrightarrow$ Estimating/Identifying 0's in $\Sigma$
-        \item Enforse sparsity for $\hat\Theta$ to account for $S$
+        \item Enforse sparsity for $\hat\Theta$ to account for possible rank-degeneracy of $S$ if $d \gg N$
+        % in fact, under p \leq N the \Theta MLE can still exhibit \cite{mazumder_graphical_2012}
         \item Exhaustive search is quickly infeasible, but can yield solutions with theoretical guarantees
         \begin{itemize} \item Consistency \item Nice statistical rates \end{itemize}
         %\item Far from exhaustive, these methods are nice for 
@@ -430,9 +431,18 @@ What does this give us?
 \begin{frame}{Simulations (Complete Data)}
     \begin{itemize}
         \item \texttt{glasso} package in R can fit Graphical Lasso as well as neighborhood-selection approximation 
+        \item \texttt{huge} is an extension of \texttt{glasso} with algorithmic/convergence fixes, computation in C, and extended methods
         \item sklearn has similar \texttt{sklearn.covariance.graphicallasso} command 
         \item \texttt{skggm} extends Gaussian Graphical Model methods  % other CV metcis beyond loglik 
-        \item \textcolor{red}{Simulation/data set-up detailled here, banded/AR, block, and ER graph }
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Simulations (Complete Data)}
+    \begin{itemize}
+        \item $\lambda = 2\sqrt{\frac{\log d}{N}}$
+        \item Graph Recovery (accuracacy by proportion of correct edge recovery)
+        \item Operator Norm Distance $\mathbf{||\hat\Theta - \Theta||_2}$ 
+        \item Construct "banded" adjacency matrices:
     \end{itemize}
 \end{frame}
 
@@ -558,11 +568,15 @@ What does this give us?
 
 
 \begin{frame}{Forgoing Sparsity Assumptions}
-In the above methods, we have almost uniformly assumed some sparsity and applied a penalty ($\ell_1$)
+\begin{itemize}
+\item In the above methods, we have almost uniformly assumed some sparsity and applied a penalty ($\ell_1$)
     \begin{enumerate}
         \item How often is this a viable assumption? 
         \item What do we do (or what happens) if we don't meet this sparsity requirement? 
     \end{enumerate}
+\item     Mazumder (2012) \cite{mazumder_graphical_2012} offers an updated algorithm and insight into performance for $p$ close to but larger than $N$
+\item Interplay between $d, N$, and graph-connectedeness affect computation time and convergence 
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Time-Series Data}

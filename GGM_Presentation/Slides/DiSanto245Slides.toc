@@ -2,7 +2,7 @@
 \beamer@sectionintoc {2}{Estimation for Complete Data}{16}{0}{2}
 \beamer@subsectionintoc {2}{1}{Neighborhood Selection}{17}{0}{2}
 \beamer@subsectionintoc {2}{2}{Graphical Lasso}{20}{0}{2}
-\beamer@subsectionintoc {2}{3}{Further Notes}{24}{0}{2}
-\beamer@sectionintoc {3}{Estimation with Missingness}{25}{0}{3}
-\beamer@subsectionintoc {3}{1}{General Methods}{28}{0}{3}
-\beamer@subsectionintoc {3}{2}{{\it Erose} Data and GI-JOE}{29}{0}{3}
+\beamer@subsectionintoc {2}{3}{Further Notes}{25}{0}{2}
+\beamer@sectionintoc {3}{Estimation with Missingness}{26}{0}{3}
+\beamer@subsectionintoc {3}{1}{General Methods}{29}{0}{3}
+\beamer@subsectionintoc {3}{2}{{\it Erose} Data and GI-JOE}{30}{0}{3}

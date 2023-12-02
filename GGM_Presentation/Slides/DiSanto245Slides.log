@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  30 NOV 2023 14:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  30 NOV 2023 22:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1053,11 +1053,14 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 
 ] [24
 
-] (./DiSanto245Slides.toc) [25
+] [25
 
-] [26
+] (./DiSanto245Slides.toc) [26
 
-] [27
+]
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 484.
+ [27
 
 ] [28
 
@@ -1069,27 +1072,34 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 
 ] [32
 
+] [33
+
 ]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 544.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 554.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [33
+) [34
 
-] [34
-
-
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [35
+] [35
 
 
 ] [36
 
-] [37
+
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [37
 
 ] [38
 
-] [39
+]
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 606.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 606.
+ [39
 
 ] [40
+
+] [41
 
 ]
 \tf@nav=\write7
@@ -1103,24 +1113,24 @@ File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 
  (./DiSanto245Slides.aux)
 Package rerunfilecheck Info: File `DiSanto245Slides.out' has not changed.
-(rerunfilecheck)             Checksum: C2766347023F2A123CFAF456713CD30C;1600.
+(rerunfilecheck)             Checksum: 46488B9DD4ED6765C6F8CBFB5DBD304C;1600.
 Package logreq Info: Writing requests to 'DiSanto245Slides.run.xml'.
 \openout1 = `DiSanto245Slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32900 strings out of 476025
- 666853 string characters out of 5790018
+ 32916 strings out of 476025
+ 667288 string characters out of 5790018
  1877388 words of memory out of 5000000
- 52669 multiletter control sequences out of 15000+600000
- 531822 words of font info for 95 fonts, out of 8000000 for 9000
+ 52682 multiletter control sequences out of 15000+600000
+ 532704 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,1375b,1548s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,122p,2064b,1548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb>
-Output written on DiSanto245Slides.pdf (40 pages, 536775 bytes).
+Output written on DiSanto245Slides.pdf (41 pages, 541390 bytes).
 PDF statistics:
- 1423 PDF objects out of 1440 (max. 8388607)
- 1303 compressed objects within 14 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 1455 PDF objects out of 1728 (max. 8388607)
+ 1334 compressed objects within 14 object streams
+ 104 named destinations out of 1000 (max. 500000)
  202 words of extra memory for PDF output out of 10000 (max. 10000000)
 
