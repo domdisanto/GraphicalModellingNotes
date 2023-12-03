@@ -47,7 +47,8 @@
 
 \begin{frame}{Notes (To Be Deleted)}
     \begin{itemize}
-        \item Add comparison of nhood/glasso for complete data 
+        \item Maybe scrap nhood selection for time 
+        \item \textcolor{red}{Be able to speak to glasso over neighborhood selection, how sparsity guarantees MLE existence}
         \item Analyses/slides for missingness TBD 
     \end{itemize}
 \end{frame}
@@ -198,7 +199,7 @@
     \begin{columns}[T] % align columns at the top
         \begin{column}{.7\textwidth}
             \begin{itemize}%{.5\textwidth}
-                \setlength\itemsep{3mm}
+                \setlength\itemsep{5mm}
                 \item Consider random vector $X \sim N(\boldsymbol\mu, \Sigma)$ and precision matrix $\Theta \equiv \Sigma^{-1}$
                 \begin{itemize} 
                     \item Interested in estimating $\Sigma$ to characterize joint distribution $f_X$
@@ -206,9 +207,11 @@
                 \item Can construct a resulting graph $\mathcal{G} = (V, E)$, $V = X, E \subseteq V \times V$
                 \begin{itemize} \item Let $\nhood(x)$ represent the neighborhood of $x$, or $\nhood(x) = \{b \in V \mid (x,b) \in E\}$ \end{itemize}
                 \item Can construct adjacency matrix $A \in \mathbb{R}^{|V| \times |V|}$ describing edge set $E$ 
-                \begin{itemize} \item $A_{ij}=\mathbb{I}\{(i,j) \in E\}$ \end{itemize}
-                \item Gaussianity gives us the nice property that $\Theta_{ij}=0 \Leftrightarrow X_i \perp X_j | X_{-\{i,j\}}$
-            \end{itemize}
+                    \begin{itemize} 
+                        \item $A_{ij}=\mathbb{I}\{(i,j) \in E\}$ 
+                        \item Let $D_{max}$ represent the maximum degree
+                    \end{itemize} 
+                \end{itemize}
         \end{column}
         \begin{column}{.3\textwidth}
             %\begin{figure}
@@ -261,7 +264,7 @@
     \begin{columns}[T] % align columns at the top
         \begin{column}{.7\textwidth}
             \begin{itemize}%{.5\textwidth}
-                \setlength\itemsep{3mm}
+                \setlength\itemsep{5mm}
                 \item Consider random vector $X \sim N(\boldsymbol\mu, \Sigma)$ and precision matrix $\Theta \equiv \Sigma^{-1}$
                 \begin{itemize} 
                     \item Interested in estimating $\Sigma$ to characterize joint distribution $f_X$
@@ -269,9 +272,11 @@
                 \item Can construct a resulting graph $\mathcal{G} = (V, E)$, $V = X, E \subseteq V \times V$
                 \begin{itemize} \item Let $\nhood(x)$ represent the neighborhood of $x$, or $\nhood(x) = \{b \in V \mid (x,b) \in E\}$ \end{itemize}
                 \item Can construct adjacency matrix $A \in \mathbb{R}^{|V| \times |V|}$ describing edge set $E$ 
-                \begin{itemize} \item $A_{ij}=\mathbb{I}\{(i,j) \in E\}$ \end{itemize}
-                \item Gaussianity gives us the nice property that $\Theta_{ij}=0 \Leftrightarrow X_i \perp X_j | X_{-\{i,j\}}$
-            \end{itemize}
+                    \begin{itemize} 
+                        \item $A_{ij}=\mathbb{I}\{(i,j) \in E\}$ 
+                        \item Let $D_{max}$ represent the maximum degree 
+                    \end{itemize}
+                \end{itemize}
         \end{column}
         \begin{column}{.3\textwidth}
             %\begin{figure}
@@ -308,6 +313,11 @@
             }
         \end{column}
     \end{columns}
+\end{frame}
+
+\begin{frame}{Gaussian Graphical Models}
+    Gaussianity gives us the nice property that $\Theta_{ij}=0 \Leftrightarrow X_i \perp X_j | X_{-\{i,j\}}$ \\ 
+    \textcolor{red}{Multivariate gaussian pdf and conditional properties}
 \end{frame}
 
 \begin{frame}{How do we estimate graph structure?}
@@ -419,13 +429,17 @@ So we assume sparsity and apply the $\ell_1$ penalty
 
 What does this give us? 
 \begin{itemize}
-    \item True graph recovery for $N=\Omega(d^2\log p)$
+    \item True graph recovery guaranteed for $N=\Omega(D_{max}^3\log p)$
     % similar error bounds give vanishing sparsity if N>p
-    \item Convex pogram, quickly optimizable 
+    \item Convex program, quickly optimizable 
 \end{itemize}
 % convex program, nicely optimizable 
 % under sparsity: consistent, efficient, allows MLE asymptotics and guarantees existence! 
 % SLS has nice notes on this as well
+\end{frame}
+
+\begin{frame}{Graphical Lasso - Optimization}
+    \textcolor{red}{Block coordinate optimiaztion here?}
 \end{frame}
 
 \begin{frame}{Simulations (Complete Data)}
@@ -438,21 +452,45 @@ What does this give us?
 \end{frame}
 
 \begin{frame}{Simulations (Complete Data)}
-    \begin{itemize}
+    \begin{itemize}\setlength\itemsep{6mm}
         \item $\lambda = 2\sqrt{\frac{\log d}{N}}$
         \item Graph Recovery (accuracacy by proportion of correct edge recovery)
-        \item Operator Norm Distance $\mathbf{||\hat\Theta - \Theta||_2}$ 
-        \item Construct "banded" adjacency matrices:
+        \item Operator Norm Distance $\mathbf{||\hat\Theta - \Theta||_2} \lesssim \sqrt{\frac{D_{max}^2\log d}{N}}$ 
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Simulations (Complete Data)}
+    Graph Structure: \newline 
+    \textcolor{red}{banded/AR(.band), random/ER } \\ 
+    \[
+    AR(3, \rho) = \begin{bmatrix}
+        1 & \rho^1 & \rho^2 & \rho^3 &  0 & \dots & \dots & \dots & 0 \\
+        \rho^1 & 1 & \rho^1 & \rho^2 & \rho^3 &  0 & \dots & \dots & 0 \\
+        \rho^2 & & \rho^1 & 1 & \rho^1 & \rho^2 & \rho^3 & 0 & \dots\\
+        \vdots &\vdots &\vdots &\vdots &\vdots &\vdots &\vdots &\vdots &\vdots &\\
+        0 & \dots & \rho^3 & \rho^2 & \rho^1 & 1 & \rho^1 & \rho^2 & \rho^3 \\ 
+    \end{bmatrix}
+    \]
 \end{frame}
 
 
 \begin{frame}{Simulations (Complete Data)}
-    \begin{itemize}
-        \item \textcolor{red}{Graphs here}
-    \end{itemize}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b3.png}
+        \caption{AR(3), $\rho=0.3$ adjacency structure}
+    \end{figure}
 \end{frame}
 
+
+
+\begin{frame}{Simulations (Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b8.png}
+        \caption{AR(8), $\rho=0.3$ adjacency structure}
+    \end{figure}
+\end{frame}
 
 
 
