@@ -315,10 +315,9 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Gaussian Graphical Models}
-    Gaussianity gives us the nice property that $\Theta_{ij}=0 \Leftrightarrow X_i \perp X_j | X_{-\{i,j\}}$ \\ 
-    \textcolor{red}{Multivariate gaussian pdf and conditional properties}
-\end{frame}
+
+
+
 
 \begin{frame}{How do we estimate graph structure?}
     \centering
@@ -341,6 +340,39 @@
     \end{tikzpicture}
 \end{frame}
 
+\begin{frame}{Gaussian Graphical Models}
+    Recall the form and properties of a multivariate Gaussian random vector:
+    \begin{gather*}
+        f(x; \mu, \Theta) = \frac{1}{(2\pi)^{d/2} |\Theta|^{1/2}} \exp\left(-\frac{1}{2} (x - \mu)^T \Theta (x - \mu)\right)
+    \end{gather*}
+
+\[
+\mathbb{E}[X_i \mid X_{(-i)}] = \mu_i + (X_{(-i)} - \mu_{(-i)})^T \Theta_{j \neq i} \sigma_{i, j\neq i}
+\]
+
+\[
+\text{Var}[X_i \mid X_{(-i)}] = \Sigma_{ii} - \sigma_{i, j \neq i}^T \Theta_{j \neq i} \sigma_{j \neq i, i}
+\]
+
+\end{frame}
+
+
+
+\begin{frame}{Gaussian Graphical Models}
+
+{\bf Gaussianity gives us the nice property that $\Theta_{ij}=0 \Leftrightarrow X_i \perp X_j | X_{-\{i,j\}}$ }
+
+\[
+\mathbb{E}[X_i \mid X_{(-i)}] = \mu_i + (X_{(-i)} - \mu_{(-i)})^T \Theta_{j \neq i} \sigma_{i, j\neq i}
+\]
+
+\[
+\text{Var}[X_i \mid X_{(-i)}] = \Sigma_{ii} - \sigma_{i, j \neq i}^T \Theta_{j \neq i} \sigma_{j \neq i, i}
+\]
+
+\end{frame}
+
+
 
 \section{Estimation for Complete Data}
 
@@ -348,12 +380,13 @@
 
 \begin{frame}{Preface}
     \begin{itemize}\setlength\itemsep{6mm}
-        \item \textcolor{red}{$X = (X_1, ..., X_d)$ may or may not contain a "response variable" of interest EDIT do you do anything differently if so?}
+        \item Consider the setting of graph estimation for $X = (X_1, ..., X_d)$
+        \begin{itemize} \item Generally your data may or may not contain a "response variable" of interest \end{itemize}
         \item Identifying conditional relationships $\Leftrightarrow$ Estimating/Identifying 0's in $\Sigma$
         \item Enforse sparsity for $\hat\Theta$ to account for possible rank-degeneracy of $S$ if $d \gg N$
         % in fact, under p \leq N the \Theta MLE can still exhibit \cite{mazumder_graphical_2012}
-        \item Exhaustive search is quickly infeasible, but can yield solutions with theoretical guarantees
-        \begin{itemize} \item Consistency \item Nice statistical rates \end{itemize}
+        %\item Exhaustive search is quickly infeasible, but can yield solutions with theoretical guarantees
+        %\begin{itemize} \item Consistency \item Nice statistical rates \end{itemize}
         %\item Far from exhaustive, these methods are nice for 
         %\begin{itemize} 
         %    \item $\ell_1$ peantly 
@@ -407,7 +440,7 @@ Natural extension, why not just maximize the log-likelihood?
     \right\}
 \end{gather*}
 
-For $N<d$, we have the empirical covariance matrix $S = n^{-1}\sum X_i X_i^T$ is rank-degenerate, and the MLE does not exist! \textcolor{red}{Prove, 9.2c in SLS}
+For $N<d$, we have the empirical covariance matrix $S = n^{-1}\sum X_i X_i^T$ is rank-degenerate, and the MLE does not exist!
 
 \end{frame}
 
@@ -445,7 +478,7 @@ What does this give us?
 \begin{frame}{Simulations (Complete Data)}
     \begin{itemize}
         \item \texttt{glasso} package in R can fit Graphical Lasso as well as neighborhood-selection approximation 
-        \item \texttt{huge} is an extension of \texttt{glasso} with algorithmic/convergence fixes, computation in C, and extended methods
+        \item \texttt{huge} is a very nice extension of \texttt{glasso} with algorithmic/convergence fixes, computation in C, additional flexibility, graph generating functions 
         \item sklearn has similar \texttt{sklearn.covariance.graphicallasso} command 
         \item \texttt{skggm} extends Gaussian Graphical Model methods  % other CV metcis beyond loglik 
     \end{itemize}
@@ -453,15 +486,26 @@ What does this give us?
 
 \begin{frame}{Simulations (Complete Data)}
     \begin{itemize}\setlength\itemsep{6mm}
-        \item $\lambda = 2\sqrt{\frac{\log d}{N}}$
+        \item Theory-suggested penalty $\lambda = 2\sqrt{\frac{\log d}{N}}$, but implementations often supply a range similar to \texttt{glmnet} default behavior
         \item Graph Recovery (accuracacy by proportion of correct edge recovery)
         \item Operator Norm Distance $\mathbf{||\hat\Theta - \Theta||_2} \lesssim \sqrt{\frac{D_{max}^2\log d}{N}}$ 
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Simulations (Complete Data)}
-    Graph Structure: \newline 
-    \textcolor{red}{banded/AR(.band), random/ER } \\ 
+\begin{frame}{Simulations (Set-Up)}
+    \begin{itemize}\setlength\itemsep{8mm}
+        \item Generated multivariate normal data for $d=\{64, 128, 256\}$ with AR(n,$\rho)$ adjacency structures
+        \item Assessed edge-selection performance for $N$ ranging from 10 to 2000 
+            \begin{itemize}
+                \item TPR = (\# of true edges selected) / (\# of true edges)
+                \item TNR = (\# of true non-edges not selected) / (\# of true non-edges)
+                \item Operator norm $||\mathbf{\hat\Theta - \Theta}||_2$
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Simulations (Set-Up)}
     \[
     AR(3, \rho) = \begin{bmatrix}
         1 & \rho^1 & \rho^2 & \rho^3 &  0 & \dots & \dots & \dots & 0 \\
@@ -474,21 +518,75 @@ What does this give us?
 \end{frame}
 
 
-\begin{frame}{Simulations (Complete Data)}
+\begin{frame}{Simulations (GLASSO - Complete Data)}
     \begin{figure}
         \centering 
-        \includegraphics[scale=0.65]{glasso_complete_fixN_b3.png}
-        \caption{AR(3), $\rho=0.3$ adjacency structure}
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b1.png}
+        \caption{AR(1), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Simulations (GLASSO - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b2.png}
+        \caption{AR(2), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Simulations (GLASSO - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b4.png}
+        \caption{AR(4), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Simulations (GLASSO - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b8.png}
+        \caption{AR(8), $\rho=0.4$ adjacency structure}
     \end{figure}
 \end{frame}
 
 
 
-\begin{frame}{Simulations (Complete Data)}
+\begin{frame}{Simulations (Neighborhood Selection - Complete Data)}
     \begin{figure}
         \centering 
-        \includegraphics[scale=0.65]{glasso_complete_fixN_b8.png}
-        \caption{AR(8), $\rho=0.3$ adjacency structure}
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b1mb.png}
+        \caption{AR(1), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Simulations (Neighborhood Selection - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b2mb.png}
+        \caption{AR(2), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Simulations (Neighborhood Selection - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b4mb.png}
+        \caption{AR(4), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Simulations (Neighborhood Selection - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_fixN_b8mb.png}
+        \caption{AR(8), $\rho=0.4$ adjacency structure}
     \end{figure}
 \end{frame}
 
@@ -497,15 +595,18 @@ What does this give us?
 \subsection{Further Notes}
 
 \begin{frame}{Further Notes}
-\begin{itemize}
-    \item Neighborhood Selection maximizes $d$ conditional likelihoods
-    \item GLasso maximizes an $\ell_1$ penalized, joint (Gaussian) likelihood
-    \item (Highly non-trivial) extensions beyond Gaussianity exist:
-    \begin{itemize}
-        \item \textcolor{red}{ REVIEW/ADD/EDIT be able to speak in some depth} 
-        \item Heterogenous graphs (specifically mixture of Gaussian, Exponential, Poisson, Binomial nodes ) \cite{chen_selection_2015} 
-        \item Non-parametric extensions \cite{dong_nonparametric_2022}
-    \end{itemize}
+\begin{itemize}\setlength\itemsep{5mm}
+%    \item Neighborhood Selection maximizes $d$ conditional likelihoods
+%    \item GLasso maximizes an $\ell_1$ penalized, joint (Gaussian) likelihood
+    \item Neighborhood selection (slightly) seems to outperform GLasso in edge-selection, more notably in our less-sparse settings\footnote{These results are also slightly altered by choice of $\rho$, our value $\rho=0.3$ was chosen arbitrarily and kept constant only for brevity}
+    \item GLasso "better approximate" $\boldsymbol\Theta$ with asymptotic guarantees not provided by neighborhood selection
+    \item Error scaling more vulnerable to $D_{max}$ than $d$-dimensionalty of random vector 
+    \item Omitted results for random Erd\"os R\'enyi graphs yield similar results, conclusions 
+%    \item (Highly non-trivial) extensions beyond Gaussianity exist:
+%    \begin{itemize}
+%        \item Heterogenous graphs (specifically mixture of Gaussian, Exponential, Poisson, Binomial nodes ) \cite{chen_selection_2015} 
+ %       \item Non-parametric extensions \cite{dong_nonparametric_2022}
+ %   \end{itemize}
 \end{itemize}    
 \end{frame}
 
@@ -536,12 +637,17 @@ What does this give us?
 
 \begin{frame}{{\it Erose} Data}
     \begin{itemize}
-        \item Cite \cite{zheng_gi-joe_2023}
+        \item {\it Erose} data is a term coined by Zheng, Allen (2023) for data with irregular availability \cite{zheng_gi-joe_2023}
+        \begin{itemize}
+            \item Leads to "drastically different" sample size for a small subset of nodes 
+            \item Erose data almost certainly violate MAR/MCAR assumptions of existing methods 
+            \item Motivated by neuroscience but with applications in genetic expression data, 
+        \end{itemize}
     \end{itemize} 
 \end{frame}
 
 
-\begin{frame}{}
+\begin{frame}{GI-JOE for Erose Data}
 \end{frame}
 
 
@@ -605,12 +711,96 @@ What does this give us?
 \end{frame}
 
 
+\begin{frame}{}
+    \bf{\LARGE Erd\"os R\'enyi Graph Results (Complete Data)}    
+\end{frame}
+    
+
+
+\begin{frame}{Simulations (GLASSO - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_ER_FixN_01.png}
+        \caption{ER(p=0.01), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Simulations (GLASSO - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_ER_FixN_05.png}
+        \caption{ER(p=0.05), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Simulations (GLASSO - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_ER_FixN_1.png}
+        \caption{ER(p=0.1), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Simulations (GLASSO - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_ER_FixN_2.png}
+        \caption{ER(p=0.2), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}{ER-Simulations (Neighborhood Selection - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_ERmb_FixN_01.png}
+        \caption{ER(p=0.01), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ER-Simulations (Neighborhood Selection - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_ERmb_FixN_05.png}
+        \caption{ER(p=0.05), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ER-Simulations (Neighborhood Selection - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_ERmb_FixN_1.png}
+        \caption{ER(p=0.1), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{ER-Simulations (Neighborhood Selection - Complete Data)}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.65]{glasso_complete_ERmb_FixN_2.png}
+        \caption{ER(0.2), $\rho=0.4$ adjacency structure}
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}{}
+    \bf{\Large Misc. Notes}    
+\end{frame}
+    
 \begin{frame}{Forgoing Sparsity Assumptions}
 \begin{itemize}
 \item In the above methods, we have almost uniformly assumed some sparsity and applied a penalty ($\ell_1$)
     \begin{enumerate}
         \item How often is this a viable assumption? 
-        \item What do we do (or what happens) if we don't meet this sparsity requirement? 
+        \item What do we do (or what happens) if we don't meet this sparsity requirement, more severely than our AR($\cdot)$ extension sims?  
     \end{enumerate}
 \item     Mazumder (2012) \cite{mazumder_graphical_2012} offers an updated algorithm and insight into performance for $p$ close to but larger than $N$
 \item Interplay between $d, N$, and graph-connectedeness affect computation time and convergence 

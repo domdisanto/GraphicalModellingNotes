@@ -1,8 +1,8 @@
 \beamer@sectionintoc {1}{Introduction to Graphical Models}{5}{0}{1}
-\beamer@sectionintoc {2}{Estimation for Complete Data}{17}{0}{2}
-\beamer@subsectionintoc {2}{1}{Neighborhood Selection}{18}{0}{2}
-\beamer@subsectionintoc {2}{2}{Graphical Lasso}{21}{0}{2}
-\beamer@subsectionintoc {2}{3}{Further Notes}{29}{0}{2}
-\beamer@sectionintoc {3}{Estimation with Missingness}{30}{0}{3}
-\beamer@subsectionintoc {3}{1}{General Methods}{33}{0}{3}
-\beamer@subsectionintoc {3}{2}{{\it Erose} Data and GI-JOE}{34}{0}{3}
+\beamer@sectionintoc {2}{Estimation for Complete Data}{18}{0}{2}
+\beamer@subsectionintoc {2}{1}{Neighborhood Selection}{19}{0}{2}
+\beamer@subsectionintoc {2}{2}{Graphical Lasso}{22}{0}{2}
+\beamer@subsectionintoc {2}{3}{Further Notes}{37}{0}{2}
+\beamer@sectionintoc {3}{Estimation with Missingness}{38}{0}{3}
+\beamer@subsectionintoc {3}{1}{General Methods}{41}{0}{3}
+\beamer@subsectionintoc {3}{2}{{\it Erose} Data and GI-JOE}{42}{0}{3}

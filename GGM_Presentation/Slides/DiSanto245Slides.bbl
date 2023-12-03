@@ -56,61 +56,6 @@
       \verb Banerjee and Ghaoui - Model Selection Through Sparse Maximum Likelihood .pdf:/Users/jdomi/Zotero/storage/I2X7G553/Banerjee and Ghaoui - Model Selection Through Sparse Maximum Likelihood .pdf:application/pdf
       \endverb
     \endentry
-    \entry{chen_selection_2015}{article}{}
-      \name{author}{3}{}{%
-        {{hash=dcda1aed061135e8e22df92323170970}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Shizhe},
-           giveni={S\bibinitperiod}}}%
-        {{hash=6fa979c8f308c55db8450be4216e4531}{%
-           family={Witten},
-           familyi={W\bibinitperiod},
-           given={Daniela\bibnamedelima M.},
-           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=b133854816964a92b357f0cefd6c0421}{%
-           family={Shojaie},
-           familyi={S\bibinitperiod},
-           given={Ali},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{e19f16ab8710c45d0916f2c19ed506cb}
-      \strng{fullhash}{602ae1e70ebd5d39072f63b336910491}
-      \strng{bibnamehash}{602ae1e70ebd5d39072f63b336910491}
-      \strng{authorbibnamehash}{602ae1e70ebd5d39072f63b336910491}
-      \strng{authornamehash}{e19f16ab8710c45d0916f2c19ed506cb}
-      \strng{authorfullhash}{602ae1e70ebd5d39072f63b336910491}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We consider the problem of estimating the parameters in a pairwise graphical model in which the distribution of each node, conditioned on the others, may have a different exponential family form. We identify restrictions on the parameter space required for the existence of a well-defined joint density, and establish the consistency of the neighbourhood selection approach for graph reconstruction in high dimensions when the true underlying graph is sparse. Motivated by our theoretical results, we investigate the selection of edges between nodes whose conditional distributions take different parametric forms, and show that efficiency can be gained if edge estimates obtained from the regressions of particular nodes are used to reconstruct the graph. These results are illustrated with examples of Gaussian, Bernoulli, Poisson and exponential distributions. Our theoretical findings are corroborated by evidence from simulation studies.}
-      \field{issn}{0006-3444}
-      \field{journaltitle}{Biometrika}
-      \field{month}{3}
-      \field{number}{1}
-      \field{title}{Selection and estimation for mixed graphical models}
-      \field{urlday}{24}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{volume}{102}
-      \field{year}{2015}
-      \field{urldateera}{ce}
-      \field{pages}{47\bibrangedash 64}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.1093/biomet/asu051
-      \endverb
-      \verb{file}
-      \verb Accepted Version:/Users/jdomi/Zotero/storage/FI94WPGL/Chen et al. - 2015 - Selection and estimation for mixed graphical model.pdf:application/pdf;Snapshot:/Users/jdomi/Zotero/storage/AKI6PR9L/228946.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1093/biomet/asu051
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1093/biomet/asu051
-      \endverb
-    \endentry
     \entry{dempster_covariance_1972}{article}{}
       \name{author}{1}{}{%
         {{hash=09d592a5388131e31704c9c4464439c9}{%
@@ -151,43 +96,6 @@
       \endverb
       \verb{url}
       \verb https://www.jstor.org/stable/2528966
-      \endverb
-    \endentry
-    \entry{dong_nonparametric_2022}{article}{}
-      \name{author}{2}{}{%
-        {{hash=e16b03661fdfbcf39546885a68509604}{%
-           family={Dong},
-           familyi={D\bibinitperiod},
-           given={Hao},
-           giveni={H\bibinitperiod}}}%
-        {{hash=8bc2f1f7178e0f3bb07ef0761cf18a2d}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Yuedong},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{6b43a2e98f07ead3461a498e8de1a83b}
-      \strng{fullhash}{b9b37966d6ca88790881a80d8361a022}
-      \strng{bibnamehash}{b9b37966d6ca88790881a80d8361a022}
-      \strng{authorbibnamehash}{b9b37966d6ca88790881a80d8361a022}
-      \strng{authornamehash}{6b43a2e98f07ead3461a498e8de1a83b}
-      \strng{authorfullhash}{b9b37966d6ca88790881a80d8361a022}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The neighborhood selection method directly explores the conditional dependence structure and has been widely used to construct undirected graphical models. However, except for some special cases with discrete data, there is little research on nonparametric methods for neighborhood selection with mixed data. This paper develops a fully nonparametric neighborhood selection method under a consolidated smoothing spline ANOVA (SS ANOVA) decomposition framework. The proposed model is ﬂexible and contains many existing models as special cases. The proposed method provides a uniﬁed framework for mixed data without any restrictions on the type of each random variable. We detect edges by applying an L1 regularization to interactions in the SS ANOVA decomposition. We propose an iterative procedure to compute the estimates and establish the convergence rates for conditional density and interactions. Simulations indicate that the proposed methods perform well under Gaussian and non-Gaussian settings. We illustrate the proposed methods using two real data examples.}
-      \field{journaltitle}{Journal of Machine Learning Research}
-      \field{title}{Nonparametric {Neighborhood} {Selection} in {Graphical} {Models}}
-      \field{volume}{23}
-      \field{year}{2022}
-      \field{pages}{1\bibrangedash 26}
-      \range{pages}{26}
-      \verb{file}
-      \verb Dong and Wang - Nonparametric Neighborhood Selection in Graphical .pdf:/Users/jdomi/Zotero/storage/W3W98JKU/Dong and Wang - Nonparametric Neighborhood Selection in Graphical .pdf:application/pdf
       \endverb
     \endentry
     \entry{imperatorskaia_akademia_nauk_russia_commentarii_1726}{book}{}
