@@ -98,9 +98,9 @@
   # n = seq(1e2, 1e3, length.out=10)
   n = c(10, 50, 100, 250, 300, 500, 1e3)
   
-  d64b2 = lapply(n, glasso.perf, d = 64, .cor.str="band", .band = 1, rho = 0.2)
-  d100b2 = lapply(n, glasso.perf, d = 128, .cor.str="band", .band = 1, rho = 0.2)
-  d225b2 = lapply(n, glasso.perf, d = 256, .cor.str="band", .band = 1, rho = 0.2)
+  d64b2 = lapply(n, glasso.perf, d = 64, .cor.str="band", .band = 1, rho = 0.4)
+  d100b2 = lapply(n, glasso.perf, d = 128, .cor.str="band", .band = 1, rho = 0.4)
+  d225b2 = lapply(n, glasso.perf, d = 256, .cor.str="band", .band = 1, rho = 0.4)
   
   
   b3.plot = bind_rows(lapply(d64b2, "[[", ".df.op")
