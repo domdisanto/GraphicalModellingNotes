@@ -854,11 +854,13 @@ M-step also follows from first-order optimality conditions on the log-likelihood
 
 \begin{frame}{MissGLasso - Algorithm}
     \bf{
-\begin{itemize}
-    \item Maximize likelihood obser observe data 
-    \item Use conditional Gaussian properties to estimate sufficient statistics over complete data 
-    \item Improve iteratively 
-\end{itemize}
+\begin{enumerate}
+    \item {\Large E}stimate the expectations of sufficient statistics over complete data
+    \begin{itemize}
+        \item Conditional Gaussian properties give simple, closed forms 
+    \end{itemize}
+    \item {\Large M}aximize likelihood (GLasso) and update parameter estimates by optimality conditions 
+\end{enumerate}
     }
 \end{frame}
 
@@ -878,7 +880,7 @@ M-step also follows from first-order optimality conditions on the log-likelihood
 
 \begin{frame}{Censored Data}
     \begin{itemize}
-        \item Methods for censored data included in \texttt{cglasso} using recent papers from the package authors \cite{augugliaro_conditional_2020,augugliaro_ell_1_2018}
+        \item Methods for censored data included in \texttt{cglasso} using recent papers from the package authors \cite{augugliaro_l1_2018, augugliaro_conditional_2020}
         \item Include an extension of the MissGLasso EM algorithm for truncated Gaussian distribution 
         \item Clearly extends beyond the MAR framework but requires strict, known missing data mechanism (e.g. detection limits)
     \end{itemize}
@@ -1073,13 +1075,6 @@ M-step also follows from first-order optimality conditions on the log-likelihood
     \end{itemize}
 \end{frame}
 
-
-\begin{frame}{Missing Data Methods {\it Utilizing Graphs}}
-    \begin{itemize}
-        \item We focus on estimating graphs when the underlying (graphical) data of interest includes missingness 
-        \item cite mohan/Pearl articles
-    \end{itemize}
-\end{frame}
     
 \begin{frame}{Forgoing Sparsity Assumptions}
 \begin{itemize}

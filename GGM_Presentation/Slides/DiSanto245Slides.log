@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  4 DEC 2023 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  4 DEC 2023 15:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1062,15 +1062,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'DiSanto245Slides.bbl' found.
- (./DiSanto245Slides.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                augugliaro_ell_1_2018
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (./DiSanto245Slides.bbl)
 Package biblatex Info: Reference section=0 on input line 48.
 Package biblatex Info: Reference segment=0 on input line 48.
  (./DiSanto245Slides.nav) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -1270,11 +1262,7 @@ Overfull \hbox (1.94862pt too wide) detected at line 853
 
 ] [47
 
-]
-
-LaTeX Warning: Citation 'augugliaro_ell_1_2018' on page 48 undefined on input line 885.
-
-[48
+] [48
 
 ] [49
 
@@ -1283,7 +1271,7 @@ LaTeX Warning: Citation 'augugliaro_ell_1_2018' on page 48 undefined on input li
 ] [51
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 963.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 965.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ) [52
@@ -1294,77 +1282,78 @@ File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ] [54
 
 
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [55
+] [55
 
-] [56
+
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [56
+
+] [57
 
 ]
-<glasso_complete_ER_FixN_01.png, id=1803, 442.5333pt x 256.3176pt>
+<glasso_complete_ER_FixN_01.png, id=1833, 442.5333pt x 256.3176pt>
 File: glasso_complete_ER_FixN_01.png Graphic file (type png)
 <use glasso_complete_ER_FixN_01.png>
-Package pdftex.def Info: glasso_complete_ER_FixN_01.png  used on input line 991.
-(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
- [57
-
- <./glasso_complete_ER_FixN_01.png>]
-<glasso_complete_ER_FixN_05.png, id=1833, 442.5333pt x 256.3176pt>
-File: glasso_complete_ER_FixN_05.png Graphic file (type png)
-<use glasso_complete_ER_FixN_05.png>
-Package pdftex.def Info: glasso_complete_ER_FixN_05.png  used on input line 1000.
+Package pdftex.def Info: glasso_complete_ER_FixN_01.png  used on input line 993.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [58
 
- <./glasso_complete_ER_FixN_05.png>]
-<glasso_complete_ER_FixN_1.png, id=1863, 442.5333pt x 256.3176pt>
-File: glasso_complete_ER_FixN_1.png Graphic file (type png)
-<use glasso_complete_ER_FixN_1.png>
-Package pdftex.def Info: glasso_complete_ER_FixN_1.png  used on input line 1009.
+ <./glasso_complete_ER_FixN_01.png>]
+<glasso_complete_ER_FixN_05.png, id=1863, 442.5333pt x 256.3176pt>
+File: glasso_complete_ER_FixN_05.png Graphic file (type png)
+<use glasso_complete_ER_FixN_05.png>
+Package pdftex.def Info: glasso_complete_ER_FixN_05.png  used on input line 1002.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [59
 
- <./glasso_complete_ER_FixN_1.png>]
-<glasso_complete_ER_FixN_2.png, id=1894, 442.5333pt x 256.3176pt>
-File: glasso_complete_ER_FixN_2.png Graphic file (type png)
-<use glasso_complete_ER_FixN_2.png>
-Package pdftex.def Info: glasso_complete_ER_FixN_2.png  used on input line 1018.
+ <./glasso_complete_ER_FixN_05.png>]
+<glasso_complete_ER_FixN_1.png, id=1894, 442.5333pt x 256.3176pt>
+File: glasso_complete_ER_FixN_1.png Graphic file (type png)
+<use glasso_complete_ER_FixN_1.png>
+Package pdftex.def Info: glasso_complete_ER_FixN_1.png  used on input line 1011.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [60
 
- <./glasso_complete_ER_FixN_2.png>]
-<glasso_complete_ERmb_FixN_01.png, id=1924, 442.5333pt x 256.3176pt>
-File: glasso_complete_ERmb_FixN_01.png Graphic file (type png)
-<use glasso_complete_ERmb_FixN_01.png>
-Package pdftex.def Info: glasso_complete_ERmb_FixN_01.png  used on input line 1028.
+ <./glasso_complete_ER_FixN_1.png>]
+<glasso_complete_ER_FixN_2.png, id=1924, 442.5333pt x 256.3176pt>
+File: glasso_complete_ER_FixN_2.png Graphic file (type png)
+<use glasso_complete_ER_FixN_2.png>
+Package pdftex.def Info: glasso_complete_ER_FixN_2.png  used on input line 1020.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [61
 
- <./glasso_complete_ERmb_FixN_01.png>]
-<glasso_complete_ERmb_FixN_05.png, id=1955, 442.5333pt x 256.3176pt>
-File: glasso_complete_ERmb_FixN_05.png Graphic file (type png)
-<use glasso_complete_ERmb_FixN_05.png>
-Package pdftex.def Info: glasso_complete_ERmb_FixN_05.png  used on input line 1037.
+ <./glasso_complete_ER_FixN_2.png>]
+<glasso_complete_ERmb_FixN_01.png, id=1955, 442.5333pt x 256.3176pt>
+File: glasso_complete_ERmb_FixN_01.png Graphic file (type png)
+<use glasso_complete_ERmb_FixN_01.png>
+Package pdftex.def Info: glasso_complete_ERmb_FixN_01.png  used on input line 1030.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [62
 
- <./glasso_complete_ERmb_FixN_05.png>]
-<glasso_complete_ERmb_FixN_1.png, id=1986, 442.5333pt x 256.3176pt>
-File: glasso_complete_ERmb_FixN_1.png Graphic file (type png)
-<use glasso_complete_ERmb_FixN_1.png>
-Package pdftex.def Info: glasso_complete_ERmb_FixN_1.png  used on input line 1046.
+ <./glasso_complete_ERmb_FixN_01.png>]
+<glasso_complete_ERmb_FixN_05.png, id=1986, 442.5333pt x 256.3176pt>
+File: glasso_complete_ERmb_FixN_05.png Graphic file (type png)
+<use glasso_complete_ERmb_FixN_05.png>
+Package pdftex.def Info: glasso_complete_ERmb_FixN_05.png  used on input line 1039.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [63
 
- <./glasso_complete_ERmb_FixN_1.png>]
-<glasso_complete_ERmb_FixN_2.png, id=2016, 442.5333pt x 256.3176pt>
-File: glasso_complete_ERmb_FixN_2.png Graphic file (type png)
-<use glasso_complete_ERmb_FixN_2.png>
-Package pdftex.def Info: glasso_complete_ERmb_FixN_2.png  used on input line 1055.
+ <./glasso_complete_ERmb_FixN_05.png>]
+<glasso_complete_ERmb_FixN_1.png, id=2016, 442.5333pt x 256.3176pt>
+File: glasso_complete_ERmb_FixN_1.png Graphic file (type png)
+<use glasso_complete_ERmb_FixN_1.png>
+Package pdftex.def Info: glasso_complete_ERmb_FixN_1.png  used on input line 1048.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [64
 
- <./glasso_complete_ERmb_FixN_2.png>] [65
+ <./glasso_complete_ERmb_FixN_1.png>]
+<glasso_complete_ERmb_FixN_2.png, id=2046, 442.5333pt x 256.3176pt>
+File: glasso_complete_ERmb_FixN_2.png Graphic file (type png)
+<use glasso_complete_ERmb_FixN_2.png>
+Package pdftex.def Info: glasso_complete_ERmb_FixN_2.png  used on input line 1057.
+(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
+ [65
 
-] [66
+ <./glasso_complete_ERmb_FixN_2.png>] [66
 
 ] [67
 
@@ -1394,18 +1383,18 @@ Package logreq Info: Writing requests to 'DiSanto245Slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34686 strings out of 476025
- 704967 string characters out of 5790018
+ 34698 strings out of 476025
+ 705388 string characters out of 5790018
  1880388 words of memory out of 5000000
- 54326 multiletter control sequences out of 15000+600000
+ 54337 multiletter control sequences out of 15000+600000
  534297 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,21n,122p,2064b,1672s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb>
-Output written on DiSanto245Slides.pdf (71 pages, 3309397 bytes).
+Output written on DiSanto245Slides.pdf (71 pages, 3307661 bytes).
 PDF statistics:
- 2389 PDF objects out of 2487 (max. 8388607)
- 2192 compressed objects within 22 object streams
- 166 named destinations out of 1000 (max. 500000)
+ 2391 PDF objects out of 2487 (max. 8388607)
+ 2194 compressed objects within 22 object streams
+ 167 named destinations out of 1000 (max. 500000)
  282 words of extra memory for PDF output out of 10000 (max. 10000000)
 
