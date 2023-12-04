@@ -98,7 +98,7 @@
     \item Graph theory attributed to begin with Euler and the "Seven Bridges of K\"onigsberg" ($\sim$1736)
     \pgfsetfillopacity{0.4}
     \item Random graph theory began developing in $\sim$1940's (Moreno and Jennings) but most notably with the Erd\"os-R\'enyi random graph (1958)
-    \item Ising model ($\sim$1920's) - proposed graphical model of interactions of atomic spin
+    \item Ising model ($\sim$1920's) - proposed graphical model of interactions of phase transitions (atomic spin)
     \item Statistical "beginnings"%\footnote{"Beginnings" as earlier applications in physics were probabilistic by construction, but this may be seen as the earliest application purely from a statistical point of view, i.e. without considering physical phenomena} as a subset of methods for contingency tables and log-linear models ($\sim$1970's)
     \item Arthur Dempster (founding Harvard Stats professor) introduced covariate selection by precision matrix estimation in 1972 \cite{dempster_covariance_1972}
     \item Judea Pearl $\sim$1980's for causal intepretation of Bayesian networks
@@ -114,7 +114,7 @@
         \item Graph theory attributed to begin with Euler and the "Seven Bridges of K\"onigsberg" ($\sim$1736)
         \item Random graph theory began developing in $\sim$1940's (Moreno and Jennings) but most notably with the Erd\"os-R\'enyi random graph (1958)
         \pgfsetfillopacity{1}
-        \item Ising model ($\sim$1920's) - proposed a graphical model of interactions of atomic spin
+        \item Ising model ($\sim$1920's) - proposed a graphical model of interactions of phase transitions (atomic spin)
         \pgfsetfillopacity{0.4}
         \item Statistical "beginnings"%\footnote{"Beginnings" as earlier applications in physics were probabilistic by construction, but this may be seen as the earliest application purely from a statistical point of view, i.e. without considering physical phenomena} as a subset of methods for contingency tables and log-linear models ($\sim$1970's)
         \item Arthur Dempster (founding Harvard Stats professor) introduced covariate selection by precision matrix estimation in 1972 \cite{dempster_covariance_1972}
@@ -130,7 +130,7 @@
         \pgfsetfillopacity{0.4}
         \item Graph theory attributed to begin with Euler and the "Seven Bridges of K\"onigsberg" ($\sim$1736)
         \item Random graph theory began developing in $\sim$1940's (Moreno and Jennings) but most notably with the Erd\"os-R\'enyi random graph (1958)
-        \item Ising model ($\sim$1920's) - proposed a graphical model of interactions of atomic spin
+        \item Ising model ($\sim$1920's) - proposed a graphical model of interactions of phase transitions (atomic spin)
         \pgfsetfillopacity{1}
         \item Statistical "beginnings"\footnote{Early use in physics were probabilistic, but this may be seen as an early "purse statistics" application} as a subset of methods for contingency tables and log-linear models ($\sim$1970's)
         \pgfsetfillopacity{0.4}
@@ -344,7 +344,7 @@
 \begin{frame}{Gaussian Graphical Models}
     Recall the form and properties of a multivariate Gaussian random vector:
     \begin{gather*}
-        f(x; \mu, \Theta) = \frac{1}{(2\pi)^{d/2} |\Theta|^{1/2}} \exp\left(-\frac{1}{2} (x - \mu)^T \Theta (x - \mu)\right)
+        f(x; \mu, \Theta) = \frac{|\Theta|^{1/2}}{(2\pi)^{d/2} } \exp\left(-\frac{1}{2} (x - \mu)^T \Theta (x - \mu)\right)
     \end{gather*}
 
 \[
@@ -477,7 +477,7 @@ What does this give us?
 %Identify $\hat\Theta$ by (variations of) block-coordinate descent
 
 \begin{algorithmic}[1]
-    \State Initialize $\mathbf{W} \gets S$
+    \State Initialize $\mathbf{W} \gets S + \lambda \mathbf{I}$
     \For{$j=1,2,...,d,1 ,2 ...$ until convergence}:
     \State Partition $\mathbf{W} = \begin{bmatrix} \mathbf{W}_{kk} & \mathbf{w}_{kj} \\ \mathbf{w}_{jk} & w_{jj} \end{bmatrix}$
     \State Solve estimating equations $\mathbf{W}_{kk}\beta - \mathbf{s}_{jk} + \lambda \text{sign}\beta = 0$
@@ -487,10 +487,13 @@ What does this give us?
     \State Solve for $\hat\theta_{kj} = -\hat\beta \cdot \hat\theta_{jj}$ where $1/\hat\theta{jj}=2_{jj}-\mathbf{w}_{kj}^T\hat\beta$
     \EndFor
 \end{algorithmic}
+\end{frame}
 
+\begin{frame}{Graphical Lasso - Algorithm}
 \begin{itemize}
     \item The estimating equations themselves are solved using cyclical coordinate-descent algorithm 
     \item Additional structural checks on $\mathbf{S,W}$ at initialization and interim steps have since been implemented
+    \item Replacing $\mathbf{W}_{kk}$ with $\mathbf{S}_kk$ iterates once and returns the neighborhood selection algorithm! 
 \end{itemize}
 \end{frame}
 
@@ -637,7 +640,7 @@ What does this give us?
         \item Methods above largely assume complete data%\footnote{In the Gaussian setting, hidden/unobserved nodes or missingness can be mean-imputed, but this is fairly n\"aive/ad-hoc procedure}
         \item Networks change, measurement availability (and quality) varies
         \item Measurement is also often differential between nodes 
-        \item As a result, complete case analysis can drastically reduce sample size if requiring complete data on all nodes 
+        \item Complete case analysis can drastically reduce sample size if requiring complete data on all nodes 
     \end{itemize}
 \end{frame}
 
@@ -713,14 +716,173 @@ What does this give us?
 
 \subsection{MissGLasso}
 
-\begin{frame}{Graphical Methods for Missingness}
+\begin{frame}{MissGLasso}
     \begin{itemize}
-        \item Suppose for $X \sim N(0, \Sigma)$, we can partition $X = (X_o, X_m)$
-        \item 
+        \item Suppose for $X^{(i)} \sim N(\mu, \Sigma)$, we can partition $X = (X^{(i)}_o, X^{(i)}_m)$
+        \item Consider all observed data $\mathbf{X}_o = (X_o^{(1)}, X_o^{(2)}, ..., X_o^{(N)})$ and maximize the resulting likelihood (with penalty):
+    \end{itemize}
+    
+    \begin{align*}
+        \hat\Theta 
+        &= 
+        argmax_{\Theta\succ 0}
+        \ell_\lambda(\Sigma; \mathbf{X}_o)
+        =
+        argmin_{\Theta\succ 0}
+        -\ell_\lambda(\Sigma; \mathbf{X}_o)
+        \\
+        -
+        \ell_\lambda(\Sigma; \mathbf{X}_o)
+        &=
+        -
+        \sum_{i=1}^N 
+        \frac{1}{2} \log \det \Theta_o
+        +
+        \frac{1}{2} (X_o^{(i)}-\mu_o)^T \Theta_o (X_o^{(i)} -\mu_o)
+        +
+        \lambda ||\Theta||_1
+    \end{align*}
+
+    \begin{itemize}
+        \item Despite similar structure to our typical Gaussian log-likelihood, because of missingness, {\bf this is not necessarily convex}! 
     \end{itemize}
 \end{frame}
 
-\subsection{{\it Erose} Data and GI-JOE}
+
+\begin{frame}{MissGLasso - Algorithm}
+\begin{itemize}
+    \item We can consider our unobserved $\mathbf{X}_m$ latent, and implement EM! 
+\end{itemize}
+
+\begin{align*}
+    -\ell_\lambda(\Sigma; \mathbf{X})
+    &=
+    -
+    \frac{n}{2}\log \det \Theta 
+    +
+    \frac{n}{2} \mu^T \Theta \mu 
+    -
+    \mu^T \Theta \underbrace{X^T \mathbf{1}}_{\mathbf{T}_1}
+    +
+    \frac{1}{2}\text{tr}(\Theta \underbrace{X^T X}_{\mathbf{T}_2})
+    +
+    \lambda||\Theta||_1
+\end{align*}
+
+\begin{itemize}
+    \item $\mathbb{E}(\ell_\lambda | X_o, \mu, \Theta)$ is only random in $\mathbf{T_1, T_2}$
+    \item The E-step reduces to $\mathbb{E}(\mathbf{T}_1 | X_o, \mu, \Theta)$ and $\mathbb{E}(\mathbf{T}_2 | X_o, \mu, \Theta)$
+    \begin{itemize}
+        \item More simply,  $\mathbb{E}(x_k^{(i)} | X_o^{(i)}, \mu, \Theta)$ and $\mathbb{E}(x_j^{(i)} x_k^{(i)} | X_o^{(i)}, \mu, \Theta)$, $j,k=1,...,d; i=1,...,N$ 
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{MissGLasso - Algorithm}
+
+Moreover, by conditional properties of the Gaussian, for the $\gamma$th iteration, we have simple forms for these expectations! 
+
+
+\begin{align*}
+    \text{Let }
+    c
+    &= 
+    \mu_m^{(\gamma)}
+    -
+    (\Theta^{(-1)}_{mm})^{(\gamma)}
+    \Theta_{mo}^{(\gamma)}
+    (X_o - \mu_o)
+    \\ 
+    \mathbf{T}_1^{(\gamma+1)}
+    =
+    \mathbb{E}(x_j | X_o, \mu, \Theta)
+    &=
+    \begin{cases}
+        x_j, & \text{if $x_j$ observed} \\ 
+        c_j 
+         & otherwise \\ 
+    \end{cases}
+\\
+    \mathbf{T}_2^{(\gamma+1)}
+    =
+    \mathbb{E}(x_jx_k | X_o, \mu, \Theta)
+    &=
+    \begin{cases}
+        x_jx_k, & \text{if $x_j,x_k$ observed} \\ 
+        x_j c_k, & \text{if only $x_j$ observed} \\ 
+        \left(\Theta_{mm}^{(\gamma)} \right)^{-1}_{jk}
+        +
+        c_j c_k, & \text{if $x_j, x_k$ missing}
+    \end{cases}
+\end{align*}
+
+\end{frame}
+
+
+\begin{frame}{MissGLasso - Algorithm}
+M-step also follows from first-order optimality conditions on the log-likelihood with these nice expectations:
+
+\begin{align*}
+    \mu^{(\gamma+1)}
+    &=
+    \frac{1}{n}\mathbf{T}_1^{(\gamma+1)}
+    \\
+    \Theta^{(\gamma + 1)}
+    &=
+    argmin_{\Theta \succ 0}
+    \Big\{
+    -\log \det \Theta 
+    +
+    \text{tr}
+    \left(
+        \Theta 
+        \left[ 
+            \frac{1}{n}\mathbf{T}_2^{(\gamma + 1)}
+            -
+            \mu^{(\gamma + 1)}
+            (\mu^{(\gamma + 1)})^T
+        \right]
+    \right)
+    \\
+    &\hspace{21mm}
+    +
+    \frac{2\lambda}{n}||\Theta||_1 \Big\}
+\end{align*}
+
+\end{frame}
+
+\begin{frame}{MissGLasso - Algorithm}
+    \bf{
+\begin{itemize}
+    \item Maximize likelihood obser observe data 
+    \item Use conditional Gaussian properties to estimate sufficient statistics over complete data 
+    \item Improve iteratively 
+\end{itemize}
+    }
+\end{frame}
+
+\begin{frame}{MissGlasso - Notes}
+    \begin{itemize}
+        \item Fairly intuitive implementation which allows us to use all data, including rarely observed nodes 
+        \item Outperforms complete case analysis and mean-imputation in graph selection 
+        \item Assumes MAR and empirically underperforms in simulations with MNAR data 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+    \bf{\Large What is the state of methods for partially-observed, MNAR graphs?}
+\end{frame}
+
+\subsection{Additional Missing Data Methods}
+
+\begin{frame}{Censored Data}
+    \begin{itemize}
+        \item Methods for censored data included in \texttt{cglasso} using recent papers from the package authors \cite{augugliaro_conditional_2020,augugliaro_ell_1_2018}
+        \item Include an extension of the MissGLasso EM algorithm for truncated Gaussian distribution 
+        \item Clearly extends beyond the MAR framework but requires strict, known missing data mechanism (e.g. detection limits)
+    \end{itemize}
+\end{frame}
 
 
 
@@ -732,15 +894,36 @@ What does this give us?
             \item Erose data almost certainly violate MAR/MCAR assumptions of existing methods 
             \item Motivated by neuroscience but with applications in genetic expression data, 
         \end{itemize}
+        \item Authors propose the {\it \bf{G}raph \bf{I}nference when \bf{J}oint \bf{O}bservations are \bf{Erose}} (GI-JOE) method for edge-wise inference in erosely observed edges 
+        \begin{itemize}
+            \item Adaptation of debiased neighborhood selection algorithm 
+            \item Does not require imputation of missing values
+        \end{itemize}
     \end{itemize} 
 \end{frame}
 
 
-\begin{frame}{GI-JOE for Erose Data}
+
+\section*{Conclusion}
+
+
+
+
+
+
+\begin{frame}{Concluding Notes}
+    \begin{itemize}\setlength\itemsep{4mm}
+        \item Graphs are a powerful representation of your multivariate data {\bf(intuitively and algorithmically)}
+        \item These extensions tend to distill to regularized M-estimation problems, an area with great theoretical contributions and guarantees
+        \item Important to consider sparsity/degree scaling of your graph
+        \begin{itemize}
+            \item Early methods quickly recover graph structure, even when $N\ll d$
+        \end{itemize}
+        \item \texttt{huge, cglasso} packages are poweful implementations in R
+    \end{itemize}
 \end{frame}
 
 
-\section*{Conclusion}
 
 \begin{frame}{Graphs, how and why (revisited)?}
     \centering
@@ -762,22 +945,15 @@ What does this give us?
     \node[blue, scale=3, opacity=1] (Q) at (0,0) {\Huge ?}; % Add a large question mark in the center
     \node (inv) at (2.4, 0) {};
     %\node[opacity=1] (NH) at (6.4, 0.5) {Neighborhood Selection (even with {\it erose} data)};
-    \node[opacity=1] (M) at (6.4, 0) {Regularized M-estimation(+)!};
+    \node[opacity=1] (M) at (6.1, 0) {Regularized M-estimation(+)!};
+    \node[opacity=1] (C) at (6.2, -0.5) {$\rightarrow$ Consistency};
+    \node[opacity=1] (C) at (6.2, -1) {$\rightarrow$ Fast computation  even for $p\gg N$};
+    \node[opacity=1] (MLE) at (6.2, -1.5) {$\rightarrow$ MLE via GLasso};
+    \node[opacity=1] (EM) at (6.2, -2) {$\rightarrow$ EM Extensions for MAR};
     %\node[opacity=1] (NH) at (6.4, -0.5) {Conditional GLasso models};
     \draw[->, opacity=1, line width=0.4mm] (inv) edge (M);
     \end{tikzpicture}
 \end{frame}
-
-
-\begin{frame}{Conclusion}
-    \begin{itemize}
-        \item Graphs are a powerful representation of your multivariate data (intuitively and algorithmically)
-        \item Useful, theoretical extensions may follow more immediately under the graphical model formalism 
-        \item These extensions tend\footnote{Under a high-dimensiona/assumed-sparsity regime} to distill to regularized M-estimation problems, an area with great theoretical contributions and guarantees
-        \item Extensions beyond Gaussianity substantially increase complexity 
-    \end{itemize}
-\end{frame}
-
 
 \begin{frame}[allowframebreaks]{References}
     \begin{itemize}
@@ -886,7 +1062,14 @@ What does this give us?
 
 \begin{frame}{Conditional Graphical Lasso}
     \begin{itemize}
-        \item Cite \texttt{cglasso} package, MissGLasso paper for relevant conditional graphical lasso (i.e. predictor/response sets of interest)
+        \item Can consider random vectors $Y, X$
+        \begin{itemize}
+            \item $Y$ is a random vector of interest (i.e. our graph structure)
+            \item $X$ is a common set of covariates included in all conditioning
+        \end{itemize}
+        \item See \texttt{cglasso} package \cite{augugliaro_cglasso_2023} for implementation
+        \item Package includes conditional MissGLasso implementation
+        \item Methods are extended for censoring 
     \end{itemize}
 \end{frame}
 
@@ -942,6 +1125,7 @@ See Michael Eichler's {\it "Granger-causality graphs for multivariate time serie
     \item The typical lasso estimator $\hat\beta_\lambda = \text{argmin}\beta ||Y-X\beta||_2^2 + \lambda||\beta||_1$ is biased for true $beta^*$
     \item Can construct debiased estimator $\hat\beta_\lambda^d$ with asymptotic normality 
     \item What inference does this permit in graphical models that use $\ell_1$ penalization? 
+    \item Debiased neighborhood selection is partial motivation for Zheng, Allen's GI-JOE paper \cite{zheng_gi-joe_2023}
     \end{itemize}
 \end{frame}
 

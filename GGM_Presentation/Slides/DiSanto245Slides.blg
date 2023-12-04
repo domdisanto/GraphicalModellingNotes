@@ -1,0 +1,18 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'DiSanto245Slides.blg'
+[35] biber-darwin:340> INFO - === Mon Dec  4, 2023, 15:27:59
+[43] Biber.pm:419> INFO - Reading 'DiSanto245Slides.bcf'
+[89] Biber.pm:979> INFO - Found 13 citekeys in bib section 0
+[96] Biber.pm:4419> INFO - Processing section 0
+[101] Biber.pm:4610> INFO - Looking for bibtex file 'BST245_Project.bib' for section 0
+[104] bibtex.pm:1713> INFO - LaTeX decoding ...
+[136] bibtex.pm:1519> INFO - Found BibTeX data source 'BST245_Project.bib'
+[191] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[191] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[192] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[192] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[200] bbl.pm:660> INFO - Writing 'DiSanto245Slides.bbl' with encoding 'UTF-8'
+[205] bbl.pm:763> INFO - Output to DiSanto245Slides.bbl
+[205] Biber.pm:131> WARN - ISBN '978-0-387-84857-0 978-0-387-84858-7' in entry 'hastie_elements_2009' is invalid - run biber with '--validate_datamodel' for details.
+[205] Biber.pm:131> WARN - I didn't find a database entry for 'augugliaro_ell_1_2018' (section 0)
+[205] Biber.pm:133> INFO - WARNINGS: 2

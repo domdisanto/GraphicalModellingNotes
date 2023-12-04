@@ -80,82 +80,96 @@
 \headcommand {\beamer@framepages {35}{35}}
 \headcommand {\slideentry {2}{2}{15}{36/36}{Graphical Lasso}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\beamer@subsectionpages {22}{36}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{37}{Further Notes}}
-\headcommand {\slideentry {2}{3}{1}{37/37}{Further Notes}{0}}
+\headcommand {\slideentry {2}{2}{16}{37/37}{Graphical Lasso}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@sectionpages {18}{37}}
-\headcommand {\beamer@subsectionpages {37}{37}}
-\headcommand {\sectionentry {3}{Estimation with Missingness}{38}{Estimation with Missingness}{0}}
-\headcommand {\slideentry {3}{0}{1}{38/38}{}{0}}
+\headcommand {\beamer@subsectionpages {22}{37}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{38}{Further Notes}}
+\headcommand {\slideentry {2}{3}{1}{38/38}{Further Notes}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {3}{0}{2}{39/39}{}{0}}
+\headcommand {\beamer@sectionpages {18}{38}}
+\headcommand {\beamer@subsectionpages {38}{38}}
+\headcommand {\sectionentry {3}{Estimation with Missingness}{39}{Estimation with Missingness}{0}}
+\headcommand {\slideentry {3}{0}{1}{39/39}{}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@subsectionpages {38}{39}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{40}{MissGLasso}}
-\headcommand {\slideentry {3}{1}{1}{40/40}{MissGLasso}{0}}
+\headcommand {\slideentry {3}{0}{2}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@subsectionpages {40}{40}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{41}{{\it Erose} Data and GI-JOE}}
-\headcommand {\slideentry {3}{2}{1}{41/41}{{\it Erose} Data and GI-JOE}{0}}
+\headcommand {\beamer@subsectionpages {39}{40}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{41}{MissGLasso}}
+\headcommand {\slideentry {3}{1}{1}{41/41}{MissGLasso}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {3}{2}{2}{42/42}{{\it Erose} Data and GI-JOE}{0}}
+\headcommand {\slideentry {3}{1}{2}{42/42}{MissGLasso}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\beamer@sectionpages {38}{42}}
-\headcommand {\beamer@subsectionpages {41}{42}}
-\headcommand {\sectionentry {4}{Conclusion}{43}{Conclusion}{0}}
-\headcommand {\slideentry {4}{0}{1}{43/43}{}{0}}
+\headcommand {\slideentry {3}{1}{3}{43/43}{MissGLasso}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {4}{0}{2}{44/44}{}{0}}
+\headcommand {\slideentry {3}{1}{4}{44/44}{MissGLasso}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@sectionpages {43}{44}}
-\headcommand {\beamer@subsectionpages {43}{44}}
-\headcommand {\sectionentry {5}{References}{45}{References}{0}}
-\headcommand {\slideentry {5}{0}{0}{45/45}{}{0}}
+\headcommand {\slideentry {3}{1}{5}{45/45}{MissGLasso}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {5}{0}{0}{45/46}{}{0}}
-\headcommand {\beamer@framepages {45}{46}}
-\headcommand {\slideentry {5}{0}{0}{45/47}{}{0}}
-\headcommand {\beamer@framepages {45}{47}}
-\headcommand {\beamer@sectionpages {43}{47}}
-\headcommand {\beamer@subsectionpages {43}{47}}
-\headcommand {\sectionentry {6}{Appendix}{48}{Appendix}{0}}
-\headcommand {\slideentry {6}{0}{1}{48/48}{}{0}}
+\headcommand {\slideentry {3}{1}{6}{46/46}{MissGLasso}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\slideentry {3}{1}{7}{47/47}{MissGLasso}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\beamer@subsectionpages {41}{47}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{48}{Additional Missing Data Methods}}
+\headcommand {\slideentry {3}{2}{1}{48/48}{Additional Missing Data Methods}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {6}{0}{2}{49/49}{}{0}}
+\headcommand {\slideentry {3}{2}{2}{49/49}{Additional Missing Data Methods}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {6}{0}{3}{50/50}{}{0}}
+\headcommand {\beamer@sectionpages {39}{49}}
+\headcommand {\beamer@subsectionpages {48}{49}}
+\headcommand {\sectionentry {4}{Conclusion}{50}{Conclusion}{0}}
+\headcommand {\slideentry {4}{0}{1}{50/50}{}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\slideentry {6}{0}{4}{51/51}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{51/51}{}{0}}
 \headcommand {\beamer@framepages {51}{51}}
-\headcommand {\slideentry {6}{0}{5}{52/52}{}{0}}
+\headcommand {\beamer@sectionpages {50}{51}}
+\headcommand {\beamer@subsectionpages {50}{51}}
+\headcommand {\sectionentry {5}{References}{52}{References}{0}}
+\headcommand {\slideentry {5}{0}{0}{52/52}{}{0}}
 \headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {6}{0}{6}{53/53}{}{0}}
-\headcommand {\beamer@framepages {53}{53}}
-\headcommand {\slideentry {6}{0}{7}{54/54}{}{0}}
-\headcommand {\beamer@framepages {54}{54}}
-\headcommand {\slideentry {6}{0}{8}{55/55}{}{0}}
+\headcommand {\slideentry {5}{0}{0}{52/53}{}{0}}
+\headcommand {\beamer@framepages {52}{53}}
+\headcommand {\slideentry {5}{0}{0}{52/54}{}{0}}
+\headcommand {\beamer@framepages {52}{54}}
+\headcommand {\beamer@sectionpages {50}{54}}
+\headcommand {\beamer@subsectionpages {50}{54}}
+\headcommand {\sectionentry {6}{Appendix}{55}{Appendix}{0}}
+\headcommand {\slideentry {6}{0}{1}{55/55}{}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\slideentry {6}{0}{9}{56/56}{}{0}}
+\headcommand {\slideentry {6}{0}{2}{56/56}{}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\slideentry {6}{0}{10}{57/57}{}{0}}
+\headcommand {\slideentry {6}{0}{3}{57/57}{}{0}}
 \headcommand {\beamer@framepages {57}{57}}
-\headcommand {\slideentry {6}{0}{11}{58/58}{}{0}}
+\headcommand {\slideentry {6}{0}{4}{58/58}{}{0}}
 \headcommand {\beamer@framepages {58}{58}}
-\headcommand {\slideentry {6}{0}{12}{59/59}{}{0}}
+\headcommand {\slideentry {6}{0}{5}{59/59}{}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\slideentry {6}{0}{13}{60/60}{}{0}}
+\headcommand {\slideentry {6}{0}{6}{60/60}{}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\slideentry {6}{0}{14}{61/61}{}{0}}
+\headcommand {\slideentry {6}{0}{7}{61/61}{}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {6}{0}{15}{62/62}{}{0}}
+\headcommand {\slideentry {6}{0}{8}{62/62}{}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\slideentry {6}{0}{16}{63/63}{}{0}}
+\headcommand {\slideentry {6}{0}{9}{63/63}{}{0}}
 \headcommand {\beamer@framepages {63}{63}}
-\headcommand {\slideentry {6}{0}{17}{64/64}{}{0}}
+\headcommand {\slideentry {6}{0}{10}{64/64}{}{0}}
 \headcommand {\beamer@framepages {64}{64}}
-\headcommand {\beamer@partpages {1}{64}}
-\headcommand {\beamer@subsectionpages {48}{64}}
-\headcommand {\beamer@sectionpages {48}{64}}
-\headcommand {\beamer@documentpages {64}}
-\headcommand {\gdef \inserttotalframenumber {64}}
+\headcommand {\slideentry {6}{0}{11}{65/65}{}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\slideentry {6}{0}{12}{66/66}{}{0}}
+\headcommand {\beamer@framepages {66}{66}}
+\headcommand {\slideentry {6}{0}{13}{67/67}{}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {6}{0}{14}{68/68}{}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {6}{0}{15}{69/69}{}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\slideentry {6}{0}{16}{70/70}{}{0}}
+\headcommand {\beamer@framepages {70}{70}}
+\headcommand {\slideentry {6}{0}{17}{71/71}{}{0}}
+\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\beamer@partpages {1}{71}}
+\headcommand {\beamer@subsectionpages {55}{71}}
+\headcommand {\beamer@sectionpages {55}{71}}
+\headcommand {\beamer@documentpages {71}}
+\headcommand {\gdef \inserttotalframenumber {71}}

@@ -1531,7 +1531,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT ./DiSanto245Slides.toc
 INPUT DiSanto245Slides.toc
 INPUT DiSanto245Slides.toc
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT ./DiSanto245Slides.toc
 INPUT DiSanto245Slides.toc
 INPUT DiSanto245Slides.toc
@@ -1579,6 +1578,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/sansmathaccent/mathker
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
@@ -1659,7 +1659,6 @@ INPUT ./DiSanto245Slides.toc
 INPUT DiSanto245Slides.toc
 INPUT DiSanto245Slides.toc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi12.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
