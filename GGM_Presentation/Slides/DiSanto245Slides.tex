@@ -9,6 +9,8 @@
     \tableofcontents[currentsection]
   \end{frame}
 }
+\usepackage{algorithm}
+\usepackage{algpseudocodex}
 \usepackage{tikz}
 
 \usetheme{CambridgeUS}
@@ -472,7 +474,13 @@ What does this give us?
 \end{frame}
 
 \begin{frame}{Graphical Lasso - Optimization}
-    \textcolor{red}{Block coordinate optimiaztion here?}
+
+Identify $\hat\Theta$ by (variations of) block-coordinate descent
+
+\begin{algorithmic}[1]
+    \State Initialize $\mathbf{W} = \mathbf{S}$
+\end{algorithmic}   
+
 \end{frame}
 
 \begin{frame}{Simulations (Complete Data)}
@@ -614,21 +622,89 @@ What does this give us?
 \section{Estimation with Missingness}
 
 \begin{frame}{Motivation}
-    \begin{itemize}
-        \item Methods above largely assume complete data\footnote{In the Gaussian setting, hidden/unobserved nodes or missingness can be mean-imputed, but this is fairly n\"aive/ad-hoc procedure}
+    \begin{itemize}\setlength\itemsep{6mm}
+        \item Methods above largely assume complete data%\footnote{In the Gaussian setting, hidden/unobserved nodes or missingness can be mean-imputed, but this is fairly n\"aive/ad-hoc procedure}
         \item Networks change, measurement availability (and quality) varies
         \item Measurement is also often differential between nodes 
     \end{itemize}
-    \textcolor{red}{Visualization here}
 \end{frame}
 
-\begin{frame}{Na\"ive Methods with Missingness}
-    \textcolor{red}{Results with nhood, GLasso in grahpicswith missingness}
+\iffalse 
+\begin{frame}{Missingness}
+    \scalebox{0.5}{
+    \foreach \j in {1,...,5}{
+    \begin{tikzpicture}[opacity=0.7]
+        \foreach \i in {1,...,20} {
+            \node[circle, draw, fill=black, inner sep=2pt] (node\i) at ({360/20 * (\i - 1)}:2) {};
+          }
+        
+          \foreach \i in {1,...,19} {
+            \foreach \j in {\i,...,20} {
+              \ifnum\i<\j
+                \pgfmathparse{rnd}
+                \ifdim\pgfmathresult pt<0.2pt
+                  \draw (node\i) -- (node\j);
+                \fi
+              \fi
+            }
+          }
+    \end{tikzpicture}
+    }
+    }
+
+    \scalebox{0.5}{
+        \foreach \j in {1,...,5}{
+        \begin{tikzpicture}[opacity=0.7]
+            \foreach \i in {1,...,20} {
+                \node[circle, draw, fill=black, inner sep=2pt] (node\i) at ({360/20 * (\i - 1)}:2) {};
+              }
+            
+              \foreach \i in {1,...,19} {
+                \foreach \j in {\i,...,20} {
+                  \ifnum\i<\j
+                    \pgfmathparse{rnd}
+                    \ifdim\pgfmathresult pt<0.2pt
+                      \draw (node\i) -- (node\j);
+                    \fi
+                  \fi
+                }
+              }
+        \end{tikzpicture}
+        }
+        }
+    
 \end{frame}
+
+
+
+\begin{frame}{Standard GGM Method for Missingness}
+    
+    \begin{center}
+        \begin{tabular}{|c||c c c c||} 
+         \hline
+         Observation (i) & $X_{i1}$ & $X_{i2}$ & \dots & $X_{id}$ \\ [0.5ex] 
+         \hline\hline
+         1 &  $X_{11}$ & $X_{12}$ & \dots & $X_{1d}$ \\ 
+         \hline
+         2 & $X_{21}$ & $X_{22}$ & \dots & $X_{2d}$ \\
+         \hline
+         3 & $X_{31}$ & $X_{32}$ & \dots & $X_{3d}$ \\
+         \hline
+         \vdots & \vdots & \vdots & \vdots & \vdots \\
+         \hline
+         N &  $X_{N1}$ & $X_{N2}$ & \dots & $X_{Nd}$\\ [1ex] 
+         \hline
+        \end{tabular}
+        \end{center}
+\end{frame}
+\fi 
 
 \subsection{General Methods}
 
 \begin{frame}{Graphical Methods for Missingness}
+    \begin{itemize}
+        \item Suppose we partition $X = (X_a, X_b)$
+    \end{itemize}
 \end{frame}
 
 \subsection{{\it Erose} Data and GI-JOE}
@@ -793,6 +869,13 @@ What does this give us?
 
 \begin{frame}{}
     \bf{\Large Misc. Notes}    
+\end{frame}
+
+\begin{frame}{Missing Data Methods {\it Utilizing Graphs}}
+    \begin{itemize}
+        \item We focus on estimating graphs when the underlying (graphical) data of interest includes missingness 
+        \item cite mohan/Pearl articles
+    \end{itemize}
 \end{frame}
     
 \begin{frame}{Forgoing Sparsity Assumptions}

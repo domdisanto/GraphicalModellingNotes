@@ -4,5 +4,5 @@
 \beamer@subsectionintoc {2}{2}{Graphical Lasso}{22}{0}{2}
 \beamer@subsectionintoc {2}{3}{Further Notes}{37}{0}{2}
 \beamer@sectionintoc {3}{Estimation with Missingness}{38}{0}{3}
-\beamer@subsectionintoc {3}{1}{General Methods}{41}{0}{3}
-\beamer@subsectionintoc {3}{2}{{\it Erose} Data and GI-JOE}{42}{0}{3}
+\beamer@subsectionintoc {3}{1}{General Methods}{40}{0}{3}
+\beamer@subsectionintoc {3}{2}{{\it Erose} Data and GI-JOE}{41}{0}{3}
