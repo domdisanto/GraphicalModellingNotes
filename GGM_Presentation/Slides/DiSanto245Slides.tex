@@ -49,9 +49,8 @@
 
 \begin{frame}{Notes (To Be Deleted)}
     \begin{itemize}
-        \item Maybe scrap nhood selection for time 
         \item \textcolor{red}{Be able to speak to glasso over neighborhood selection, how sparsity guarantees MLE existence}
-        \item Analyses/slides for missingness TBD 
+        \item Finish missing data results 
     \end{itemize}
 \end{frame}
 
@@ -473,14 +472,26 @@ What does this give us?
 % SLS has nice notes on this as well
 \end{frame}
 
-\begin{frame}{Graphical Lasso - Optimization}
 
-Identify $\hat\Theta$ by (variations of) block-coordinate descent
+\begin{frame}{Graphical Lasso - Algorithm\footnote{Pseudocode adopted from Elements of Statistical Learning, Chapter 17 \cite{hastie_elements_2009} and Statistical Learning with Sparsity, Chapter 9 \cite{hastie_statistical_2016}}}
+%Identify $\hat\Theta$ by (variations of) block-coordinate descent
 
 \begin{algorithmic}[1]
-    \State Initialize $\mathbf{W} = \mathbf{S}$
-\end{algorithmic}   
+    \State Initialize $\mathbf{W} \gets S$
+    \For{$j=1,2,...,d,1 ,2 ...$ until convergence}:
+    \State Partition $\mathbf{W} = \begin{bmatrix} \mathbf{W}_{kk} & \mathbf{w}_{kj} \\ \mathbf{w}_{jk} & w_{jj} \end{bmatrix}$
+    \State Solve estimating equations $\mathbf{W}_{kk}\beta - \mathbf{s}_{jk} + \lambda \text{sign}\beta = 0$
+    \State Update $\mathbf{w_{kj}} = \mathbf{W}_{kk}\hat\beta$
+    \EndFor
+    \For{$j=1,2,...,d$ final update:}
+    \State Solve for $\hat\theta_{kj} = -\hat\beta \cdot \hat\theta_{jj}$ where $1/\hat\theta{jj}=2_{jj}-\mathbf{w}_{kj}^T\hat\beta$
+    \EndFor
+\end{algorithmic}
 
+\begin{itemize}
+    \item The estimating equations themselves are solved using cyclical coordinate-descent algorithm 
+    \item Additional structural checks on $\mathbf{S,W}$ at initialization and interim steps have since been implemented
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Simulations (Complete Data)}
@@ -626,6 +637,7 @@ Identify $\hat\Theta$ by (variations of) block-coordinate descent
         \item Methods above largely assume complete data%\footnote{In the Gaussian setting, hidden/unobserved nodes or missingness can be mean-imputed, but this is fairly n\"aive/ad-hoc procedure}
         \item Networks change, measurement availability (and quality) varies
         \item Measurement is also often differential between nodes 
+        \item As a result, complete case analysis can drastically reduce sample size if requiring complete data on all nodes 
     \end{itemize}
 \end{frame}
 
@@ -699,11 +711,12 @@ Identify $\hat\Theta$ by (variations of) block-coordinate descent
 \end{frame}
 \fi 
 
-\subsection{General Methods}
+\subsection{MissGLasso}
 
 \begin{frame}{Graphical Methods for Missingness}
     \begin{itemize}
-        \item Suppose we partition $X = (X_a, X_b)$
+        \item Suppose for $X \sim N(0, \Sigma)$, we can partition $X = (X_o, X_m)$
+        \item 
     \end{itemize}
 \end{frame}
 
@@ -870,6 +883,13 @@ Identify $\hat\Theta$ by (variations of) block-coordinate descent
 \begin{frame}{}
     \bf{\Large Misc. Notes}    
 \end{frame}
+
+\begin{frame}{Conditional Graphical Lasso}
+    \begin{itemize}
+        \item Cite \texttt{cglasso} package, MissGLasso paper for relevant conditional graphical lasso (i.e. predictor/response sets of interest)
+    \end{itemize}
+\end{frame}
+
 
 \begin{frame}{Missing Data Methods {\it Utilizing Graphs}}
     \begin{itemize}

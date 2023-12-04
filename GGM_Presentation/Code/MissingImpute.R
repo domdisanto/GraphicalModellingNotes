@@ -10,10 +10,17 @@ head.matrix = function(mat, n=5){
   print(mat[1:n, 1:n])
 }
 
+# MAR #### 
+N = 1000 
+d = 64
+rho = 0.3 
 
-n <- 1000L
-p <- 3L
-q <- 2L
+Sigma <- outer(1L:p, 1L:p, function(i, j) rho^abs(i - j))
+Z <- rcggm(n = n, b0 = b0, X = X, B = B, Sigma = Sigma, probna = 0.05)
+out <- cglasso(. ~ ., data = Z)
+
+
+
 b0 <- runif(p)
 B <- matrix(runif(q * p), nrow = q, ncol = p)
 X <- matrix(rnorm(n * q), nrow = n, ncol = q)
@@ -23,12 +30,14 @@ Z <- rcggm(n = n, b0 = b0, X = X, B = B, Sigma = Sigma, probna = 0.05)
 out <- cglasso(. ~ ., data = Z)
 out
 
-anyNA(Z$X)
-sum(is.na(Z$Y[,3]))
+.Z = Z
+.Z$X = NULL 
 
-cglasso(. ~ ., data=.Z)
+.test = cglasso(. ~ ., data=.Z)
+.rho = mean(.test$rho)
+.testY = impute(.test ,"mar", rho.new = .rho)
 
-cglasso(. ~ ., data=Z)
+.test = cglasso(. ~ ., data=Z)
 
 
 

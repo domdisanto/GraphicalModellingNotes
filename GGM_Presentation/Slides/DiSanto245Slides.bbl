@@ -98,6 +98,109 @@
       \verb https://www.jstor.org/stable/2528966
       \endverb
     \endentry
+    \entry{hastie_elements_2009}{book}{}
+      \name{author}{3}{}{%
+        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=971cf69058b64a94326dea0f2a8bbcce}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Jerome},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{fullhash}{7ca1bfe876d5e037b6aed69704221267}
+      \strng{bibnamehash}{7ca1bfe876d5e037b6aed69704221267}
+      \strng{authorbibnamehash}{7ca1bfe876d5e037b6aed69704221267}
+      \strng{authornamehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{authorfullhash}{7ca1bfe876d5e037b6aed69704221267}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-387-84857-0 978-0-387-84858-7}
+      \field{series}{Springer {Series} in {Statistics}}
+      \field{title}{The {Elements} of {Statistical} {Learning}}
+      \field{urlday}{4}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-0-387-84858-7
+      \endverb
+      \verb{file}
+      \verb Full Text:/Users/jdomi/Zotero/storage/FA7G4XEY/Hastie et al. - 2009 - The Elements of Statistical Learning.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-0-387-84858-7
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-0-387-84858-7
+      \endverb
+      \keyw{Averaging,Boosting,classification,clustering,data mining,machine learning,Projection pursuit,Random Forest,supervised learning,Support Vector Machine,unsupervised learning}
+    \endentry
+    \entry{hastie_statistical_2016}{book}{}
+      \name{author}{3}{}{%
+        {{hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f63ed13ae004bc07c17dcf5ae0e2838e}{%
+           family={Wainwright},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{fullhash}{4b904fc327b90ea5c4688fa39b069225}
+      \strng{bibnamehash}{4b904fc327b90ea5c4688fa39b069225}
+      \strng{authorbibnamehash}{4b904fc327b90ea5c4688fa39b069225}
+      \strng{authornamehash}{45eb7d473651da447f1d77717e7f8650}
+      \strng{authorfullhash}{4b904fc327b90ea5c4688fa39b069225}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Statistical {Learning} with {Sparsity}: the {Lasso} and {Generalizations}}
+      \field{urlday}{4}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Statistical Learning with Sparsity\: the Lasso and Generalizations:/Users/jdomi/Zotero/storage/RBQYZ7L5/StatLearnSparsity.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://hastie.su.domains/StatLearnSparsity/
+      \endverb
+      \verb{url}
+      \verb https://hastie.su.domains/StatLearnSparsity/
+      \endverb
+    \endentry
     \entry{imperatorskaia_akademia_nauk_russia_commentarii_1726}{book}{}
       \name{author}{1}{}{%
         {{hash=92a00b569579a6ef2308be0014a2dc55}{%
