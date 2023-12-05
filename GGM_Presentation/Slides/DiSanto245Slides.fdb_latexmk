@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber DiSanto245Slides"] 1701721823 "DiSanto245Slides.bcf" "DiSanto245Slides.bbl" "DiSanto245Slides" 1701722236 0
+["biber DiSanto245Slides"] 1701735069 "DiSanto245Slides.bcf" "DiSanto245Slides.bbl" "DiSanto245Slides" 1701743580 0
   "./BST245_Project.bib" 1701720947 42265 119aea841a2892c86d67425fb99ef300 ""
-  "DiSanto245Slides.bcf" 1701722236 108981 fdaa4c3de4e7aed09d750aef64e792a3 "pdflatex"
+  "DiSanto245Slides.bcf" 1701743580 109056 ad7e5c63268a35e4cfe6ef0b8191c4bb "pdflatex"
   (generated)
   "DiSanto245Slides.bbl"
   "DiSanto245Slides.blg"
   (rewritten before read)
-["pdflatex"] 1701722227 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GGM_Presentation/Slides/DiSanto245Slides.tex" "DiSanto245Slides.pdf" "DiSanto245Slides" 1701722236 0
-  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GGM_Presentation/Slides/DiSanto245Slides.tex" 1701722227 43249 df6beac9ea08b191ab7642846bdafa6a ""
+["pdflatex"] 1701743571 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GGM_Presentation/Slides/DiSanto245Slides.tex" "DiSanto245Slides.pdf" "DiSanto245Slides" 1701743580 0
+  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GGM_Presentation/Slides/DiSanto245Slides.tex" 1701743554 42987 ca724a53f03ea77207c91567db72b549 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcsi1095.tfm" 1136768653 2048 deb1f56b7417729340fec7e4c9055e8e ""
@@ -40,7 +40,6 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm" 1136768653 1520 ca2bb4b78ac9800bd686e30c6d19ef95 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi12.tfm" 1136768653 1532 48589e216c7fb787d0f3ee1a3047705d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm" 1136768653 1500 7f49257eca65a87057f17452e9fe3ef5 ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssi9.tfm" 1136768653 1524 db4bb1dddb7b51420776d94a5c70c2a5 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
@@ -66,7 +65,6 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb" 1248133631 25150 e0d09798d232ab9d00c5c0a8df6cc22d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb" 1248133631 25095 0ff1f6d531b320ecbbd6ea84d875816c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1248133631 25168 33771b85f45c82138dd7745db7092d1c ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb" 1248133631 25029 6f2cec9646ca278302ed7d604e506e3e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
@@ -282,13 +280,13 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693935593 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693935547 7883466 9d2d13fbc6d11091b517934f993b5158 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "DiSanto245Slides.aux" 1701722236 18459 570896a5fc9cdabab5a4c2393a24fd8f "pdflatex"
-  "DiSanto245Slides.bbl" 1701721825 34676 67858a579107b5751265b6b53ebbfb65 "biber DiSanto245Slides"
-  "DiSanto245Slides.nav" 1701722236 8842 6fafbf6a0f3b3bd52e087fa80ab239b2 "pdflatex"
-  "DiSanto245Slides.out" 1701722236 1622 1c5721b1df5c2bb1aec605df9f308594 "pdflatex"
-  "DiSanto245Slides.run.xml" 1701722236 2393 87e0e2b24651ae919740d636bf14e443 "pdflatex"
-  "DiSanto245Slides.tex" 1701722227 43249 df6beac9ea08b191ab7642846bdafa6a ""
-  "DiSanto245Slides.toc" 1701722236 503 e037c335b5a05a3c920c80a10a0d3591 "pdflatex"
+  "DiSanto245Slides.aux" 1701743580 18137 bee821ff8028e39e38d7b1248f271c92 "pdflatex"
+  "DiSanto245Slides.bbl" 1701735072 34676 67858a579107b5751265b6b53ebbfb65 "biber DiSanto245Slides"
+  "DiSanto245Slides.nav" 1701743580 8549 dd29d5b13b018d6270b796172a5b418d "pdflatex"
+  "DiSanto245Slides.out" 1701743580 1622 5b8aef8eb78384cfbcf31e8451cf8e55 "pdflatex"
+  "DiSanto245Slides.run.xml" 1701743580 2393 87e0e2b24651ae919740d636bf14e443 "pdflatex"
+  "DiSanto245Slides.tex" 1701743554 42987 ca724a53f03ea77207c91567db72b549 ""
+  "DiSanto245Slides.toc" 1701743580 503 033a1c8c5b88942dd1517fd6c3a5fcf4 "pdflatex"
   "Wikipedia_Bridges.png" 1700776963 239852 59bfa3b3522e2c46831e55153acded1e ""
   "glasso_complete_ER_FixN_01.png" 1701645563 163215 4e6890d893ba1a33e49735b54e58e4d9 ""
   "glasso_complete_ER_FixN_05.png" 1701645563 174390 7d6bc1b128ba12061bcb007571c15df6 ""

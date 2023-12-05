@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  4 DEC 2023 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  4 DEC 2023 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1067,39 +1067,39 @@ Package biblatex Info: Reference section=0 on input line 48.
 Package biblatex Info: Reference segment=0 on input line 48.
  (./DiSanto245Slides.nav) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2
+] (./DiSanto245Slides.toc) [2
 
-] (./DiSanto245Slides.toc) [3
+] [3
 
-] [4
-
-] (./DiSanto245Slides.toc) [5
+] (./DiSanto245Slides.toc) [4
 
 ]
-<Wikipedia_Bridges.png, id=245, 712.6625pt x 164.615pt>
+<Wikipedia_Bridges.png, id=218, 712.6625pt x 164.615pt>
 File: Wikipedia_Bridges.png Graphic file (type png)
 <use Wikipedia_Bridges.png>
-Package pdftex.def Info: Wikipedia_Bridges.png  used on input line 91.
+Package pdftex.def Info: Wikipedia_Bridges.png  used on input line 83.
 (pdftex.def)             Requested size: 356.33038pt x 82.3073pt.
 
-Overfull \hbox (14.03508pt too wide) in paragraph at lines 91--91
+Overfull \hbox (14.03508pt too wide) in paragraph at lines 83--83
  [] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 91.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 83.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-) [6
+) [5
 
- <./Wikipedia_Bridges.png>] [7
+ <./Wikipedia_Bridges.png>] [6
+
+] [7
 
 ] [8
 
@@ -1107,16 +1107,16 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [10
 
-] [11
-
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 252.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 243.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 252.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 243.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 252.
- [12
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 243.
+ [11
+
+] [12
 
 ] [13
 
@@ -1124,137 +1124,137 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 
 ] [15
 
-] [16
+] (./DiSanto245Slides.toc) [16
 
 ] [17
 
-] (./DiSanto245Slides.toc) [18
+] [18
 
 ] [19
 
 ] [20
 
-] [21
+]
+\c@algpx@indentEndPage-0=\count503
+\c@algpx@indentEndPage-1=\count504
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 471.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 471.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 471.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 471.
+ [21
 
 ] [22
 
 ] [23
 
-]
-\c@algpx@indentEndPage-0=\count503
-\c@algpx@indentEndPage-1=\count504
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 490.
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 490.
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 490.
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 490.
- [24
+] [24
 
 ] [25
 
 ] [26
 
-] [27
-
-] [28
-
-] [29
-
 ]
-<glasso_complete_fixN_b1.png, id=988, 442.5333pt x 256.3176pt>
+<glasso_complete_fixN_b1.png, id=903, 442.5333pt x 256.3176pt>
 File: glasso_complete_fixN_b1.png Graphic file (type png)
 <use glasso_complete_fixN_b1.png>
-Package pdftex.def Info: glasso_complete_fixN_b1.png  used on input line 549.
+Package pdftex.def Info: glasso_complete_fixN_b1.png  used on input line 542.
+(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
+ [27
+
+ <./glasso_complete_fixN_b1.png>]
+<glasso_complete_fixN_b2.png, id=935, 442.5333pt x 256.3176pt>
+File: glasso_complete_fixN_b2.png Graphic file (type png)
+<use glasso_complete_fixN_b2.png>
+Package pdftex.def Info: glasso_complete_fixN_b2.png  used on input line 551.
+(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
+ [28
+
+ <./glasso_complete_fixN_b2.png>]
+<glasso_complete_fixN_b4.png, id=966, 442.5333pt x 256.3176pt>
+File: glasso_complete_fixN_b4.png Graphic file (type png)
+<use glasso_complete_fixN_b4.png>
+Package pdftex.def Info: glasso_complete_fixN_b4.png  used on input line 560.
+(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
+ [29
+
+ <./glasso_complete_fixN_b4.png>]
+<glasso_complete_fixN_b8.png, id=997, 442.5333pt x 256.3176pt>
+File: glasso_complete_fixN_b8.png Graphic file (type png)
+<use glasso_complete_fixN_b8.png>
+Package pdftex.def Info: glasso_complete_fixN_b8.png  used on input line 569.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [30
 
- <./glasso_complete_fixN_b1.png>]
-<glasso_complete_fixN_b2.png, id=1019, 442.5333pt x 256.3176pt>
-File: glasso_complete_fixN_b2.png Graphic file (type png)
-<use glasso_complete_fixN_b2.png>
-Package pdftex.def Info: glasso_complete_fixN_b2.png  used on input line 558.
+ <./glasso_complete_fixN_b8.png>]
+<glasso_complete_fixN_b1mb.png, id=1028, 442.5333pt x 256.3176pt>
+File: glasso_complete_fixN_b1mb.png Graphic file (type png)
+<use glasso_complete_fixN_b1mb.png>
+Package pdftex.def Info: glasso_complete_fixN_b1mb.png  used on input line 579.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [31
 
- <./glasso_complete_fixN_b2.png>]
-<glasso_complete_fixN_b4.png, id=1052, 442.5333pt x 256.3176pt>
-File: glasso_complete_fixN_b4.png Graphic file (type png)
-<use glasso_complete_fixN_b4.png>
-Package pdftex.def Info: glasso_complete_fixN_b4.png  used on input line 567.
+ <./glasso_complete_fixN_b1mb.png>]
+<glasso_complete_fixN_b2mb.png, id=1061, 442.5333pt x 256.3176pt>
+File: glasso_complete_fixN_b2mb.png Graphic file (type png)
+<use glasso_complete_fixN_b2mb.png>
+Package pdftex.def Info: glasso_complete_fixN_b2mb.png  used on input line 588.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [32
 
- <./glasso_complete_fixN_b4.png>]
-<glasso_complete_fixN_b8.png, id=1083, 442.5333pt x 256.3176pt>
-File: glasso_complete_fixN_b8.png Graphic file (type png)
-<use glasso_complete_fixN_b8.png>
-Package pdftex.def Info: glasso_complete_fixN_b8.png  used on input line 576.
+ <./glasso_complete_fixN_b2mb.png>]
+<glasso_complete_fixN_b4mb.png, id=1092, 442.5333pt x 256.3176pt>
+File: glasso_complete_fixN_b4mb.png Graphic file (type png)
+<use glasso_complete_fixN_b4mb.png>
+Package pdftex.def Info: glasso_complete_fixN_b4mb.png  used on input line 597.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [33
 
- <./glasso_complete_fixN_b8.png>]
-<glasso_complete_fixN_b1mb.png, id=1114, 442.5333pt x 256.3176pt>
-File: glasso_complete_fixN_b1mb.png Graphic file (type png)
-<use glasso_complete_fixN_b1mb.png>
-Package pdftex.def Info: glasso_complete_fixN_b1mb.png  used on input line 586.
+ <./glasso_complete_fixN_b4mb.png>]
+<glasso_complete_fixN_b8mb.png, id=1122, 442.5333pt x 256.3176pt>
+File: glasso_complete_fixN_b8mb.png Graphic file (type png)
+<use glasso_complete_fixN_b8mb.png>
+Package pdftex.def Info: glasso_complete_fixN_b8mb.png  used on input line 606.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [34
 
- <./glasso_complete_fixN_b1mb.png>]
-<glasso_complete_fixN_b2mb.png, id=1146, 442.5333pt x 256.3176pt>
-File: glasso_complete_fixN_b2mb.png Graphic file (type png)
-<use glasso_complete_fixN_b2mb.png>
-Package pdftex.def Info: glasso_complete_fixN_b2mb.png  used on input line 595.
-(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
- [35
+ <./glasso_complete_fixN_b8mb.png>] [35
 
- <./glasso_complete_fixN_b2mb.png>]
-<glasso_complete_fixN_b4mb.png, id=1177, 442.5333pt x 256.3176pt>
-File: glasso_complete_fixN_b4mb.png Graphic file (type png)
-<use glasso_complete_fixN_b4mb.png>
-Package pdftex.def Info: glasso_complete_fixN_b4mb.png  used on input line 604.
-(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
- [36
+] (./DiSanto245Slides.toc) [36
 
- <./glasso_complete_fixN_b4mb.png>]
-<glasso_complete_fixN_b8mb.png, id=1207, 442.5333pt x 256.3176pt>
-File: glasso_complete_fixN_b8mb.png Graphic file (type png)
-<use glasso_complete_fixN_b8mb.png>
-Package pdftex.def Info: glasso_complete_fixN_b8mb.png  used on input line 613.
-(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
- [37
+] [37
 
- <./glasso_complete_fixN_b8mb.png>] [38
+]
+Overfull \hbox (1.33592pt too wide) detected at line 742
+[]
+ []
 
-] (./DiSanto245Slides.toc) [39
+[38
+
+]
+Overfull \hbox (4.55516pt too wide) detected at line 773
+[]
+ []
+
+[39
 
 ] [40
 
 ]
-Overfull \hbox (1.33592pt too wide) detected at line 749
+Overfull \hbox (1.94862pt too wide) detected at line 846
 []
  []
 
 [41
 
-]
-Overfull \hbox (4.55516pt too wide) detected at line 780
-[]
- []
-
-[42
+] [42
 
 ] [43
 
-]
-Overfull \hbox (1.94862pt too wide) detected at line 853
-[]
- []
-
-[44
+] [44
 
 ] [45
 
@@ -1264,106 +1264,100 @@ Overfull \hbox (1.94862pt too wide) detected at line 853
 
 ] [48
 
-] [49
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 958.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+) [49
 
 ] [50
 
+
 ] [51
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 965.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [52
 
-] [53
+] [52
 
+
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [53
 
 ] [54
 
-
-] [55
-
-
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [56
-
-] [57
-
 ]
-<glasso_complete_ER_FixN_01.png, id=1833, 442.5333pt x 256.3176pt>
+<glasso_complete_ER_FixN_01.png, id=1747, 442.5333pt x 256.3176pt>
 File: glasso_complete_ER_FixN_01.png Graphic file (type png)
 <use glasso_complete_ER_FixN_01.png>
-Package pdftex.def Info: glasso_complete_ER_FixN_01.png  used on input line 993.
+Package pdftex.def Info: glasso_complete_ER_FixN_01.png  used on input line 986.
+(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
+ [55
+
+ <./glasso_complete_ER_FixN_01.png>]
+<glasso_complete_ER_FixN_05.png, id=1779, 442.5333pt x 256.3176pt>
+File: glasso_complete_ER_FixN_05.png Graphic file (type png)
+<use glasso_complete_ER_FixN_05.png>
+Package pdftex.def Info: glasso_complete_ER_FixN_05.png  used on input line 995.
+(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
+ [56
+
+ <./glasso_complete_ER_FixN_05.png>]
+<glasso_complete_ER_FixN_1.png, id=1809, 442.5333pt x 256.3176pt>
+File: glasso_complete_ER_FixN_1.png Graphic file (type png)
+<use glasso_complete_ER_FixN_1.png>
+Package pdftex.def Info: glasso_complete_ER_FixN_1.png  used on input line 1004.
+(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
+ [57
+
+ <./glasso_complete_ER_FixN_1.png>]
+<glasso_complete_ER_FixN_2.png, id=1839, 442.5333pt x 256.3176pt>
+File: glasso_complete_ER_FixN_2.png Graphic file (type png)
+<use glasso_complete_ER_FixN_2.png>
+Package pdftex.def Info: glasso_complete_ER_FixN_2.png  used on input line 1013.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [58
 
- <./glasso_complete_ER_FixN_01.png>]
-<glasso_complete_ER_FixN_05.png, id=1863, 442.5333pt x 256.3176pt>
-File: glasso_complete_ER_FixN_05.png Graphic file (type png)
-<use glasso_complete_ER_FixN_05.png>
-Package pdftex.def Info: glasso_complete_ER_FixN_05.png  used on input line 1002.
+ <./glasso_complete_ER_FixN_2.png>]
+<glasso_complete_ERmb_FixN_01.png, id=1869, 442.5333pt x 256.3176pt>
+File: glasso_complete_ERmb_FixN_01.png Graphic file (type png)
+<use glasso_complete_ERmb_FixN_01.png>
+Package pdftex.def Info: glasso_complete_ERmb_FixN_01.png  used on input line 1023.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [59
 
- <./glasso_complete_ER_FixN_05.png>]
-<glasso_complete_ER_FixN_1.png, id=1894, 442.5333pt x 256.3176pt>
-File: glasso_complete_ER_FixN_1.png Graphic file (type png)
-<use glasso_complete_ER_FixN_1.png>
-Package pdftex.def Info: glasso_complete_ER_FixN_1.png  used on input line 1011.
+ <./glasso_complete_ERmb_FixN_01.png>]
+<glasso_complete_ERmb_FixN_05.png, id=1900, 442.5333pt x 256.3176pt>
+File: glasso_complete_ERmb_FixN_05.png Graphic file (type png)
+<use glasso_complete_ERmb_FixN_05.png>
+Package pdftex.def Info: glasso_complete_ERmb_FixN_05.png  used on input line 1032.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [60
 
- <./glasso_complete_ER_FixN_1.png>]
-<glasso_complete_ER_FixN_2.png, id=1924, 442.5333pt x 256.3176pt>
-File: glasso_complete_ER_FixN_2.png Graphic file (type png)
-<use glasso_complete_ER_FixN_2.png>
-Package pdftex.def Info: glasso_complete_ER_FixN_2.png  used on input line 1020.
+ <./glasso_complete_ERmb_FixN_05.png>]
+<glasso_complete_ERmb_FixN_1.png, id=1930, 442.5333pt x 256.3176pt>
+File: glasso_complete_ERmb_FixN_1.png Graphic file (type png)
+<use glasso_complete_ERmb_FixN_1.png>
+Package pdftex.def Info: glasso_complete_ERmb_FixN_1.png  used on input line 1041.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [61
 
- <./glasso_complete_ER_FixN_2.png>]
-<glasso_complete_ERmb_FixN_01.png, id=1955, 442.5333pt x 256.3176pt>
-File: glasso_complete_ERmb_FixN_01.png Graphic file (type png)
-<use glasso_complete_ERmb_FixN_01.png>
-Package pdftex.def Info: glasso_complete_ERmb_FixN_01.png  used on input line 1030.
+ <./glasso_complete_ERmb_FixN_1.png>]
+<glasso_complete_ERmb_FixN_2.png, id=1961, 442.5333pt x 256.3176pt>
+File: glasso_complete_ERmb_FixN_2.png Graphic file (type png)
+<use glasso_complete_ERmb_FixN_2.png>
+Package pdftex.def Info: glasso_complete_ERmb_FixN_2.png  used on input line 1050.
 (pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
  [62
 
- <./glasso_complete_ERmb_FixN_01.png>]
-<glasso_complete_ERmb_FixN_05.png, id=1986, 442.5333pt x 256.3176pt>
-File: glasso_complete_ERmb_FixN_05.png Graphic file (type png)
-<use glasso_complete_ERmb_FixN_05.png>
-Package pdftex.def Info: glasso_complete_ERmb_FixN_05.png  used on input line 1039.
-(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
- [63
+ <./glasso_complete_ERmb_FixN_2.png>] [63
 
- <./glasso_complete_ERmb_FixN_05.png>]
-<glasso_complete_ERmb_FixN_1.png, id=2016, 442.5333pt x 256.3176pt>
-File: glasso_complete_ERmb_FixN_1.png Graphic file (type png)
-<use glasso_complete_ERmb_FixN_1.png>
-Package pdftex.def Info: glasso_complete_ERmb_FixN_1.png  used on input line 1048.
-(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
- [64
+] [64
 
- <./glasso_complete_ERmb_FixN_1.png>]
-<glasso_complete_ERmb_FixN_2.png, id=2046, 442.5333pt x 256.3176pt>
-File: glasso_complete_ERmb_FixN_2.png Graphic file (type png)
-<use glasso_complete_ERmb_FixN_2.png>
-Package pdftex.def Info: glasso_complete_ERmb_FixN_2.png  used on input line 1057.
-(pdftex.def)             Requested size: 287.64323pt x 166.60446pt.
- [65
+] [65
 
- <./glasso_complete_ERmb_FixN_2.png>] [66
+] [66
 
 ] [67
 
 ] [68
-
-] [69
-
-] [70
-
-] [71
 
 ]
 \tf@nav=\write7
@@ -1377,24 +1371,24 @@ Package pdftex.def Info: glasso_complete_ERmb_FixN_2.png  used on input line 105
 
  (./DiSanto245Slides.aux)
 Package rerunfilecheck Info: File `DiSanto245Slides.out' has not changed.
-(rerunfilecheck)             Checksum: 1C5721B1DF5C2BB1AEC605DF9F308594;1622.
+(rerunfilecheck)             Checksum: 5B8AEF8EB78384CFBCF31E8451CF8E55;1622.
 Package logreq Info: Writing requests to 'DiSanto245Slides.run.xml'.
 \openout1 = `DiSanto245Slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34698 strings out of 476025
- 705388 string characters out of 5790018
- 1880388 words of memory out of 5000000
- 54337 multiletter control sequences out of 15000+600000
- 534297 words of font info for 104 fonts, out of 8000000 for 9000
+ 34676 strings out of 476025
+ 705039 string characters out of 5790018
+ 1881388 words of memory out of 5000000
+ 54322 multiletter control sequences out of 15000+600000
+ 533940 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,21n,122p,2064b,1672s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb>
-Output written on DiSanto245Slides.pdf (71 pages, 3307661 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb>
+Output written on DiSanto245Slides.pdf (68 pages, 3291670 bytes).
 PDF statistics:
- 2391 PDF objects out of 2487 (max. 8388607)
- 2194 compressed objects within 22 object streams
- 167 named destinations out of 1000 (max. 500000)
+ 2302 PDF objects out of 2487 (max. 8388607)
+ 2110 compressed objects within 22 object streams
+ 161 named destinations out of 1000 (max. 500000)
  282 words of extra memory for PDF output out of 10000 (max. 10000000)
 

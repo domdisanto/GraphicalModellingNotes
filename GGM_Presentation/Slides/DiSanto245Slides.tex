@@ -33,7 +33,7 @@
 \addbibresource{BST245_Project.bib}
 
 \title{Graphical Models}
-\subtitle{With a focus towards interimly missing data}
+\subtitle{With extensions for missing data}
 \author{Dominic DiSanto}
 \institute[]{Department of Biostatistics, Harvard University}
 \date{\today}
@@ -46,14 +46,6 @@
     % START %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-\begin{frame}{Notes (To Be Deleted)}
-    \begin{itemize}
-        \item \textcolor{red}{Be able to speak to glasso over neighborhood selection, how sparsity guarantees MLE existence}
-        \item Finish missing data results 
-    \end{itemize}
-\end{frame}
-
 
 \maketitle
 
@@ -133,16 +125,29 @@
         \item Ising model ($\sim$1920's) - proposed a graphical model of interactions of phase transitions (atomic spin)
         \pgfsetfillopacity{1}
         \item Statistical "beginnings"\footnote{Early use in physics were probabilistic, but this may be seen as an early "purse statistics" application} as a subset of methods for contingency tables and log-linear models ($\sim$1970's)
-        \pgfsetfillopacity{0.4}
         \item Arthur Dempster (founding Harvard Stats professor) introduced covariate selection by precision matrix estimation in 1972 \cite{dempster_covariance_1972}
         \item Judea Pearl $\sim$1980's for causal intepretation of Bayesian networks
-        \pgfsetfillopacity{1}
         \item Modern interest in related regularized M-estimation problems and graphical neural networks 
     \end{itemize}
 \end{frame}
     \pgfsetfillopacity{1}
 
 
+
+\begin{frame}{Graphical Model Motivation}
+    \begin{itemize}\setlength\itemsep{4mm}
+        \item Graphs are a natural way to represent interrelationships among our data! 
+        \item Present nice properties for estimation of joint distributions 
+        \begin{itemize}
+            \item Can avail existing graphical algorithms
+            \item Ability to characterize conditional (in)dependencies
+        \end{itemize}
+        \item Probabilistic graphical modelling provide a general formalism of many existing methods in statistics (e.g. Bayesian hierarchical modelling, Hidden Markov Models, Kalman filter)
+        % BHM's can be represented by a DAG, hence yielding available directed methods 
+        % HMM's (which are a specific dynamic Bayesian network) , see https://www.cs.ubc.ca/~murphyk/Bayes/bayes.html
+        \item Wainwright, Jordan {\it "Graphical Models, Exponential Families, and Variational Inference"} (2007) is an excellent reference for further applications (and theory) behind graphical models \cite{wainwright_graphical_2007}\footnote{See 2.4 specifically for applications}
+    \end{itemize}
+\end{frame}
 
 \begin{frame}{Graphical Model Motivation}
     \begin{columns}[T]
@@ -181,20 +186,6 @@
 \end{frame}
 
 
-\begin{frame}{Graphs}
-    \begin{itemize}\setlength\itemsep{4mm}
-        \item Graphs are a natural way to represent interrelationships among our data! 
-        \item Present nice properties for estimation of joint distributions 
-        \begin{itemize}
-            \item Can avail existing graphical algorithms
-            \item Ability to characterize conditional (in)dependencies
-        \end{itemize}
-        \item Probabilistic graphical modelling provide a general formalism of many existing methods in statistics (e.g. Bayesian hierarchical modelling, Hidden Markov Models, Kalman filter)
-        % BHM's can be represented by a DAG, hence yielding available directed methods 
-        % HMM's (which are a specific dynamic Bayesian network) , see https://www.cs.ubc.ca/~murphyk/Bayes/bayes.html
-        \item Wainwright, Jordan {\it "Graphical Models, Exponential Families, and Variational Inference"} (2007) is an excellent reference for further applications (and theory) behind graphical models \cite{wainwright_graphical_2007}\footnote{See 2.4 specifically for applications}
-    \end{itemize}
-\end{frame}
 
 \begin{frame}{Graphs}
     \begin{columns}[T] % align columns at the top
@@ -252,6 +243,7 @@
 \end{frame}
 
 
+\iffalse 
 \begin{frame}{Notation/Nomenclature}{\it Omitting some philosophical discrepancies}
     \begin{itemize}
         \item Directed (Acyclic) Graph $\Leftrightarrow$ Bayesian network
@@ -259,7 +251,7 @@
         \item Undirected graph $\Leftrightarrow$ Markov network / Markov random field
     \end{itemize}
 \end{frame}
-
+\fi 
 
 \begin{frame}{Graphs}
     \begin{columns}[T] % align columns at the top
@@ -364,11 +356,11 @@
 {\bf Gaussianity gives us the nice property that $\Theta_{ij}=0 \Leftrightarrow X_i \perp X_j | X_{-\{i,j\}}$ }
 
 \[
-\mathbb{E}[X_i \mid X_{(-i)}] = \mu_i + (X_{(-i)} - \mu_{(-i)})^T \Theta_{j \neq i} \sigma_{i, j\neq i}
+\mathbb{E}[X_i \mid X_{(-i)}] = \mu_i + (X_{(-i)} - \mu_{(-i)})^T \Theta_{j \neq i} \sigma_{j\neq i, i}
 \]
 
 \[
-\text{Var}[X_i \mid X_{(-i)}] = \Sigma_{ii} - \sigma_{i, j \neq i}^T \Theta_{j \neq i} \sigma_{j \neq i, i}
+\text{Var}[X_i \mid X_{(-i)}] = \Sigma_{ii} - \sigma_{j \neq i, i}^T \Theta_{j \neq i} \sigma_{j \neq i, i}
 \]
 
 \end{frame}
@@ -383,8 +375,8 @@
     \begin{itemize}\setlength\itemsep{6mm}
         \item Consider the setting of graph estimation for $X = (X_1, ..., X_d)$
         \begin{itemize} \item Generally your data may or may not contain a "response variable" of interest \end{itemize}
-        \item Identifying conditional relationships $\Leftrightarrow$ Estimating/Identifying 0's in $\Sigma$
-        \item Enforse sparsity for $\hat\Theta$ to account for possible rank-degeneracy of $S$ if $d \gg N$
+        \item Identifying conditional relationships $\Leftrightarrow$ Estimating/Identifying 0's in $\Theta$
+        \item Enforce sparsity for $\hat\Theta$ to account for possible rank-degeneracy of $S$ if $d \gg N$
         % in fact, under p \leq N the \Theta MLE can still exhibit \cite{mazumder_graphical_2012}
         %\item Exhaustive search is quickly infeasible, but can yield solutions with theoretical guarantees
         %\begin{itemize} \item Consistency \item Nice statistical rates \end{itemize}
@@ -441,13 +433,8 @@ Natural extension, why not just maximize the log-likelihood?
     \right\}
 \end{gather*}
 
-For $N<d$, we have the empirical covariance matrix $S = n^{-1}\sum X_i X_i^T$ is rank-degenerate, and the MLE does not exist!
+For $N<d$, we have the empirical covariance matrix $S = n^{-1}\sum X_i X_i^T$ is rank-degenerate, and the MLE does not exist! \cite{banerjee_model_2008} \newline 
 
-\end{frame}
-
-
-
-\begin{frame}{Graphical Lasso}
 So we assume sparsity and apply the $\ell_1$ penalty
 
 \begin{gather*}
@@ -461,16 +448,8 @@ So we assume sparsity and apply the $\ell_1$ penalty
     \right\}
 \end{gather*}
 
-What does this give us? 
-\begin{itemize}
-    \item True graph recovery guaranteed for $N=\Omega(D_{max}^3\log p)$
-    % similar error bounds give vanishing sparsity if N>p
-    \item Convex program, quickly optimizable 
-\end{itemize}
-% convex program, nicely optimizable 
-% under sparsity: consistent, efficient, allows MLE asymptotics and guarantees existence! 
-% SLS has nice notes on this as well
 \end{frame}
+
 
 
 \begin{frame}{Graphical Lasso - Algorithm\footnote{Pseudocode adopted from Elements of Statistical Learning, Chapter 17 \cite{hastie_elements_2009} and Statistical Learning with Sparsity, Chapter 9 \cite{hastie_statistical_2016}}}
@@ -487,14 +466,28 @@ What does this give us?
     \State Solve for $\hat\theta_{kj} = -\hat\beta \cdot \hat\theta_{jj}$ where $1/\hat\theta{jj}=2_{jj}-\mathbf{w}_{kj}^T\hat\beta$
     \EndFor
 \end{algorithmic}
+
+
 \end{frame}
 
 \begin{frame}{Graphical Lasso - Algorithm}
 \begin{itemize}
     \item The estimating equations themselves are solved using cyclical coordinate-descent algorithm 
     \item Additional structural checks on $\mathbf{S,W}$ at initialization and interim steps have since been implemented
-    \item Replacing $\mathbf{W}_{kk}$ with $\mathbf{S}_kk$ iterates once and returns the neighborhood selection algorithm! 
+    \item Replacing $\mathbf{W}_{kk}$ with $\mathbf{S}_{kk}$ iterates once and returns the neighborhood selection algorithm! 
 \end{itemize}
+
+
+What does this give us? 
+\begin{itemize}
+    \item True graph recovery guaranteed for $N=\Omega(D_{max}^3 \log d)$
+    % similar error bounds give vanishing sparsity if N>p
+    \item Convex program, quickly optimizable 
+\end{itemize}
+% convex program, nicely optimizable 
+% under sparsity: consistent, efficient, allows MLE asymptotics and guarantees existence! 
+% SLS has nice notes on this as well
+
 \end{frame}
 
 \begin{frame}{Simulations (Complete Data)}
@@ -510,7 +503,7 @@ What does this give us?
     \begin{itemize}\setlength\itemsep{6mm}
         \item Theory-suggested penalty $\lambda = 2\sqrt{\frac{\log d}{N}}$, but implementations often supply a range similar to \texttt{glmnet} default behavior
         \item Graph Recovery (accuracacy by proportion of correct edge recovery)
-        \item Operator Norm Distance $\mathbf{||\hat\Theta - \Theta||_2} \lesssim \sqrt{\frac{D_{max}^2\log d}{N}}$ 
+        \item Operator Norm Distance $\mathbf{||\hat\Theta - \Theta||_2} \underbrace{\lesssim \sqrt{\frac{D_{max}^2\log d}{N}}}_{\text{for GLasso}}$ 
     \end{itemize}
 \end{frame}
 

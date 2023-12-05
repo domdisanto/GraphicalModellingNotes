@@ -2369,14 +2369,15 @@
     <bcf:citekey order="5" intorder="1">wainwright_graphical_2007</bcf:citekey>
     <bcf:citekey order="6" intorder="1">meinshausen_high-dimensional_2006</bcf:citekey>
     <bcf:citekey order="7" intorder="1">banerjee_model_2008</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">hastie_elements_2009</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">hastie_statistical_2016</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">augugliaro_l1_2018</bcf:citekey>
-    <bcf:citekey order="10" intorder="2">augugliaro_conditional_2020</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">zheng_gi-joe_2023</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">augugliaro_cglasso_2023</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">mazumder_graphical_2012</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">zheng_gi-joe_2023</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">banerjee_model_2008</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">hastie_elements_2009</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">hastie_statistical_2016</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">augugliaro_l1_2018</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">augugliaro_conditional_2020</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">zheng_gi-joe_2023</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">augugliaro_cglasso_2023</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">mazumder_graphical_2012</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">zheng_gi-joe_2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
