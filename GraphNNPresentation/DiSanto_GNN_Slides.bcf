@@ -2383,14 +2383,17 @@
     <bcf:citekey order="17" intorder="2">gainza_deciphering_2020</bcf:citekey>
     <bcf:citekey order="18" intorder="1">isert_structure-based_2023</bcf:citekey>
     <bcf:citekey order="19" intorder="1">isert_structure-based_2023</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">ferludin_tf-gnn_2023</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">gori_new_2005</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">scarselli_graph_2009</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">kipf_semi-supervised_2017</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">duvenaud_convolutional_2015</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">gilmer_neural_2017</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">ying_hierarchical_2018</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">mcdermott_structure-inducing_2023</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">satorras_en_2022</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">abdollahi_nodecoder_2023</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">abdollahi_nodecoder_2023</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">ferludin_tf-gnn_2023</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">gori_new_2005</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">scarselli_graph_2009</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">kipf_semi-supervised_2017</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">duvenaud_convolutional_2015</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">gilmer_neural_2017</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">ying_hierarchical_2018</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">mcdermott_structure-inducing_2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

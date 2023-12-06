@@ -175,7 +175,7 @@
 %                \item Consider random vector $X \sim F(\boldsymbol\mu, \Sigma)$ and precision matrix $\Theta \equiv \Sigma^{-1}$
                 \item Consider the graph $\Graph = (\NodeSet, \EdgeSet), \EdgeSet \subseteq \NodeSet \times \NodeSet$, where any node $\node$ has a related "feature vector" $x_\node \in \mathbb{R}^d$
                 \begin{itemize}
-                    \item Let $\NumNodes = \NumNodes$
+                    \item Let $\NumNodes = |V|$
                 \end{itemize}
                 \item Let $\nhood_s(\node)$ represent the $s$-hop neighborhood of any node $\node$ (and implicitly $\nhood(\node) \equiv \nhood_1(\node)$)
                 \item Can construct adjacency matrix $\AdjMat \in \mathbb{R}^{\NumNodes \times \NumNodes}$ to capture structure of edge set $\EdgeSet$ 
@@ -349,7 +349,7 @@
     \State Initialize $\nrepresent^{(0)} \gets x_\node, \forall \node \in \NodeSet$ 
         \For{$\iter = 0, ..., \Iter$}:
             \For{$\node \in \Graph$}:
-            \State $m_u^{(\iter+1)} \gets \text{\textcolor{blue}{Message}}(h_\node, h_u, \edge_{\node u}), \forall u \in \nhood_\node$
+            \State $m_u^{(\iter+1)} \gets \text{\textcolor{blue}{Message}}(\nrepresent_\node^{(\iter)}, \nrepresent^{(\iter)}_u, \edge_{\node u}), \forall u \in \nhood_\node$
             \State $\nrepresent_{agg}^{(\iter+1)} \gets \text{\textcolor{blue}{Aggregate}}(\{m_u^{(\iter)} \mid u \in \nhood_\node\})$ 
             \State $\nrepresent^{(\iter+1)} \gets \text{\textcolor{blue}{Update}}(\nrepresent^{(\iter)}, \nrepresent_{agg}^{(\iter)})$
             \EndFor
@@ -383,11 +383,11 @@ Can succinctly represent the $\iter$th layer as:
     \right\}
 \\
 \fi
-    \mathbf{h}_\node^{(\iter+1)} 
+    h_\node^{(\iter+1)} 
     &=
     Up
     \left\{ 
-    x_\node^{(\iter)}
+    \nrepresent_\node^{(\iter)}
     ,   
     Agg
     \left[
@@ -429,6 +429,8 @@ Trained end-to-end via backpropagation for problem-specific Transform function
         \end{itemize}
     \end{itemize}
 \end{frame}
+
+
 
 
 
@@ -480,6 +482,49 @@ Trained end-to-end via backpropagation for problem-specific Transform function
 
 
 
+
+\begin{frame}{Graph Convolutional Network}
+    Intuitive "derivation": 
+    \begin{align*}
+        \NodeRepMat^{(\iter+1)}
+        &=
+        \sigma
+        \left( 
+            \AdjMat \NodeRepMat^{(\iter)} \Theta
+        \right) 
+    \\
+        \NodeRepMat^{(\iter+1)}
+        &=
+        \sigma
+        \left( 
+            \DegMat^{-1}\AdjMat \NodeRepMat^{(\iter)} \Theta
+        \right) 
+        \qquad{\text{Normalizing by degree}}
+    \\
+        \NodeRepMat^{(\iter+1)}
+        &=
+        \sigma
+        \left( 
+            \DegMat^{-1/2}\AdjMat\DegMat^{-1/2} \NodeRepMat^{(\iter)} \Theta
+        \right) 
+        \qquad{\text{Symmetric normalization}} % "no longer simple averaging"
+    \\
+        \NodeRepMat^{(\iter+1)}
+        &=
+        \sigma
+        \left( 
+            \widetilde{\DegMat}^{-1/2}
+            \widetilde{\AdjMat}
+            \widetilde{\DegMat}^{-1/2} \NodeRepMat^{(\iter)} \Theta
+        \right) 
+        \qquad{\text{Adding self-loop}}
+    \end{align*}
+    
+    where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \sum_j \widetilde{\AdjMat}_{ij}$, $\sigma$ is any activation function, $\NodeRepMat$ is simply the matrix of $\mathbf{\nrepresent}_\node$ for all nodes 
+    % intuition here is normalizing by a nodes degree (left mult) and "averaging" neighborhood degree (right mult)
+    % nice explainer \url{https://math.stackexchange.com/questions/3035968/interpretation-of-symmetric-normalised-graph-adjacency-matrix}
+\end{frame}
+
 \begin{frame}{Graph Convolutional Network}
     \begin{itemize}
     \item Proposed in 2017 by Thomas Kipf, Max Welling \cite{kipf_semi-supervised_2017}, can consider one example of "Laplacian-based methods" \cite{gilmer_neural_2017} 
@@ -530,48 +575,6 @@ Trained end-to-end via backpropagation for problem-specific Transform function
 
 
 
-\begin{frame}{Graph Convolutional Network}
-    \textcolor{red}{Maybe move to appendix} \\ 
-Intuitive "derivation": 
-\begin{align*}
-    \NodeRepMat^{(\iter+1)}
-    &=
-    \sigma
-    \left( 
-        \AdjMat \NodeRepMat^{(\iter)} \Theta
-    \right) 
-\\
-    \NodeRepMat^{(\iter+1)}
-    &=
-    \sigma
-    \left( 
-        \DegMat^{-1}\AdjMat \NodeRepMat^{(\iter)} \Theta
-    \right) 
-    \qquad{\text{Normalizing by degree}}
-\\
-    \NodeRepMat^{(\iter+1)}
-    &=
-    \sigma
-    \left( 
-        \DegMat^{-1/2}\AdjMat\DegMat^{-1/2} \NodeRepMat^{(\iter)} \Theta
-    \right) 
-    \qquad{\text{Symmetric normalization}} % "no longer simple averaging"
-\\
-    \NodeRepMat^{(\iter+1)}
-    &=
-    \sigma
-    \left( 
-        \widetilde{\DegMat}^{-1/2}
-        \widetilde{\AdjMat}
-        \widetilde{\DegMat}^{-1/2} \NodeRepMat^{(\iter)} \Theta
-    \right) 
-    \qquad{\text{Adding self-loop}}
-\end{align*}
-
-where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \sum_j \widetilde{\AdjMat}_{ij}$, $\sigma$ is any activation function, $\NodeRepMat$ is simply the matrix of $\mathbf{\nrepresent}_\node$ for all nodes 
-% intuition here is normalizing by a nodes degree (left mult) and "averaging" neighborhood degree (right mult)
-% nice explainer \url{https://math.stackexchange.com/questions/3035968/interpretation-of-symmetric-normalised-graph-adjacency-matrix}
-\end{frame}
 
 
 \begin{frame}{General Framework (Revisited)}
@@ -583,6 +586,7 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
             \end{itemize}
         \item {\bf Architecture}
             \begin{itemize}
+                \item Message Passing Neural Network (MPNN) 
                 \item $\NodeRepMat^{(\iter+1)} 
                 =
                 \ReLu
@@ -840,13 +844,17 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
 
 \begin{frame}{GNN Input}
     \begin{columns}
-        \begin{column}{0.7\textwidth}
-            \begin{itemize}
+        \begin{column}{0.65\textwidth}
+            \begin{itemize}\setlength\itemsep{6mm}
+                \item Nodes $\mathbf{\node}$ include 3-dimensional coordinate data 
+                \begin{itemize}
                 \item Atomic structure in Euclidean space 
                 \item Amino acid (also "residue") structure 
+                \end{itemize}
+                \item Maintain invariance for translations, rotations but not necessarily reflections 
             \end{itemize}            
         \end{column}
-        \begin{column}{0.3\textwidth}
+        \begin{column}{0.35\textwidth}
             \begin{figure}
                 \centering 
                 \includegraphics[scale=0.55]{Isert_2023_ModelsSBDD_3DGraph.png}
@@ -871,7 +879,7 @@ $\forall  T, \  \exists T': f(T(x)) = T'(f(x))$
 
 \end{frame}
 
-\begin{frame}{Architecture}
+\begin{frame}{Architecture(s)}
 Forgoing the iteration supercripts, one message pass can be represented as such: 
     \begin{align*}
         m_{ij}
@@ -900,6 +908,7 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
         Update_{\mathbf\node}
         \left[
             \mathbf{\node}_i
+            , 
             Agg_\mathbf{\node}
             \left( 
                 \{\mathbf{m}_{ij}\}_{j \in \nhood(\node_i)}
@@ -907,23 +916,102 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
         \right]
     \end{align*}
 
-    where \textcolor{blue}{$Msg_m, Update_h$} are geometrically {\bf invariant}, scalar functions and $Msg_{\mathbf{m}}, Update_{\mathbf\node}$ are geometrically \bf{equivariant}, vector functions \newline 
-    Here $\mathbf\node \in \mathbb{R}^3$ are 3-D coordinates (e.g. atom or amino acid location)
+    where \textcolor{blue}{$Msg_m, Update_h$} are geometrically {\bf invariant}, scalar functions and $Msg_{\mathbf{m}}, Update_{\mathbf\node}$ are geometrically {\bf equivariant}, vector functions \newline 
+    Here $\mathbf\node \in \mathbb{R}^3$ are 3-D coordinates (e.g. atom or amino acid location)\\
+    \textcolor{red}{EDIT Clarify invariatne/equvariant to what transformations}
 \end{frame}
 
-\begin{frame}{Equivariant GNN's}
-\textcolor{red}{Recreate message passing for equivariant GNN's with my notation for consistency, emphaseize new equivariant vector functions}
-\begin{align*}
-    h_{ij}^{(\iter)}
-    &=
-    \Agg(\mathbf{\node}_i, )
-\end{align*}
+
+\begin{frame}{Architecture(s)}
+    May also consider the proposed Equivariant Graphical Neural Network (EGNN) from Satorras (2021) \cite{satorras_en_2022}. Again, let $\mathbf{\node}_i$ represent a node's coordinate embeddings: 
+        \begin{align*}
+            m_{ij}
+            &=
+            Msg_m(\nrepresent_i, \nrepresent_j, ||\mathbf{\node}_i^{(\iter)}-\mathbf{\node}_j^{(\iter)}||^2, \edge_{ij}) 
+        \\ 
+            \mathbf{\node}_i^{(\iter+1)}
+            &=
+            \mathbf{\node}_i^{(\iter)}
+            +
+            C
+            \sum_{j\neq 1}
+            \left(
+            \mathbf{\node}_i^{(\iter)}
+            -
+            \mathbf{\node}_i^{(\iter)}
+            \right) 
+            \phi_\node(m_{ij})
+        \\
+            m_i 
+            &= 
+            Agg(m_{ij})
+            =
+            \sum_{j\neq i} m_{ij}
+        \\
+            \nrepresent^{(\iter+1)}
+            &=
+            Update(\nrepresent^{(\iter+1)}, m_i)
+        \end{align*}
+    
 \end{frame}
 
-\begin{frame}{Specific GNN Implementation}
-    \textcolor{red}{Review/cite one of the eGNN's from the Zhang paper}
+    
+\begin{frame}{NodeCoder}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.3]{Fig1_NodeCoder.png}
+        \caption{Subst of Fig. 1 from Abdollahi (2023) NodeCoder \cite{abdollahi_nodecoder_2023}}
+    \end{figure}
+
+    With a given layer updated using a slight adaptation: 
+    \begin{align*}
+        \NodeRepMat^{(\iter+1)} 
+        &=
+        \text{ELu}
+        \left( 
+            \mathbf{
+            %D^{-1/2}
+            %(\AdjMat + I)
+            %D^{-1/2}
+            \widetilde{\DegMat}^{-1/2}
+            \widetilde{\AdjMat}
+            \widetilde{\DegMat}^{-1/2}  
+            \NodeRepMat^{(\iter)}
+            \Theta 
+            }            
+        \right)
+    \\
+        \NodeRepMat^{(\Iter)} 
+        &=
+        LogSoftMax
+        \left\{
+        \widetilde{\DegMat}^{-1/2}
+        \widetilde{\AdjMat}
+        \widetilde{\DegMat}^{-1/2}  
+        \text{ELu}
+        \left( 
+            \mathbf{
+            %D^{-1/2}
+            %(\AdjMat + I)
+            %D^{-1/2}
+            \widetilde{\DegMat}^{-1/2}
+            \widetilde{\AdjMat}
+            \widetilde{\DegMat}^{-1/2}  
+            \NodeRepMat^{(\iter)}
+            \Theta 
+            }            
+        \right)
+        \Theta_t
+        \right\}
+    \end{align*}
 \end{frame}
 
+\begin{frame}{EquiPocket}
+    \textcolor{red}{Time pending add} 
+    \url{https://arxiv.org/pdf/2302.12177.pdf}
+\end{frame}
+
+\subsection{Structure-Induced Pre-Training}
 
 
 \section*{Conclusion}

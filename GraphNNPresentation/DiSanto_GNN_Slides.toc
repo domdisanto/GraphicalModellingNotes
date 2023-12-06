@@ -4,3 +4,4 @@
 \beamer@subsectionintoc {3}{1}{Multimodal Graph Learning (MGL)}{24}{0}{3}
 \beamer@subsectionintoc {3}{2}{Knowledge-Graph Data}{31}{0}{3}
 \beamer@subsectionintoc {3}{3}{Structure-Based Drug Design (SBDD)}{31}{0}{3}
+\beamer@subsectionintoc {3}{4}{Structure-Induced Pre-Training}{42}{0}{3}

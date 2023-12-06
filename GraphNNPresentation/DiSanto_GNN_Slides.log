@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  5 DEC 2023 20:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  5 DEC 2023 23:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1167,7 +1167,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] [5
 
 ]
-<MultimodalPreview.png, id=226, 808.01875pt x 795.97375pt>
+<MultimodalPreview.png, id=232, 808.01875pt x 795.97375pt>
 File: MultimodalPreview.png Graphic file (type png)
 <use MultimodalPreview.png>
 Package pdftex.def Info: MultimodalPreview.png  used on input line 137.
@@ -1175,7 +1175,7 @@ Package pdftex.def Info: MultimodalPreview.png  used on input line 137.
  [6
 
  <./MultimodalPreview.png>]
-<Caffeine_Graph.png, id=260, 1137.24875pt x 435.6275pt>
+<Caffeine_Graph.png, id=267, 1137.24875pt x 435.6275pt>
 File: Caffeine_Graph.png Graphic file (type png)
 <use Caffeine_Graph.png>
 Package pdftex.def Info: Caffeine_Graph.png  used on input line 146.
@@ -1183,7 +1183,7 @@ Package pdftex.def Info: Caffeine_Graph.png  used on input line 146.
  [7
 
  <./Caffeine_Graph.png>]
-<Zhang_Protein3D.png, id=295, 610.28pt x 336.25626pt>
+<Zhang_Protein3D.png, id=301, 610.28pt x 336.25626pt>
 File: Zhang_Protein3D.png Graphic file (type png)
 <use Zhang_Protein3D.png>
 Package pdftex.def Info: Zhang_Protein3D.png  used on input line 154.
@@ -1258,10 +1258,10 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
 ] [28
 
 ]
-<Ektefaie_StructureLearning.png, id=945, 303.1325pt x 409.53pt>
+<Ektefaie_StructureLearning.png, id=952, 303.1325pt x 409.53pt>
 File: Ektefaie_StructureLearning.png Graphic file (type png)
 <use Ektefaie_StructureLearning.png>
-Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 724.
+Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 728.
 (pdftex.def)             Requested size: 121.25084pt x 163.80908pt.
  [29
 
@@ -1270,46 +1270,46 @@ Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 724.
 ] [31
 
 ]
-<Zhang_2023_BindingSite.png, id=1037, 421.575pt x 162.10562pt>
+<Zhang_2023_BindingSite.png, id=1044, 421.575pt x 162.10562pt>
 File: Zhang_2023_BindingSite.png Graphic file (type png)
 <use Zhang_2023_BindingSite.png>
-Package pdftex.def Info: Zhang_2023_BindingSite.png  used on input line 765.
+Package pdftex.def Info: Zhang_2023_BindingSite.png  used on input line 769.
 (pdftex.def)             Requested size: 171.14764pt x 65.81071pt.
-<Zhang_2023_BindingAffinity.png, id=1038, 421.575pt x 147.55125pt>
+<Zhang_2023_BindingAffinity.png, id=1045, 421.575pt x 147.55125pt>
 File: Zhang_2023_BindingAffinity.png Graphic file (type png)
 <use Zhang_2023_BindingAffinity.png>
-Package pdftex.def Info: Zhang_2023_BindingAffinity.png  used on input line 765.
+Package pdftex.def Info: Zhang_2023_BindingAffinity.png  used on input line 769.
 (pdftex.def)             Requested size: 171.14764pt x 59.90201pt.
  [32
 
  <./Zhang_2023_BindingSite.png> <./Zhang_2023_BindingAffinity.png>] [33
 
 ]
-<Isert_2023_ModelsSBDD.png, id=1100, 595.22375pt x 312.16624pt>
+<Isert_2023_ModelsSBDD.png, id=1107, 595.22375pt x 312.16624pt>
 File: Isert_2023_ModelsSBDD.png Graphic file (type png)
 <use Isert_2023_ModelsSBDD.png>
-Package pdftex.def Info: Isert_2023_ModelsSBDD.png  used on input line 820.
+Package pdftex.def Info: Isert_2023_ModelsSBDD.png  used on input line 824.
 (pdftex.def)             Requested size: 327.37407pt x 171.69196pt.
  [34
 
  <./Isert_2023_ModelsSBDD.png>]
-<Isert_2023_ModelsSBDD_VoxelMesh.png, id=1134, 425.59pt x 309.65688pt>
+<Isert_2023_ModelsSBDD_VoxelMesh.png, id=1141, 425.59pt x 309.65688pt>
 File: Isert_2023_ModelsSBDD_VoxelMesh.png Graphic file (type png)
 <use Isert_2023_ModelsSBDD_VoxelMesh.png>
-Package pdftex.def Info: Isert_2023_ModelsSBDD_VoxelMesh.png  used on input line 837.
+Package pdftex.def Info: Isert_2023_ModelsSBDD_VoxelMesh.png  used on input line 841.
 (pdftex.def)             Requested size: 170.23297pt x 123.86055pt.
-<Gainza_2020_ProteinNodesRadii.png, id=1135, 268.00125pt x 231.86626pt>
+<Gainza_2020_ProteinNodesRadii.png, id=1142, 268.00125pt x 231.86626pt>
 File: Gainza_2020_ProteinNodesRadii.png Graphic file (type png)
 <use Gainza_2020_ProteinNodesRadii.png>
-Package pdftex.def Info: Gainza_2020_ProteinNodesRadii.png  used on input line 837.
+Package pdftex.def Info: Gainza_2020_ProteinNodesRadii.png  used on input line 841.
 (pdftex.def)             Requested size: 134.00029pt x 115.93283pt.
  [35
 
  <./Isert_2023_ModelsSBDD_VoxelMesh.png> <./Gainza_2020_ProteinNodesRadii.png>]
-<Isert_2023_ModelsSBDD_3DGraph.png, id=1170, 156.585pt x 294.09875pt>
+<Isert_2023_ModelsSBDD_3DGraph.png, id=1177, 156.585pt x 294.09875pt>
 File: Isert_2023_ModelsSBDD_3DGraph.png Graphic file (type png)
 <use Isert_2023_ModelsSBDD_3DGraph.png>
-Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 858.
+Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 866.
 (pdftex.def)             Requested size: 86.12201pt x 161.7548pt.
  [36
 
@@ -1319,14 +1319,19 @@ Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 8
 
 ] [39
 
-] [40
+]
+<Fig1_NodeCoder.png, id=1301, 1036.87375pt x 228.855pt>
+File: Fig1_NodeCoder.png Graphic file (type png)
+<use Fig1_NodeCoder.png>
+Package pdftex.def Info: Fig1_NodeCoder.png  used on input line 1007.
+(pdftex.def)             Requested size: 311.06451pt x 68.65701pt.
+ [40
 
-] [41
+ <./Fig1_NodeCoder.png>] [41
 
 ] [42
 
 ] [43
-
 
 ] [44
 
@@ -1336,49 +1341,52 @@ Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 8
 
 ] [46
 
+
 ] [47
 
 ] [48
 
 ] [49
 
+] [50
+
 ]
-<DIFFPOOL_RexYing.png, id=1597, 786.94pt x 330.23375pt>
+<DIFFPOOL_RexYing.png, id=1641, 786.94pt x 330.23375pt>
 File: DIFFPOOL_RexYing.png Graphic file (type png)
 <use DIFFPOOL_RexYing.png>
-Package pdftex.def Info: DIFFPOOL_RexYing.png  used on input line 991.
+Package pdftex.def Info: DIFFPOOL_RexYing.png  used on input line 1079.
 (pdftex.def)             Requested size: 354.11972pt x 148.6038pt.
 
-Overfull \hbox (11.82442pt too wide) in paragraph at lines 991--991
+Overfull \hbox (11.82442pt too wide) in paragraph at lines 1079--1079
  [] 
  []
 
-[50
+[51
 
  <./DIFFPOOL_RexYing.png>]
-<Junwei_KG_Models_Infograph.png, id=1628, 2352.79pt x 1324.95pt>
+<Junwei_KG_Models_Infograph.png, id=1673, 2352.79pt x 1324.95pt>
 File: Junwei_KG_Models_Infograph.png Graphic file (type png)
 <use Junwei_KG_Models_Infograph.png>
-Package pdftex.def Info: Junwei_KG_Models_Infograph.png  used on input line 999.
+Package pdftex.def Info: Junwei_KG_Models_Infograph.png  used on input line 1087.
 (pdftex.def)             Requested size: 305.87344pt x 172.24954pt.
- [51
+ [52
 
  <./Junwei_KG_Models_Infograph.png>]
-<PDB_File_Ex.png, id=1657, 991.705pt x 543.02875pt>
+<PDB_File_Ex.png, id=1701, 991.705pt x 543.02875pt>
 File: PDB_File_Ex.png Graphic file (type png)
 <use PDB_File_Ex.png>
-Package pdftex.def Info: PDB_File_Ex.png  used on input line 1008.
+Package pdftex.def Info: PDB_File_Ex.png  used on input line 1096.
 (pdftex.def)             Requested size: 366.92511pt x 200.91748pt.
 
-Overfull \hbox (24.6298pt too wide) in paragraph at lines 1008--1008
+Overfull \hbox (24.6298pt too wide) in paragraph at lines 1096--1096
  [] 
  []
 
 
-Overfull \vbox (54.5135pt too high) detected at line 1008
+Overfull \vbox (54.5135pt too high) detected at line 1096
  []
 
-[52
+[53
 
  <./PDB_File_Ex.png>]
 \tf@nav=\write7
@@ -1392,24 +1400,24 @@ Overfull \vbox (54.5135pt too high) detected at line 1008
 
  (./DiSanto_GNN_Slides.aux)
 Package rerunfilecheck Info: File `DiSanto_GNN_Slides.out' has not changed.
-(rerunfilecheck)             Checksum: 51AB226E0639FAC68833FA129E1A5B85;1638.
+(rerunfilecheck)             Checksum: 2AB79E8C78A083DCD739EDDF90FF1A0C;1850.
 Package logreq Info: Writing requests to 'DiSanto_GNN_Slides.run.xml'.
 \openout1 = `DiSanto_GNN_Slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37674 strings out of 476025
- 779430 string characters out of 5790018
+ 37697 strings out of 476025
+ 780042 string characters out of 5790018
  1879388 words of memory out of 5000000
- 57317 multiletter control sequences out of 15000+600000
+ 57334 multiletter control sequences out of 15000+600000
  533113 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,22n,122p,2052b,1875s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on DiSanto_GNN_Slides.pdf (52 pages, 3615843 bytes).
+Output written on DiSanto_GNN_Slides.pdf (53 pages, 3872941 bytes).
 PDF statistics:
- 1793 PDF objects out of 2073 (max. 8388607)
- 1642 compressed objects within 17 object streams
- 129 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1838 PDF objects out of 2073 (max. 8388607)
+ 1683 compressed objects within 17 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
