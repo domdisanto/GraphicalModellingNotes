@@ -92,7 +92,7 @@
       \verb{url}
       \verb http://arxiv.org/abs/1509.09292
       \endverb
-      \keyw{Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Statistics - Machine Learning}
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning,Computer Science - Neural and Evolutionary Computing}
     \endentry
     \entry{ektefaie_multimodal_2023}{article}{}
       \name{author}{5}{}{%
@@ -162,7 +162,7 @@
       \verb{url}
       \verb https://www.nature.com/articles/s42256-023-00624-6
       \endverb
-      \keyw{Computational science,Computer science,Machine learning,Statistics}
+      \keyw{Machine learning,Computer science,Statistics,Computational science}
     \endentry
     \entry{ferludin_tf-gnn_2023}{misc}{}
       \name{author}{27}{}{%
@@ -339,7 +339,7 @@
       \verb{url}
       \verb http://arxiv.org/abs/2207.03522
       \endverb
-      \keyw{Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Computer Science - Social and Information Networks,Physics - Physics and Society,Statistics - Machine Learning}
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning,Computer Science - Neural and Evolutionary Computing,Computer Science - Social and Information Networks,Physics - Physics and Society}
     \endentry
     \entry{gainza_deciphering_2020}{article}{}
       \name{author}{7}{}{%
@@ -419,7 +419,7 @@
       \verb{url}
       \verb https://www.nature.com/articles/s41592-019-0666-6
       \endverb
-      \keyw{Machine learning,Protein function predictions,Protein structure predictions,Proteins}
+      \keyw{Proteins,Machine learning,Protein function predictions,Protein structure predictions}
     \endentry
     \entry{gilmer_neural_2017}{misc}{}
       \name{author}{5}{}{%
@@ -535,6 +535,63 @@
       \endverb
       \verb{url}
       \verb https://ieeexplore.ieee.org/document/1555942
+      \endverb
+    \endentry
+    \entry{isert_structure-based_2023}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4520c82216d88cdcd6c2164fac8d05b7}{%
+           family={Isert},
+           familyi={I\bibinitperiod},
+           given={Clemens},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6d75c9970cc3d386624751597761b0e0}{%
+           family={Atz},
+           familyi={A\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9477eb09da9d3d7c6dd63f569486d863}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Gisbert},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{68e4f385d3ef10708887e547e4c96265}
+      \strng{fullhash}{b9b9ef0a542b969b324af1c718a42428}
+      \strng{bibnamehash}{b9b9ef0a542b969b324af1c718a42428}
+      \strng{authorbibnamehash}{b9b9ef0a542b969b324af1c718a42428}
+      \strng{authornamehash}{68e4f385d3ef10708887e547e4c96265}
+      \strng{authorfullhash}{b9b9ef0a542b969b324af1c718a42428}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Structure-based drug design uses three-dimensional geometric information of macromolecules, such as proteins or nucleic acids, to identify suitable ligands. Geometric deep learning, an emerging concept of neural-network-based machine learning, has been applied to macromolecular structures. This review provides an overview of the recent applications of geometric deep learning in bioorganic and medicinal chemistry, highlighting its potential for structurebased drug discovery and design. Emphasis is placed on molecular property prediction, ligand binding site and pose prediction, and structure-based de novo molecular design. The current challenges and opportunities are highlighted, and a forecast of the future of geometric deep learning for drug discovery is presented.}
+      \field{issn}{0959440X}
+      \field{journaltitle}{Current Opinion in Structural Biology}
+      \field{month}{4}
+      \field{title}{Structure-based drug design with geometric deep learning}
+      \field{urlday}{5}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{volume}{79}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{102548}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.sbi.2023.102548
+      \endverb
+      \verb{file}
+      \verb Isert et al. - 2023 - Structure-based drug design with geometric deep le.pdf:/Users/jdomi/Zotero/storage/X37AEHGN/Isert et al. - 2023 - Structure-based drug design with geometric deep le.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0959440X23000222
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0959440X23000222
       \endverb
     \endentry
     \entry{javaloy_mitigating_2022}{misc}{}
@@ -699,7 +756,7 @@
       \verb{url}
       \verb https://www.nature.com/articles/s42256-023-00647-z
       \endverb
-      \keyw{Computational models,Computer science,Machine learning,Statistics}
+      \keyw{Machine learning,Computational models,Computer science,Statistics}
     \endentry
     \entry{sanchez-lengeling_gentle_2021}{article}{}
       \name{author}{4}{}{%
@@ -883,7 +940,7 @@
       \verb{url}
       \verb http://arxiv.org/abs/1810.00826
       \endverb
-      \keyw{Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Statistics - Machine Learning}
+      \keyw{Computer Science - Machine Learning,Computer Science - Computer Vision and Pattern Recognition,Statistics - Machine Learning}
     \endentry
     \entry{ying_hierarchical_2018}{inproceedings}{}
       \name{author}{6}{}{%

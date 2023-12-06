@@ -90,7 +90,6 @@
 
 \begin{frame}[allowframebreaks]{Notes/Questions (To Be Deleted)}
     \begin{itemize}
-        \item Touch on AlphaFold? GNN's used I believe but unconfirmed, and architecture is complicated/seems infeasible (at least for my time right now)
         \item Still unsure how to tie in PrimeKG paper
         \item Methods for edge selection/identification? Some instances we only want to preserve structure, but sometimes we want to predict/fit edges, how does that fit into message-passing/GCN methods or other extensions? 
         \item \textcolor{red}{Diffpool article as extension of general GNN, hierarchical pooling over global readout functions?} \url{https://papers.nips.cc/paper_files/paper/2018/file/e77dbaf6759253c7c6d0efc5690369c7-Paper.pdf}
@@ -367,6 +366,7 @@
 \begin{frame}{General Framework}
 Can succinctly represent the $\iter$th layer as: 
 \begin{align*}
+\iffalse 
     \mathbf{h}_\node^{(\iter+1)} 
     &=
     \text{Update}
@@ -382,6 +382,7 @@ Can succinctly represent the $\iter$th layer as:
     \right]
     \right\}
 \\
+\fi
     \mathbf{h}_\node^{(\iter+1)} 
     &=
     Up
@@ -736,10 +737,12 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
     \bf{\Large Proteins and Structure-Based Drug Design (SBDD)}    
 \end{frame}
 
-\begin{frame}{AlphaFold}
-    \textcolor{red}{Image and very brief acknowledgement/link for AlphaFold, ESMFold here (~30s)}
-\end{frame}
 
+\iffalse 
+            \begin{frame}{AlphaFold}
+                \textcolor{red}{Image and very brief acknowledgement/link for AlphaFold, ESMFold here (~30s)}
+            \end{frame}
+\fi 
 
 \begin{frame}{Structure-Based Drug Design (SBDD)}
     \begin{itemize}
@@ -761,6 +764,19 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
     \centering{\small Images from Fig. 1 of Zhang (2023) \cite{zhang_systematic_2023}}
 \end{frame}
 
+\begin{frame}{Output}
+    \begin{itemize}
+        \item {\bf Binding site prediction} is binary categorization at the (surface) amino acid level 
+        \item {\bf Binding affinity prediction} is a continuous measure of protein-ligand interaction strength 
+        \item Protein Databank (PDB), PDBBind, Dockground, CSAR-HiQ are existing data sets used to train most GNN's in these contexts 
+        \item Other characteristics are important for drug design and protein-ligand interactions but without current GNN methods to my knowledge 
+        \begin{itemize}
+            \item Binding pose 
+            \item Ligand generation 
+            \item Linker design 
+        \end{itemize}
+    \end{itemize}
+\end{frame}
 
 \iffalse 
             \begin{frame}{Input}
@@ -792,39 +808,107 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
 \fi 
 
 
+
+
+
 \begin{frame}{Input}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.55]{Isert_2023_ModelsSBDD.png}
+    \end{figure}
+    Figure from Isert (2023) \cite{isert_structure-based_2023}
+\end{frame}
+
+\begin{frame}{CNN Input}
     \begin{itemize}
         \item Nodes and edges defined by radial patches about a discretization of the protein surface 
     \end{itemize}
+
     \begin{figure}
-        \centering
-        \includegraphics[scale=0.55]{Gainza_2020_ProteinNodesRadii.png}  \\ 
-        Fig 1a. Gainza (2020) \cite{gainza_deciphering_2020}
+        \centering 
+        \includegraphics[scale=0.4]{Isert_2023_ModelsSBDD_VoxelMesh.png}
+%    \end{figure}
+%
+%    \begin{figure}
+%        \centering
+        \includegraphics[scale=0.5]{Gainza_2020_ProteinNodesRadii.png}  \\ 
+        Left: Fig 2(ab) from Isert (2023); Right: Fig 1a. Gainza (2020) \cite{isert_structure-based_2023, gainza_deciphering_2020}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Input}
-    \begin{itemize}\setlength\itemsep{8mm}
-        \item Nodes and edges defined by radial patches about a discretization of the protein surface 
-        \item Note the complications of 3D geometry (geodesic distance)
-        \item Invariant, necessary as previously stated ("coordinate system robust")
-        \item Equivariant, less strict than invariant, some transformations should generate different output (see protein conformations for drug-ligand interaction, molecular chirality) 
-    \end{itemize}
-\end{frame}
 
-\begin{frame}{Output}
+
+\begin{frame}{GNN Input}
+    \begin{columns}
+        \begin{column}{0.7\textwidth}
+            \begin{itemize}
+                \item Atomic structure in Euclidean space 
+                \item Amino acid (also "residue") structure 
+            \end{itemize}            
+        \end{column}
+        \begin{column}{0.3\textwidth}
+            \begin{figure}
+                \centering 
+                \includegraphics[scale=0.55]{Isert_2023_ModelsSBDD_3DGraph.png}
+            \caption{Figure 1c from Isert (2023) \cite{isert_structure-based_2023}}
+        \end{figure}
+                    
+        \end{column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Architecture}
+Consider some transformations $T, T'$ (e.g. reflection, rotation, etc.) within the same symmetry group: \newline 
+\vspace{3mm} 
+\\ 
+
+Invariance: $f(T(x)) = T'(f(x)) = f(x)$
+\\
+\vspace{6mm}
+
+Equivariance: 
+$\forall  T, \  \exists T': f(T(x)) = T'(f(x))$
+
+\end{frame}
+
+\begin{frame}{Architecture}
+Forgoing the iteration supercripts, one message pass can be represented as such: 
     \begin{align*}
         m_{ij}
         &=
-        Msg_m() 
-        \\ 
+        \textcolor{blue}{Msg_m}(\mathbf{\node_i}, \mathbf{\node_j}, \nrepresent_i, \nrepresent_j, \edge_{ij}) 
+    \\ 
         \mathbf{m}_{ij}
         &=
         Msg_{\mathbf{m}}
+        (\mathbf{\node_i}, \mathbf{\node_j}, \nrepresent_i, \nrepresent_j, \edge_{ij})
+    \\
+        \nrepresent_i'
+        &=
+        \textcolor{blue}{Update_\nrepresent}
+        \left[
+            \nrepresent_i
+            , 
+            Agg_h
+            (
+                \{m_{ij}\}_{j \in \nhood(\node_i)}
+            )
+        \right]     
+    \\
+        \mathbf{\node_i'}
+        &=
+        Update_{\mathbf\node}
+        \left[
+            \mathbf{\node}_i
+            Agg_\mathbf{\node}
+            \left( 
+                \{\mathbf{m}_{ij}\}_{j \in \nhood(\node_i)}
+            \right)
+        \right]
     \end{align*}
+
+    where \textcolor{blue}{$Msg_m, Update_h$} are geometrically {\bf invariant}, scalar functions and $Msg_{\mathbf{m}}, Update_{\mathbf\node}$ are geometrically \bf{equivariant}, vector functions \newline 
+    Here $\mathbf\node \in \mathbb{R}^3$ are 3-D coordinates (e.g. atom or amino acid location)
 \end{frame}
 
 \begin{frame}{Equivariant GNN's}
@@ -840,14 +924,6 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
     \textcolor{red}{Review/cite one of the eGNN's from the Zhang paper}
 \end{frame}
 
-
-\begin{frame}{Extensions}
-    \textcolor{red}{30s discussion(?)}
-    \begin{itemize}
-        \item Transformers (non-GNN method but outperform)
-        \item Generative methods 
-    \end{itemize}
-\end{frame}
 
 
 \section*{Conclusion}
@@ -919,6 +995,15 @@ where $\widetilde{\AdjMat} = \AdjMat + \Identity, \widetilde{\DegMat}_{ii} = \su
     \begin{figure}
         \centering
         \includegraphics[scale=0.13]{Junwei_KG_Models_Infograph.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Protein Data Bank File}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.37]{PDB_File_Ex.png}
+        \caption{Example PDB file structure/protein information. Taken directly from Wikipedia: \url{https://en.wikipedia.org/wiki/Protein_Data_Bank_(file_format)}
+        }
     \end{figure}
 \end{frame}
 \end{document}

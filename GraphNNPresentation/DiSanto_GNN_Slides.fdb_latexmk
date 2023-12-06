@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber DiSanto_GNN_Slides"] 0 "DiSanto_GNN_Slides.bcf" "DiSanto_GNN_Slides.bbl" "DiSanto_GNN_Slides" 1701307568 -1
-  "./GNN_Presentation.bib" 1701286785 45490 e3f0a074e110a0042bb0707ded5d503a ""
-  "DiSanto_GNN_Slides.bcf" 1701307568 109732 289242c1464003e730fd12a02b635160 "pdflatex"
+["biber DiSanto_GNN_Slides"] 1701823270 "DiSanto_GNN_Slides.bcf" "DiSanto_GNN_Slides.bbl" "DiSanto_GNN_Slides" 1701825149 0
+  "./GNN_Presentation.bib" 1701804336 49290 5a1d4246b8e15aca7220f557e7a005a6 ""
+  "DiSanto_GNN_Slides.bcf" 1701825148 110060 b25f09f4c290aad84c4216d8241b8d7f "pdflatex"
   (generated)
   "DiSanto_GNN_Slides.bbl"
   "DiSanto_GNN_Slides.blg"
   (rewritten before read)
-["pdflatex"] 1701307564 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" "DiSanto_GNN_Slides.pdf" "DiSanto_GNN_Slides" 1701307568 0
-  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" 1701307559 34069 1757ce51d58ae251c386b1e60c50c45e ""
+["pdflatex"] 1701825144 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" "DiSanto_GNN_Slides.pdf" "DiSanto_GNN_Slides" 1701825149 0
+  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" 1701825031 36700 a72821f7b8eecc99720ba7b6e89fb6c1 ""
   "/Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1701198993 6964 86a4f557053a70c52d0f24169404b0d7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -289,17 +289,21 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Caffeine_Graph.png" 1701106261 214751 e9ba72ae758bd400b77b9a34a618898b ""
   "DIFFPOOL_RexYing.png" 1701136621 249236 abaf6d7e25597be5019b60b3388c5919 ""
-  "DiSanto_GNN_Slides.aux" 1701307568 16753 4c314197e9b4bad047f59eb6481d4347 "pdflatex"
-  "DiSanto_GNN_Slides.bbl" 1701288106 52198 f36591bd7d7db61e781d0a627d936ea9 "biber DiSanto_GNN_Slides"
-  "DiSanto_GNN_Slides.nav" 1701307568 7045 5a08946ed2c0c4f71f3ca1324e8d870e "pdflatex"
-  "DiSanto_GNN_Slides.out" 1701307568 1638 51ab226e0639fac68833fa129e1a5b85 "pdflatex"
-  "DiSanto_GNN_Slides.run.xml" 1701307568 2409 47d6fc4ed2ecda7a5ace4f9810941036 "pdflatex"
-  "DiSanto_GNN_Slides.tex" 1701307559 34069 1757ce51d58ae251c386b1e60c50c45e ""
-  "DiSanto_GNN_Slides.toc" 1701307568 493 198552fe6935039afcc59a194ac215b7 "pdflatex"
+  "DiSanto_GNN_Slides.aux" 1701825148 17338 4d01648184be54c0bf70a5d4463447ed "pdflatex"
+  "DiSanto_GNN_Slides.bbl" 1701823272 55171 5e7bcafab84e5daa649786cda823574e "biber DiSanto_GNN_Slides"
+  "DiSanto_GNN_Slides.nav" 1701825148 7137 e70bcf9ce0558faa45e7e941a980f318 "pdflatex"
+  "DiSanto_GNN_Slides.out" 1701825148 1638 51ab226e0639fac68833fa129e1a5b85 "pdflatex"
+  "DiSanto_GNN_Slides.run.xml" 1701825148 2409 47d6fc4ed2ecda7a5ace4f9810941036 "pdflatex"
+  "DiSanto_GNN_Slides.tex" 1701825031 36700 a72821f7b8eecc99720ba7b6e89fb6c1 ""
+  "DiSanto_GNN_Slides.toc" 1701825148 493 198552fe6935039afcc59a194ac215b7 "pdflatex"
   "Ektefaie_StructureLearning.png" 1701209654 109505 cd9f47742f18a0739e588c11dbe2d917 ""
   "Gainza_2020_ProteinNodesRadii.png" 1701286841 214328 a0cba1b1920e255603a4e4ecfeeff615 ""
+  "Isert_2023_ModelsSBDD.png" 1701804270 552964 208a1650c3d67349436c8ef3a31f8f5a ""
+  "Isert_2023_ModelsSBDD_3DGraph.png" 1701825143 147365 36b16b4af675b83a8b0357465e8ce853 ""
+  "Isert_2023_ModelsSBDD_VoxelMesh.png" 1701809553 378315 fc8b04f26c0e711fa36621fa96dbcae1 ""
   "Junwei_KG_Models_Infograph.png" 1700697582 1058127 a44b2e181116a9d2698f44397ef525ed ""
   "MultimodalPreview.png" 1701114323 287772 2db3e68c5dd901255b3ece7aa14aada0 ""
+  "PDB_File_Ex.png" 1701810549 295842 e63f1029f3c9a5eba625983fef2cfd61 ""
   "Zhang_2023_BindingAffinity.png" 1701286336 37241 f22b55deb6fe18b0fa8317f6c9018201 ""
   "Zhang_2023_BindingSite.png" 1701286318 39280 8d286d7ecaf20cbe76e2835e51514c5d ""
   "Zhang_Protein3D.png" 1701228093 265824 9ec118838ba24f1af9c94d9729b04e19 ""
