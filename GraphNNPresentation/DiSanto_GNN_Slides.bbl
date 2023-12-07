@@ -82,6 +82,66 @@
       \endverb
       \keyw{Quantitative Biology - Quantitative Methods}
     \endentry
+    \entry{chandak_building_2023}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5ae310cf79d0b3644dc03264891651cb}{%
+           family={Chandak},
+           familyi={C\bibinitperiod},
+           given={Payal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=20b2c9f80d5574f01211ed9ecca40a92}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Kexin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5f1df07c5fbd5a91d0e32b8697082857}{%
+           family={Zitnik},
+           familyi={Z\bibinitperiod},
+           given={Marinka},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{0efeb2df1f991a21ee478ab7e957fcc3}
+      \strng{fullhash}{5f966b96dfb9d8e8afab3b53811466cb}
+      \strng{bibnamehash}{5f966b96dfb9d8e8afab3b53811466cb}
+      \strng{authorbibnamehash}{5f966b96dfb9d8e8afab3b53811466cb}
+      \strng{authornamehash}{0efeb2df1f991a21ee478ab7e957fcc3}
+      \strng{authorfullhash}{5f966b96dfb9d8e8afab3b53811466cb}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Developing personalized diagnostic strategies and targeted treatments requires a deep understanding of disease biology and the ability to dissect the relationship between molecular and genetic factors and their phenotypic consequences. However, such knowledge is fragmented across publications, non-standardized repositories, and evolving ontologies describing various scales of biological organization between genotypes and clinical phenotypes. Here, we present PrimeKG, a multimodal knowledge graph for precision medicine analyses. PrimeKG integrates 20 high-quality resources to describe 17,080 diseases with 4,050,249 relationships representing ten major biological scales, including disease-associated protein perturbations, biological processes and pathways, anatomical and phenotypic scales, and the entire range of approved drugs with their therapeutic action, considerably expanding previous efforts in disease-rooted knowledge graphs. PrimeKG contains an abundance of ‘indications’, ‘contradictions’, and ‘off-label use’ drug-disease edges that lack in other knowledge graphs and can support AI analyses of how drugs affect disease-associated networks. We supplement PrimeKG’s graph structure with language descriptions of clinical guidelines to enable multimodal analyses and provide instructions for continual updates of PrimeKG as new data become available.}
+      \field{issn}{2052-4463}
+      \field{journaltitle}{Scientific Data}
+      \field{month}{2}
+      \field{note}{Number: 1 Publisher: Nature Publishing Group}
+      \field{number}{1}
+      \field{title}{Building a knowledge graph to enable precision medicine}
+      \field{urlday}{26}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{10}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{67}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41597-023-01960-3
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/jdomi/Zotero/storage/EDBVQ4KP/Chandak et al. - 2023 - Building a knowledge graph to enable precision med.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41597-023-01960-3
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41597-023-01960-3
+      \endverb
+      \keyw{Machine learning,Data integration,Medical research,Network topology,Predictive medicine}
+    \endentry
     \entry{duvenaud_convolutional_2015}{misc}{}
       \name{author}{7}{}{%
         {{hash=834f50f5d5a332c21effd10f07daf79e}{%

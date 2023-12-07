@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  6 DEC 2023 19:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  6 DEC 2023 22:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -988,24 +988,24 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 )
 \openout1 = `DiSanto_GNN_Slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1060,60 +1060,60 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 91.
+Package hyperref Info: Link coloring ON on input line 94.
  (./DiSanto_GNN_Slides.out) (./DiSanto_GNN_Slides.out)
 \@outlinefile=\write6
 \openout6 = `DiSanto_GNN_Slides.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 91.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 94.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 91.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 94.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 91.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 91.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 91.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 91.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 94.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 91.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 91.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 91.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 94.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 91.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 91.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 91.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 94.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 91.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 91.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 94.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 91.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 94.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 91.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 91.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 91.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 91.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 91.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 94.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 91.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 91.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 94.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 94.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 91.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 94.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 91.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 94.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 91.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 94.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1142,8 +1142,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'DiSanto_GNN_Slides.bbl' found.
  (./DiSanto_GNN_Slides.bbl)
-Package biblatex Info: Reference section=0 on input line 91.
-Package biblatex Info: Reference segment=0 on input line 91.
+Package biblatex Info: Reference section=0 on input line 94.
+Package biblatex Info: Reference segment=0 on input line 94.
  (./DiSanto_GNN_Slides.nav) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] (./DiSanto_GNN_Slides.toc) [2
@@ -1154,10 +1154,10 @@ Package biblatex Info: Reference segment=0 on input line 91.
 <txGNN_KG.png, id=169, 264.99pt x 198.7425pt>
 File: txGNN_KG.png Graphic file (type png)
 <use txGNN_KG.png>
-Package pdftex.def Info: txGNN_KG.png  used on input line 123.
+Package pdftex.def Info: txGNN_KG.png  used on input line 126.
 (pdftex.def)             Requested size: 264.98935pt x 198.742pt.
 
-Overfull \vbox (14.73802pt too high) detected at line 123
+Overfull \vbox (14.73802pt too high) detected at line 126
  []
 
 [4
@@ -1166,7 +1166,7 @@ Overfull \vbox (14.73802pt too high) detected at line 123
 <MultimodalPreview.png, id=203, 808.01875pt x 795.97375pt>
 File: MultimodalPreview.png Graphic file (type png)
 <use MultimodalPreview.png>
-Package pdftex.def Info: MultimodalPreview.png  used on input line 130.
+Package pdftex.def Info: MultimodalPreview.png  used on input line 133.
 (pdftex.def)             Requested size: 161.60088pt x 159.19193pt.
  [5
 
@@ -1174,17 +1174,17 @@ Package pdftex.def Info: MultimodalPreview.png  used on input line 130.
 <Caffeine_Graph.png, id=236, 1137.24875pt x 435.6275pt>
 File: Caffeine_Graph.png Graphic file (type png)
 <use Caffeine_Graph.png>
-Package pdftex.def Info: Caffeine_Graph.png  used on input line 139.
+Package pdftex.def Info: Caffeine_Graph.png  used on input line 142.
 (pdftex.def)             Requested size: 341.17726pt x 130.68925pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 139.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 142.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 139.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 142.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 139.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 142.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [6
@@ -1193,7 +1193,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 <Zhang_Protein3D.png, id=271, 610.28pt x 336.25626pt>
 File: Zhang_Protein3D.png Graphic file (type png)
 <use Zhang_Protein3D.png>
-Package pdftex.def Info: Zhang_Protein3D.png  used on input line 147.
+Package pdftex.def Info: Zhang_Protein3D.png  used on input line 150.
 (pdftex.def)             Requested size: 274.62346pt x 151.3139pt.
  [7
 
@@ -1201,18 +1201,18 @@ Package pdftex.def Info: Zhang_Protein3D.png  used on input line 147.
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 215.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 218.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 215.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 218.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 215.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 218.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 215.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 218.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 215.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 218.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 215.
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 215.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 218.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 218.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [9
@@ -1224,7 +1224,7 @@ File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ] [12
 
 ]
-Overfull \hbox (14.84607pt too wide) detected at line 267
+Overfull \hbox (14.84607pt too wide) detected at line 270
 []
  []
 
@@ -1235,7 +1235,7 @@ Overfull \hbox (14.84607pt too wide) detected at line 267
 \c@algpx@indentEndPage-1=\count516
 \c@algpx@indentEndCoordIndex-0=\count517
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 354.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 357.
  [14
 
 ] [15
@@ -1262,12 +1262,12 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
 <Zhang_2023_BindingSite.png, id=831, 421.575pt x 162.10562pt>
 File: Zhang_2023_BindingSite.png Graphic file (type png)
 <use Zhang_2023_BindingSite.png>
-Package pdftex.def Info: Zhang_2023_BindingSite.png  used on input line 669.
+Package pdftex.def Info: Zhang_2023_BindingSite.png  used on input line 672.
 (pdftex.def)             Requested size: 171.14764pt x 65.81071pt.
 <Zhang_2023_BindingAffinity.png, id=832, 421.575pt x 147.55125pt>
 File: Zhang_2023_BindingAffinity.png Graphic file (type png)
 <use Zhang_2023_BindingAffinity.png>
-Package pdftex.def Info: Zhang_2023_BindingAffinity.png  used on input line 669.
+Package pdftex.def Info: Zhang_2023_BindingAffinity.png  used on input line 672.
 (pdftex.def)             Requested size: 171.14764pt x 59.90201pt.
  [25
 
@@ -1275,7 +1275,7 @@ Package pdftex.def Info: Zhang_2023_BindingAffinity.png  used on input line 669.
 <Isert_2023_ModelsSBDD.png, id=866, 595.22375pt x 312.16624pt>
 File: Isert_2023_ModelsSBDD.png Graphic file (type png)
 <use Isert_2023_ModelsSBDD.png>
-Package pdftex.def Info: Isert_2023_ModelsSBDD.png  used on input line 710.
+Package pdftex.def Info: Isert_2023_ModelsSBDD.png  used on input line 713.
 (pdftex.def)             Requested size: 327.37407pt x 171.69196pt.
  [26
 
@@ -1283,12 +1283,12 @@ Package pdftex.def Info: Isert_2023_ModelsSBDD.png  used on input line 710.
 <Isert_2023_ModelsSBDD_VoxelMesh.png, id=899, 425.59pt x 309.65688pt>
 File: Isert_2023_ModelsSBDD_VoxelMesh.png Graphic file (type png)
 <use Isert_2023_ModelsSBDD_VoxelMesh.png>
-Package pdftex.def Info: Isert_2023_ModelsSBDD_VoxelMesh.png  used on input line 727.
+Package pdftex.def Info: Isert_2023_ModelsSBDD_VoxelMesh.png  used on input line 730.
 (pdftex.def)             Requested size: 170.23297pt x 123.86055pt.
 <Gainza_2020_ProteinNodesRadii.png, id=900, 268.00125pt x 231.86626pt>
 File: Gainza_2020_ProteinNodesRadii.png Graphic file (type png)
 <use Gainza_2020_ProteinNodesRadii.png>
-Package pdftex.def Info: Gainza_2020_ProteinNodesRadii.png  used on input line 727.
+Package pdftex.def Info: Gainza_2020_ProteinNodesRadii.png  used on input line 730.
 (pdftex.def)             Requested size: 134.00029pt x 115.93283pt.
  [27
 
@@ -1296,7 +1296,7 @@ Package pdftex.def Info: Gainza_2020_ProteinNodesRadii.png  used on input line 7
 <Isert_2023_ModelsSBDD_3DGraph.png, id=936, 156.585pt x 294.09875pt>
 File: Isert_2023_ModelsSBDD_3DGraph.png Graphic file (type png)
 <use Isert_2023_ModelsSBDD_3DGraph.png>
-Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 750.
+Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 753.
 (pdftex.def)             Requested size: 86.12201pt x 161.7548pt.
  [28
 
@@ -1310,7 +1310,7 @@ Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 7
 <Fig1_NodeCoder.png, id=1060, 1036.87375pt x 228.855pt>
 File: Fig1_NodeCoder.png Graphic file (type png)
 <use Fig1_NodeCoder.png>
-Package pdftex.def Info: Fig1_NodeCoder.png  used on input line 895.
+Package pdftex.def Info: Fig1_NodeCoder.png  used on input line 898.
 (pdftex.def)             Requested size: 311.06451pt x 68.65701pt.
  [32
 
@@ -1318,7 +1318,7 @@ Package pdftex.def Info: Fig1_NodeCoder.png  used on input line 895.
 <Zhang_Fig8_Binding.png, id=1094, 474.77374pt x 304.13625pt>
 File: Zhang_Fig8_Binding.png Graphic file (type png)
 <use Zhang_Fig8_Binding.png>
-Package pdftex.def Info: Zhang_Fig8_Binding.png  used on input line 911.
+Package pdftex.def Info: Zhang_Fig8_Binding.png  used on input line 914.
 (pdftex.def)             Requested size: 284.86644pt x 182.48315pt.
  [33
 
@@ -1326,7 +1326,7 @@ Package pdftex.def Info: Zhang_Fig8_Binding.png  used on input line 911.
 <ScanNet_Pooling.png, id=1130, 956.57375pt x 466.74374pt>
 File: ScanNet_Pooling.png Graphic file (type png)
 <use ScanNet_Pooling.png>
-Package pdftex.def Info: ScanNet_Pooling.png  used on input line 920.
+Package pdftex.def Info: ScanNet_Pooling.png  used on input line 923.
 (pdftex.def)             Requested size: 334.80583pt x 163.36275pt.
  [34
 
@@ -1338,7 +1338,7 @@ Package pdftex.def Info: ScanNet_Pooling.png  used on input line 920.
 <Multimodal_Concep.png, id=1223, 871.255pt x 653.44125pt>
 File: Multimodal_Concep.png Graphic file (type png)
 <use Multimodal_Concep.png>
-Package pdftex.def Info: Multimodal_Concep.png  used on input line 957.
+Package pdftex.def Info: Multimodal_Concep.png  used on input line 960.
 (pdftex.def)             Requested size: 217.81322pt x 163.35991pt.
  [37
 
@@ -1348,7 +1348,7 @@ Package pdftex.def Info: Multimodal_Concep.png  used on input line 957.
 <Modal_Agg_Fig2.png, id=1291, 333.74687pt x 253.44687pt>
 File: Modal_Agg_Fig2.png Graphic file (type png)
 <use Modal_Agg_Fig2.png>
-Package pdftex.def Info: Modal_Agg_Fig2.png  used on input line 1007.
+Package pdftex.def Info: Modal_Agg_Fig2.png  used on input line 1010.
 (pdftex.def)             Requested size: 200.24966pt x 152.06929pt.
  [39
 
@@ -1360,7 +1360,7 @@ Package pdftex.def Info: Modal_Agg_Fig2.png  used on input line 1007.
 <Ektefaie_StructureLearning.png, id=1383, 303.1325pt x 409.53pt>
 File: Ektefaie_StructureLearning.png Graphic file (type png)
 <use Ektefaie_StructureLearning.png>
-Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 1068.
+Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 1071.
 (pdftex.def)             Requested size: 121.25084pt x 163.80908pt.
  [42
 
@@ -1368,7 +1368,7 @@ Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 1068
 <Ektefaie_OnStructure.png, id=1416, 317.185pt x 324.21124pt>
 File: Ektefaie_OnStructure.png Graphic file (type png)
 <use Ektefaie_OnStructure.png>
-Package pdftex.def Info: Ektefaie_OnStructure.png  used on input line 1094.
+Package pdftex.def Info: Ektefaie_OnStructure.png  used on input line 1097.
 (pdftex.def)             Requested size: 126.87173pt x 129.68219pt.
  [43
 
@@ -1376,50 +1376,80 @@ Package pdftex.def Info: Ektefaie_OnStructure.png  used on input line 1094.
 <MGL_MethodsTable.png, id=1450, 763.85374pt x 465.74pt>
 File: MGL_MethodsTable.png Graphic file (type png)
 <use MGL_MethodsTable.png>
-Package pdftex.def Info: MGL_MethodsTable.png  used on input line 1102.
+Package pdftex.def Info: MGL_MethodsTable.png  used on input line 1105.
 (pdftex.def)             Requested size: 305.53607pt x 186.2927pt.
  [44
 
  <./MGL_MethodsTable.png>]
-<Zheng_2022_MGL_Patients_Arch.png, id=1483, 911.405pt x 459.7175pt>
+<TextGCN_Yao_Fig2.png, id=1483, 551.05875pt x 220.825pt>
+File: TextGCN_Yao_Fig2.png Graphic file (type png)
+<use TextGCN_Yao_Fig2.png>
+Package pdftex.def Info: TextGCN_Yao_Fig2.png  used on input line 1125.
+(pdftex.def)             Requested size: 220.41959pt x 88.32843pt.
+ [45
+
+ <./TextGCN_Yao_Fig2.png>]
+<Zheng_2022_MGL_Patients_Arch.png, id=1518, 911.405pt x 459.7175pt>
 File: Zheng_2022_MGL_Patients_Arch.png Graphic file (type png)
 <use Zheng_2022_MGL_Patients_Arch.png>
-Package pdftex.def Info: Zheng_2022_MGL_Patients_Arch.png  used on input line 1110.
+Package pdftex.def Info: Zheng_2022_MGL_Patients_Arch.png  used on input line 1134.
 (pdftex.def)             Requested size: 364.55554pt x 183.88373pt.
 
-Overfull \hbox (22.26024pt too wide) in paragraph at lines 1110--1110
+Overfull \hbox (22.26024pt too wide) in paragraph at lines 1134--1134
  [] 
  []
 
 
-Overfull \vbox (31.47975pt too high) detected at line 1110
+Overfull \vbox (31.47975pt too high) detected at line 1134
  []
 
-[45
+[46
 
- <./Zheng_2022_MGL_Patients_Arch.png>]
-<TextGCN_Yao_Fig2.png, id=1518, 551.05875pt x 220.825pt>
-File: TextGCN_Yao_Fig2.png Graphic file (type png)
-<use TextGCN_Yao_Fig2.png>
-Package pdftex.def Info: TextGCN_Yao_Fig2.png  used on input line 1118.
-(pdftex.def)             Requested size: 330.63779pt x 132.496pt.
- [46
-
- <./TextGCN_Yao_Fig2.png>] [47
+ <./Zheng_2022_MGL_Patients_Arch.png>] [47
 
 ] [48
 
 ] [49
 
-] [50
+]
+File: txGNN_KG.png Graphic file (type png)
+<use txGNN_KG.png>
+Package pdftex.def Info: txGNN_KG.png  used on input line 1175.
+(pdftex.def)             Requested size: 264.98935pt x 198.742pt.
 
-] [51
+Overfull \vbox (14.73802pt too high) detected at line 1175
+ []
 
-] [52
+[50
 
-] [53
+]
+<Chandak_KG_Arch.png, id=1671, 528.97626pt x 166.6225pt>
+File: Chandak_KG_Arch.png Graphic file (type png)
+<use Chandak_KG_Arch.png>
+Package pdftex.def Info: Chandak_KG_Arch.png  used on input line 1198.
+(pdftex.def)             Requested size: 211.58675pt x 66.64781pt.
+ [51
 
-] [54
+ <./Chandak_KG_Arch.png>]
+File: txGNN_KG.png Graphic file (type png)
+<use txGNN_KG.png>
+Package pdftex.def Info: txGNN_KG.png  used on input line 1208.
+(pdftex.def)             Requested size: 225.24255pt x 168.93192pt.
+
+Overfull \vbox (14.25711pt too high) detected at line 1208
+ []
+
+[52
+
+]
+<TxGNN_Arch.png, id=1737, 790.955pt x 421.575pt>
+File: TxGNN_Arch.png Graphic file (type png)
+<use TxGNN_Arch.png>
+Package pdftex.def Info: TxGNN_Arch.png  used on input line 1218.
+(pdftex.def)             Requested size: 316.3764pt x 168.627pt.
+ [53
+
+ <./TxGNN_Arch.png>] [54
 
 ] [55
 
@@ -1427,18 +1457,18 @@ Package pdftex.def Info: TextGCN_Yao_Fig2.png  used on input line 1118.
 
 ] [57
 
-
 ] [58
 
-
-] [59
-
+]
+File: TxGNN_Arch.png Graphic file (type png)
+<use TxGNN_Arch.png>
+Package pdftex.def Info: TxGNN_Arch.png  used on input line 1326.
+(pdftex.def)             Requested size: 316.3764pt x 168.627pt.
+ [59
 
 ] [60
 
-
 ] [61
-
 
 ] [62
 
@@ -1446,46 +1476,67 @@ Package pdftex.def Info: TextGCN_Yao_Fig2.png  used on input line 1118.
 
 ] [64
 
+
 ] [65
+
 
 ] [66
 
+
+] [67
+
+
+] [68
+
+
+] [69
+
+] [70
+
+] [71
+
+] [72
+
+] [73
+
+] [74
+
 ]
-<NodeCoder_S2_Embeddings.png, id=2144, 792.9625pt x 656.4525pt>
+<NodeCoder_S2_Embeddings.png, id=2397, 792.9625pt x 656.4525pt>
 File: NodeCoder_S2_Embeddings.png Graphic file (type png)
 <use NodeCoder_S2_Embeddings.png>
-Package pdftex.def Info: NodeCoder_S2_Embeddings.png  used on input line 1269.
+Package pdftex.def Info: NodeCoder_S2_Embeddings.png  used on input line 1467.
 (pdftex.def)             Requested size: 237.89058pt x 196.93727pt.
 
-Overfull \vbox (12.93329pt too high) detected at line 1269
+Overfull \vbox (12.93329pt too high) detected at line 1467
  []
 
-[67
+[75
 
  <./NodeCoder_S2_Embeddings.png>]
-<Junwei_KG_Models_Infograph.png, id=2178, 2352.79pt x 1324.95pt>
+<Junwei_KG_Models_Infograph.png, id=2431, 2352.79pt x 1324.95pt>
 File: Junwei_KG_Models_Infograph.png Graphic file (type png)
 <use Junwei_KG_Models_Infograph.png>
-Package pdftex.def Info: Junwei_KG_Models_Infograph.png  used on input line 1277.
+Package pdftex.def Info: Junwei_KG_Models_Infograph.png  used on input line 1475.
 (pdftex.def)             Requested size: 305.87344pt x 172.24954pt.
- [68
+ [76
 
  <./Junwei_KG_Models_Infograph.png>]
-<PDB_File_Ex.png, id=2206, 991.705pt x 543.02875pt>
+<PDB_File_Ex.png, id=2459, 991.705pt x 543.02875pt>
 File: PDB_File_Ex.png Graphic file (type png)
 <use PDB_File_Ex.png>
-Package pdftex.def Info: PDB_File_Ex.png  used on input line 1286.
+Package pdftex.def Info: PDB_File_Ex.png  used on input line 1484.
 (pdftex.def)             Requested size: 366.92511pt x 200.91748pt.
 
-Overfull \hbox (24.6298pt too wide) in paragraph at lines 1286--1286
+Overfull \hbox (24.6298pt too wide) in paragraph at lines 1484--1484
  [] 
  []
 
 
-Overfull \vbox (54.5135pt too high) detected at line 1286
+Overfull \vbox (54.5135pt too high) detected at line 1484
  []
 
-[69
+[77
 
  <./PDB_File_Ex.png>]
 \tf@nav=\write7
@@ -1505,18 +1556,18 @@ Package logreq Info: Writing requests to 'DiSanto_GNN_Slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37849 strings out of 476025
- 783286 string characters out of 5790018
+ 37906 strings out of 476025
+ 784223 string characters out of 5790018
  1879388 words of memory out of 5000000
- 57441 multiletter control sequences out of 15000+600000
+ 57479 multiletter control sequences out of 15000+600000
  533113 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,22n,122p,2052b,1872s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on DiSanto_GNN_Slides.pdf (69 pages, 5925340 bytes).
+ </Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk> </Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on DiSanto_GNN_Slides.pdf (77 pages, 6235371 bytes).
 PDF statistics:
- 2351 PDF objects out of 2487 (max. 8388607)
- 2146 compressed objects within 22 object streams
- 170 named destinations out of 1000 (max. 500000)
- 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2616 PDF objects out of 2984 (max. 8388607)
+ 2389 compressed objects within 24 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 306 words of extra memory for PDF output out of 10000 (max. 10000000)
 

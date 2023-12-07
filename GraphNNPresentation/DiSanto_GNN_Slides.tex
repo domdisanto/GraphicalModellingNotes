@@ -85,6 +85,9 @@
 \newcommand{\Agg}{\text{Aggregate}}
 \newcommand{\Msg}{\text{Message}}
 \newcommand{\Loss}{\mathcal{L}}
+\newcommand{\relation}{r}
+%\newcommand{\relate}{r}
+\newcommand{\RelationSet}{\mathcal{T}_R}
 %%%%%%%%%%%%%%%%%%%%%%%%
     % START %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -1101,6 +1104,27 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
     \end{figure}
 \end{frame}
 
+
+\begin{frame}{TextGCN}
+    \begin{itemize}
+        \item Graph-building by word co-occurrence(\textit{uncovering toplogy}) 
+        \item $Z = SoftMax(
+            \widetilde{\DegMat}^{-1/2}
+            \widetilde{\AdjMat}
+            \widetilde{\DegMat}^{-1/2}  
+            \ReLu(\widetilde{\DegMat}^{-1/2}
+            \widetilde{\AdjMat}
+            \widetilde{\DegMat}^{-1/2}  
+            \NodeRepMat^{(\iter)}\Theta)\Theta^*)$
+    \end{itemize}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.4]{TextGCN_Yao_Fig2.png}
+        \caption{Figure 1 from Yao (2018) \cite{yao_graph_2018}}
+    \end{figure}
+\end{frame}
+
+
 \begin{frame}{Zheng (2022) Multi-modal Graph Learning for Disease Prediction }
     \begin{figure}
         \centering 
@@ -1109,18 +1133,12 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
     \end{figure}
 \end{frame}
 
-\begin{frame}{TextGCN}
-    \begin{figure}
-        \centering 
-        \includegraphics[scale=0.6]{TextGCN_Yao_Fig2.png}
-        \caption{Figure 1 from Yao (2018) \cite{yao_graph_2018}}
-    \end{figure}
-\end{frame}
+
 
 
 \begin{frame}{Summary of Multimodal Graph Learning}
     \begin{itemize}\setlength\itemsep{6mm}
-        \item It is unclear to me if the novelty is related to GNN architecture or "pre-GNN" modality fusion 
+        \item Accounting for intermodal information (currently) arises in graph-learning stages 
         \item Quite comprehensive framework, includes some early GDL/CNN papers and methods 
         \begin{itemize}
             \item MaSIF CNN model
@@ -1140,55 +1158,206 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
 \end{frame}
 
 \begin{frame}{Motivation}
-    \begin{itemize}
-        \item Zero-shot prediction 
+    \begin{itemize}\setlength\itemsep{6mm}
+        \item TxGNN trained to predict therapeutic agents for "neglected" diseases 
+        \item "Zero-shot prediction" - disease with few or no understood indications 
+        \item Formally stated, we want to predict if drug $j$ is indicated or contraindicated for disease $i$
     \end{itemize}
 \end{frame}
 
 
-\begin{frame}{Preface}
-    \begin{itemize}
-        \item \textbf{Structure-Induced Pre-Training}
-        \item \textbf{Knowledge Graph Aggregation}
-    \end{itemize}
+\begin{frame}{Input}
+    \begin{figure}
+        \centering 
+        \includegraphics{txGNN_KG.png}
+        \caption{Fig 1A from Huang (2023) \cite{huang_zero-shot_2023}}
+    \end{figure}
 \end{frame}
-\begin{frame}{Structure-Induced Pre-Training}
+
+
+
+\begin{frame}{Harmonization and PrimeKG}
+%    \begin{figure}
+%        \centering 
+%        \includegraphics[scale=0.4]{Huang_NodeTypes.png}
+%        \caption{Table 3 from Huang (2023) \cite{huang_zero-shot_2023}}
+%    \end{figure}
     \begin{itemize}
-        \item Consider a pre-training (PT)/fine-tuning (FT) problem 
-        \item We pre-train $f_\theta:\mathcal{X}\rightarrow\mathcal{Z}$ on some PT data $\mathbf{X}_{PT} \in \mathcal{X}$ and loss function $\Loss_{PT}$
-        \item Use the encoded $f(\mathbf{X}_{PT}) \in \mathcal{Z}$ on some downstream, FT tasks 
+        \item Chandak (2023) \textit{"Building a knowledge graph to enable precision medicine"} paper provides framework on KG harmonization \cite{chandak_building_2023}
+        \item Define common ontologies and construct an aggregated KG from heterogeneous sources 
         \begin{itemize}
-            \item Protein folding category, stability, amino acid properties 
-            \item Text sentiment 
+            \item "drug", "disease", "anatomy", "pathway", "biological process", "molecular function", "gene/protein", "effect/phenotype", "exposure"
         \end{itemize}
-        \item Applied in langauge models, protein behavior prediction 
     \end{itemize}
+
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.4]{Chandak_KG_Arch.png}
+        \caption{Fig. 2a from Chandak (2023) \cite{chandak_building_2023}\footnote{This does not reflect the specific data sources in TxGNN, although there is some overlap, just a general data harmonization outline}}
+    \end{figure}
 \end{frame}
 
-\begin{frame}{Structure-Induced Pre-Training}
-    \begin{itemize}
-        \item In addition to $\mathbf{X}_{PT}$, we also have underlying structure $\Graph_{PT}$
-        \item Our PT encoder $f_\theta$ must only take $\mathbf{X}_{PT}$ as input to allow transferability to FT tasks 
-        \item Decompose loss function as PT objective $\Loss_{Obj}$ and structure-inducing $\Loss_\Graph$:
-    \end{itemize}
 
-    \begin{gather*}
-        \Loss_{PT}
+\begin{frame}{Input}
+    Represent our KG $\Graph = (\NodeSet, \EdgeSet, \RelationSet), \edge_{ij} = (\node_i, \relation, \node_j)$ and our usual node-embedding notation $\nrepresent_i$
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.85]{txGNN_KG.png}
+        \caption{Fig 1A from Huang (2023) \cite{huang_zero-shot_2023}}
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Architecture}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.4]{TxGNN_Arch.png}
+        \caption{Fig. 1b from Huang (2023) \cite{huang_zero-shot_2023}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Architecture}
+    \begin{enumerate}
+        \item A heterogeneous graph neural network-based encoder to obtain biologically meaningful network representation for each biomedical entity
+        \item A disease similarity-based metric learning decoder to leverage auxiliary information to enrich the representation of diseases that lack molecular characterization
+        \item An all-relation stochastic pre-training followed by a drug-disease centric full-graph fine-tuning strategy
+        \item A graph explainability module to retain a sparse set of edges that are crucial for prediction as a post-training step
+      \end{enumerate}
+\end{frame}
+
+\begin{frame}{Architecture}
+    \begin{enumerate}
+        \item $\relation-$MPNN
+        \item Disease similarly quantification (and gatekeeping)
+        \item Pre-train on KG mini-batches; Fine-tune on drug-disease pairs 
+        \item Interpretability 
+      \end{enumerate}
+\end{frame}
+
+\begin{frame}{Heterogenous graph neural network encoder}
+    Here, let $\nhood_\relation$ be the neighborhood only for edges of relation type $r$
+    \begin{align*}
+        Message:
+        &
+        m_{\relation,i} 
+        = 
+        \Theta_{\relation,M}\nrepresent_i
+        \\
+        Aggregate:
+        &
+        \widetilde{m_{\relation,i}} 
+        = 
+        |\nhood_{\relation (i)}|^{(-1)}
+        \sum_{j \in \nhood_{\relation (i)}}
+        m_{\relation,j}
+        \\
+        Update:
+        &
+        h_i 
+        \leftarrow 
+        h_i + \sum_{\relation \in \RelationSet}
+        \widetilde{m_{\relation,i}} 
+        \\
+        \\
+        &p_{i,jj,r} 
         =
-        (1-\lambda)\Loss_{Obj}
+        expit(\sum \nrepresent_i \cdot w_r \cdot \nrepresent_j)
+        \\
+        &
+        \Loss 
+        =
+        \sum_{(i,r,j)}
+%        \sum_{(i,r,j) \in D_+ \cup D_-}
+        y_{i,r,j} * \log(p_{i,r,j})
         +
-        \lambda \Loss_{\Graph}
-    \end{gather*}
+        (1-y_{i,r,j}) * \log(1-p_{i,r,j})
+    \end{align*}
 \end{frame}
 
-\begin{frame}{Knowledge Graph Aggregation}
-    \begin{itemize}
-        \item 
+\begin{frame}{Disease Similarity}
+    \begin{itemize}\setlength\itemsep{4mm}
+        \item Recall TxGNN's goal is zero-shot for poorly-understood diseases (i.e. likely sparsely connected) 
+        \item Rather than update these embeddings, identify most similar and well-understood diseases to utilize KG information 
+        \begin{itemize}
+            \item Protein structure similarity 
+            \item Similar phenotype or exposure 
+        \end{itemize}
+        \item Supply a "gating mechanism" to induce similarity updating of poorly-understood diseases while discouraging updating well-connected/known diseases 
     \end{itemize}
 \end{frame}
+
+
+\iffalse 
+            \begin{frame}{Architecture}
+                Loss function: 
+                \begin{gather*}
+                    \Loss 
+                    =
+                    \sum_{(i,r,j) \in D_+ \cup D_-}
+                    y_{i,r,j} * \log(p_{i,r,j})
+                    +
+                    (1-y_{i,r,j}) * \log(1-p_{i,r,j})
+                \end{gather*}
+            Train/Test Split:
+                \begin{itemize}
+                    \item Test-train split by \textit{a priori} defined disease groups 
+                    \item Random test-train split $\rightarrow$ all drug-disease connections moved to test set among test disease sets 
+                \end{itemize}
+            \end{frame}
+\fi 
+
+\begin{frame}{Pre-training/Fine-tuning}
+    \begin{itemize}\setlength\itemsep{4mm}
+        \item Desire for PT/FT is two-fold: computation and scope 
+        \item Pre-train on random mini-batches 
+        \item Use pre-trained encoder weights (with exception of $w_r$) for fine-tuning on drug-disease pairs 
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Architecture (Revisited)}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.4]{TxGNN_Arch.png}
+        \caption{Fig. 1b from Huang (2023) \cite{huang_zero-shot_2023}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Explainability}
+    \begin{itemize}
+        \item Account for lack of interpretability of model parameters by identifying sparse edge sets for relevant predictions 
+        \item Calculate indicator for edge inclusion $z^{(\iter)} = \mathbf{1}_{[\mathbb{R}>0.5]}
+        \left( 
+            \text{sigmoid}
+            \left( 
+                W_{g,r}^{(\iter)}(m_{r,i}^{(\iter)}||m_{r,j}^{(\iter)})
+            \right)
+        \right)$
+        \item Update message $\hat{m}_{ir}^{(\iter)} = z_{ijr}^{(\iter)} \cdot m_{i,r}^{(\iter)} + (1-z_{i,j,r}^{(\iter)})\cdot \mathbf{b}_r^{(\iter)}$ for learnable baseline vector $\mathbf{b}_r$
+        \item Train with loss function: \\ 
+\end{itemize}
+\[
+    \max_\lambda \min_{\mathbf{W}_g}  
+    \sum_{k=1}^L \sum_{(i,j,r) \in D_{+} \cup D_{-}} 
+    \Ind_{[R \neq 0]}z^{(k)}_{i,j,r} 
+    + 
+    \lambda \left( \lVert \hat{p}_{i,j,r} - p_{i,j,r} \rVert^2 - \beta\right) 
+    \]
+
+\end{frame}
+
 
 \begin{frame}{TxGNN}
+    \begin{itemize}
+        \item Leverage heterogeneous KG data to predict therapies for poorly understood (read: sparsely KG connected) diseases 
+        \item Using large, heterogeneous KG data combined with understandings of disease similarity elucidate better understandings of rare diseases or expand use of orphan drugs 
+        \item Requires a non-trivial data harmonization effort as well as a PT/FT method for computational feasibility 
+        \item Authors offer an explainability analysis by identifying sparse edge sets with "faithful predictions"
+    \end{itemize}
 \end{frame}
+
 
 \section*{Conclusion}
 
@@ -1218,6 +1387,38 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
 \bf{\LARGE Appendix Slides}    
 \end{frame}
 
+
+
+\begin{frame}{Structure-Induced Pre-Training (1/2)}
+    \begin{itemize}
+        \item Consider a pre-training (PT)/fine-tuning (FT) problem 
+        \item We pre-train $f_\theta:\mathcal{X}\rightarrow\mathcal{Z}$ on some PT data $\mathbf{X}_{PT} \in \mathcal{X}$ and loss function $\Loss_{PT}$
+        \item Use the encoded $f(\mathbf{X}_{PT}) \in \mathcal{Z}$ on some downstream, FT tasks 
+        \begin{itemize}
+            \item Protein folding category, stability, amino acid properties 
+            \item Text sentiment 
+        \end{itemize}
+        \item Applied in langauge models, protein behavior prediction 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Structure-Induced Pre-Training (2/2)}
+    \begin{itemize}
+        \item In addition to $\mathbf{X}_{PT}$, we also have underlying structure $\Graph_{PT}$
+        \item Our PT encoder $f_\theta$ must only take $\mathbf{X}_{PT}$ as input to allow transferability to FT tasks 
+        \item Decompose loss function as PT objective $\Loss_{Obj}$ and structure-inducing $\Loss_\Graph$:
+    \end{itemize}
+
+    \begin{gather*}
+        \Loss_{PT}
+        =
+        (1-\lambda)\Loss_{Obj}
+        +
+        \lambda \Loss_{\Graph}
+    \end{gather*}
+\end{frame}
+
+
 \begin{frame}{Implementations}
     \begin{itemize}
         \item \href{https://pytorch-geometric.readthedocs.io/en/latest/}{PyTorch Geometric} with directed extension \href{https://github.com/SherylHYX/pytorch_geometric_signed_directed}{PyTorch Geometric Signed Directed}
@@ -1231,9 +1432,6 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Methods within MGL Blueprint}
-
-\end{frame}
 
 \begin{frame}{Abbreviated History}
     \begin{itemize}

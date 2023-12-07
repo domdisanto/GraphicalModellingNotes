@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'DiSanto_GNN_Slides.blg'
-[41] biber-darwin:340> INFO - === Wed Dec  6, 2023, 19:17:25
-[50] Biber.pm:419> INFO - Reading 'DiSanto_GNN_Slides.bcf'
-[101] Biber.pm:979> INFO - Found 22 citekeys in bib section 0
-[109] Biber.pm:4419> INFO - Processing section 0
-[115] Biber.pm:4610> INFO - Looking for bibtex file 'GNN_Presentation.bib' for section 0
-[120] bibtex.pm:1713> INFO - LaTeX decoding ...
-[158] bibtex.pm:1519> INFO - Found BibTeX data source 'GNN_Presentation.bib'
+[38] biber-darwin:340> INFO - === Wed Dec  6, 2023, 22:00:55
+[47] Biber.pm:419> INFO - Reading 'DiSanto_GNN_Slides.bcf'
+[97] Biber.pm:979> INFO - Found 23 citekeys in bib section 0
+[105] Biber.pm:4419> INFO - Processing section 0
+[111] Biber.pm:4610> INFO - Looking for bibtex file 'GNN_Presentation.bib' for section 0
+[116] bibtex.pm:1713> INFO - LaTeX decoding ...
+[154] bibtex.pm:1519> INFO - Found BibTeX data source 'GNN_Presentation.bib'
+[280] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
 [280] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[281] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[281] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[281] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[297] bbl.pm:660> INFO - Writing 'DiSanto_GNN_Slides.bbl' with encoding 'UTF-8'
+[280] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[280] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[296] bbl.pm:660> INFO - Writing 'DiSanto_GNN_Slides.bbl' with encoding 'UTF-8'
 [317] bbl.pm:763> INFO - Output to DiSanto_GNN_Slides.bbl
