@@ -26,6 +26,7 @@
 \usepackage{algorithm}
 \usepackage{algpseudocodex}
 \usepackage{caption}
+%\usepackage{mathtools}
 \usepackage{tikz}
 \usetikzlibrary{positioning, arrows.meta}
 \usetikzlibrary{decorations.pathreplacing,calligraphy}
@@ -83,18 +84,11 @@
 \newcommand{\Identity}{\mathbf{I}}
 \newcommand{\Agg}{\text{Aggregate}}
 \newcommand{\Msg}{\text{Message}}
+\newcommand{\Loss}{\mathcal{L}}
 %%%%%%%%%%%%%%%%%%%%%%%%
     % START %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-\begin{frame}[allowframebreaks]{Notes/Questions (To Be Deleted)}
-    \begin{itemize}
-        \item Still unsure how to tie in PrimeKG paper
-        \item Methods for edge selection/identification? Some instances we only want to preserve structure, but sometimes we want to predict/fit edges, how does that fit into message-passing/GCN methods or other extensions? 
-        \item \textcolor{red}{Diffpool article as extension of general GNN, hierarchical pooling over global readout functions?} \url{https://papers.nips.cc/paper_files/paper/2018/file/e77dbaf6759253c7c6d0efc5690369c7-Paper.pdf}
-    \end{itemize}
-\end{frame}
 
 
 \begin{frame}
@@ -106,28 +100,27 @@
 \end{frame}
 
 
-\section{Set-Up and Motivation \textcolor{red}{5ish minutes}}
+\section{Set-Up and Motivation}
 
 \begin{frame}{Goals}
     \begin{itemize}\setlength\itemsep{8mm}
-        \item Provide a useful overview of Graphical Neural Networks (GNN)
+        \item Briefly motivate and introduce Graphical Neural Networks (GNN)
+        \item Describe recent reviews and applications 
         \begin{itemize}
-            \item Motivation for necessity of GNN's 
-            \item Provide a general framework of fitting 
-        \end{itemize}
-        \item Describe applications and extensions of the general GNN model 
-        \begin{itemize}
-            \item Multimodal Physiological/Biomedical Data
-            \item Integration of Knowledge-Graph and EHR Data
+            \item Drug Discovery 
+            \item Multimodal Biomedical Data 
+            \item Knowledge Graph Integrated GNN's \& TxGNN
         \end{itemize}
     \end{itemize}
 \end{frame}
 
-
-\begin{frame}{KG Application}
-    \textcolor{red}{Image here. Or maybe drop, 4 might be overkill}
+\begin{frame}{Knowledge Graph Data}
+    \begin{figure}
+        \centering 
+        \includegraphics{txGNN_KG.png}
+        \caption{Fig 1A from Huang (2023) \cite{huang_zero-shot_2023}}
+    \end{figure}
 \end{frame}
-
 \begin{frame}{Multi-modal Biomedical Data}
     \begin{figure}
         \centering 
@@ -238,7 +231,7 @@
 
 
 
-\section{General Construction \textcolor{red}{10-20ish minutes}}
+\section{General Construction}
 \OutlineRedux 
 
 
@@ -614,131 +607,20 @@ Trained end-to-end via backpropagation for problem-specific Transform function
 
 
 
-\section{Applications and Extensions \textcolor{red}{20-25ish minutes}}
+\section{Applications and Extensions}
 \OutlineRedux
 
-
-
-\subsection{Multimodal Graph Learning (MGL)}
-
-\begin{frame}{}
-    \bf{\Large Multimodal Graph Learning (MGL)}    
-\end{frame}
-
-\begin{frame}{Multimodal Graph Learning (MGL)}
-\begin{itemize}\setlength\itemsep{6mm}
-    \item Ektefaie (2023) {\it Multimodal learning with graphs} \cite{ektefaie_multimodal_2023}
-    \item \textcolor{red}{Cite 14-16 in multimodal paper for multi improvement over uni VAE} 
-    \item Topology is complicated by multimodality of input data 
-    \begin{itemize}
-        \item Modal collapse \cite{javaloy_mitigating_2022}
-        \item Differential data availability 
-        \item \textcolor{red}{Can mention Kipf algorithm does well in semi-supervised setting (even with limited labels available within a given "cluster"), so if we have some gold standard data (biomarker/strong proxy, etc.) that is difficult to obtain, can be VERY useful to include for MGL and lead to good performance, no bullet point here just mention}
-    \end{itemize}
-\end{itemize}    
-
-\end{frame}
-
-\begin{frame}{Mutimodal}
-    \begin{columns}[T]
-        \begin{column}{0.5\textwidth}
-            Clinical Data
-            \begin{itemize}        
-                \item Clinical text  
-                \item -omics data 
-                \item Laboratory measurements 
-                \item Clinical imaging
-            \end{itemize}
-            \end{column}
-        \begin{column}{0.5\textwidth}
-            Protein Structures
-            \begin{itemize}        
-                \item 1$^\circ$ AA Sequence
-                \item 2$^\circ$ Helix interactions
-                \item 3$^\circ$ Folding, bridges 
-            \end{itemize}
-        \end{column}
-%        \begin{column}{0.3\textwidth}
-%            Text Data
-%            \begin{itemize}        
-%                \item 
-%            \end{itemize}
-%        \end{column}
-    \end{columns}
-\end{frame}
-
-
-\begin{frame}{Framework}
-    Authors propose a four component "blueprint"
-    \begin{enumerate}
-    \item Identifying entitites (i.e. modalities)
-    \item Uncovering topology 
-    \begin{itemize}
-        \item {\it A priori}
-        \item Adaptively learned
-    \end{itemize}
-    \item Propagating information 
-    \item Mixing representation 
-    \end{enumerate}
-\end{frame}
-
-
-\begin{frame}{Framework}
-    Authors propose a four component "blueprint"
-    \begin{enumerate}
-    \item Identifying entitites (i.e. modalities)
-    \item Uncovering topology 
-    \item {\bf Propagating information }
-    \item {\bf Mixing representation }
-    \end{enumerate}
-    \begin{tikzpicture}[overlay,remember picture]
-        \draw[decorate,decoration={calligraphic brace, amplitude=4pt},line width=1.2pt]
-        (6.7,2.6) -- (6.7,1.7) node[midway, right=6pt, xshift=-2pt, text=black] {\footnotesize Structure Learning};
-    \end{tikzpicture}
-
-    \begin{tikzpicture}[overlay,remember picture]
-        \draw[decorate,decoration={calligraphic brace, amplitude=4pt},line width=1.2pt]
-        (5.2,1.8) -- (5.2,0.95) node[midway, right=6pt, xshift=-2pt, text=black] {\footnotesize Learning On-Structure Phase};
-    \end{tikzpicture}
-\end{frame}
-
-\begin{frame}{Structure Learning}
-    \begin{columns}[T]
-    \begin{column}{0.5\textwidth}
-        \vspace{12mm}
-        \begin{itemize}
-            \item Consider patients as {\it nodes} 
-            \item Consider modalities as {\it entities} (colored nodes)
-            \begin{itemize}
-                \item Clinical text/narrative data 
-                \item Laboratory/Physiological measurements 
-                \item Image/Video data 
-                \item Patient reported measurements/symptoms
-                \item etc. 
-            \end{itemize}
-        \end{itemize}      
-    \end{column}
-    \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \includegraphics[scale=0.4]{Ektefaie_StructureLearning.png}
-            \caption{Subset of Fig 2c \cite{ektefaie_multimodal_2023}}
-        \end{figure}    
-    \end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Learning on Structure}
-    
-\end{frame}
-
-
-\subsection{Knowledge-Graph Data}
 
 
 \subsection{Structure-Based Drug Design (SBDD)}
 
 \begin{frame}{}
-    \bf{\Large Proteins and Structure-Based Drug Design (SBDD)}    
+    \textbf{\Large Proteins and Structure-Based Drug Design (SBDD)} \\ 
+    \vspace{5mm}
+    Geometric Deep Learning for Structure-Based Drug Design: A Survey
+(2023) \\ 
+Zaixi Zhang, Jiaxian Yan, Qi Liu, Enhong Chen, and Marinka Zitnik
+\cite{zhang_systematic_2023}
 \end{frame}
 
 
@@ -750,12 +632,30 @@ Trained end-to-end via backpropagation for problem-specific Transform function
 
 \begin{frame}{Structure-Based Drug Design (SBDD)}
     \begin{itemize}
-        \item Zhang (2023) {\it Geometric Deep Learning for Structure-Based Drug Design: A Survey} \cite{zhang_systematic_2023}
         \item SBDD aims to improve drug-discovery by understanding 3D protein structures and predicting drug efficacy/behavior % docking, conformations, etc. summarize as useful to understand behavior of drug based on target protein structure 
-        \item Problems of note for GNN's include {\bf binding site prediction} and {\bf binding affinity prediction}
+        \item Can dichotomize tasks categorized as \textit{predictive} or \textit{generative}
+        \item Problems of note for GNN's include predictive tasks 
+        \begin{itemize}
+            \item \textbf{binding site prediction} 
+            \item \textbf{binding affinity prediction}
+        \end{itemize}
+        \item Other characteristics are important for drug design and protein-ligand interactions but without current GNN methods to my knowledge 
+        \begin{itemize}
+            \item Binding pose 
+            \item Ligand generation 
+            \item Linker design 
+        \end{itemize}
+%        \item Protein Databank (PDB), PDBBind, Dockground, CSAR-HiQ are existing data sets used to train most GNN's in these contexts 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Output}
+    \begin{itemize}
+        \item {\bf Binding site prediction} is binary categorization at the (surface) amino acid level 
+        \item {\bf Binding affinity prediction} is a continuous measure of protein-ligand interaction strength 
     \end{itemize}
 
-    \vspace{3mm}
+    \vspace{4mm}
 
     \begin{columns}
         \begin{column}{0.5\textwidth}
@@ -766,20 +666,6 @@ Trained end-to-end via backpropagation for problem-specific Transform function
         \end{column}
     \end{columns}
     \centering{\small Images from Fig. 1 of Zhang (2023) \cite{zhang_systematic_2023}}
-\end{frame}
-
-\begin{frame}{Output}
-    \begin{itemize}
-        \item {\bf Binding site prediction} is binary categorization at the (surface) amino acid level 
-        \item {\bf Binding affinity prediction} is a continuous measure of protein-ligand interaction strength 
-        \item Protein Databank (PDB), PDBBind, Dockground, CSAR-HiQ are existing data sets used to train most GNN's in these contexts 
-        \item Other characteristics are important for drug design and protein-ligand interactions but without current GNN methods to my knowledge 
-        \begin{itemize}
-            \item Binding pose 
-            \item Ligand generation 
-            \item Linker design 
-        \end{itemize}
-    \end{itemize}
 \end{frame}
 
 \iffalse 
@@ -846,11 +732,9 @@ Trained end-to-end via backpropagation for problem-specific Transform function
     \begin{columns}
         \begin{column}{0.65\textwidth}
             \begin{itemize}\setlength\itemsep{6mm}
-                \item Nodes $\mathbf{\node}$ include 3-dimensional coordinate data 
-                \begin{itemize}
-                \item Atomic structure in Euclidean space 
-                \item Amino acid (also "residue") structure 
-                \end{itemize}
+                \item Nodes $\node$ include typical feature embeddings $\nrepresent$ and 3-dimensional coordinate data $\mathbf\node$
+                \item Nodes are primarily conceptualized at the {\bf amino acid} (also {\bf residue}) level
+                    %\item Can also consider the atomic sub-structure
                 \item Maintain invariance for translations, rotations but not necessarily reflections 
             \end{itemize}            
         \end{column}
@@ -864,6 +748,7 @@ Trained end-to-end via backpropagation for problem-specific Transform function
         \end{column}
     \end{columns}
 \end{frame}
+
 
 \begin{frame}{Architecture}
 Consider some transformations $T, T'$ (e.g. reflection, rotation, etc.) within the same symmetry group: \newline 
@@ -938,9 +823,9 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
             \left(
             \mathbf{\node}_i^{(\iter)}
             -
-            \mathbf{\node}_i^{(\iter)}
+            \mathbf{\node}_j^{(\iter)}
             \right) 
-            \phi_\node(m_{ij})
+            Agg_\node(m_{ij})
         \\
             m_i 
             &= 
@@ -963,7 +848,10 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
         \caption{Subst of Fig. 1 from Abdollahi (2023) NodeCoder \cite{abdollahi_nodecoder_2023}}
     \end{figure}
 
-    With a given layer updated using a slight adaptation: 
+    \begin{itemize}
+        \item Nodes are residues with atomic property (and other) embeddings
+        \item With a given layer updated using a slight adaptation of GCN: 
+    \end{itemize}
     \begin{align*}
         \NodeRepMat^{(\iter+1)} 
         &=
@@ -1006,13 +894,301 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
     \end{align*}
 \end{frame}
 
-\begin{frame}{EquiPocket}
-    \textcolor{red}{Time pending add} 
-    \url{https://arxiv.org/pdf/2302.12177.pdf}
+\iffalse 
+    \begin{frame}{EquiPocket}
+        \textcolor{red}{Time pending add} 
+        \url{https://arxiv.org/pdf/2302.12177.pdf}
+    \end{frame}
+\fi 
+
+
+\begin{frame}{PIGNet}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.6]{Zhang_Fig8_Binding.png}
+        \caption{Fig 8. from Zhang (2023) describing PIGNet architecture \cite{moon_pignet_2022, zhang_systematic_2023}}
+    \end{figure}
 \end{frame}
 
-\subsection{Structure-Induced Pre-Training}
 
+\begin{frame}{ScanNet}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.35]{ScanNet_Pooling.png}
+        \caption{Fig 1. from Tubiana (2021) \cite{tubiana_scannet_2022}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{SBDD Summary}
+    \begin{itemize}\setlength\itemsep{6mm}
+        \item Geometric Deep Learning is used to predict protein properties (in addition to drug-ligand interactions)
+        \item Conceptualize nodes as residues 
+        \begin{itemize}
+            \item Can also fix graph with atomic nodes, fit GNN (or other methdo) to input atomic graph, and pool at the residue level  
+        \end{itemize}
+        \item Adapt our architecture to account for desired geometric invariance and equivariance 
+        \item Zhang (2023) \cite{zhang_systematic_2023} review compiles these and more complex architectures
+        \begin{itemize}
+            \item Transformers 
+            \item Variational Autoencoders 
+            \item Methods for generative GDL tasks 
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+
+\subsection{Multimodal Graph Learning (MGL)}
+
+
+\begin{frame}{}
+    \textbf{\Large Multimodal Graph Learning (MGL)}  \\
+    \vspace{5mm}
+    Multimodal learning with graphs (2023) \\ Yasha Ektefaie, George Dasoulas, Ayush Noori, Maha Farhat, and Marinka Zitnik
+\end{frame}
+
+
+\begin{frame}{Motivation}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.25]{Multimodal_Concep.png}
+        \caption{Fig. 3 from Li (2022) \cite{li_graph_2022}}
+    \end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Multimodal Graph Learning (MGL)}
+\begin{itemize}\setlength\itemsep{6mm}
+    \item Ektefaie (2023) {\it Multimodal learning with graphs} \cite{ektefaie_multimodal_2023}
+    %\item \textcolor{red}{Cite 14-16 in multimodal paper for multi improvement over uni VAE} 
+    \item Topology is complicated by multimodality of input data 
+    \begin{itemize}
+        \item Modal collapse \cite{javaloy_mitigating_2022}
+        \item Differential data availability 
+       % \item \textcolor{red}{Can mention Kipf algorithm does well in semi-supervised setting (even with limited labels available within a given "cluster"), so if we have some gold standard data (biomarker/strong proxy, etc.) that is difficult to obtain, can be VERY useful to include for MGL and lead to good performance, no bullet point here just mention}
+    \end{itemize}
+\end{itemize}    
+\vspace{3mm}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            Clinical Data
+            \begin{itemize}        
+                \item Clinical text  
+                \item -omics data 
+                \item Laboratory measurements 
+                \item Clinical imaging
+            \end{itemize}
+            \end{column}
+        \begin{column}{0.5\textwidth}
+            Protein Structures
+            \begin{itemize}        
+                \item 1$^\circ$ AA Sequence
+                \item 2$^\circ$ Helix interactions
+                \item 3$^\circ$ Folding, bridges 
+            \end{itemize}
+        \end{column}
+%        \begin{column}{0.3\textwidth}
+%            Text Data
+%            \begin{itemize}        
+%                \item 
+%            \end{itemize}
+%        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Aggregation}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.6]{Modal_Agg_Fig2.png}
+        \caption{Subet of Fig. 2 from Ektefaie (2023) \cite{ektefaie_multimodal_2023}}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Framework}
+    Authors propose a four component "blueprint"
+    \begin{enumerate}
+    \item Identifying entitites (i.e. modalities)
+    \item Uncovering topology 
+    \begin{itemize}
+        \item {\it A priori}
+        \item Adaptively learned
+    \end{itemize}
+    \item Propagating information 
+    \item Mixing representation 
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Framework}
+    Authors propose a four component "blueprint"
+    \begin{enumerate}
+    \item Identifying entitites (i.e. modalities)
+    \item Uncovering topology 
+    \item Propagating information
+    \item Mixing representation
+    \end{enumerate}
+    \begin{tikzpicture}[overlay,remember picture]
+        \draw[decorate,decoration={calligraphic brace, amplitude=4pt},line width=1.2pt]
+        (6.7,2.6) -- (6.7,1.7) node[midway, right=6pt, xshift=-2pt, text=black] {\footnotesize Structure Learning};
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[overlay,remember picture]
+        \draw[decorate,decoration={calligraphic brace, amplitude=4pt},line width=1.2pt]
+        (5.2,1.8) -- (5.2,0.95) node[midway, right=6pt, xshift=-2pt, text=black] {\footnotesize Learning On-Structure Phase};
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Structure Learning}
+    \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+        %\vspace{12mm}
+        \begin{itemize}
+            \item Consider modalities as {\it entities} (colored nodes)
+            \begin{itemize}
+                \item Clinical text/narrative data 
+                \item Laboratory/Physiological measurements 
+                \item Image/Video data 
+                \item Patient reported measurements/symptoms
+                \item etc. 
+            \end{itemize}
+            \item Use known modalities to \textbf{identify} nodes
+            \item \textbf{Connect} nodes to generate graph structure (learned or provided \textit{a priori} knowledge)
+        \end{itemize}      
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[scale=0.4]{Ektefaie_StructureLearning.png}
+            \caption{Subset of Fig 2c \cite{ektefaie_multimodal_2023}}
+        \end{figure}    
+    \end{column}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}{Learning on Structure}
+    \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+        %\vspace{12mm}
+        \begin{itemize}
+            \item Can construct one or more adjacency measures $\mathbf{A}$ 
+            \item Message propagate across edges outlined in Structure Learning 
+            \item Combine representations 
+            \begin{itemize}
+                \item Summation 
+                \item Averaging 
+                \item Neighborhood-specific aggregation
+            \end{itemize}
+        \end{itemize}      
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \includegraphics[scale=0.4]{Ektefaie_OnStructure.png}
+            \caption{Subset of Fig 2c \cite{ektefaie_multimodal_2023}}
+        \end{figure}    
+    \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.4]{MGL_MethodsTable.png}
+        \caption{Supp. Table 2 from Ektefaie (2023) \cite{ektefaie_multimodal_2023}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Zheng (2022) Multi-modal Graph Learning for Disease Prediction }
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.4]{Zheng_2022_MGL_Patients_Arch.png}
+        \caption{Fig. 2. From Zheng (2022) \cite{zheng_multi-modal_2022}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{TextGCN}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.6]{TextGCN_Yao_Fig2.png}
+        \caption{Figure 1 from Yao (2018) \cite{yao_graph_2018}}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Summary of Multimodal Graph Learning}
+    \begin{itemize}\setlength\itemsep{6mm}
+        \item It is unclear to me if the novelty is related to GNN architecture or "pre-GNN" modality fusion 
+        \item Quite comprehensive framework, includes some early GDL/CNN papers and methods 
+        \begin{itemize}
+            \item MaSIF CNN model
+            \item Graph Attention Networks 
+        \end{itemize} 
+    \end{itemize}
+\end{frame}
+
+
+\subsection{TxGNN}
+
+\begin{frame}{}
+    \textbf{\Large TxGNN: Geometric Deep Learning and "Human-Centered AI"}  \\
+    \vspace{5mm}
+    Zero-shot prediction of therapeutic use with geometric deep learning and clinician centered design (2023) \\ 
+    Huang, Chandak, Wang, Havaldar, Vaid, Leskovec, Nadkarni, Glicksberg, Gehlenborg, Zitnik
+\end{frame}
+
+\begin{frame}{Motivation}
+    \begin{itemize}
+        \item Zero-shot prediction 
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Preface}
+    \begin{itemize}
+        \item \textbf{Structure-Induced Pre-Training}
+        \item \textbf{Knowledge Graph Aggregation}
+    \end{itemize}
+\end{frame}
+\begin{frame}{Structure-Induced Pre-Training}
+    \begin{itemize}
+        \item Consider a pre-training (PT)/fine-tuning (FT) problem 
+        \item We pre-train $f_\theta:\mathcal{X}\rightarrow\mathcal{Z}$ on some PT data $\mathbf{X}_{PT} \in \mathcal{X}$ and loss function $\Loss_{PT}$
+        \item Use the encoded $f(\mathbf{X}_{PT}) \in \mathcal{Z}$ on some downstream, FT tasks 
+        \begin{itemize}
+            \item Protein folding category, stability, amino acid properties 
+            \item Text sentiment 
+        \end{itemize}
+        \item Applied in langauge models, protein behavior prediction 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Structure-Induced Pre-Training}
+    \begin{itemize}
+        \item In addition to $\mathbf{X}_{PT}$, we also have underlying structure $\Graph_{PT}$
+        \item Our PT encoder $f_\theta$ must only take $\mathbf{X}_{PT}$ as input to allow transferability to FT tasks 
+        \item Decompose loss function as PT objective $\Loss_{Obj}$ and structure-inducing $\Loss_\Graph$:
+    \end{itemize}
+
+    \begin{gather*}
+        \Loss_{PT}
+        =
+        (1-\lambda)\Loss_{Obj}
+        +
+        \lambda \Loss_{\Graph}
+    \end{gather*}
+\end{frame}
+
+\begin{frame}{Knowledge Graph Aggregation}
+    \begin{itemize}
+        \item 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{TxGNN}
+\end{frame}
 
 \section*{Conclusion}
 
@@ -1055,6 +1231,10 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Methods within MGL Blueprint}
+
+\end{frame}
+
 \begin{frame}{Abbreviated History}
     \begin{itemize}
         \item Graph Neural Network first(?) coined in Gori (2005) \cite{gori_new_2005} and subqeuently in Scarselli (2009) {\it The Graph Neural Network Model} \cite{scarselli_graph_2009}
@@ -1070,11 +1250,21 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
     \end{itemize}
 \end{frame}
 
+\iffalse 
 \begin{frame}{DiffPool}
     Figure 1 from Ying (2018) {\it Hierarchical Graph Representation Learning with Differentiable Pooling} \cite{ying_hierarchical_2018}
     \begin{figure}
         \centering 
         \includegraphics[scale=0.45]{DIFFPOOL_RexYing.png}
+    \end{figure}
+\end{frame}
+\fi 
+
+\begin{frame}{NodeCoder Embeddings}
+    \begin{figure}
+        \centering 
+        \includegraphics[scale=0.3]{NodeCoder_S2_Embeddings.png}
+        \caption{From Table S2 in Abdollahi (2023) \cite{abdollahi_nodecoder_2023}}
     \end{figure}
 \end{frame}
 

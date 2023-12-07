@@ -600,6 +600,97 @@
       \verb https://ieeexplore.ieee.org/document/1555942
       \endverb
     \endentry
+    \entry{huang_zero-shot_2023}{misc}{}
+      \name{author}{10}{}{%
+        {{hash=20b2c9f80d5574f01211ed9ecca40a92}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Kexin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5ae310cf79d0b3644dc03264891651cb}{%
+           family={Chandak},
+           familyi={C\bibinitperiod},
+           given={Payal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2630587e79c2423cce217f18edc65fed}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Qianwen},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=d334fa9348142c837ecfc263d6060f1c}{%
+           family={Havaldar},
+           familyi={H\bibinitperiod},
+           given={Shreyas},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fecc502fcff9ffc00f08bf35d5da6fb0}{%
+           family={Vaid},
+           familyi={V\bibinitperiod},
+           given={Akhil},
+           giveni={A\bibinitperiod}}}%
+        {{hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9afbf2c60fabf4c07f76e41e7e13e75a}{%
+           family={Nadkarni},
+           familyi={N\bibinitperiod},
+           given={Girish},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f3f7f39acd6ca9fa0e288ee83fbca301}{%
+           family={Glicksberg},
+           familyi={G\bibinitperiod},
+           given={Benjamin\bibnamedelima S.},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=a07bbc24abc685eef80763024fdc40b8}{%
+           family={Gehlenborg},
+           familyi={G\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=5f1df07c5fbd5a91d0e32b8697082857}{%
+           family={Zitnik},
+           familyi={Z\bibinitperiod},
+           given={Marinka},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {medRxiv}%
+      }
+      \strng{namehash}{64e1c53dfb0a3c4ddd05e3ab14ae0038}
+      \strng{fullhash}{deb9ad5319c691306237fe24c9cd2f50}
+      \strng{bibnamehash}{64e1c53dfb0a3c4ddd05e3ab14ae0038}
+      \strng{authorbibnamehash}{64e1c53dfb0a3c4ddd05e3ab14ae0038}
+      \strng{authornamehash}{64e1c53dfb0a3c4ddd05e3ab14ae0038}
+      \strng{authorfullhash}{deb9ad5319c691306237fe24c9cd2f50}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{<}p{>}Historically, drug repurposing – identifying new therapeutic uses for approved drugs – has been attributed to serendipity. While recent advances have leveraged knowledge graphs and deep learning to identify potential therapeutic candidates, their clinical utility remains limited due to their dependence on existing knowledge about diseases. Here, we introduce TXGNN, a geometric deep learning approach designed for “zero-shot” drug repurposing, enabling therapeutic predictions even for diseases with no existing medicines. Trained on a medical knowledge graph, TXGNN utilizes a graph neural network and metric-learning module to rank therapeutic candidates as potential indications and contraindications across 17,080 diseases. When benchmarked against eight leading methods, TXGNN significantly improves prediction accuracy for indications by 49.2\% and contraindications by 35.1\% under stringent zero-shot evaluation. To facilitate interpretation and analysis of the model’s predictions, TXGNN’s Explainer module offers transparent insights into the multi-hop paths that form TXGNN’s predictive rationale. Clinicians and scientists found TXGNN’s explanations instrumental in contextualizing and validating its predicted therapeutic candidates during our user study. Many of TXGNN’s novel predictions have shown remarkable alignment with off-label prescriptions made by clinicians within a large healthcare system, affirming their real-world utility. TXGNN provides drug repurposing predictions that are more accurate than existing methods, consistent with off-label prescription decisions made by clinicians, and can be investigated through multi-hop interpretable explanations.{<}/p{>}}
+      \field{month}{9}
+      \field{note}{Pages: 2023.03.19.23287458}
+      \field{title}{Zero-shot drug repurposing with geometric deep learning and clinician centered design}
+      \field{urlday}{6}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1101/2023.03.19.23287458
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/jdomi/Zotero/storage/FLISZCBQ/Huang et al. - 2023 - Zero-shot drug repurposing with geometric deep lea.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.medrxiv.org/content/10.1101/2023.03.19.23287458v2
+      \endverb
+      \verb{url}
+      \verb https://www.medrxiv.org/content/10.1101/2023.03.19.23287458v2
+      \endverb
+    \endentry
     \entry{isert_structure-based_2023}{article}{}
       \name{author}{3}{}{%
         {{hash=4520c82216d88cdcd6c2164fac8d05b7}{%
@@ -756,6 +847,52 @@
       \endverb
       \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
     \endentry
+    \entry{li_graph_2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=57edbf63ea30b1f71bda396b97e368a1}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Michelle\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=20b2c9f80d5574f01211ed9ecca40a92}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Kexin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5f1df07c5fbd5a91d0e32b8697082857}{%
+           family={Zitnik},
+           familyi={Z\bibinitperiod},
+           given={Marinka},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{4d81bb6d3f80a230a238b4ef448708db}
+      \strng{fullhash}{49dba472f7d245c00ad0c9ad46b6669c}
+      \strng{bibnamehash}{49dba472f7d245c00ad0c9ad46b6669c}
+      \strng{authorbibnamehash}{49dba472f7d245c00ad0c9ad46b6669c}
+      \strng{authornamehash}{4d81bb6d3f80a230a238b4ef448708db}
+      \strng{authorfullhash}{49dba472f7d245c00ad0c9ad46b6669c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Networks-or graphs-are universal descriptors of systems of interacting elements. In biomedicine and healthcare, they can represent, for example, molecular interactions, signalling pathways, disease co-morbidities or healthcare systems. In this Perspective, we posit that representation learning can realize principles of network medicine, discuss successes and current limitations of the use of representation learning on graphs in biomedicine and healthcare, and outline algorithmic strategies that leverage the topology of graphs to embed them into compact vectorial spaces. We argue that graph representation learning will keep pushing forward machine learning for biomedicine and healthcare applications, including the identification of genetic variants underlying complex traits, the disentanglement of single-cell behaviours and their effects on health, the assistance of patients in diagnosis and treatment, and the development of safe and effective medicines.}
+      \field{issn}{2157-846X}
+      \field{journaltitle}{Nature Biomedical Engineering}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Graph representation learning in biomedicine and healthcare}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{pages}{1353\bibrangedash 1369}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1038/s41551-022-00942-x
+      \endverb
+      \keyw{Humans,Delivery of Health Care,Machine Learning}
+    \endentry
     \entry{mcdermott_structure-inducing_2023}{article}{}
       \name{author}{4}{}{%
         {{hash=320a9eb93080307302d84ae0ed6b7111}{%
@@ -820,6 +957,73 @@
       \verb https://www.nature.com/articles/s42256-023-00647-z
       \endverb
       \keyw{Machine learning,Computational models,Computer science,Statistics}
+    \endentry
+    \entry{moon_pignet_2022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=cad863b6541ad33669bb3ec264760ec6}{%
+           family={Moon},
+           familyi={M\bibinitperiod},
+           given={Seokhyun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5b47999c65817096ecc50ce557a2512d}{%
+           family={Zhung},
+           familyi={Z\bibinitperiod},
+           given={Wonho},
+           giveni={W\bibinitperiod}}}%
+        {{hash=68b285564507546ae7e4ba1a7a7a12c9}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Soojung},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2eb70e5ec072f4b7475c8a6e0da9146f}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Jaechang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=99822221b566512781784c79dfaa1e71}{%
+           family={Youn\bibnamedelima Kim},
+           familyi={Y\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Woo},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{23f1823a49e9f71bce759adbd125b658}
+      \strng{fullhash}{9a7f600891ef5c4ee4881ffdc97f7be9}
+      \strng{bibnamehash}{23f1823a49e9f71bce759adbd125b658}
+      \strng{authorbibnamehash}{23f1823a49e9f71bce759adbd125b658}
+      \strng{authornamehash}{23f1823a49e9f71bce759adbd125b658}
+      \strng{authorfullhash}{9a7f600891ef5c4ee4881ffdc97f7be9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Chemical Science}
+      \field{note}{Publisher: Royal Society of Chemistry}
+      \field{number}{13}
+      \field{shorttitle}{{PIGNet}}
+      \field{title}{{PIGNet}: a physics-informed deep learning model toward generalized drug–target interaction predictions}
+      \field{urlday}{6}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{volume}{13}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{3661\bibrangedash 3673}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1039/D1SC06946B
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/jdomi/Zotero/storage/LQZAZE2K/Moon et al. - 2022 - PIGNet a physics-informed deep learning model tow.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.rsc.org/en/content/articlelanding/2022/sc/d1sc06946b
+      \endverb
+      \verb{url}
+      \verb https://pubs.rsc.org/en/content/articlelanding/2022/sc/d1sc06946b
+      \endverb
     \endentry
     \entry{sanchez-lengeling_gentle_2021}{article}{}
       \name{author}{4}{}{%
@@ -997,6 +1201,67 @@
       \verb http://ieeexplore.ieee.org/document/4700287/
       \endverb
     \endentry
+    \entry{tubiana_scannet_2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=852fea1000f1d29385f68e0c1bb7a97c}{%
+           family={Tubiana},
+           familyi={T\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1e1d535f241b3723b64dee3eb90da671}{%
+           family={Schneidman-Duhovny},
+           familyi={S\bibinithyphendelim D\bibinitperiod},
+           given={Dina},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cf36b7e746c076ee28fb6e8aaf0b28d8}{%
+           family={Wolfson},
+           familyi={W\bibinitperiod},
+           given={Haim\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{649e0f8df0d2165db27ede26a0f84d63}
+      \strng{fullhash}{b1190b7b32a3a6303ec9a913fcc62d69}
+      \strng{bibnamehash}{b1190b7b32a3a6303ec9a913fcc62d69}
+      \strng{authorbibnamehash}{b1190b7b32a3a6303ec9a913fcc62d69}
+      \strng{authornamehash}{649e0f8df0d2165db27ede26a0f84d63}
+      \strng{authorfullhash}{b1190b7b32a3a6303ec9a913fcc62d69}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Predicting the functional sites of a protein from its structure, such as the binding sites of small molecules, other proteins or antibodies, sheds light on its function in vivo. Currently, two classes of methods prevail: machine learning models built on top of handcrafted features and comparative modeling. They are, respectively, limited by the expressivity of the handcrafted features and the availability of similar proteins. Here, we introduce ScanNet, an end-to-end, interpretable geometric deep learning model that learns features directly from 3D structures. ScanNet builds representations of atoms and amino acids based on the spatio-chemical arrangement of their neighbors. We train ScanNet for detecting protein–protein and protein–antibody binding sites, demonstrate its accuracy—including for unseen protein folds—and interpret the filters learned. Finally, we predict epitopes of the SARS-CoV-2 spike protein, validating known antigenic regions and predicting previously uncharacterized ones. Overall, ScanNet is a versatile, powerful and interpretable model suitable for functional site prediction tasks. A webserver for ScanNet is available from http://bioinfo3d.cs.tau.ac.il/ScanNet/.}
+      \field{issn}{1548-7105}
+      \field{journaltitle}{Nature Methods}
+      \field{month}{6}
+      \field{note}{Number: 6 Publisher: Nature Publishing Group}
+      \field{number}{6}
+      \field{shorttitle}{{ScanNet}}
+      \field{title}{{ScanNet}: an interpretable geometric deep learning model for structure-based protein binding site prediction}
+      \field{urlday}{6}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{volume}{19}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{730\bibrangedash 739}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1038/s41592-022-01490-7
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/jdomi/Zotero/storage/QVK9UGCX/Tubiana et al. - 2022 - ScanNet an interpretable geometric deep learning .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41592-022-01490-7
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41592-022-01490-7
+      \endverb
+      \keyw{Machine learning,Protein function predictions,Software}
+    \endentry
     \entry{xu_how_2019}{misc}{}
       \name{author}{4}{}{%
         {{hash=29a3a6bf823a641230b0258e0a8a0214}{%
@@ -1056,70 +1321,57 @@
       \endverb
       \keyw{Computer Science - Machine Learning,Computer Science - Computer Vision and Pattern Recognition,Statistics - Machine Learning}
     \endentry
-    \entry{ying_hierarchical_2018}{inproceedings}{}
-      \name{author}{6}{}{%
-        {{hash=5f21207e4436b16d3a0577038244f9b9}{%
-           family={Ying},
+    \entry{yao_graph_2018}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=bfc0861406613bb4c1b805155c64e3d5}{%
+           family={Yao},
            familyi={Y\bibinitperiod},
-           given={Zhitao},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=adf64964c8c9d5f144d937e11ccf61ba}{%
-           family={You},
-           familyi={Y\bibinitperiod},
-           given={Jiaxuan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=85f1d306bd524b1b382661ffd4da38e8}{%
-           family={Morris},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6d96ac3d4db50823c54976b773071759}{%
+           family={Mao},
            familyi={M\bibinitperiod},
-           given={Christopher},
+           given={Chengsheng},
            giveni={C\bibinitperiod}}}%
-        {{hash=62341ebcc57e03720c55a39d93f0b17d}{%
-           family={Ren},
-           familyi={R\bibinitperiod},
-           given={Xiang},
-           giveni={X\bibinitperiod}}}%
-        {{hash=2b50dc0bf681355a1fe029fdb5c75479}{%
-           family={Hamilton},
-           familyi={H\bibinitperiod},
-           given={Will},
-           giveni={W\bibinitperiod}}}%
-        {{hash=900d107125ff0ca84698cb909e4f6c51}{%
-           family={Leskovec},
+        {{hash=72e578ff3bed4af8f3c82e781d9dcec5}{%
+           family={Luo},
            familyi={L\bibinitperiod},
-           given={Jure},
-           giveni={J\bibinitperiod}}}%
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Curran Associates, Inc.}%
+        {arXiv}%
       }
-      \strng{namehash}{608f8f7abd0c8ec13137d8ec5a6de927}
-      \strng{fullhash}{bf470773783968a3ee54f9c66b8715da}
-      \strng{bibnamehash}{608f8f7abd0c8ec13137d8ec5a6de927}
-      \strng{authorbibnamehash}{608f8f7abd0c8ec13137d8ec5a6de927}
-      \strng{authornamehash}{608f8f7abd0c8ec13137d8ec5a6de927}
-      \strng{authorfullhash}{bf470773783968a3ee54f9c66b8715da}
+      \strng{namehash}{43b6c2e863a469840c01bfefdcd85b7c}
+      \strng{fullhash}{e3c641eb38cb48c51dddd9f98eeb38e7}
+      \strng{bibnamehash}{e3c641eb38cb48c51dddd9f98eeb38e7}
+      \strng{authorbibnamehash}{e3c641eb38cb48c51dddd9f98eeb38e7}
+      \strng{authornamehash}{43b6c2e863a469840c01bfefdcd85b7c}
+      \strng{authorfullhash}{e3c641eb38cb48c51dddd9f98eeb38e7}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Recently, graph neural networks (GNNs) have revolutionized the field of graph representation learning through effectively learned node embeddings, and achieved state-of-the-art results in tasks such as node classification and link prediction. However, current GNN methods are inherently flat and do not learn hierarchical representations of graphs---a limitation that is especially problematic for the task of graph classification, where the goal is to predict the label associated with an entire graph. Here we propose DiffPool, a differentiable graph pooling module that can generate hierarchical representations of graphs and can be combined with various graph neural network architectures in an end-to-end fashion. DiffPool learns a differentiable soft cluster assignment for nodes at each layer of a deep GNN, mapping nodes to a set of clusters, which then form the coarsened input for the next GNN layer. Our experimental results show that combining existing GNN methods with DiffPool yields an average improvement of 5-10\% accuracy on graph classification benchmarks, compared to all existing pooling approaches, achieving a new state-of-the-art on four out of five benchmark datasets.}
-      \field{booktitle}{Advances in {Neural} {Information} {Processing} {Systems}}
-      \field{title}{Hierarchical {Graph} {Representation} {Learning} with {Differentiable} {Pooling}}
-      \field{urlday}{28}
-      \field{urlmonth}{11}
+      \field{abstract}{Text classification is an important and classical problem in natural language processing. There have been a number of studies that applied convolutional neural networks (convolution on regular grid, e.g., sequence) to classification. However, only a limited number of studies have explored the more flexible graph convolutional neural networks (convolution on non-grid, e.g., arbitrary graph) for the task. In this work, we propose to use graph convolutional networks for text classification. We build a single text graph for a corpus based on word co-occurrence and document word relations, then learn a Text Graph Convolutional Network (Text GCN) for the corpus. Our Text GCN is initialized with one-hot representation for word and document, it then jointly learns the embeddings for both words and documents, as supervised by the known class labels for documents. Our experimental results on multiple benchmark datasets demonstrate that a vanilla Text GCN without any external word embeddings or knowledge outperforms state-of-the-art methods for text classification. On the other hand, Text GCN also learns predictive word and document embeddings. In addition, experimental results show that the improvement of Text GCN over state-of-the-art comparison methods become more prominent as we lower the percentage of training data, suggesting the robustness of Text GCN to less training data in text classification.}
+      \field{annotation}{Comment: Accepted by 33rd AAAI Conference on Artificial Intelligence (AAAI 2019)}
+      \field{month}{11}
+      \field{note}{arXiv:1809.05679 [cs]}
+      \field{title}{Graph {Convolutional} {Networks} for {Text} {Classification}}
+      \field{urlday}{7}
+      \field{urlmonth}{12}
       \field{urlyear}{2023}
-      \field{volume}{31}
       \field{year}{2018}
       \field{urldateera}{ce}
       \verb{file}
-      \verb Full Text PDF:/Users/jdomi/Zotero/storage/F9ECRZCH/Ying et al. - 2018 - Hierarchical Graph Representation Learning with Di.pdf:application/pdf
+      \verb arXiv.org Snapshot:/Users/jdomi/Zotero/storage/TQEULW8F/1809.html:text/html;Full Text PDF:/Users/jdomi/Zotero/storage/YUZTLX9Q/Yao et al. - 2018 - Graph Convolutional Networks for Text Classificati.pdf:application/pdf
       \endverb
       \verb{urlraw}
-      \verb https://papers.nips.cc/paper_files/paper/2018/hash/e77dbaf6759253c7c6d0efc5690369c7-Abstract.html
+      \verb http://arxiv.org/abs/1809.05679
       \endverb
       \verb{url}
-      \verb https://papers.nips.cc/paper_files/paper/2018/hash/e77dbaf6759253c7c6d0efc5690369c7-Abstract.html
+      \verb http://arxiv.org/abs/1809.05679
       \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
     \endentry
     \entry{zhang_systematic_2023}{misc}{}
       \name{author}{5}{}{%
@@ -1185,6 +1437,82 @@
       \verb http://arxiv.org/abs/2306.11768
       \endverb
       \keyw{Computer Science - Computational Engineering,Finance,and Science,Computer Science - Machine Learning,Quantitative Biology - Quantitative Methods}
+    \endentry
+    \entry{zheng_multi-modal_2022}{article}{}
+      \name{author}{7}{}{%
+        {{hash=15b89738ab90dfba4b269ce40ad19700}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Shuai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f985de9eb5ca1933b2a64f744ebfcbb2}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Zhenfeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9e84ea9e31c28268df0be73efa4835e0}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhizhe},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d888a5de4eb0625e7b42b6f28869cf62}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Zhenyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=621013bf54d3546375ad71f17f020b5b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=dfa62e80605953eef7dbf6762975eab6}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yuchen},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5150da6c54dbb181303e4feed7ea53f1}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{b42ffe87641ebc742d0b8f78dd8af502}
+      \strng{fullhash}{5e2d582697dde15303736e25dc6defb7}
+      \strng{bibnamehash}{b42ffe87641ebc742d0b8f78dd8af502}
+      \strng{authorbibnamehash}{b42ffe87641ebc742d0b8f78dd8af502}
+      \strng{authornamehash}{b42ffe87641ebc742d0b8f78dd8af502}
+      \strng{authorfullhash}{5e2d582697dde15303736e25dc6defb7}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Benefiting from the powerful expressive capability of graphs, graph-based approaches have been popularly applied to handle multi-modal medical data and achieved impressive performance in various biomedical applications. For disease prediction tasks, most existing graph-based methods tend to define the graph manually based on specified modality (e.g., demographic information), and then integrated other modalities to obtain the patient representation by Graph Representation Learning (GRL). However, constructing an appropriate graph in advance is not a simple matter for these methods. Meanwhile, the complex correlation between modalities is ignored. These factors inevitably yield the inadequacy of providing sufficient information about the patient’s condition for a reliable diagnosis. To this end, we propose an end-to-end Multi-modal Graph Learning framework (MMGL) for disease prediction with multi-modality. To effectively exploit the rich information across multi-modality associated with the disease, modality-aware representation learning is proposed to aggregate the features of each modality by leveraging the correlation and complementarity between the modalities. Furthermore, instead of defining the graph manually, the latent graph structure is captured through an effective way of adaptive graph learning. It could be jointly optimized with the prediction model, thus revealing the intrinsic connections among samples. Our model is also applicable to the scenario of inductive learning for those unseen data. An extensive group of experiments on two disease prediction tasks demonstrates that the proposed MMGL achieves more favorable performance. The code of MMGL is available at https://github.com/SsGood/MMGL.}
+      \field{issn}{1558-254X}
+      \field{journaltitle}{IEEE Transactions on Medical Imaging}
+      \field{month}{9}
+      \field{note}{Conference Name: IEEE Transactions on Medical Imaging}
+      \field{number}{9}
+      \field{title}{Multi-{Modal} {Graph} {Learning} for {Disease} {Prediction}}
+      \field{urlday}{6}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{volume}{41}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{2207\bibrangedash 2216}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TMI.2022.3159264
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Abstract Record:/Users/jdomi/Zotero/storage/R67J2R6P/9733917.html:text/html;Submitted Version:/Users/jdomi/Zotero/storage/NR39LGF5/Zheng et al. - 2022 - Multi-Modal Graph Learning for Disease Prediction.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9733917
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9733917
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
