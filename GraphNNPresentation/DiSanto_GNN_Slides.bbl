@@ -1145,57 +1145,6 @@
       \verb https://distill.pub/2021/gnn-intro
       \endverb
     \endentry
-    \entry{satorras_en_2022}{misc}{}
-      \name{author}{3}{}{%
-        {{hash=a9c40c6be2a06d47fb58e0bdfd28a1f3}{%
-           family={Satorras},
-           familyi={S\bibinitperiod},
-           given={Victor\bibnamedelima Garcia},
-           giveni={V\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=3217062971cd751f410c7479cd9c280a}{%
-           family={Hoogeboom},
-           familyi={H\bibinitperiod},
-           given={Emiel},
-           giveni={E\bibinitperiod}}}%
-        {{hash=53d2880ad8047b61cdae2c6b2803e763}{%
-           family={Welling},
-           familyi={W\bibinitperiod},
-           given={Max},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{3d45a0160934cbf19d121cff53d7db31}
-      \strng{fullhash}{40192b6345076c7fe7f0e9204ffb25bc}
-      \strng{bibnamehash}{40192b6345076c7fe7f0e9204ffb25bc}
-      \strng{authorbibnamehash}{40192b6345076c7fe7f0e9204ffb25bc}
-      \strng{authornamehash}{3d45a0160934cbf19d121cff53d7db31}
-      \strng{authorfullhash}{40192b6345076c7fe7f0e9204ffb25bc}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This paper introduces a new model to learn graph neural networks equivariant to rotations, translations, reflections and permutations called E(n)-Equivariant Graph Neural Networks (EGNNs). In contrast with existing methods, our work does not require computationally expensive higher-order representations in intermediate layers while it still achieves competitive or better performance. In addition, whereas existing methods are limited to equivariance on 3 dimensional spaces, our model is easily scaled to higher-dimensional spaces. We demonstrate the effectiveness of our method on dynamical systems modelling, representation learning in graph autoencoders and predicting molecular properties.}
-      \field{month}{2}
-      \field{note}{arXiv:2102.09844 [cs, stat]}
-      \field{title}{E(n) {Equivariant} {Graph} {Neural} {Networks}}
-      \field{urlday}{6}
-      \field{urlmonth}{12}
-      \field{urlyear}{2023}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb arXiv.org Snapshot:/Users/jdomi/Zotero/storage/MH4Q8UMH/2102.html:text/html;Full Text PDF:/Users/jdomi/Zotero/storage/TNLJWDTI/Satorras et al. - 2022 - E(n) Equivariant Graph Neural Networks.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/2102.09844
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/2102.09844
-      \endverb
-      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
-    \endentry
     \entry{scarselli_graph_2009}{article}{}
       \name{author}{5}{}{%
         {{hash=08ec959fd97d02517d7be592475bf19c}{%

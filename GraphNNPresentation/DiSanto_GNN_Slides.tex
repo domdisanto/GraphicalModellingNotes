@@ -262,7 +262,7 @@
         \begin{cases}
             \text{Node-wise }\Phi(\Graph, x): (x\in \NodeSet) \rightarrow \mathbb{R}^m 
             \\  \\
-            \tikz[baseline]{\node[anchor=base,fill=white,inner sep=0pt,opacity=0.5] {$\text{Graph-level characteristics }\Phi(\Graph, e): (e\in\EdgeSet) \rightarrow \mathbb{R}^m$};}
+            \tikz[baseline]{\node[anchor=base,fill=white,inner sep=0pt,opacity=0.5] {$\text{Edge characteristics }\Phi(\Graph, e): (e\in\EdgeSet) \rightarrow \mathbb{R}^m$};}
             \\ \\
             \tikz[baseline]{\node[anchor=base,fill=white,inner sep=0pt,opacity=0.5] {$\text{Graph-level characteristics }\Phi(\Graph)$};} %\rightarrow \mathbb{R}^m 
         \end{cases}            
@@ -473,7 +473,6 @@ Trained end-to-end via backpropagation for problem-specific Transform function
         %\item $\mathbf{D}_{ii} = \sum_{j}\mathbf{(\AdjMat+I)_{ij}}$
         %\item Eigenvalue normalizing $\mathbf{D^{-1/2}(\AdjMat + I)D^{-1/2}}$ for computational stability
     \end{itemize}
-%    \textcolor{red}{Review paper, comment on applications briefly (KG setting), also motivate through graph convolutions?}
     \end{frame}
 
 
@@ -566,7 +565,6 @@ Trained end-to-end via backpropagation for problem-specific Transform function
         %\item $\mathbf{D}_{ii} = \sum_{j}\mathbf{(\AdjMat+I)_{ij}}$
         %\item Eigenvalue normalizing $\mathbf{D^{-1/2}(\AdjMat + I)D^{-1/2}}$ for computational stability
     \end{itemize}
-%    \textcolor{red}{Review paper, comment on applications briefly (KG setting), also motivate through graph convolutions?}
     \end{frame}
 
 
@@ -627,11 +625,6 @@ Zaixi Zhang, Jiaxian Yan, Qi Liu, Enhong Chen, and Marinka Zitnik
 \end{frame}
 
 
-\iffalse 
-            \begin{frame}{AlphaFold}
-                \textcolor{red}{Image and very brief acknowledgement/link for AlphaFold, ESMFold here (~30s)}
-            \end{frame}
-\fi 
 
 \begin{frame}{Structure-Based Drug Design (SBDD)}
     \begin{itemize}
@@ -806,43 +799,43 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
 
     where \textcolor{blue}{$Msg_m, Update_h$} are geometrically {\bf invariant}, scalar functions and $Msg_{\mathbf{m}}, Update_{\mathbf\node}$ are geometrically {\bf equivariant}, vector functions \newline 
     Here $\mathbf\node \in \mathbb{R}^3$ are 3-D coordinates (e.g. atom or amino acid location)\\
-    \textcolor{red}{EDIT Clarify invariatne/equvariant to what transformations}
 \end{frame}
 
 
-\begin{frame}{Architecture(s)}
-    May also consider the proposed Equivariant Graphical Neural Network (EGNN) from Satorras (2021) \cite{satorras_en_2022}. Again, let $\mathbf{\node}_i$ represent a node's coordinate embeddings: 
-        \begin{align*}
-            m_{ij}
-            &=
-            Msg_m(\nrepresent_i, \nrepresent_j, ||\mathbf{\node}_i^{(\iter)}-\mathbf{\node}_j^{(\iter)}||^2, \edge_{ij}) 
-        \\ 
-            \mathbf{\node}_i^{(\iter+1)}
-            &=
-            \mathbf{\node}_i^{(\iter)}
-            +
-            C
-            \sum_{j\neq 1}
-            \left(
-            \mathbf{\node}_i^{(\iter)}
-            -
-            \mathbf{\node}_j^{(\iter)}
-            \right) 
-            Agg_\node(m_{ij})
-        \\
-            m_i 
-            &= 
-            Agg(m_{ij})
-            =
-            \sum_{j\neq i} m_{ij}
-        \\
-            \nrepresent^{(\iter+1)}
-            &=
-            Update(\nrepresent^{(\iter+1)}, m_i)
-        \end{align*}
-    
-\end{frame}
-
+\iffalse 
+        \begin{frame}{Architecture(s)}
+            May also consider the proposed Equivariant Graphical Neural Network (EGNN) from Satorras (2021) \cite{satorras_en_2022}. Again, let $\mathbf{\node}_i$ represent a node's coordinate embeddings: 
+                \begin{align*}
+                    m_{ij}
+                    &=
+                    Msg_m(\nrepresent_i, \nrepresent_j, ||\mathbf{\node}_i^{(\iter)}-\mathbf{\node}_j^{(\iter)}||^2, \edge_{ij}) 
+                \\ 
+                    \mathbf{\node}_i^{(\iter+1)}
+                    &=
+                    \mathbf{\node}_i^{(\iter)}
+                    +
+                    C
+                    \sum_{j\neq 1}
+                    \left(
+                    \mathbf{\node}_i^{(\iter)}
+                    -
+                    \mathbf{\node}_j^{(\iter)}
+                    \right) 
+                    Agg_\node(m_{ij})
+                \\
+                    m_i 
+                    &= 
+                    Agg(m_{ij})
+                    =
+                    \sum_{j\neq i} m_{ij}
+                \\
+                    \nrepresent^{(\iter+1)}
+                    &=
+                    Update(\nrepresent^{(\iter+1)}, m_i)
+                \end{align*}
+            
+        \end{frame}
+\fi 
     
 \begin{frame}{NodeCoder}
     \begin{figure}
@@ -897,12 +890,7 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
     \end{align*}
 \end{frame}
 
-\iffalse 
-    \begin{frame}{EquiPocket}
-        \textcolor{red}{Time pending add} 
-        \url{https://arxiv.org/pdf/2302.12177.pdf}
-    \end{frame}
-\fi 
+
 
 
 \begin{frame}{PIGNet}
@@ -965,12 +953,10 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
 \begin{frame}{Multimodal Graph Learning (MGL)}
 \begin{itemize}\setlength\itemsep{6mm}
     \item Ektefaie (2023) {\it Multimodal learning with graphs} \cite{ektefaie_multimodal_2023}
-    %\item \textcolor{red}{Cite 14-16 in multimodal paper for multi improvement over uni VAE} 
     \item Topology is complicated by multimodality of input data 
     \begin{itemize}
         \item Modal collapse \cite{javaloy_mitigating_2022}
         \item Differential data availability 
-       % \item \textcolor{red}{Can mention Kipf algorithm does well in semi-supervised setting (even with limited labels available within a given "cluster"), so if we have some gold standard data (biomarker/strong proxy, etc.) that is difficult to obtain, can be VERY useful to include for MGL and lead to good performance, no bullet point here just mention}
     \end{itemize}
 \end{itemize}    
 \vspace{3mm}
@@ -1260,7 +1246,7 @@ Forgoing the iteration supercripts, one message pass can be represented as such:
         \widetilde{m_{\relation,i}} 
         \\
         \\
-        &p_{i,jj,r} 
+        &p_{i,j,r} 
         =
         expit(\sum \nrepresent_i \cdot w_r \cdot \nrepresent_j)
         \\

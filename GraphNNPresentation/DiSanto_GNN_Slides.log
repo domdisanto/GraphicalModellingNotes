@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  6 DEC 2023 22:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.5)  6 DEC 2023 23:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1223,12 +1223,7 @@ File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 
 ] [12
 
-]
-Overfull \hbox (14.84607pt too wide) detected at line 270
-[]
- []
-
-[13
+] [13
 
 ]
 \c@algpx@indentEndPage-0=\count515
@@ -1262,12 +1257,12 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
 <Zhang_2023_BindingSite.png, id=831, 421.575pt x 162.10562pt>
 File: Zhang_2023_BindingSite.png Graphic file (type png)
 <use Zhang_2023_BindingSite.png>
-Package pdftex.def Info: Zhang_2023_BindingSite.png  used on input line 672.
+Package pdftex.def Info: Zhang_2023_BindingSite.png  used on input line 665.
 (pdftex.def)             Requested size: 171.14764pt x 65.81071pt.
 <Zhang_2023_BindingAffinity.png, id=832, 421.575pt x 147.55125pt>
 File: Zhang_2023_BindingAffinity.png Graphic file (type png)
 <use Zhang_2023_BindingAffinity.png>
-Package pdftex.def Info: Zhang_2023_BindingAffinity.png  used on input line 672.
+Package pdftex.def Info: Zhang_2023_BindingAffinity.png  used on input line 665.
 (pdftex.def)             Requested size: 171.14764pt x 59.90201pt.
  [25
 
@@ -1275,7 +1270,7 @@ Package pdftex.def Info: Zhang_2023_BindingAffinity.png  used on input line 672.
 <Isert_2023_ModelsSBDD.png, id=866, 595.22375pt x 312.16624pt>
 File: Isert_2023_ModelsSBDD.png Graphic file (type png)
 <use Isert_2023_ModelsSBDD.png>
-Package pdftex.def Info: Isert_2023_ModelsSBDD.png  used on input line 713.
+Package pdftex.def Info: Isert_2023_ModelsSBDD.png  used on input line 706.
 (pdftex.def)             Requested size: 327.37407pt x 171.69196pt.
  [26
 
@@ -1283,12 +1278,12 @@ Package pdftex.def Info: Isert_2023_ModelsSBDD.png  used on input line 713.
 <Isert_2023_ModelsSBDD_VoxelMesh.png, id=899, 425.59pt x 309.65688pt>
 File: Isert_2023_ModelsSBDD_VoxelMesh.png Graphic file (type png)
 <use Isert_2023_ModelsSBDD_VoxelMesh.png>
-Package pdftex.def Info: Isert_2023_ModelsSBDD_VoxelMesh.png  used on input line 730.
+Package pdftex.def Info: Isert_2023_ModelsSBDD_VoxelMesh.png  used on input line 723.
 (pdftex.def)             Requested size: 170.23297pt x 123.86055pt.
 <Gainza_2020_ProteinNodesRadii.png, id=900, 268.00125pt x 231.86626pt>
 File: Gainza_2020_ProteinNodesRadii.png Graphic file (type png)
 <use Gainza_2020_ProteinNodesRadii.png>
-Package pdftex.def Info: Gainza_2020_ProteinNodesRadii.png  used on input line 730.
+Package pdftex.def Info: Gainza_2020_ProteinNodesRadii.png  used on input line 723.
 (pdftex.def)             Requested size: 134.00029pt x 115.93283pt.
  [27
 
@@ -1296,7 +1291,7 @@ Package pdftex.def Info: Gainza_2020_ProteinNodesRadii.png  used on input line 7
 <Isert_2023_ModelsSBDD_3DGraph.png, id=936, 156.585pt x 294.09875pt>
 File: Isert_2023_ModelsSBDD_3DGraph.png Graphic file (type png)
 <use Isert_2023_ModelsSBDD_3DGraph.png>
-Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 753.
+Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 746.
 (pdftex.def)             Requested size: 86.12201pt x 161.7548pt.
  [28
 
@@ -1304,152 +1299,152 @@ Package pdftex.def Info: Isert_2023_ModelsSBDD_3DGraph.png  used on input line 7
 
 ] [30
 
-] [31
-
 ]
-<Fig1_NodeCoder.png, id=1060, 1036.87375pt x 228.855pt>
+<Fig1_NodeCoder.png, id=1027, 1036.87375pt x 228.855pt>
 File: Fig1_NodeCoder.png Graphic file (type png)
 <use Fig1_NodeCoder.png>
-Package pdftex.def Info: Fig1_NodeCoder.png  used on input line 898.
+Package pdftex.def Info: Fig1_NodeCoder.png  used on input line 891.
 (pdftex.def)             Requested size: 311.06451pt x 68.65701pt.
- [32
+ [31
 
  <./Fig1_NodeCoder.png>]
-<Zhang_Fig8_Binding.png, id=1094, 474.77374pt x 304.13625pt>
+<Zhang_Fig8_Binding.png, id=1063, 474.77374pt x 304.13625pt>
 File: Zhang_Fig8_Binding.png Graphic file (type png)
 <use Zhang_Fig8_Binding.png>
-Package pdftex.def Info: Zhang_Fig8_Binding.png  used on input line 914.
+Package pdftex.def Info: Zhang_Fig8_Binding.png  used on input line 902.
 (pdftex.def)             Requested size: 284.86644pt x 182.48315pt.
- [33
+ [32
 
  <./Zhang_Fig8_Binding.png>]
-<ScanNet_Pooling.png, id=1130, 956.57375pt x 466.74374pt>
+<ScanNet_Pooling.png, id=1099, 956.57375pt x 466.74374pt>
 File: ScanNet_Pooling.png Graphic file (type png)
 <use ScanNet_Pooling.png>
-Package pdftex.def Info: ScanNet_Pooling.png  used on input line 923.
+Package pdftex.def Info: ScanNet_Pooling.png  used on input line 911.
 (pdftex.def)             Requested size: 334.80583pt x 163.36275pt.
- [34
+ [33
 
- <./ScanNet_Pooling.png>] [35
+ <./ScanNet_Pooling.png>] [34
 
-] [36
+] [35
 
 ]
-<Multimodal_Concep.png, id=1223, 871.255pt x 653.44125pt>
+<Multimodal_Concep.png, id=1192, 871.255pt x 653.44125pt>
 File: Multimodal_Concep.png Graphic file (type png)
 <use Multimodal_Concep.png>
-Package pdftex.def Info: Multimodal_Concep.png  used on input line 960.
+Package pdftex.def Info: Multimodal_Concep.png  used on input line 948.
 (pdftex.def)             Requested size: 217.81322pt x 163.35991pt.
- [37
+ [36
 
- <./Multimodal_Concep.png>] [38
+ <./Multimodal_Concep.png>] [37
 
 ]
-<Modal_Agg_Fig2.png, id=1291, 333.74687pt x 253.44687pt>
+<Modal_Agg_Fig2.png, id=1259, 333.74687pt x 253.44687pt>
 File: Modal_Agg_Fig2.png Graphic file (type png)
 <use Modal_Agg_Fig2.png>
-Package pdftex.def Info: Modal_Agg_Fig2.png  used on input line 1010.
+Package pdftex.def Info: Modal_Agg_Fig2.png  used on input line 996.
 (pdftex.def)             Requested size: 200.24966pt x 152.06929pt.
- [39
+ [38
 
- <./Modal_Agg_Fig2.png>] [40
+ <./Modal_Agg_Fig2.png>] [39
 
-] [41
+] [40
 
 ]
-<Ektefaie_StructureLearning.png, id=1383, 303.1325pt x 409.53pt>
+<Ektefaie_StructureLearning.png, id=1351, 303.1325pt x 409.53pt>
 File: Ektefaie_StructureLearning.png Graphic file (type png)
 <use Ektefaie_StructureLearning.png>
-Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 1071.
+Package pdftex.def Info: Ektefaie_StructureLearning.png  used on input line 1057.
 (pdftex.def)             Requested size: 121.25084pt x 163.80908pt.
- [42
+ [41
 
  <./Ektefaie_StructureLearning.png>]
-<Ektefaie_OnStructure.png, id=1416, 317.185pt x 324.21124pt>
+<Ektefaie_OnStructure.png, id=1385, 317.185pt x 324.21124pt>
 File: Ektefaie_OnStructure.png Graphic file (type png)
 <use Ektefaie_OnStructure.png>
-Package pdftex.def Info: Ektefaie_OnStructure.png  used on input line 1097.
+Package pdftex.def Info: Ektefaie_OnStructure.png  used on input line 1083.
 (pdftex.def)             Requested size: 126.87173pt x 129.68219pt.
- [43
+ [42
 
  <./Ektefaie_OnStructure.png>]
-<MGL_MethodsTable.png, id=1450, 763.85374pt x 465.74pt>
+<MGL_MethodsTable.png, id=1418, 763.85374pt x 465.74pt>
 File: MGL_MethodsTable.png Graphic file (type png)
 <use MGL_MethodsTable.png>
-Package pdftex.def Info: MGL_MethodsTable.png  used on input line 1105.
+Package pdftex.def Info: MGL_MethodsTable.png  used on input line 1091.
 (pdftex.def)             Requested size: 305.53607pt x 186.2927pt.
- [44
+ [43
 
  <./MGL_MethodsTable.png>]
-<TextGCN_Yao_Fig2.png, id=1483, 551.05875pt x 220.825pt>
+<TextGCN_Yao_Fig2.png, id=1452, 551.05875pt x 220.825pt>
 File: TextGCN_Yao_Fig2.png Graphic file (type png)
 <use TextGCN_Yao_Fig2.png>
-Package pdftex.def Info: TextGCN_Yao_Fig2.png  used on input line 1125.
+Package pdftex.def Info: TextGCN_Yao_Fig2.png  used on input line 1111.
 (pdftex.def)             Requested size: 220.41959pt x 88.32843pt.
- [45
+ [44
 
  <./TextGCN_Yao_Fig2.png>]
-<Zheng_2022_MGL_Patients_Arch.png, id=1518, 911.405pt x 459.7175pt>
+<Zheng_2022_MGL_Patients_Arch.png, id=1486, 911.405pt x 459.7175pt>
 File: Zheng_2022_MGL_Patients_Arch.png Graphic file (type png)
 <use Zheng_2022_MGL_Patients_Arch.png>
-Package pdftex.def Info: Zheng_2022_MGL_Patients_Arch.png  used on input line 1134.
+Package pdftex.def Info: Zheng_2022_MGL_Patients_Arch.png  used on input line 1120.
 (pdftex.def)             Requested size: 364.55554pt x 183.88373pt.
 
-Overfull \hbox (22.26024pt too wide) in paragraph at lines 1134--1134
+Overfull \hbox (22.26024pt too wide) in paragraph at lines 1120--1120
  [] 
  []
 
 
-Overfull \vbox (31.47975pt too high) detected at line 1134
+Overfull \vbox (31.47975pt too high) detected at line 1120
  []
 
-[46
+[45
 
- <./Zheng_2022_MGL_Patients_Arch.png>] [47
+ <./Zheng_2022_MGL_Patients_Arch.png>] [46
+
+] [47
 
 ] [48
-
-] [49
 
 ]
 File: txGNN_KG.png Graphic file (type png)
 <use txGNN_KG.png>
-Package pdftex.def Info: txGNN_KG.png  used on input line 1175.
+Package pdftex.def Info: txGNN_KG.png  used on input line 1161.
 (pdftex.def)             Requested size: 264.98935pt x 198.742pt.
 
-Overfull \vbox (14.73802pt too high) detected at line 1175
+Overfull \vbox (14.73802pt too high) detected at line 1161
  []
 
-[50
+[49
 
 ]
-<Chandak_KG_Arch.png, id=1671, 528.97626pt x 166.6225pt>
+<Chandak_KG_Arch.png, id=1640, 528.97626pt x 166.6225pt>
 File: Chandak_KG_Arch.png Graphic file (type png)
 <use Chandak_KG_Arch.png>
-Package pdftex.def Info: Chandak_KG_Arch.png  used on input line 1198.
+Package pdftex.def Info: Chandak_KG_Arch.png  used on input line 1184.
 (pdftex.def)             Requested size: 211.58675pt x 66.64781pt.
- [51
+ [50
 
  <./Chandak_KG_Arch.png>]
 File: txGNN_KG.png Graphic file (type png)
 <use txGNN_KG.png>
-Package pdftex.def Info: txGNN_KG.png  used on input line 1208.
+Package pdftex.def Info: txGNN_KG.png  used on input line 1194.
 (pdftex.def)             Requested size: 225.24255pt x 168.93192pt.
 
-Overfull \vbox (14.25711pt too high) detected at line 1208
+Overfull \vbox (14.25711pt too high) detected at line 1194
  []
 
-[52
+[51
 
 ]
-<TxGNN_Arch.png, id=1737, 790.955pt x 421.575pt>
+<TxGNN_Arch.png, id=1705, 790.955pt x 421.575pt>
 File: TxGNN_Arch.png Graphic file (type png)
 <use TxGNN_Arch.png>
-Package pdftex.def Info: TxGNN_Arch.png  used on input line 1218.
+Package pdftex.def Info: TxGNN_Arch.png  used on input line 1204.
 (pdftex.def)             Requested size: 316.3764pt x 168.627pt.
- [53
+ [52
 
- <./TxGNN_Arch.png>] [54
+ <./TxGNN_Arch.png>] [53
+
+] [54
 
 ] [55
 
@@ -1457,14 +1452,14 @@ Package pdftex.def Info: TxGNN_Arch.png  used on input line 1218.
 
 ] [57
 
-] [58
-
 ]
 File: TxGNN_Arch.png Graphic file (type png)
 <use TxGNN_Arch.png>
-Package pdftex.def Info: TxGNN_Arch.png  used on input line 1326.
+Package pdftex.def Info: TxGNN_Arch.png  used on input line 1312.
 (pdftex.def)             Requested size: 316.3764pt x 168.627pt.
- [59
+ [58
+
+] [59
 
 ] [60
 
@@ -1473,6 +1468,7 @@ Package pdftex.def Info: TxGNN_Arch.png  used on input line 1326.
 ] [62
 
 ] [63
+
 
 ] [64
 
@@ -1488,7 +1484,6 @@ Package pdftex.def Info: TxGNN_Arch.png  used on input line 1326.
 
 ] [68
 
-
 ] [69
 
 ] [70
@@ -1499,44 +1494,42 @@ Package pdftex.def Info: TxGNN_Arch.png  used on input line 1326.
 
 ] [73
 
-] [74
-
 ]
-<NodeCoder_S2_Embeddings.png, id=2397, 792.9625pt x 656.4525pt>
+<NodeCoder_S2_Embeddings.png, id=2366, 792.9625pt x 656.4525pt>
 File: NodeCoder_S2_Embeddings.png Graphic file (type png)
 <use NodeCoder_S2_Embeddings.png>
-Package pdftex.def Info: NodeCoder_S2_Embeddings.png  used on input line 1467.
+Package pdftex.def Info: NodeCoder_S2_Embeddings.png  used on input line 1453.
 (pdftex.def)             Requested size: 237.89058pt x 196.93727pt.
 
-Overfull \vbox (12.93329pt too high) detected at line 1467
+Overfull \vbox (12.93329pt too high) detected at line 1453
  []
 
-[75
+[74
 
  <./NodeCoder_S2_Embeddings.png>]
-<Junwei_KG_Models_Infograph.png, id=2431, 2352.79pt x 1324.95pt>
+<Junwei_KG_Models_Infograph.png, id=2399, 2352.79pt x 1324.95pt>
 File: Junwei_KG_Models_Infograph.png Graphic file (type png)
 <use Junwei_KG_Models_Infograph.png>
-Package pdftex.def Info: Junwei_KG_Models_Infograph.png  used on input line 1475.
+Package pdftex.def Info: Junwei_KG_Models_Infograph.png  used on input line 1461.
 (pdftex.def)             Requested size: 305.87344pt x 172.24954pt.
- [76
+ [75
 
  <./Junwei_KG_Models_Infograph.png>]
-<PDB_File_Ex.png, id=2459, 991.705pt x 543.02875pt>
+<PDB_File_Ex.png, id=2427, 991.705pt x 543.02875pt>
 File: PDB_File_Ex.png Graphic file (type png)
 <use PDB_File_Ex.png>
-Package pdftex.def Info: PDB_File_Ex.png  used on input line 1484.
+Package pdftex.def Info: PDB_File_Ex.png  used on input line 1470.
 (pdftex.def)             Requested size: 366.92511pt x 200.91748pt.
 
-Overfull \hbox (24.6298pt too wide) in paragraph at lines 1484--1484
+Overfull \hbox (24.6298pt too wide) in paragraph at lines 1470--1470
  [] 
  []
 
 
-Overfull \vbox (54.5135pt too high) detected at line 1484
+Overfull \vbox (54.5135pt too high) detected at line 1470
  []
 
-[77
+[76
 
  <./PDB_File_Ex.png>]
 \tf@nav=\write7
@@ -1550,24 +1543,24 @@ Overfull \vbox (54.5135pt too high) detected at line 1484
 
  (./DiSanto_GNN_Slides.aux)
 Package rerunfilecheck Info: File `DiSanto_GNN_Slides.out' has not changed.
-(rerunfilecheck)             Checksum: F09240C4104409A49BA1E58657BA6631;1307.
+(rerunfilecheck)             Checksum: 85B29D0A31268EADCFBD68FEBF840BD9;1307.
 Package logreq Info: Writing requests to 'DiSanto_GNN_Slides.run.xml'.
 \openout1 = `DiSanto_GNN_Slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37906 strings out of 476025
- 784223 string characters out of 5790018
+ 37898 strings out of 476025
+ 784018 string characters out of 5790018
  1879388 words of memory out of 5000000
- 57479 multiletter control sequences out of 15000+600000
+ 57474 multiletter control sequences out of 15000+600000
  533113 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,22n,122p,2052b,1872s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk> </Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on DiSanto_GNN_Slides.pdf (77 pages, 6235371 bytes).
+Output written on DiSanto_GNN_Slides.pdf (76 pages, 6232023 bytes).
 PDF statistics:
- 2616 PDF objects out of 2984 (max. 8388607)
- 2389 compressed objects within 24 object streams
- 187 named destinations out of 1000 (max. 500000)
+ 2584 PDF objects out of 2984 (max. 8388607)
+ 2358 compressed objects within 24 object streams
+ 184 named destinations out of 1000 (max. 500000)
  306 words of extra memory for PDF output out of 10000 (max. 10000000)
 
