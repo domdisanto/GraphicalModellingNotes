@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber DiSanto_GNN_Slides"] 1701922333 "DiSanto_GNN_Slides.bcf" "DiSanto_GNN_Slides.bbl" "DiSanto_GNN_Slides" 1701922349 0
+["biber DiSanto_GNN_Slides"] 1701922333 "DiSanto_GNN_Slides.bcf" "DiSanto_GNN_Slides.bbl" "DiSanto_GNN_Slides" 1701961654 0
   "./GNN_Presentation.bib" 1701908203 62926 ef5891cb42e59f10afc0f870700008c6 ""
-  "DiSanto_GNN_Slides.bcf" 1701922349 112734 397e9c23cb6a46024a548637c4258841 "pdflatex"
+  "DiSanto_GNN_Slides.bcf" 1701961654 112734 397e9c23cb6a46024a548637c4258841 "pdflatex"
   (generated)
   "DiSanto_GNN_Slides.bbl"
   "DiSanto_GNN_Slides.blg"
   (rewritten before read)
-["pdflatex"] 1701922342 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" "DiSanto_GNN_Slides.pdf" "DiSanto_GNN_Slides" 1701922349 0
-  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" 1701922332 52176 126a5f789ac01b249c3817787e47d252 ""
+["pdflatex"] 1701961647 "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" "DiSanto_GNN_Slides.pdf" "DiSanto_GNN_Slides" 1701961654 0
+  "/Users/jdomi/Documents/GradSchool/PhD/Research/Junwei/GraphicalModellingNotes/GraphNNPresentation/DiSanto_GNN_Slides.tex" 1701961647 52175 c41cd0bb3b410f6bddcd888a2088e86e ""
   "/Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1701198993 6964 86a4f557053a70c52d0f24169404b0d7 ""
   "/Users/jdomi/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk" 1695919762 7808 4a53411debd7b8600975fa0509ed4416 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -291,13 +291,13 @@
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Caffeine_Graph.png" 1701106261 214751 e9ba72ae758bd400b77b9a34a618898b ""
   "Chandak_KG_Arch.png" 1701912640 132709 4a3b5f3f1bf7c1db4436dde45f45d16d ""
-  "DiSanto_GNN_Slides.aux" 1701922349 23772 da3fc8874ab6e5f36eb13779180f6730 "pdflatex"
+  "DiSanto_GNN_Slides.aux" 1701961654 23772 da3fc8874ab6e5f36eb13779180f6730 "pdflatex"
   "DiSanto_GNN_Slides.bbl" 1701922335 81128 51747b2396956b3ec29432144d9fcb0f "biber DiSanto_GNN_Slides"
-  "DiSanto_GNN_Slides.nav" 1701922349 9431 702e80ccf8f1a3b7abc9506b2c88979e "pdflatex"
-  "DiSanto_GNN_Slides.out" 1701922349 1307 85b29d0a31268eadcfbd68febf840bd9 "pdflatex"
-  "DiSanto_GNN_Slides.run.xml" 1701922349 2409 47d6fc4ed2ecda7a5ace4f9810941036 "pdflatex"
-  "DiSanto_GNN_Slides.tex" 1701922332 52176 126a5f789ac01b249c3817787e47d252 ""
-  "DiSanto_GNN_Slides.toc" 1701922349 377 1d6288808d651e461f238dcb98a4da19 "pdflatex"
+  "DiSanto_GNN_Slides.nav" 1701961654 9431 702e80ccf8f1a3b7abc9506b2c88979e "pdflatex"
+  "DiSanto_GNN_Slides.out" 1701961654 1307 85b29d0a31268eadcfbd68febf840bd9 "pdflatex"
+  "DiSanto_GNN_Slides.run.xml" 1701961654 2409 47d6fc4ed2ecda7a5ace4f9810941036 "pdflatex"
+  "DiSanto_GNN_Slides.tex" 1701961647 52175 c41cd0bb3b410f6bddcd888a2088e86e ""
+  "DiSanto_GNN_Slides.toc" 1701961654 377 1d6288808d651e461f238dcb98a4da19 "pdflatex"
   "Ektefaie_OnStructure.png" 1701891717 86932 9c14f77e38989d4be316a1c9a57275af ""
   "Ektefaie_StructureLearning.png" 1701209654 109505 cd9f47742f18a0739e588c11dbe2d917 ""
   "Fig1_NodeCoder.png" 1701828251 326797 9d5de0785a0d907a18c7a8c59d21d57e ""
