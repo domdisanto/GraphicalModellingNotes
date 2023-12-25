@@ -11,6 +11,7 @@
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.bcf
+*.blg
 *.cb
 *.cb2
 *.fdb_latexmk
