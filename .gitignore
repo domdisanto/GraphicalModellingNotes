@@ -1,3 +1,6 @@
+##
+*.DS_Store
+
 ## papers 
 /GraphNNPresentation/Papers
 
@@ -7,16 +10,20 @@
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
+*.bcf
+*.cb
+*.cb2
+*.fdb_latexmk
+*.fls
+*.fmt
+*.fot
+.*.lb
 *.lof
 *.log
 *.lot
-*.fls
+*.nav
 *.out
-*.toc
-*.fmt
-*.fot
-*.cb
-*.cb2
-.*.lb
-*.fdb_latexmk
+*.run.xml
+*.snm
 *.synctex.gz
+*.toc
